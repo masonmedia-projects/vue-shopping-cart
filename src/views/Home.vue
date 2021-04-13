@@ -1,6 +1,6 @@
 <template>
   <b-container fluid class="p-5 mt-4">
-    <!-- style="background-color: #f0aea2;" -->
+    <!-- style="background: url(./Waimakariri.png); background-size: 120%;" -->
   <!-- <b-container fluid class="p-5 mt-4" style="background-color: #f05323; orange"> -->
     <b-row class="d-flex text-left"
     v-for="items in $t('page1')" :key="items.id">
@@ -30,50 +30,6 @@
             <b-button variant="outline-dark" class="w-100 rounded-0">More details</b-button>
             <!-- <router-link :to="{ name: 'FoodDetails', params: {id: topRated.id}}"></router-link> -->
           </b-card-text>
-        </b-card>
-      </b-col>
-    </b-row>
-
-    <b-row class="d-flex text-left">
-      <b-col lg="12">
-        <h3 class="my-4 px-3">All categories</h3>
-      </b-col>
-      <b-col lg="4" 
-      v-on:click="foodDetails(items)" 
-      v-for="items in allCategories" :key="items.id">
-        <b-card
-          :title="items.name"
-          :img-src="items.url"
-          img-alt="Image"
-          img-top
-          tag="article"
-          class="border-0 rounded-0 mb-3 shadow"
-        >
-          <b-card-text>
-            <!-- Some quick example text to build on the card title and make up the bulk of the card's content. -->
-          </b-card-text>
-          <b-button href="#" variant="outline-dark" class="w-100 rounded-0">Go somewhere</b-button>
-        </b-card>
-      </b-col>
-    </b-row>
-
-    <b-row class="d-flex text-left">
-      <b-col lg="12">
-        <h3 class="my-4 px-3">Dishes near you</h3>
-      </b-col>
-      <b-col lg="4" v-on:click="foodDetails(items)" v-for="items in dishesNearYou" :key="items.id">
-        <b-card
-          :title="items.name"
-          :img-src="items.url"
-          img-alt="Image"
-          img-top
-          tag="article"
-          class="border-0 rounded-0 mb-3 shadow"
-        >
-          <b-card-text>
-            <!-- Some quick example text to build on the card title and make up the bulk of the card's content. -->
-          </b-card-text>
-          <b-button variant="outline-dark" class="w-100 rounded-0">Go somewhere</b-button>
         </b-card>
       </b-col>
     </b-row>

@@ -78,13 +78,22 @@ export default {
         cartItems() {
             return this.$store.state.cartItems;
         },
+        // changed price to id so items without price would be recognized
         totalPrice() {
             let price = 0;
             this.$store.state.cartItems.map(el => {
-                price += el["quantity"] * el["price"]
+                price += el["quantity"] * el["id"]
             })
             return price;
         },
+        // original for getting/calculating price
+        // totalPrice() {
+        //     let price = 0;
+        //     this.$store.state.cartItems.map(el => {
+        //         price += el["quantity"] * el["price"]
+        //     })
+        //     return price;
+        // },
         myLearningPlan() {
             return this.$store.state.data.myLearningPlan;
         }

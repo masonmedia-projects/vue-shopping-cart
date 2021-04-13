@@ -1,9 +1,9 @@
 {
   "welcome":[
     {
-      "img1":"https://source.unsplash.com/1600x900/?food",
-      "img2":"https://source.unsplash.com/1600x900/?cuisine",
-      "img3":"https://source.unsplash.com/1600x900/?leadership",
+      "img1":"https://source.unsplash.com/1600x900/?desk",
+      "img2":"./Hinterrhein.png",
+      "img3":"https://source.unsplash.com/1600x900/?computer",
       "microTitle":"Leadership Learning Tool",
       "mainTitle":"Quick Start",
       "title2":"Leadership Learning Tool",
@@ -40,8 +40,7 @@
       "id":1,
       "name":"Self-Awareness",
       "category":"Leading Yourself",
-      "price":"100",
-      "url":"https://source.unsplash.com/1600x900/?cake",
+      "url":"https://source.unsplash.com/1600x900/?zen",
       "description":"Building awareness around the mindsets and behaviours that help you be a successful leader",
       "moreDetail":[
         "Seeing yourself clearly and objectively through reflection and introspection",
@@ -57,8 +56,7 @@
       "id":2,
       "name":"Empowerment",
       "category":"Collaborating with & Inspiring Others",
-      "price":"125",
-      "url":"https://source.unsplash.com/1600x900/?noodles",
+      "url":"https://source.unsplash.com/1600x900/?building",
       "description":"Developing strong relationships and motivating others to perform at their highest potential",
       "moreDetail":[
         "Inspiring ownership and accountability within others",
@@ -76,9 +74,8 @@
       "id":3,
       "name":"Collaboration",
       "category":"Collaborating with & Inspiring Others",
-      "price":"90",
-      "url":"https://source.unsplash.com/1600x900/?fries",
-      "description":"Crispy, double fried",
+      "url":"https://source.unsplash.com/1600x900/?collaborate",
+      "description":"Developing strong relationships and motivating others to perform at their highest potential",
       "moreDetail": [
         "Creating and delivering on shared goals through influence and cooperation",
         "Initiating and maintaining relationships with others",
@@ -91,27 +88,57 @@
     },
     {
       "id":4,
-      "name":"Macaroni",
-      "price":"200",
-      "url":"https://source.unsplash.com/1600x900/?macaroni",
-      "description":"Cheesy blasters",
-      "moreDetail":"Adipisicing ut turducken, et short ribs id kielbasa ground round swine esse eu non boudin. Sunt in consectetur, sed bacon ham quis incididunt nostrud ipsum in bresaola non. Qui chislic tongue ball tip, aliquip ham hock pork belly andouille non meatloaf drumstick laborum porchetta shankle ut. Est officia andouille turducken. Ground round tongue anim, beef ribs t-bone landjaeger in consequat commodo ut qui ullamco. Aute commodo pancetta excepteur, alcatra aliquip esse et adipisicing lorem shankle ground round tri-tip."
+      "name":"Communication",
+      "category":"Communicating Effectively & with Empathy",
+      "url":"https://source.unsplash.com/1600x900/?phone",
+      "description":"Communicating a clear vision to accomplish key objectives",
+      "moreDetail": [
+        "Conveying information and ideas persuasively and succinctly",
+        "Capturing and holding others’ attention in a focused and captivating way", 
+        "Adapting the message to the audience’s diverse needs",
+        "Developing visually appealing, inclusive and coherent presentation materials"
+      ],
+      "selectIf":[
+        "You need to create and deliver an impactful presentation or message",
+        "You want to build confidence in public speaking",
+        "You want to influence others through communication"
+      ]
     },
     {
       "id":5,
-      "name":"Pizza",
-      "price":"150",
-      "url":"https://source.unsplash.com/1600x900/?pizza",
-      "description":"Cheesy chessy pizza",
-      "moreDetail":"T-bone nostrud exercitation, dolor non cupim ea ut et officia eu. Meatball pork belly frankfurter jerky et filet mignon consequat officia aute elit laboris. Nostrud dolore doner, drumstick culpa shankle aliqua sausage t-bone incididunt kevin. Dolor turkey hamburger labore eiusmod. Tempor andouille meatball short ribs ipsum laboris non ut proident elit est bacon. Short loin drumstick pork, corned beef leberkas salami deserunt pork chop in ribeye short ribs qui."
+      "name":"Authentic Conversations",
+      "category":"Communicating Effectively & with Empathy",
+      "url":"https://source.unsplash.com/1600x900/?communication",
+      "description":"Communicating a clear vision to accomplish key objectives",
+      "moreDetail": [
+        "Listening actively to gain insights to other perspectives",
+        "Addressing challenging conversations proactively",
+        "Providing appreciative and constructive feedback effectively",
+        "Managing conflict with a win-win approach", 
+        "Encouraging conversations that build a culture of equity and inclusion"
+      ],
+      "selectIf":[
+        "You want to listen with the intent to understand",  
+        "You want to achieve beneficial outcomes when engaging in challenging conversations",
+        "You need to confidently manage challenging conversations, situations or conflict", 
+        "You need to share your opinions even if they are unpopular"
+      ]
     },
     {
       "id":6,
-      "name":"Salad",
-      "price":"134",
-      "url":"https://source.unsplash.com/1600x900/?salad",
-      "description":"Fresh",
-      "moreDetail":"Tenderloin chislic tempor mollit, non cow ut. Consectetur sirloin tempor, chuck adipisicing et tongue spare ribs chislic meatloaf pork loin cupidatat fugiat magna deserunt. Boudin turkey culpa capicola shoulder prosciutto. Ut ut excepteur qui pork strip steak consequat. Non rump shankle ut labore velit ut. Ribeye pork ham pancetta ad anim aliquip tongue non alcatra ball tip ea. Burgdoggen non drumstick, cow tempor in tongue pancetta ad turkey landjaeger bacon occaecat irure filet mignon."
+      "name":"Emotional Intelligence ",
+      "category":"Communicating Effectively & with Empathy",
+      "url":"https://source.unsplash.com/1600x900/?emotions",
+      "description":"Communicating a clear vision to accomplish key objectives",
+      "moreDetail": [
+      "Conveying empathy and recognizing the emotions of others",
+      "Being authentic, while also demonstrating social and situational awareness",
+      "Recognizing when emotions and biases affect decision-making"
+      ],
+      "selectIf":[
+        "You’d like to get better at identifying and responding to emotions",  
+        "You’re required to find solutions to problems in emotionally charged situations"
+      ]
     },
     {
       "id":1,
