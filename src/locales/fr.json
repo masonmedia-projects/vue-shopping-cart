@@ -1,0 +1,114 @@
+{
+  "welcome": [
+    {
+      "img1": "https://source.unsplash.com/1600x900/?food",
+      "img2": "https://source.unsplash.com/1600x900/?cuisine",
+      "img3": "https://source.unsplash.com/1600x900/?leadership",
+      "microTitle": "Outil d’apprentissage du leadership",
+      "mainTitle": "Démarrage rapide",
+      "title2": "Outil d’apprentissage du leadership",
+      "text1": "<strong> Grands apprenants font de grands leaders.</strong> Au cours de notre organisation, nous avons une culture d’apprentissage qui nous donne l’occasion de nous développer dans des domaines qui nous aident à mieux nous servir nous-mêmes, notre équipe et notre organisation. Qu’il s’agisse d’un domaine qui vous passionne et que vous souhaitez explorer davantage ou d’un domaine où vous avez récemment reconnu une opportunité de développement, cet outil est fait pour vous.",
+      "text2": "Bienvenue à l’outil d’apprentissage du leadership. S’il vous plaît utiliser cet outil pour découvrir les activités d’apprentissage, qui sont personnalisés pour les capacités de leadership, les connaissances et les compétences. Cet outil organisera les activités qui vous seront les plus précieuses.",
+      "text3": "Si vous savez sur quelles connaissances et compétences vous souhaitez vous concentrer, sélectionnez Démarrer. Sinon, sélectionnez En savoir plus pour explorer quelques suggestions utiles et obtenir plus d’informations.",
+      "btn1": "démarrer",
+      "btn2": "Pour en savoir plus"
+    }
+  ],
+  "page1": [
+    {
+      "introTitle": "Mon outil de développement du leadership!",
+      "introText": "Établis votre plan d’apprentissage en sélectionnant les éléments sur qui vous souhaitez vous concentrer aujourd’hui. Sélectionnez chaque élément pour en savoir plus sur ce que chaque élément représente, y compris les comportements et les capacités qui sont inclus dans cet élément, et quand l’élément peut être un domaine d’intérêt approprié pour vous."
+    }
+  ],
+  "allCategories": [
+    {
+      "id": "1",
+      "name": "conscience de soi",
+      "category": "Vous diriger soi-même",
+      "price": "100",
+      "url": "https://source.unsplash.com/1600x900/?cake",
+      "description": "Vous diriger soi-même",
+      "moreDetail": [
+        "Se voir clairement et objectivement à travers la réflexion et l’introspection",
+        "Connaître vos forces, vos opportunités, vos croyances, vos préjugés, vos motivations et vos émotions",
+        "Chercher des commentaires pour apprendre comment les autres vous perçoivent, votre attitude et vos réponses à eux"
+      ],
+      "selectIf": [
+        "Vous souhaitez en savoir plus sur la perception des autres de vous",
+        "Vous souhaitez vous sentir habilité à apporter des changements et à tirer parti de vos domaines de forces et d’opportunités"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Nouilles",
+      "category": "Vous diriger soi-même",
+      "price": "125",
+      "url": "https://source.unsplash.com/1600x900/?noodles",
+      "description": "Nouilles super savoureuses",
+      "moreDetail": [
+        "Inspirer la propriété et la responsabilisation au sein des autres",
+        "Permettre aux autres de réussir en encadrer et déléguer efficacement le travail",
+        "Reconnaître et respecter les contributions des autres",
+        "Encourager les autres à étendre leurs capacités",
+        "En développer d’autres en fournissant des orientations, des ressources, de la formation et du mentorat pertinents"
+      ],
+      "selectIf": [
+        "Vous souhaitez en savoir plus sur la perception des autres de vous",
+        "Vous souhaitez vous sentir habilité à apporter des changements et à tirer parti de vos domaines de forces et d’opportunités"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "frites",
+      "price": "90",
+      "url": "https://source.unsplash.com/1600x900/?fries",
+      "description": "Croustillant, double frit",
+      "moreDetail": "Enim ut et côtes de bœuf. Boulettes de viande au pain de viande lorem shank porc surlonge pariatur, côtes levées capicola tenderloin. Côtes de bœuf Aliqua cillum ipsum. Ut flanc côtes courtes, culpa jerky nulla dolor in pariatur tenderloin kevin pork longe pancetta hamburger. Id nostrud anim sed, sunt eu langue surlonge."
+    },
+    {
+      "id": "4",
+      "name": "macaroni",
+      "price": "200",
+      "url": "https://source.unsplash.com/1600x900/?macaroni",
+      "description": "Blasters cheesy",
+      "moreDetail": "Adipisicing ut turducken, et côtes courtes id kielbasa ground round swine esse eu non boudin. Sunt in consectetur, sed bacon ham quis incididunt nostrud ipsum in bresaola non. Bout de boule de langue chislic, ventre de porc de jarret de jambon d’aliquip andouille non meatloaf drumstick laborum porchetta shankle ut. Est officia andouille turducken. Anim de langue ronde moulue, côtes de bœuf t-bone landjaeger in consequat commodo ut qui ullamco. Aute commodo pancetta excepteur, alcatra aliquip esse et adipisicing lorem shankle ground round tri-tip."
+    },
+    {
+      "id": "5",
+      "name": "pizza",
+      "price": "150",
+      "url": "https://source.unsplash.com/1600x900/?pizza",
+      "description": "Pizza chessy au fromage",
+      "moreDetail": "Exercitation nostrud de T-bone, dolor non cupim ea ut et officia eu. Meatball porc ventre frankfurter jerky et filet mignon consequat officia aute elit laboris. Nostrud dolore doner, drumstick culpa shankle aliqua saucisse t-bone incididunt kevin. Dolor dinde hamburger labore eiusmod. Tempor andouille meatball côtes courtes ipsum laboris non ut proident elit est bacon. Porc tambour longe court, corned beef leberkas salami deserunt côtelette de porc en côtes courtes ribeye qui."
+    },
+    {
+      "id": "6",
+      "name": "salade",
+      "price": "134",
+      "url": "https://source.unsplash.com/1600x900/?salad",
+      "description": "frais",
+      "moreDetail": "Tenderloin chislic tempor mollit, non vache ut. Consectetur sirloin tempor, chuck adipisicing et tongue côtes levées chislic meatloaf pork long cupidatat fugiat magna deserunt. Boudin dinde culpa capicola épaule prosciutto. Ut ut excepteur qui filet de porc steak consequat. Non croupe shankle ut labore velit ut. Ribeye jambon de porc pancetta ad anim aliquip langue non alcatra ball tip ea. Burgdoggen non drumstick, cow tempor in tongue pancetta ad turkey landjaeger bacon occaecat irure filet mignon."
+    },
+    {
+      "id": "1",
+      "name": "samosa",
+      "price": "100",
+      "url": "https://source.unsplash.com/1600x900/?samosa",
+      "description": "Gâteau très savoureux"
+    },
+    {
+      "id": "2",
+      "name": "soupe",
+      "price": "125",
+      "url": "https://source.unsplash.com/1600x900/?soup",
+      "description": "Nouilles super savoureuses"
+    },
+    {
+      "id": "3",
+      "name": "Tacos",
+      "price": "90",
+      "url": "https://source.unsplash.com/1600x900/?tacos",
+      "description": "Croustillant, double frit"
+    }
+  ]
+}
