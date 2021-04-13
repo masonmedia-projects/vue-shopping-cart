@@ -1,4 +1,8 @@
-# vuex_akash_shopping_cart
+# Vue Shopping Cart
+
+## Project
+
+A shopping cart app demo using Vue, Vuex, BootstrapVue, and animate.css based on a tutorial by [Akash Ingole](https://www.youtube.com/watch?v=irr7ACcmW_4).
 
 ## Project setup
 ```
