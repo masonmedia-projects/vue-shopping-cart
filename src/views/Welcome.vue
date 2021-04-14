@@ -64,8 +64,8 @@
                         <transition name="fade" appear>
                             <div>
                             <ul class="list-unstyled">
-                                <li class="mb-2">{{ items.text2 }}</li>
-                                <li class="mb-2">{{ items.text3 }}</li>
+                                <li class="mb-2" v-html="items.text2"></li>
+                                <li class="mb-2" v-html="items.text3"></li>
                             </ul>
                             <hr class="d-flex mx-0 mr-auto bg-warning" style="height: 4px; width: 50px; margin: 30px 0">
                             <div class="d-flex mb-4">
