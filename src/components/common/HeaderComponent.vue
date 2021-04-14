@@ -74,7 +74,7 @@ export default {
   .cart-count {
     font-size: 14px;
     color: white;
-    padding: 0 5px;
+    /* padding: 0 5px; */
     margin-left: -10px;
     /* background: #000; */
     /* height: 20px; */
