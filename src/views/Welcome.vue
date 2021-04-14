@@ -2,7 +2,7 @@
     <b-container fluid class="p-0">
         <b-row 
         class="d-flex flex-column justify-content-end align-items-start text-left" 
-        style="min-height: 100vh; background-color: darkcyan; position: relative;"
+        style="min-height: 100vh; background-color: #f0aea2; position: relative;"
         v-for="items in $t('welcome')" :key="items.id">
         <!-- <div class="" style="position: absolute; left: 0; top: 2%; height: 800px; width: 800px; z-index: 1; border-radius: 0 50% 50% 0;"></div> -->
         <!-- <div class="h-100 w-100" style="position: absolute; left: 0; top: 0; z-index: 1;">
