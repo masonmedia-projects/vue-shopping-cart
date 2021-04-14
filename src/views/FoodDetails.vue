@@ -116,6 +116,8 @@
 </template>
 
 <script>
+import Swal from 'sweetalert2'
+
 export default {
     name: 'FoodDetails',
     data() {
@@ -130,9 +132,21 @@ export default {
         addToCart() {
             // this.$store.commit("addToCart")
             this.$store.dispatch("addToCart", this.details);
+            // added https://sweetalert2.github.io/ for success alert
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Success!',
+                text: `${this.details.name} has been added to you cart!`,
+                showCancelButton: true,
+                cancelButtonText: 'Close',
+                cancelButtonAriaLabel: 'Close window',
+                  showConfirmButton: false,
+                timer: 2000
+            });
         },
         removeItem() {
-            this.$store.dispatch("removeItem", this.details)
+            this.$store.dispatch("removeItem", this.details);
         },
     },
     // add localStorage for product/food details

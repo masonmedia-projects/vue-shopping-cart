@@ -34,7 +34,7 @@
                                     <b-button @click="addItem(items)" class="add">+</b-button>
                                 </div> -->
                                 <b-button variant="outline-dark" class="rounded-0 mt-2 mr-2" @click="removeItem(items)">Remove</b-button>
-                                <a href="./american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg" download target="_blank"> 
+                                <a :href="cartItems" download target="_blank"> 
                                     <b-button variant="success" class="rounded-0 mt-2">Download</b-button>
                                 </a>
                             </b-card-text>
@@ -59,6 +59,7 @@
 <script>
 import CartSummary from '../components/common/CartSummary.vue'
 import EmptyCart from '../components/common/EmptyCart.vue'
+import Swal from 'sweetalert2'
 
 export default {
     name: 'Cart',
@@ -72,6 +73,15 @@ export default {
         },
         removeItem(items) {
             this.$store.dispatch("removeItem", items)
+        },
+        success(){
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your item has been added',
+                showConfirmButton: false,
+                timer: 1500
+            })
         },
     },
     computed: {
