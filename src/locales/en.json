@@ -1,7 +1,7 @@
 {
   "welcome":[
     {
-      "img1":"https://source.unsplash.com/1600x900/?desk",
+      "img1":"./bg_welcome_desk4.jpg",
       "img2":"./Hinterrhein.png",
       "img3":"https://source.unsplash.com/1600x900/?computer",
       "microTitle":"Leadership Learning Tool",
@@ -40,7 +40,7 @@
       "id":1,
       "name":"Self-Awareness",
       "category":"Leading Yourself",
-      "url":"https://source.unsplash.com/1600x900/?zen",
+      "url":"https://source.unsplash.com/1600x900/?beach",
       "description":"Building awareness around the mindsets and behaviours that help you be a successful leader",
       "moreDetail":[
         "Seeing yourself clearly and objectively through reflection and introspection",
@@ -144,7 +144,7 @@
       "id":7,
       "name":"Critical Thinking",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"https://source.unsplash.com/1600x900/?thinking",
+      "url":"https://source.unsplash.com/1600x900/?art",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Identifying the root cause of a business issue", 
@@ -160,7 +160,7 @@
       "id":8,
       "name": "Strategic Thinking",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"https://source.unsplash.com/1600x900/?strategy",
+      "url":"https://source.unsplash.com/1600x900/?brain",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Analyzing global trends", 
@@ -176,9 +176,9 @@
     },
     {
       "id":9,
-      "name": "High Performing Environment",
+      "name": "Performance",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"https://source.unsplash.com/1600x900/?strategy",
+      "url":"https://source.unsplash.com/1600x900/?buddhism",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Supporting and trusting others to achieve their highest potential",
@@ -195,7 +195,7 @@
       "id":10,
       "name": "Customer-Centricity",
       "category":"Fostering Innovation and Agility",
-      "url":"https://source.unsplash.com/1600x900/?customer",
+      "url":"https://source.unsplash.com/1600x900/?buy",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Demonstrating empathy for the customer", 
@@ -212,7 +212,7 @@
       "id":11,
       "name": "Innovation",
       "category":"Fostering Innovation and Agility",
-      "url":"https://source.unsplash.com/1600x900/?customer",
+      "url":"https://source.unsplash.com/1600x900/?science",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Exploring new ideas, methods and alternatives to achieve outcomes",
@@ -228,7 +228,7 @@
       "id":12,
       "name": "Change Agility",
       "category":"Fostering Innovation and Agility",
-      "url":"https://source.unsplash.com/1600x900/?customer",
+      "url":"https://source.unsplash.com/1600x900/?earth",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Seeing the necessity or opportunity created by change",  
