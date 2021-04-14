@@ -1,11 +1,15 @@
 <template>
   <b-container fluid class="p-5 mt-4">
+  <!-- style="background: url(./bg_dots.webp); background-size: cover;" -->
     <!-- style="background: url(./Waimakariri.png); background-size: 120%;" -->
   <!-- <b-container fluid class="p-5 mt-4" style="background-color: #f05323; orange"> -->
     <b-row class="d-flex text-left"
     v-for="items in $t('page1')" :key="items.id">
       <b-col lg="8" offset-lg="2" class="d-flex flex-column justify-content-center align-items-center text-center p-5 min-h-50">
-        <h1 class="font-weight-bold my-4 px-3" v-html="items.introTitle"></h1>
+        <h1 
+        class="font-weight-bold my-4 px-3" 
+        style="line-height: 95%;"
+        v-html="items.introTitle"></h1>
         <hr class="d-flex mx-auto mt-0 bg-warning" style="height: 4px; width: 50px;">
         <p class="mb-0" v-html="items.introText"></p>
       </b-col>

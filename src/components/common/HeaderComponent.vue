@@ -31,7 +31,6 @@
       <b-navbar-nav class="ml-auto d-flex justify-content-center align-items-start align-items-lg-center">
           <router-link class="nav-link" to="/home">Home</router-link>
           <router-link class="nav-link" to="/about">About</router-link>
-          <router-link class="nav-link" to="/food-details">Details</router-link>
           <router-link class="nav-link" to="/cart">My Plan</router-link>
           <router-link class="nav-link mr-3" to="/cart">
             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">

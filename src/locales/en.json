@@ -131,9 +131,9 @@
       "url":"https://source.unsplash.com/1600x900/?emotions",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
-      "Conveying empathy and recognizing the emotions of others",
-      "Being authentic, while also demonstrating social and situational awareness",
-      "Recognizing when emotions and biases affect decision-making"
+        "Conveying empathy and recognizing the emotions of others",
+        "Being authentic, while also demonstrating social and situational awareness",
+        "Recognizing when emotions and biases affect decision-making"
       ],
       "selectIf":[
         "You’d like to get better at identifying and responding to emotions",  
@@ -141,25 +141,111 @@
       ]
     },
     {
-      "id":1,
-      "name":"Samosa",
-      "price":"100",
-      "url":"https://source.unsplash.com/1600x900/?samosa",
-      "description":"Very tasty cake"
+      "id":7,
+      "name":"Critical Thinking",
+      "category":"Executing Strategic & Operational Excellence",
+      "url":"https://source.unsplash.com/1600x900/?thinking",
+      "description":"Consistently delivering extraordinary results",
+      "moreDetail": [
+        "Identifying the root cause of a business issue", 
+        "Making timely and sound decisions based on data and analytical insights"
+      ],
+      "selectIf":[
+        "You need to make a thoughtful business decision",
+        "You need to analyze data and develop insights",
+        "You’d like to identify patterns"
+      ]
     },
     {
-      "id":2,
-      "name":"Soup",
-      "price":"125",
-      "url":"https://source.unsplash.com/1600x900/?soup",
-      "description":"Super tasty noodles"
+      "id":8,
+      "name": "Strategic Thinking",
+      "category":"Executing Strategic & Operational Excellence",
+      "url":"https://source.unsplash.com/1600x900/?strategy",
+      "description":"Consistently delivering extraordinary results",
+      "moreDetail": [
+        "Analyzing global trends", 
+        "Identifying strengths, weaknesses, opportunities and threats", 
+        "Defining a strategy to align with long-term business direction", 
+        "Monitoring and measuring the impact of implemented strategies"
+      ],
+      "selectIf":[
+        "You need to keep sight of the big picture",
+        "You need to develop an integrated vision and long-term plan",
+        "You need to use your resources more effectively to achieve outcomes"
+      ]
     },
     {
-      "id":3,
-      "name":"Tacos",
-      "price":"90",
-      "url":"https://source.unsplash.com/1600x900/?tacos",
-      "description":"Crispy, double fried"
+      "id":9,
+      "name": "High Performing Environment",
+      "category":"Executing Strategic & Operational Excellence",
+      "url":"https://source.unsplash.com/1600x900/?strategy",
+      "description":"Consistently delivering extraordinary results",
+      "moreDetail": [
+        "Supporting and trusting others to achieve their highest potential",
+        "Working tenaciously to meet or exceed expectations",
+        "Balancing competing priorities and managing workloads"
+      ],
+      "selectIf":[
+        "You want to aim high and always do your best",
+        "You need to deliver excellence as a team",
+        "You want to create an environment of trust, achievement and optimism"
+      ]
+    },
+    {
+      "id":10,
+      "name": "Customer-Centricity",
+      "category":"Fostering Innovation and Agility",
+      "url":"https://source.unsplash.com/1600x900/?customer",
+      "description":"Encouraging new ideas and solutions through creative approaches",
+      "moreDetail": [
+        "Demonstrating empathy for the customer", 
+        "Keeping customers central to strategies and activities while ensuring the needs of the customers and the organization are met",
+        "Being flexible to continually changing and diverse customer expectations"
+      ],
+      "selectIf":[
+        "You're working on a project or initiative that is focused on the customer",
+        "You’d like to strengthen your ability to empathize with the customer",
+        "You want to create opportunities for everyone to succeed"
+      ]
+    },
+    {
+      "id":11,
+      "name": "Innovation",
+      "category":"Fostering Innovation and Agility",
+      "url":"https://source.unsplash.com/1600x900/?customer",
+      "description":"Encouraging new ideas and solutions through creative approaches",
+      "moreDetail": [
+        "Exploring new ideas, methods and alternatives to achieve outcomes",
+        "Creating an environment where others feel safe to innovate",
+        "Spotting new patterns, generating insights, valuing diverse perspectives and translating them into new ideas"
+      ],
+      "selectIf":[
+        "You’d like to try different approaches and adopt outside the box thinking",
+        "You’d like to create a safe environment for your team to take calculated risks"
+      ]
+    },
+    {
+      "id":12,
+      "name": "Change Agility",
+      "category":"Fostering Innovation and Agility",
+      "url":"https://source.unsplash.com/1600x900/?customer",
+      "description":"Encouraging new ideas and solutions through creative approaches",
+      "moreDetail": [
+        "Seeing the necessity or opportunity created by change",  
+        "Embracing discomfort and pursuing change with commitment",
+        "Practicing resilience in the face of change and setbacks",
+        "Proactively seeking out new challenges and opportunities to acquire new knowledge, perspectives and skills",
+        "Leading others through organizational and cultural changes",
+        "Removing barriers, managing resistance to change in others and demonstrating the benefits of change"
+      ],
+      "selectIf":[
+        "You want to embrace and adapt to change",
+        "You’d like to respond better to uncertainty, challenges and setbacks",
+        "You need to continually and rapidly learn, unlearn, and relearn",
+        "You need to lead organizational or cultural change",
+        "You need to enable others to overcome resistance to change"
+      ]
     }
+
   ]
 }
