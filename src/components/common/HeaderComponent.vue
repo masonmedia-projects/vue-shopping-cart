@@ -76,10 +76,10 @@ export default {
     color: white;
     padding: 0 5px;
     margin-left: -10px;
-    background: #000;
+    /* background: #000; */
     /* height: 20px; */
     /* width: 20px; */
-    border-radius: 100%;
+    /* border-radius: 100%; */
     position: absolute;
   }
   /* .badge {
