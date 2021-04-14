@@ -1,7 +1,7 @@
 {
   "welcome": [
     {
-      "img1": "https://source.unsplash.com/1600x900/?food",
+      "img1": "./bg_welcome_desk4.jpg",
       "img2": "https://source.unsplash.com/1600x900/?cuisine",
       "img3": "https://source.unsplash.com/1600x900/?leadership",
       "microTitle": "Outil d’apprentissage du leadership",
