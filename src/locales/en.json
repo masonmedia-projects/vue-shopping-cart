@@ -40,7 +40,8 @@
       "id":1,
       "name":"Self-Awareness",
       "category":"Leading Yourself",
-      "url":"https://source.unsplash.com/1600x900/?beach",
+      "url":"./bg_welcome_beach.jpeg",
+      "url2":"https://source.unsplash.com/1600x900/?beach",
       "description":"Building awareness around the mindsets and behaviours that help you be a successful leader",
       "moreDetail":[
         "Seeing yourself clearly and objectively through reflection and introspection",

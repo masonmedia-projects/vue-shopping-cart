@@ -5,7 +5,6 @@ import data from '@/locales/en.json';
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
-
     state: {
         data: data,
         cartItemCount: 0,
