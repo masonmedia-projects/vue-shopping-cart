@@ -4,16 +4,27 @@
   <!-- style="background: url(./bg_dots.webp); background-size: cover;" -->
     <!-- style="background: url(./Waimakariri.png); background-size: 120%;" -->
   <!-- <b-container fluid class="p-5 mt-4" style="background: url(./Waimakariri.png); background-position: 40% 30%; background-size: 300%; background-color: lightblue;"> -->
-    <b-row class="d-flex text-left"
+    <b-row class="d-flex text-left bg-light shadow-lg my-3 mx-1"
+    style="background: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%); border-radius: 14px"
     v-for="items in $t('page1')" :key="items.id">
-      <b-col lg="8" offset-lg="2" class="d-flex flex-column justify-content-center align-items-center text-center p-5 min-h-50">
+      <b-col lg="6" 
+      class="d-flex flex-column justify-content-center align-items-start text-start p-5"
+      style="min-height: 75vh;">
         <h1 
-        class="font-weight-bold my-4 px-3" 
-        style="line-height: 95%;"
+        class="font-weight-bold mb-4" 
+        style="font-size: 10vmin; line-height: 95%;"
         v-html="items.introTitle"></h1>
-        <hr class="d-flex mx-auto mt-0 bg-warning" style="height: 4px; width: 50px;">
+        <hr class="d-flex ml-0 mr-auto mt-0 bg-warning" style="height: 4px; width: 50px;">
         <p class="mb-0" v-html="items.introText"></p>
       </b-col>
+      <b-col lg="6" 
+      class="d-flex flex-column justify-content-center align-items-center p-0"
+      style="min-height: 50vh; background: url('./img/iconsFinance/9 - ECONOMY ANALYSIS.svg') center no-repeat; background-size: contain;">
+        <!-- style="background: url('./patternpad_3.svg'); background-size: 500%; background-position: 100% 30%;" -->
+      </b-col>
+    </b-row>
+
+    <b-row class="d-flex text-left">
       <b-col lg="4"
       class="text-center"
       v-on:click="foodDetails(items)" 

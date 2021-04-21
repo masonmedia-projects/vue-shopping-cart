@@ -1,20 +1,20 @@
 <template>
     <b-container fluid class="p-0">
         <b-row class="d-flex text-left" 
-        style="min-height: 100vh; background-color: #f0aea2"> 
+        style="min-height: 100vh; background-color: #f0aea2; background-image: url('./patternpad_3.svg'); background-size: cover;"> 
         <!-- yellow #f2cc39; -->
             <b-img :src="details.url" class="w-75 h-100" style="object-fit: cover; position: absolute; z-index: 0; left: 0; top: 0;"></b-img>
             <!-- <div class="" style="object-fit: cover; width: 1000px; height: 1000px; position: absolute; z-index: 0; top: -100px; right: -150px; border-radius: 100%; background: #f2cc39;"></div> -->
             <b-col lg="7" offset-lg="5" 
             class="d-flex flex-column justify-content-end align-items-start p-5">
-                <div class="rounded shadow p-5 w-100 mt-5 mt-md-0"
-                style="position: relative; background-image: url('./patternpad.svg'); background-size: 300%; background-color: aliceblue">
+                <div class="shadow-lg p-5 w-100 mt-5 mt-md-0"
+                style="position: relative; background-image: url('./patternpad.svg'); background-size: 300%; background-color: aliceblue; border-radius: 14px;">
                     <!-- menu -->
                     <b-dropdown right no-caret
                     class="border-0 "
                     menu-class="text-right"
                     variant="light"
-                    style="position: absolute; right: 5%; top: 5%; background: transparent">
+                    style="position: absolute; right: 5%; top: 5%; background: aliceblue;">
                         <template #button-content>
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
                                 <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
