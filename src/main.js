@@ -6,6 +6,7 @@ import {store} from './store/store'
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import '@/scss/main.scss'
 import 'animate.css'
 import i18n from './i18n'
 

@@ -43,40 +43,53 @@
                     <b-modal 
                     id="modal-center" 
                     class="d-flex"
+                    body-class="bg-dots p-4"
                     size="lg" 
                     centered 
                     :title="details.name"
                     ok-only
                     ok-variant="secondary"
                     ok-title="Close">
-                        <h3 class="mb-3">More details:</h3>
-                        <hr class="mx-0 mr-auto mb-4 bg-warning" style="width: 50px; height: 4px;"/>
-                        <b-alert variant="info" show
-                        class="d-flex justify-content-start align-items-center"
-                        v-for="item in details.moreDetail" :key="item.id">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all mr-2" viewBox="0 0 16 16">
-                            <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
-                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
-                        </svg>
-                            <p class="mb-0" v-html="item"></p>
-                        </b-alert>
+                        <h3 class="mb-3 mt-2">More details:</h3>
+                        <hr class="mx-0 mr-auto mb-4" style="width: 50px; height: 4px; background: #f0aea2;"/>
+                       <!-- more details -->
+                        <b-card-group columns> 
+                            <b-card
+                            class="shadow" 
+                            v-for="item in details.moreDetail" :key="item.id">
+                                <b-card-title>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f0aea2" class="bi bi-exclude" viewBox="0 0 16 16">
+                                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm12 2H5a1 1 0 0 0-1 1v7h7a1 1 0 0 0 1-1V4z"/>
+                                    </svg>
+                                </b-card-title>
+                                <b-card-text v-html="item">
+                                </b-card-text>
+                                <b-card-text class="small text-muted" v-html="details.name"></b-card-text>
+                            </b-card>
+                        </b-card-group>   
+                        <!-- select this item if... -->
                         <h3 class="mb-3 mt-4">Select if:</h3>
-                        <hr class="mx-0 mr-auto mb-4 bg-warning" style="width: 50px; height: 4px;"/>
-                        <b-alert variant="success" show
-                        class="d-flex justify-content-start align-items-center"
-                        v-for="item in details.selectIf" :key="item.id">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all mr-2" viewBox="0 0 16 16">
-                            <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
-                            <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
-                        </svg>
-                            <p class="mb-0" v-html="item"></p>
-                        </b-alert>
+                        <hr class="mx-0 mr-auto mb-4" style="width: 50px; height: 4px; background: #b5dae5"/>
+                        <b-card-group columns> 
+                            <b-card 
+                            class="shadow"
+                            v-for="item in details.selectIf" :key="item.id">
+                                <b-card-title>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#b5dae5" class="bi bi-rainbow" viewBox="0 0 16 16">
+                                        <path d="M8 4.5a7 7 0 0 0-7 7 .5.5 0 0 1-1 0 8 8 0 1 1 16 0 .5.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 .5.5 0 0 1-1 0 6 6 0 1 1 12 0 .5.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 .5.5 0 0 1-1 0 4 4 0 1 1 8 0 .5.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 4 0 .5.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
+                                    </svg>
+                                </b-card-title>
+                                <b-card-text v-html="item">
+                                </b-card-text>
+                                <b-card-text class="small text-muted" v-html="details.name"></b-card-text>
+                            </b-card>
+                        </b-card-group>   
                     </b-modal>
                     <hr class="d-flex mx-0 mr-auto bg-warning" style="height: 4px; width: 50px; margin: 30px 0">
                     <div class="d-flex">
-                        <b-button variant="outline-dark" class="rounded-0 shadow mr-2" @click="addToCart">Add to plan</b-button>
-                        <b-button variant="outline-dark" class="rounded-0 shadow mr-2" @click="removeItem">Remove</b-button>
-                        <b-button variant="outline-dark" class="rounded-0 shadow" @click="goToCart">Go to My Plan</b-button>
+                        <b-button variant="coral" class="mr-2" @click="addToCart">Add to plan</b-button>
+                        <b-button variant="lightpink" class="mr-2" @click="removeItem">Remove</b-button>
+                        <b-button variant="bluegrey" class="" @click="goToCart">Go to My Plan</b-button>
                     </div>
                 </div>
             </b-col>
@@ -131,15 +144,6 @@ export default {
     },
     mounted() {
         this.details = JSON.parse(localStorage.getItem("details"));
-         
-        // if (localStorage.name) {
-        // this.name = localStorage.name;
-        // }
     },
-//     watch: {
-//     name(newName) {
-//       localStorage.name = newName;
-//     }
-//   },
 }
 </script>

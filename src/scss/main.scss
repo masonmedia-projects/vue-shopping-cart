@@ -1,0 +1,23 @@
+@import 'images.scss';
+@import 'cards.scss';
+@import 'buttons.scss';
+
+$font: Helvetica, Arial, sans-serif;
+
+body {
+    font-family: $font;
+    background: rgba(0,0,0,0.03);
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow-x: hidden;
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+}
+
+p {
+    font-size: 18px;
+}

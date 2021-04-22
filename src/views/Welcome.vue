@@ -1,5 +1,5 @@
 <template>
-    <b-container fluid class="p-0">
+    <b-container fluid>
         <b-row 
         class="d-flex flex-column justify-content-end align-items-start text-left" 
         style="min-height: 100vh; background-color: #f0aea2; position: relative;"
