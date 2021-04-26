@@ -13,7 +13,7 @@
                     <b-dropdown right no-caret
                     class="border-0 "
                     menu-class="text-right"
-                    variant="light"
+                    variant="trans"
                     style="position: absolute; right: 5%; top: 5%; background: aliceblue;">
                         <template #button-content>
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
