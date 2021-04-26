@@ -10,6 +10,8 @@
             <b-col lg="8"
             style="position: relative; z-index: 3;"
             class="d-flex flex-column justify-content-center align-items-start p-5 mt-md-0 mt-lg-5">
+                
+                
                 <div class="shadow p-5" style="background: rgba( 255, 255, 255, 0.9 );
                     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
                     backdrop-filter: blur( 4px );
@@ -18,21 +20,42 @@
                     border-radius: 14px">
                     <hr class="d-flex m-0 mr-auto bg-warning" style="height: 4px; width: 50px;">
                     <h5 class="py-3 mt-3 mb-0 font-weight-bold text-muted" v-html="items.microTitle"></h5>
-                    <h1 class="display-4 font-weight-bold mb-4"
+                    <!-- <h1 class="display-4 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
-                    v-html="items.title"></h1>
+                    v-html="items.title"></h1> -->
                     <div>
                         <transition name="fade" appear>
                             <div>
-                              <p class="mb-2" v-html="items.text1"></p>
+
+                              <component :is="selectedComponent"></component>
+
+                              <!-- <p class="mb-2" v-html="items.text1"></p> -->
                               <hr class="d-flex mx-0 mr-auto bg-warning" style="height: 4px; width: 50px; margin: 30px 0">
                               <div class="d-flex mb-4">
-                                  <router-link to="/home">
+                                <b-button 
+                                  variant="coral" 
+                                  size="lg"
+                                  class="shadow mr-2" 
+                                  @click="selectedComponent = 'TabOne'"
+                                  v-html="items.btn1">Read more</b-button>
+                                  <b-button 
+                                  variant="lightblue" 
+                                  size="lg"
+                                  class="shadow mr-2" 
+                                  @click="selectedComponent = 'TabTwo'"
+                                  v-html="items.btn1">Two</b-button>
+                                  <b-button 
+                                  variant="bluegrey" 
+                                  size="lg"
+                                  class="shadow" 
+                                  @click="selectedComponent = 'TabThree'"
+                                  v-html="items.btn1">Three</b-button>
+                                  <!-- <router-link to="/home">
                                       <b-button 
                                       variant="coral" 
                                       size="lg"
                                       class="shadow mr-2" v-html="items.btn1"></b-button>
-                                  </router-link>
+                                  </router-link> -->
                                   <!-- <router-link to="/about">
                                       <b-button 
                                       variant="lightblue" 
@@ -44,6 +67,7 @@
                         </transition>
                     </div>
                 </div>
+                <!--/content-->
             </b-col>
         </b-row>
 
@@ -169,10 +193,20 @@
 </template>
 
 <script>
+    import TabOne from '@/components/tabs/TabOne.vue';
+    import TabTwo from '@/components/tabs/TabTwo.vue';
+    import TabThree from '@/components/tabs/TabThree.vue';
+
 export default {
   name: 'About',
+  components: {
+    TabOne,
+    TabTwo,
+    TabThree,
+  },
   data() {
     return {
+      selectedComponent: 'TabOne',
       selected: null,
         options: [
           { value: '', text: 'All' },
