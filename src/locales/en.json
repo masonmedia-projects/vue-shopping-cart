@@ -32,7 +32,10 @@
       "text3": "Please use this tool to discover the learning activities, which are personalized to leadership capabilities, knowledge, and skills. This tool will curate the activities that will be most valuable to you.",
       "section_title3": "Grow & discover",
       "text4": "Review the Leadership Behaviour Model and choose your areas of focus through self-reflection and speaking with your colleagues.",
-      "img1": "https://source.unsplash.com/1600x900/?foliage"
+      "img1": "https://source.unsplash.com/1600x900/?foliage",
+      "btn1": "Welcome",
+      "btn2": "Leadership",
+      "btn3": "Development"
     }
   ],
   "myLearningPlan":[

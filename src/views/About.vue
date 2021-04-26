@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid contClass="">
+  <b-container fluid contClass="bg-gradient-lightblue">
         <b-row 
         class="d-flex flex-column justify-content-end align-items-start text-left" 
         style="min-height: 100vh; background-color: #f0aea2; position: relative;"
@@ -29,7 +29,6 @@
 
                               <component :is="selectedComponent"></component>
 
-                              <!-- <p class="mb-2" v-html="items.text1"></p> -->
                               <hr class="d-flex mx-0 mr-auto bg-warning" style="height: 4px; width: 50px; margin: 30px 0">
                               <div class="d-flex mb-4">
                                 <b-button 
@@ -39,17 +38,17 @@
                                   @click="selectedComponent = 'TabOne'"
                                   v-html="items.btn1">Read more</b-button>
                                   <b-button 
-                                  variant="lightblue" 
+                                  variant="lightpink" 
                                   size="lg"
                                   class="shadow mr-2" 
                                   @click="selectedComponent = 'TabTwo'"
-                                  v-html="items.btn1">Two</b-button>
+                                  v-html="items.btn2"></b-button>
                                   <b-button 
                                   variant="bluegrey" 
                                   size="lg"
                                   class="shadow" 
                                   @click="selectedComponent = 'TabThree'"
-                                  v-html="items.btn1">Three</b-button>
+                                  v-html="items.btn3">Three</b-button>
                                   <!-- <router-link to="/home">
                                       <b-button 
                                       variant="coral" 
@@ -257,3 +256,9 @@ export default {
     },
 }
 </script>
+
+<style>
+  .active {
+    filter: drop-shadow(2px 2px 10px black);
+  }
+</style>

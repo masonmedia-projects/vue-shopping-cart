@@ -46,13 +46,13 @@
       <b-col lg="4"
       class="text-center"
       v-on:click="foodDetails(items)" 
-      v-for="item in filterProductsByCategory" :key="item.name">
+      v-for="items in allCategories" :key="items.name">
       <!-- v-for="items in allCategories" :key="items.id"> -->
 
       <!-- slice limits the number of iterations in the object/array -->
       <!-- <b-col lg="4" v-for="items in topRated.slice(0, 2)" :key="items.id"> -->
         <b-card
-          :img-src="item.url"
+          :img-src="items.url"
           img-alt="Image"
           img-top
           tag="article"
@@ -61,10 +61,10 @@
           style="background: url('./bg_dots.webp'); border-radius: 14px;"
           >
           <b-card-text class="py-3">
-            <h2 v-html="item.name" class="font-weight-bold"></h2>
-            <p>{{ item.category }}</p>  
-            <b-button variant="dark mr-2" class="rounded">More details</b-button>
-            <b-button variant="info" class="rounded">Add to plan</b-button>
+            <h2 v-html="items.name" class="font-weight-bold"></h2>
+            <p>{{ items.category }}</p>  
+            <b-button variant="lightblue mr-2" class="rounded">More details</b-button>
+            <!-- <b-button variant="info" class="rounded">Add to plan</b-button> -->
             <!-- <router-link :to="{ name: 'FoodDetails', params: {id: topRated.id}}"></router-link> -->
           </b-card-text>
         </b-card>
