@@ -1,0 +1,44 @@
+.min-h-100 {
+    min-height: 100vh;
+}
+
+.min-h-50 {
+    min-height: 50vh;
+}
+
+.min-h-25 {
+    min-height: 25vh;
+}
+
+// positioning
+
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+
+.top {
+    top: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.z--1 {
+    z-index: -1;
+}

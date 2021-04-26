@@ -26,7 +26,13 @@
   
   <b-navbar fixed="top" toggleable="lg" type="light" variant="light">
     <router-link class="navbar-brand font-weight-bold" to="/">LLT</router-link>
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-navbar-toggle target="nav-collapse">
+      <!-- custom toggle icon -->
+      <template #default="{ expanded }">
+        <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+        <b-icon v-else icon="chevron-bar-down"></b-icon>
+      </template>
+    </b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto d-flex justify-content-center align-items-start align-items-lg-center">
           <router-link class="nav-link" to="/home">Home</router-link>

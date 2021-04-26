@@ -1,3 +1,6 @@
+@import 'nav.scss';
+@import 'colors.scss';
+@import 'utilities.scss';
 @import 'images.scss';
 @import 'cards.scss';
 @import 'buttons.scss';
@@ -11,11 +14,6 @@ body {
     max-width: 1500px;
     margin: 0 auto;
     overflow-x: hidden;
-        nav {
-            max-width: 1400px;
-            margin: 0 auto;
-            overflow-x: hidden;
-        }
 }
 
 p {

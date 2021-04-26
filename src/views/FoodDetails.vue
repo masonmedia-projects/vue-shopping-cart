@@ -1,12 +1,12 @@
 <template>
-    <b-container fluid class="p-0">
+    <b-container fluid class="relative">
         <b-row class="d-flex text-left" 
         style="min-height: 100vh; background-color: #f0aea2; background-image: url('./patternpad_3.svg'); background-size: cover;"> 
         <!-- yellow #f2cc39; -->
             <b-img :src="details.url" class="w-75 h-100" style="object-fit: cover; position: absolute; z-index: 0; left: 0; top: 0;"></b-img>
             <!-- <div class="" style="object-fit: cover; width: 1000px; height: 1000px; position: absolute; z-index: 0; top: -100px; right: -150px; border-radius: 100%; background: #f2cc39;"></div> -->
             <b-col lg="7" offset-lg="5" 
-            class="d-flex flex-column justify-content-end align-items-start p-5">
+            class="d-flex flex-column justify-content-end align-items-start relative p-5">
                 <div class="shadow-lg p-5 w-100 mt-5 mt-md-0"
                 style="position: relative; background-image: url('./patternpad.svg'); background-size: 300%; background-color: aliceblue; border-radius: 14px;">
                     <!-- menu -->

@@ -17,7 +17,7 @@ import HeaderComponent from '@/components/common/HeaderComponent'
 export default {
   components: {
     HeaderComponent,
-  },  
+  },
 }
 </script>
 

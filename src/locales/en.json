@@ -14,10 +14,25 @@
       "btn2": "Learn more"
     }
   ],
-  "page1":[
+  "homepage":[
     {
-      "introTitle":"Leadership Learning Tool",
-      "introText":"Build your learning plan by selecting the items you’d like to focus on today. Select each item to learn more about what each item represents including the behaviours and capabilities that are included under that item, and when the item might be an appropriate area of focus for you."
+      "microTitle": "Get started",
+      "title":"Leadership Learning Tool",
+      "text":"Build your learning plan by selecting the items you’d like to focus on today. Select each item to learn more about what each item represents including the behaviours and capabilities that are included under that item, and when the item might be an appropriate area of focus for you."
+    }
+  ],
+  "aboutpage":[
+    {
+      "microTitle": "Welcome",
+      "title":"Leadership Development Tool",
+      "text1":"Welcome to the Leadership Learning Tool. Please use this tool to discover the learning activities, which are personalized to leadership capabilities, knowledge, and skills. Scroll down for more information on how to use this tool.",
+      "section_title1": "Building leaders",
+      "text2":"Great learners make great leaders. At our organization, we have a learning culture that provides opportunities to develop in areas that help us better serve ourselves, our team, and our organization. Whether it’s an area you’re passionate about and wish to explore further or an area where you’ve recently recognized an opportunity to develop, this tool is for you.",
+      "section_title2": "Developing yourself",
+      "text3": "Please use this tool to discover the learning activities, which are personalized to leadership capabilities, knowledge, and skills. This tool will curate the activities that will be most valuable to you.",
+      "section_title3": "Grow & discover",
+      "text4": "Review the Leadership Behaviour Model and choose your areas of focus through self-reflection and speaking with your colleagues.",
+      "img1": "https://source.unsplash.com/1600x900/?foliage"
     }
   ],
   "myLearningPlan":[
