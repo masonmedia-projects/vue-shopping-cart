@@ -12,18 +12,18 @@
       <b-col lg="6" 
       class="d-flex flex-column justify-content-center align-items-start text-start p-5"
       style="min-height: 75vh;">
-      <h5 class="text-muted mb-3" v-html="items.microTitle"></h5>
-        <h1 
+      <h1 class="h5 text-muted mb-3" v-html="items.title"></h1>
+        <h5 
         class="font-weight-bold mb-4" 
         style="font-size: 9vmin; line-height: 95%;"
-        v-html="items.title"></h1>
+        v-html="items.microTitle"></h5>
         <hr class="d-flex ml-0 mr-auto mt-0 bg-warning" style="height: 4px; width: 50px;">
         <p class="mb-0" v-html="items.text"></p>
       </b-col>
       <b-col lg="6" 
       class="d-flex flex-column justify-content-center align-items-center p-0"
       style="min-height: 50vh; background: url('./patternpad_3.svg') center no-repeat; background-size: 1200%;">
-        <b-img class="w-100 h-100" style="object-fit: cover; border-radius: 14px;" src="https://images.unsplash.com/photo-1504192010706-dd7f569ee2be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80"></b-img> 
+        <b-img class="w-100 h-100" style="object-fit: cover; border-radius: 0 14px 14px 0;" src="https://images.unsplash.com/photo-1504192010706-dd7f569ee2be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80"></b-img> 
         <!-- possible imgs
         https://images.unsplash.com/photo-1500333070776-343c73e1eb4a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80
         great
@@ -58,8 +58,8 @@
           tag="article"
           header-class="font-weight-bold"
           class="border-0 mb-3 shadow"
-          style="background: url('./bg_dots.webp'); border-radius: 14px;"
           >
+          <!-- style="background: url('./bg_dots.webp'); border-radius: 14px;" -->
           <b-card-text class="py-3">
             <h2 v-html="items.name" class="font-weight-bold"></h2>
             <p>{{ items.category }}</p>  

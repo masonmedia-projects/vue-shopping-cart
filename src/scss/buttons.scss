@@ -1,3 +1,26 @@
+button, 
+.btn {
+    border-radius: 25px;
+}
+
+.btn-lightblue {
+    color: #ffffff;
+    background-color: #62B5E5;
+    border-color: #62B5E5;
+}
+
+.btn-royal {
+    color: #ffffff;
+    background-color: #003Da5;
+    border-color: #003Da5;
+}
+
+.btn-orange {
+    color: #ffffff;
+    background-color: #ED8B00;
+    border-color: #ED8B00;
+}
+
 .btn-coral {
     color: #222222;
     background-color: #f0aea2;
@@ -10,11 +33,11 @@
     border-color: #f9dcd7;
 }
 
-.btn-lightblue {
-    color: #222222;
-    background-color: lightblue;
-    border-color: lightblue;
-}
+// .btn-lightblue {
+//     color: #222222;
+//     background-color: lightblue;
+//     border-color: lightblue;
+// }
 
 .btn-bluegrey {
     color: #222222;

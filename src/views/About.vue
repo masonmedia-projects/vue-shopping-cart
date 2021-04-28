@@ -35,8 +35,12 @@
                                   variant="coral" 
                                   size="lg"
                                   class="shadow mr-2" 
+                                  :class="{highlight:selected == 1}"
                                   @click="selectedComponent = 'TabOne'"
                                   v-html="items.btn1">Read more</b-button>
+
+                                  <!-- :class="{highlight:selected == 1}" -->
+
                                   <b-button 
                                   variant="lightpink" 
                                   size="lg"
@@ -205,6 +209,7 @@ export default {
   },
   data() {
     return {
+      // selected: undefined,
       selectedComponent: 'TabOne',
       selected: null,
         options: [
@@ -261,4 +266,8 @@ export default {
   .active {
     filter: drop-shadow(2px 2px 10px black);
   }
+  .highlight {
+  filter: drop-shadow(2px 2px 5px black);
+  border-bottom: 1px solid grey;
+}
 </style>
