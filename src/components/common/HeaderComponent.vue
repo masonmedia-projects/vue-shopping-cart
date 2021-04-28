@@ -24,7 +24,7 @@
     </b-sidebar>
   </div> -->
   
-  <b-navbar fixed="top" toggleable="lg" type="light" variant="light">
+  <b-navbar fixed="top" toggleable="lg" type="light" variant="light" class="shadow">
     <router-link class="navbar-brand font-weight-bold d-flex align-items-center" to="/">
     <!-- <home-icon></home-icon> -->
     <navbar-brand-icon class="text-lightblue" />Leadership Learning Tool
@@ -32,8 +32,8 @@
     <b-navbar-toggle target="nav-collapse">
       <!-- custom toggle icon -->
       <template #default="{ expanded }">
-        <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
-        <b-icon v-else icon="chevron-bar-down"></b-icon>
+        <b-icon v-if="expanded" icon="chevron-bar-up" class="h3 mb-0"></b-icon>
+        <b-icon v-else icon="chevron-bar-down" class="h3 mb-0"></b-icon>
       </template>
     </b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
@@ -42,24 +42,19 @@
           <router-link class="nav-link" to="/about">About</router-link>
           <router-link class="nav-link" to="/cart">My Plan</router-link>
           <router-link class="nav-link mr-3" to="/cart">
-            <!-- cart icon 
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-            </svg>
-            <span class="cart-count">{{ count }}</span> -->
-            
             <b-avatar class=""></b-avatar>
             <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
-          
           </router-link>
       </b-navbar-nav>
       <b-navbar-nav class="nav-item py-2">
         <!-- lang select -->
-        <select class="custom-select" v-model="$i18n.locale">
+        <select class="custom-select mr-3" v-model="$i18n.locale">
           <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
             {{ lang }}
           </option>
         </select>
+        <!-- gear icon/exit modal -->
+        <exit-modal></exit-modal>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -67,16 +62,21 @@
 
 <script>
 import NavbarBrandIcon from '../icons/NavbarBrandIcon.vue';
-// import HomeIcon from '../icons/HomeIcon.vue';
+import ExitModal from './ExitModal.vue';
 
 export default {
     name: 'HeaderComponent',
     components: {
-        NavbarBrandIcon
-        // HomeIcon
+        NavbarBrandIcon,
+        ExitModal,
     },
     data () {
       return { langs: ['en', 'fr'] }
+    },
+    methods: {
+      hideModal() {
+        this.$refs['exit-modal'].hide()
+      },
     },
     computed: {
       count() {

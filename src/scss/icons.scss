@@ -1,0 +1,15 @@
+.gear-icon {
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 992px) {
+    .gear-icon {
+        width: 23px;
+        padding: 14px 0 8px;
+        justify-content: start;
+        align-items: center;
+    }
+}

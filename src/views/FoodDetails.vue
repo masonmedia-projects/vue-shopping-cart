@@ -36,9 +36,9 @@
                         <li><span class="font-weight-bold">Description:</span> {{ details.description }}</li>
                     </ul>
                     <!-- modal -->
-                    <b-button v-b-modal.modal-center variant="orange">Learn more</b-button>
+                    <b-button v-b-modal.details-modal variant="orange">Learn more</b-button>
                     <b-modal 
-                    id="modal-center" 
+                    id="details-modal" 
                     class="d-flex"
                     body-class="bg-dots p-4"
                     size="lg" 
