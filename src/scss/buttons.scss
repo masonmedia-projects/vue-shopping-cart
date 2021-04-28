@@ -1,6 +1,13 @@
 button, 
 .btn {
     border-radius: 25px;
+    padding: 0.375rem 1.5rem;
+}
+
+.btn:focus, 
+.btn.focus {
+    outline: 0;
+    box-shadow: none;
 }
 
 .btn-lightblue {
@@ -12,6 +19,12 @@ button,
 .btn-royal {
     color: #ffffff;
     background-color: #003Da5;
+    border-color: #003Da5;
+}
+
+.btn-outline-royal {
+    color: #003Da5;
+    background-color: transparent;
     border-color: #003Da5;
 }
 
@@ -32,12 +45,6 @@ button,
     background-color: #f9dcd7;
     border-color: #f9dcd7;
 }
-
-// .btn-lightblue {
-//     color: #222222;
-//     background-color: lightblue;
-//     border-color: lightblue;
-// }
 
 .btn-bluegrey {
     color: #222222;

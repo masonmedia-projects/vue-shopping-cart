@@ -25,7 +25,10 @@
   </div> -->
   
   <b-navbar fixed="top" toggleable="lg" type="light" variant="light">
-    <router-link class="navbar-brand font-weight-bold" to="/">LLT</router-link>
+    <router-link class="navbar-brand font-weight-bold d-flex align-items-center" to="/">
+    <!-- <home-icon></home-icon> -->
+    <navbar-brand-icon class="text-lightblue" />Leadership Learning Tool
+    </router-link> 
     <b-navbar-toggle target="nav-collapse">
       <!-- custom toggle icon -->
       <template #default="{ expanded }">
@@ -46,7 +49,7 @@
             <span class="cart-count">{{ count }}</span> -->
             
             <b-avatar class=""></b-avatar>
-            <b-badge class="cart-count">{{ count }}</b-badge>
+            <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
           
           </router-link>
       </b-navbar-nav>
@@ -60,12 +63,18 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
-
 </template>
 
 <script>
+import NavbarBrandIcon from '../icons/NavbarBrandIcon.vue';
+// import HomeIcon from '../icons/HomeIcon.vue';
+
 export default {
     name: 'HeaderComponent',
+    components: {
+        NavbarBrandIcon
+        // HomeIcon
+    },
     data () {
       return { langs: ['en', 'fr'] }
     },

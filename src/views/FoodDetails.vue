@@ -1,14 +1,13 @@
 <template>
     <b-container fluid class="relative">
-        <b-row class="d-flex text-left" 
-        style="min-height: 100vh; background-color: #f0aea2; background-image: url('./patternpad_3.svg'); background-size: cover;"> 
+        <b-row class="d-flex text-left bg-lightblue min-h-100"> 
+        <!-- style="min-height: 100vh; background-color: #f0aea2; background-image: url('./patternpad_3.svg'); background-size: cover;">  -->
         <!-- yellow #f2cc39; -->
             <b-img :src="details.url" class="w-75 h-100" style="object-fit: cover; position: absolute; z-index: 0; left: 0; top: 0;"></b-img>
             <!-- <div class="" style="object-fit: cover; width: 1000px; height: 1000px; position: absolute; z-index: 0; top: -100px; right: -150px; border-radius: 100%; background: #f2cc39;"></div> -->
             <b-col lg="7" offset-lg="5" 
             class="d-flex flex-column justify-content-end align-items-start relative p-5">
-                <div class="shadow-lg p-5 w-100 mt-5 mt-md-0"
-                style="position: relative; background-image: url('./patternpad.svg'); background-size: 300%; background-color: aliceblue; border-radius: 14px;">
+                <div class="shadow-lg p-5 w-100 mt-5 mt-md-0" style="position: relative; background-color: aliceblue; border-radius: 14px;">
                     <!-- menu -->
                     <b-dropdown right no-caret
                     class="border-0 "
@@ -16,30 +15,28 @@
                     variant="trans"
                     style="position: absolute; right: 5%; top: 5%; background: aliceblue;">
                         <template #button-content>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                            </svg>
+                            <detail-menu-icon></detail-menu-icon>
                         </template>
-                        <router-link class="dropdown-item font-weight-bold" to="/home">
+                        <router-link class="dropdown-item font-weight-bold text-base" to="/home">
                             <home-icon class="float-left"></home-icon>
                             Home
                         </router-link>
                         <b-dropdown-divider></b-dropdown-divider>
-                        <router-link class="dropdown-item font-weight-bold" to="/cart">
+                        <router-link class="dropdown-item font-weight-bold text-base" to="/cart">
                             <cart-icon class="float-left"></cart-icon>
                             My Plan
                         </router-link>
                     </b-dropdown>
                     <!-- /menu -->
-                    <hr class="d-flex m-0 mr-auto bg-warning" style="height: 4px; width: 50px;">
-                    <h1 class="display-4 font-weight-bold my-4">{{ details.name }}</h1>
+                    <hr class="d-flex m-0 mr-auto bg-orange" style="height: 4px; width: 50px;">
+                    <h1 class="font-weight-bold my-4">{{ details.name }}</h1>
                     <ul class="list-unstyled">
-                        <li><span class="font-weight-bold">Competency:</span> {{ details.name }}</li>
-                        <li><span class="font-weight-bold">Category:</span> {{ details.category }}</li>
+                        <li class="pb-1"><span class="font-weight-bold">Competency:</span> {{ details.name }}</li>
+                        <li class="pb-1"><span class="font-weight-bold">Category:</span> {{ details.category }}</li>
                         <li><span class="font-weight-bold">Description:</span> {{ details.description }}</li>
                     </ul>
                     <!-- modal -->
-                    <b-button v-b-modal.modal-center variant="dark">Learn more</b-button>
+                    <b-button v-b-modal.modal-center variant="orange">Learn more</b-button>
                     <b-modal 
                     id="modal-center" 
                     class="d-flex"
@@ -85,11 +82,11 @@
                             </b-card>
                         </b-card-group>   
                     </b-modal>
-                    <hr class="d-flex mx-0 mr-auto bg-warning" style="height: 4px; width: 50px; margin: 30px 0">
-                    <div class="d-flex">
-                        <b-button variant="coral" class="mr-2" @click="addToCart">Add to plan</b-button>
-                        <b-button variant="lightpink" class="mr-2" @click="removeItem">Remove</b-button>
-                        <b-button variant="bluegrey" class="" @click="goToCart">Go to My Plan</b-button>
+                    <hr class="d-flex mx-0 mr-auto bg-orange" style="height: 4px; width: 50px; margin: 30px 0">
+                    <div class="d-inline">
+                        <b-button variant="lightblue" class="mr-2" @click="addToCart">Add to plan</b-button>
+                        <!-- <b-button variant="orange" class="mr-2" @click="removeItem">Remove</b-button> -->
+                        <b-button variant="royal" class="" @click="goToCart">Go to My Plan</b-button>
                     </div>
                 </div>
             </b-col>
@@ -101,12 +98,14 @@
 import Swal from 'sweetalert2'
 import HomeIcon from '../components/icons/HomeIcon.vue'
 import CartIcon from '../components/icons/CartIcon.vue'
+import DetailMenuIcon from '../components/icons/DetailMenuIcon.vue'
 
 export default {
     name: 'FoodDetails',
     components: {
         HomeIcon,
         CartIcon,
+        DetailMenuIcon,
     },
     data() {
         return {

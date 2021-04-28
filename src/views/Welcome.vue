@@ -9,7 +9,7 @@
             class="w-100 h-100" 
             style="object-fit: cover; position: absolute; z-index: 0; right: 0; top: 0;"></b-img>
 
-            
+
         <!-- col content -->
             <b-col xl="8" lg="9"
             style="position: relative; z-index: 3;"
@@ -26,12 +26,13 @@
                     <h1 class="display-2 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.mainTitle"></h1>
+                    <!-- <hr class="d-flex m-0 mr-auto mt-3 mb-4 bg-orange" style="height: 4px; width: 50px;"> -->
                     <div>
                         <transition name="fade" appear>
                             <div>
                                 <ul class="list-unstyled">
-                                    <li class="mb-2" v-html="items.text2"></li>
-                                    <li class="mb-2" v-html="items.text3"></li>
+                                    <li class="mb-3" v-html="items.text2"></li>
+                                    <li class="mb-3" v-html="items.text3"></li>
                                 </ul>
                                 <div class="d-flex my-4">
                                     <router-link to="/home">
