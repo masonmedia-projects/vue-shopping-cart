@@ -1,9 +1,15 @@
 {
-  "welcome":[
+  "exit": [
     {
-      "img1":"./bg_welcome_desk4.jpg",
-      "img2":"./Hinterrhein.png",
-      "img3":"https://source.unsplash.com/1600x900/?computer",
+      "heading": "Exit LLT",
+      "title": "Are you sure?",
+      "message": "Exiting the Leadership Learning Tool will remove it from your learning plan and any saved data will be lost. Are you sure you want to proceed?",
+      "btn1": "Cancel",
+      "btn2": "Proceed"
+    }
+  ],
+  "quickStart":[
+    {
       "microTitle":"Leadership Learning Tool",
       "mainTitle":"Quick Start",
       "title2":"Leadership Learning Tool",
@@ -58,8 +64,7 @@
       "id":1,
       "name":"Self-Awareness",
       "category":"Leading Yourself",
-      "url":"./bg_welcome_beach.jpeg",
-      "url2":"https://source.unsplash.com/1600x900/?beach",
+      "url":"./selfaware.jpg",
       "description":"Building awareness around the mindsets and behaviours that help you be a successful leader",
       "moreDetail":[
         "Seeing yourself clearly and objectively through reflection and introspection",
@@ -75,7 +80,7 @@
       "id":2,
       "name":"Empowerment",
       "category":"Collaborating with & Inspiring Others",
-      "url":"https://source.unsplash.com/1600x900/?building",
+      "url":"./empowerment.jpg",
       "description":"Developing strong relationships and motivating others to perform at their highest potential",
       "moreDetail":[
         "Inspiring ownership and accountability within others",
@@ -93,7 +98,7 @@
       "id":3,
       "name":"Collaboration",
       "category":"Collaborating with & Inspiring Others",
-      "url":"https://source.unsplash.com/1600x900/?collaborate",
+      "url":"./collaboration.jpg",
       "description":"Developing strong relationships and motivating others to perform at their highest potential",
       "moreDetail": [
         "Creating and delivering on shared goals through influence and cooperation",
@@ -109,7 +114,7 @@
       "id":4,
       "name":"Communication",
       "category":"Communicating Effectively & with Empathy",
-      "url":"https://source.unsplash.com/1600x900/?phone",
+      "url":"./communication.jpg",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Conveying information and ideas persuasively and succinctly",
@@ -127,7 +132,7 @@
       "id":5,
       "name":"Authentic Conversations",
       "category":"Communicating Effectively & with Empathy",
-      "url":"https://source.unsplash.com/1600x900/?communication",
+      "url":"./conversations.jpg",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Listening actively to gain insights to other perspectives",
@@ -147,7 +152,7 @@
       "id":6,
       "name":"Emotional Intelligence ",
       "category":"Communicating Effectively & with Empathy",
-      "url":"https://source.unsplash.com/1600x900/?emotions",
+      "url":"./emotionalintell.jpg",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Conveying empathy and recognizing the emotions of others",
@@ -163,7 +168,7 @@
       "id":7,
       "name":"Critical Thinking",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"https://source.unsplash.com/1600x900/?art",
+      "url":"./criticalthinking.jpg",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Identifying the root cause of a business issue", 
@@ -179,7 +184,7 @@
       "id":8,
       "name": "Strategic Thinking",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"https://source.unsplash.com/1600x900/?brain",
+      "url":"./strategic.jpg",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Analyzing global trends", 
@@ -197,7 +202,7 @@
       "id":9,
       "name": "Performance",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"https://source.unsplash.com/1600x900/?buddhism",
+      "url":"./performance.jpg",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Supporting and trusting others to achieve their highest potential",
@@ -214,7 +219,7 @@
       "id":10,
       "name": "Customer-Centricity",
       "category":"Fostering Innovation and Agility",
-      "url":"https://source.unsplash.com/1600x900/?buy",
+      "url":"./customer.jpg",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Demonstrating empathy for the customer", 
@@ -231,7 +236,7 @@
       "id":11,
       "name": "Innovation",
       "category":"Fostering Innovation and Agility",
-      "url":"https://source.unsplash.com/1600x900/?science",
+      "url":"./innovation.jpg",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Exploring new ideas, methods and alternatives to achieve outcomes",
@@ -247,7 +252,7 @@
       "id":12,
       "name": "Change Agility",
       "category":"Fostering Innovation and Agility",
-      "url":"https://source.unsplash.com/1600x900/?earth",
+      "url":"./change.jpg",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Seeing the necessity or opportunity created by change",  

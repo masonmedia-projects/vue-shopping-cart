@@ -1,9 +1,5 @@
 <template>
   <b-container fluid class="bg-light relative z--1 p-5 mt-4">
-    <!-- background: url('./patternpad.svg'); background-size: cover;" -->
-  <!-- style="background: url(./bg_dots.webp); background-size: cover;" -->
-    <!-- style="background: url(./Waimakariri.png); background-size: 120%;" -->
-  <!-- <b-container fluid class="p-5 mt-4" style="background: url(./Waimakariri.png); background-position: 40% 30%; background-size: 300%; background-color: lightblue;"> -->
     <div class="w-100 bg-lightblue absolute z-0 left top" style="height: 400px; top: 450px;"></div>
     <b-row 
     no-gutters
@@ -24,14 +20,8 @@
       <b-col lg="6" 
       class="d-flex flex-column justify-content-center align-items-center p-0"
       style="min-height: 50vh; background: url('./patternpad_3.svg') center no-repeat; background-size: 1200%;">
-        <b-img class="w-100 h-100" style="object-fit: cover; border-radius: 0 14px 14px 0;" src="https://images.unsplash.com/photo-1504192010706-dd7f569ee2be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80"></b-img> 
-        <!-- possible imgs
-        https://images.unsplash.com/photo-1500333070776-343c73e1eb4a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80
-        great
-        https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80
-        eclipse
-        https://images.unsplash.com/photo-1504192010706-dd7f569ee2be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80
-        -->
+        <b-img class="w-100 h-100" style="object-fit: cover; border-radius: 0 14px 14px 0;" 
+        src="./01leadershipcover.jpg"></b-img> 
       </b-col>
     </b-row>
 
@@ -47,7 +37,7 @@
       <b-col lg="4"
       class="text-center"
       v-on:click="foodDetails(items)" 
-      v-for="items in allCategories" :key="items.name">
+      v-for="items in allCategories" :key="items.id">
       <!-- v-for="items in allCategories" :key="items.id"> -->
 
       <!-- slice limits the number of iterations in the object/array -->
