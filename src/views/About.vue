@@ -74,7 +74,7 @@
             </b-col>
         </b-row>
 
-        <b-row 
+        <!-- <b-row 
         class="d-flex flex-column justify-content-end align-items-start text-left shadow m-4" 
         style="min-height: 100vh; background-color: #f0aea2; position: relative; border-radius: 14px"
         v-for="items in $t('aboutpage')" :key="items.id">
@@ -154,7 +154,7 @@
                     </div>
                 </div>
             </b-col>
-        </b-row>
+        </b-row> -->
 </b-container>
    <!-- <b-container fluid class="p-5 mt-4">
     <b-row class="text-left">
