@@ -21,3 +21,9 @@ nav {
 .fixed-top {
     z-index: 10030;
 }
+
+@media (max-width: 600px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}

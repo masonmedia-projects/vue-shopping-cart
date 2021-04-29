@@ -1,13 +1,13 @@
 <template>
-  <b-container fluid class="p-5 mt-4">
+  <b-container fluid class="bg-light relative z--1 p-5 mt-4">
     <!-- background: url('./patternpad.svg'); background-size: cover;" -->
   <!-- style="background: url(./bg_dots.webp); background-size: cover;" -->
     <!-- style="background: url(./Waimakariri.png); background-size: 120%;" -->
   <!-- <b-container fluid class="p-5 mt-4" style="background: url(./Waimakariri.png); background-position: 40% 30%; background-size: 300%; background-color: lightblue;"> -->
-    <div class="h-50 w-100 bg-lightblue absolute z--1 left" style="top: 65%;"></div>
+    <div class="w-100 bg-lightblue absolute z-0 left top" style="height: 400px; top: 450px;"></div>
     <b-row 
     no-gutters
-    class="d-flex text-left bg-light shadow-lg mt-3 mb-4"
+    class="d-flex text-left bg-light shadow-lg mt-3 mb-4 relative"
     style="background: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%); border-radius: 14px"
     v-for="items in $t('homepage')" :key="items.id">
       <b-col lg="6" 

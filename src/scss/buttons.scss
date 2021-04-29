@@ -1,5 +1,6 @@
 button, 
-.btn {
+.btn,
+.btn-lg {
     border-radius: 25px;
     padding: 0.375rem 1.5rem;
 }
@@ -36,6 +37,25 @@ svg.focus {
     border-color: #ED8B00;
 }
 
+.btn-trans {
+    background: transparent;
+    color: black;
+    border: none;
+}
+
+// hover states
+
+.btn-lightblue:hover,
+.btn-royal:hover,
+.btn-orange:hover {
+    box-shadow: 0px 0px 7px #000;
+}
+
+.btn-royal:hover {
+    color: #ffffff;
+}
+
+// unused from Loblaw Digital Palette
 .btn-coral {
     color: #222222;
     background-color: #f0aea2;
@@ -52,9 +72,4 @@ svg.focus {
     color: #222222;
     background-color: #b5dae5;
     border-color: #b5dae5;
-}
-.btn-trans {
-    background: transparent;
-    color: black;
-    border: none;
 }

@@ -42,7 +42,8 @@
           <router-link class="nav-link" to="/about">About</router-link>
           <router-link class="nav-link" to="/cart">My Plan</router-link>
           <router-link class="nav-link mr-3" to="/cart">
-            <b-avatar class=""></b-avatar>
+            <!-- <b-avatar badge-variant="success" icon="person-circle"></b-avatar> -->
+            <user-icon class="user-icon"></user-icon>
             <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
           </router-link>
       </b-navbar-nav>
@@ -62,6 +63,7 @@
 
 <script>
 import NavbarBrandIcon from '../icons/NavbarBrandIcon.vue';
+import UserIcon from '../icons/UserIcon.vue';
 import ExitModal from './ExitModal.vue';
 
 export default {
@@ -69,6 +71,7 @@ export default {
     components: {
         NavbarBrandIcon,
         ExitModal,
+        UserIcon,
     },
     data () {
       return { langs: ['en', 'fr'] }
@@ -87,6 +90,9 @@ export default {
 </script>
 
 <style>
+/* .b-avatar > .b-icon {
+    width: 78%;
+} */
   .cart-count {
     font-size: 14px;
     color: white;

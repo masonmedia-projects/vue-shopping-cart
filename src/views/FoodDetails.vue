@@ -84,9 +84,9 @@
                     </b-modal>
                     <hr class="d-flex mx-0 mr-auto bg-orange" style="height: 4px; width: 50px; margin: 30px 0">
                     <div class="d-inline">
-                        <b-button variant="lightblue" class="mr-2" @click="addToCart">Add to plan</b-button>
+                        <b-button variant="lightblue" class="mr-2 mt-2" @click="addToCart">Add to plan</b-button>
                         <!-- <b-button variant="orange" class="mr-2" @click="removeItem">Remove</b-button> -->
-                        <b-button variant="royal" class="" @click="goToCart">Go to My Plan</b-button>
+                        <b-button variant="royal" class="mt-2" @click="goToCart">Checkout</b-button>
                     </div>
                 </div>
             </b-col>
@@ -129,7 +129,13 @@ export default {
                 cancelButtonText: 'Close',
                 cancelButtonAriaLabel: 'Close window',
                   showConfirmButton: false,
-                timer: 2000
+                timer: 2000,
+                cancelButtonColor: '',
+                // remove default styles, add custom classes
+                buttonsStyling: false,
+                customClass: {
+                cancelButton: 'btn-lg btn-lightblue border-0 mb-4',
+                }
             });
         },
         removeItem() {
