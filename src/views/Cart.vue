@@ -1,19 +1,32 @@
 <template>
-    <b-container class="" style="min-height: 100vh">
+    <b-container fluid class="min-h-100 bg-cart">
+        <b-container>
         <b-row 
         class="d-flex justify-content-center align-items-start text-left p-5"
         v-if="totalPrice > 0">
         <b-col lg="12"
         v-for="item in $t('myLearningPlan')" :key="item.id"
-        class="d-flex flex-column justify-content-center align-items-center text-center pt-5 pb-3">
-            <h1 class="display-3 font-weight-bold mb-4 mt-3" 
+        class="d-flex flex-column justify-content-center align-items-start text-left pt-5 pb-3">
+            <!-- <h1 class="display-4 font-weight-bold my-4" 
             style="line-height: 90%;"
             v-html="item.title"></h1>
-            <hr class="d-flex mx-auto mt-0 bg-warning" 
+            <hr class="d-flex mx-0 mr-auto mt-0 bg-orange" 
             style="height: 4px; width: 50px;">
-            <p class="mb-0" v-html="item.description"></p>
+            <p class="mb-0" v-html="item.description"></p> -->
+
+            <b-card class="mb-2 border-0 shadow bg-lightblue text-light p-5" style="border-radius: 14px;">
+                <b-card-text>
+                    <user-icon class="text-yellow" style="width: 60px; height: 60px;"></user-icon>
+                    <h1 class="display-4 font-weight-bold mb-4 mt-3" 
+                    style="line-height: 90%;"
+                    v-html="item.title"></h1>
+                    <hr class="d-flex mx-0 mr-auto mt-0 bg-yellow" 
+                    style="height: 4px; width: 50px;">
+                    <p class="mb-0" v-html="item.description"></p>                
+                </b-card-text>
+            </b-card>
         </b-col>
-        <hr class="text-dark bg-dark w-100" />
+        <hr class="w-100" />
             <b-col lg="12" class="d-flex flex-column justify-content-start align-items-start py-3">
                 <b-card no-body class="shadow border-0 overflow-hidden mb-3"
                 v-for="items in cartItems" :key="items.id">
@@ -33,9 +46,9 @@
                                     <span class="cart-quantity px-3">{{ items.quantity }}</span>
                                     <b-button @click="addItem(items)" class="add">+</b-button>
                                 </div> -->
-                                <b-button variant="outline-dark" class="rounded-0 mt-2 mr-2" @click="removeItem(items)">Remove</b-button>
+                                <b-button variant="outline-dark" class="mt-2 mr-2" @click="removeItem(items)">Remove</b-button>
                                 <a :href="cartItems" download target="_blank"> 
-                                    <b-button variant="success" class="rounded-0 mt-2">Download</b-button>
+                                    <b-button variant="green" class="mt-2">Download</b-button>
                                 </a>
                             </b-card-text>
                         </b-card-body>
@@ -43,29 +56,45 @@
                     </b-row>
                 </b-card>
             </b-col>
-            <hr class="text-dark bg-dark w-100" />
-            <b-col lg="12" class="d-flex flex-column justify-content-start align-items-start p-0">
-                <cart-summary :totalPrice="totalPrice"></cart-summary>
+            <hr class="w-100 mb-4" />
+            <b-col lg="12" v-for="item in $t('myLearningPlan')" :key="item.id">
+                <h3 class="mb-4 mt-0" v-html="item.subtitle"></h3>
+                <hr class="w-100 mb-4" />
+                <b-alert show variant="light" class="alert d-flex justify-content-start align-items-center py-3 shadow" v-for="i in item.nextSteps" :key="i.id">
+                    <arrow-icon class="text-lightblue mr-3"></arrow-icon>
+                    <p class="mb-0" v-html="i"></p>
+                </b-alert>
             </b-col>
+            <hr class="w-100" />
+
+            <!-- <b-col lg="12" class="d-flex flex-column justify-content-start align-items-start p-0">
+                <cart-summary :totalPrice="totalPrice"></cart-summary>
+            </b-col> -->
+
         </b-row>
         <b-row v-else>
             <b-col lg="12" class="d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh">
                <empty-cart></empty-cart>
             </b-col>
         </b-row>
+        </b-container>
     </b-container>
 </template>
 
 <script>
-import CartSummary from '../components/common/CartSummary.vue'
+// import CartSummary from '../components/common/CartSummary.vue'
 import EmptyCart from '../components/common/EmptyCart.vue'
+import ArrowIcon from '../components/icons/ArrowIcon.vue'
 import Swal from 'sweetalert2'
+import UserIcon from '../components/icons/UserIcon.vue'
 
 export default {
     name: 'Cart',
     components: { 
         EmptyCart,
-        CartSummary
+        ArrowIcon,
+        UserIcon,
+        // CartSummary
     },
     methods: {
         addItem(items) {
