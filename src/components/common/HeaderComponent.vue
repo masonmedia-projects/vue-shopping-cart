@@ -24,13 +24,17 @@
     </b-sidebar>
   </div> -->
   
-  <b-navbar fixed="top" toggleable="lg" type="light" variant="light" class="shadow">
+  <b-navbar 
+  fixed="top" 
+  toggleable="lg" 
+  type="light" 
+  variant="light" 
+  class="shadow py-3 py-lg-2">
     <router-link class="navbar-brand font-weight-bold d-flex align-items-center" to="/">
-    <!-- <home-icon></home-icon> -->
     <navbar-brand-icon class="text-lightblue" />Leadership Learning Tool
     </router-link> 
     <b-navbar-toggle target="nav-collapse">
-      <!-- custom toggle icon -->
+      <!-- custom mobile toggle icon -->
       <template #default="{ expanded }">
         <b-icon v-if="expanded" icon="chevron-bar-up" class="h3 mb-0"></b-icon>
         <b-icon v-else icon="chevron-bar-down" class="h3 mb-0"></b-icon>
@@ -90,9 +94,7 @@ export default {
 </script>
 
 <style>
-/* .b-avatar > .b-icon {
-    width: 78%;
-} */
+
   .cart-count {
     font-size: 14px;
     color: white;
@@ -104,16 +106,5 @@ export default {
     /* border-radius: 100%; */
     position: absolute;
   }
-  /* .badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 45%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: top;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-} */
+  
 </style>

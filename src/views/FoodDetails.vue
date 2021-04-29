@@ -48,16 +48,14 @@
                     ok-variant="secondary"
                     ok-title="Close">
                         <h3 class="mb-3 mt-2">More details:</h3>
-                        <hr class="mx-0 mr-auto mb-4" style="width: 50px; height: 4px; background: #f0aea2;"/>
+                        <hr class="mx-0 mr-auto mb-4 bg-lightblue" style="width: 50px; height: 4px;"/>
                        <!-- more details -->
                         <b-card-group columns> 
                             <b-card
                             class="shadow" 
                             v-for="item in details.moreDetail" :key="item.id">
                                 <b-card-title>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f0aea2" class="bi bi-exclude" viewBox="0 0 16 16">
-                                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm12 2H5a1 1 0 0 0-1 1v7h7a1 1 0 0 0 1-1V4z"/>
-                                    </svg>
+                                    <info-icon class="text-lightblue"></info-icon>
                                 </b-card-title>
                                 <b-card-text v-html="item">
                                 </b-card-text>
@@ -66,15 +64,14 @@
                         </b-card-group>   
                         <!-- select this item if... -->
                         <h3 class="mb-3 mt-4">Select if:</h3>
-                        <hr class="mx-0 mr-auto mb-4" style="width: 50px; height: 4px; background: #b5dae5"/>
+                        <hr class="mx-0 mr-auto mb-4 bg-green" style="width: 50px; height: 4px;" />
                         <b-card-group columns> 
                             <b-card 
                             class="shadow"
                             v-for="item in details.selectIf" :key="item.id">
                                 <b-card-title>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#b5dae5" class="bi bi-rainbow" viewBox="0 0 16 16">
-                                        <path d="M8 4.5a7 7 0 0 0-7 7 .5.5 0 0 1-1 0 8 8 0 1 1 16 0 .5.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 .5.5 0 0 1-1 0 6 6 0 1 1 12 0 .5.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 .5.5 0 0 1-1 0 4 4 0 1 1 8 0 .5.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 4 0 .5.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
-                                    </svg>
+                                    <!-- <pin-icon class="text-orange"></pin-icon> -->
+                                    <check-icon class="text-green"></check-icon>
                                 </b-card-title>
                                 <b-card-text v-html="item">
                                 </b-card-text>
@@ -99,6 +96,9 @@ import Swal from 'sweetalert2'
 import HomeIcon from '../components/icons/HomeIcon.vue'
 import CartIcon from '../components/icons/CartIcon.vue'
 import DetailMenuIcon from '../components/icons/DetailMenuIcon.vue'
+import InfoIcon from '../components/icons/InfoIcon.vue'
+import CheckIcon from '../components/icons/CheckIcon.vue'
+// import PinIcon from '../components/icons/PinIcon.vue'
 
 export default {
     name: 'FoodDetails',
@@ -106,6 +106,9 @@ export default {
         HomeIcon,
         CartIcon,
         DetailMenuIcon,
+        InfoIcon,
+        CheckIcon
+        // PinIcon,
     },
     data() {
         return {
