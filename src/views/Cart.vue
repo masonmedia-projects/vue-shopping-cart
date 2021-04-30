@@ -57,10 +57,12 @@
                 </b-card>
             </b-col>
             <hr class="w-100 mb-4" />
+            <!-- next steps -->
             <b-col lg="12" v-for="item in $t('myLearningPlan')" :key="item.id">
                 <h3 class="mb-4 mt-0" v-html="item.subtitle"></h3>
                 <hr class="w-100 mb-4" />
-                <b-alert show variant="light" class="alert d-flex justify-content-start align-items-center py-3 shadow" v-for="i in item.nextSteps" :key="i.id">
+                <b-alert show variant="light" class="alert d-flex justify-content-start align-items-center text-base py-3 shadow" 
+                v-for="i in item.nextSteps" :key="i.id">
                     <arrow-icon class="text-lightblue mr-3"></arrow-icon>
                     <p class="mb-0" v-html="i"></p>
                 </b-alert>
@@ -72,6 +74,7 @@
             </b-col> -->
 
         </b-row>
+        <!-- if learning plan has no items -->
         <b-row v-else>
             <b-col lg="12" 
             class="d-flex flex-column justify-content-center align-items-center min-h-100"
