@@ -10,12 +10,12 @@
   ],
   "quickStart":[
     {
-      "bannerImg": "./img/quick_start/01getstartedcover.jpg",
+      "bannerImg": "./img/home_page/01_getstartedcover.jpg",
       "microTitle":"My Leadership Learning Tool",
       "mainTitle":"Quick Start",
       "title2":"Leadership Learning Tool",
       "text1":"<strong>Welcome to the Leadership Learning Tool.</strong> This tool will help you to identify and explore learning connected to key leadership capabilities. You will select the skills and behaviours important to you, which will in turn inform personalized recommendations of learning activities that can build on the associated leader capabilities. Remember: great learners make great leaders!",
-      "text2":"If you know what knowledge and skills you’d like to focus on, select <strong>Get Started.</strong> If you’d like more context about this tool, or if you’re unsure of your next step and would like to explore some helpful suggestions to support your evolution as a leader, select <strong>About.</strong>",
+      "text2":"If you know what knowledge and skills you’d like to focus on, select <strong>Get Started.</strong> If you’d like more context about this tool, or if you’re unsure of your next step and would like to explore some helpful suggestions, select <strong>About.</strong>",
       "btn1": "Get started",
       "btn2": "About"
     }
@@ -37,9 +37,9 @@
       "title":"About",
       "text1":"While many people think of formal study as the obvious route to learning, the 70:20:10 model reveals that this instinct is off base. 10% of learning takes place through traditional methods like courses and formal education. 20% comes through social learning opportunities. 70% comes through on-the-job experience. This tool will support you by organizing these formal, social, and action learning opportunities in a way that will be meaningful and useful to you.",
       "section_title1": "Where do I start?",
-      "text2":"If you’re unsure of which key leader competencies to focus on,  reflect on what you’re passionate about developing. Connect with those around you for feedback on what you might focus on. Choose your initial 2–3 areas of focus. Return to this tool, and select <strong>Get Started.</strong>",
+      "text2":"If you’re unsure of which key leader competencies to focus on,  reflect on what you’re passionate about developing. Connect with those around you for feedback on what you might focus on.</strong>",
       "section_title2": "Bringing it all together",
-      "text3": "This tool will support you by organizing these formal, social, and action learning opportunities in a way that will be meaningful and useful to you.",
+      "text3": "Choose your initial 2–3 areas of focus. Return to this tool, and select <strong>Get Started.</strong>",
       "section_title3": "Grow & discover",
       "text4": "Review the Leadership Behaviour Model and choose your areas of focus through self-reflection and speaking with your colleagues.",
       "btn1": "Learn more"
