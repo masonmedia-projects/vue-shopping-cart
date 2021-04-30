@@ -22,7 +22,8 @@
 
     <div class="gear-icon">
         <gear-icon v-b-modal.exit-course></gear-icon>
-        <div v-for="item in $t('exit')" :key="item.index">
+        <div>
+            <!-- v-for="item in $t('exit')" :key="item.index" -->
             <b-modal 
             ref="exit-modal"
             id="exit-course" 
@@ -30,13 +31,15 @@
             body-class="text-center p-4"
             hide-footer
             title-class="font-weight-bold"
-            :title="item.heading">
+            title="Exit LLT"
+            >
+            <!-- :title="item.heading" -->
                 <caution-icon></caution-icon>
                 <h5 class="my-3 font-weight-bold text-dark"></h5>
-                <p class="mb-3"></p>
+                <p class="mb-3">Exiting the Leadership Learning Tool will remove it from your learning plan and any saved data will be lost. Are you sure you want to proceed?</p>
                 <div class="d-inline-block mb-3">
-                    <b-button class="mt-3 mr-2" @click="hideModal" variant="secondary">No</b-button>
-                    <b-button class="mt-3" variant="danger">Yes</b-button>
+                    <b-button class="mt-3 mr-2" @click="hideModal" variant="secondary">Cancel</b-button>
+                    <b-button class="mt-3" @click="hideModal" variant="danger">Proceed</b-button>
                 </div>
             </b-modal>
         </div>
