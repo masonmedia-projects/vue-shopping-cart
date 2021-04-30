@@ -11,14 +11,13 @@
   "quickStart":[
     {
       "bannerImg": "./img/quick_start/01getstartedcover.jpg",
-      "microTitle":"Leadership Learning Tool",
+      "microTitle":"My Leadership Learning Tool",
       "mainTitle":"Quick Start",
       "title2":"Leadership Learning Tool",
-      "text1":"<strong>Great learners make great leaders.</strong> At our organization, we have a learning culture that provides opportunities to develop in areas that help us better serve ourselves, our team, and our organization. Whether it’s an area you’re passionate about and wish to explore further or an area where you’ve recently recognized an opportunity to develop, this tool is for you.",
-      "text2":"<strong>Welcome to the Leadership Learning Tool.</strong> Please use this tool to discover the learning activities, which are personalized to leadership capabilities, knowledge, and skills. This tool will curate the activities that will be most valuable to you.",
-      "text3":"If you know what knowledge and skills you’d like to focus on, select Get Started. If not, select Learn more to explore some helpful suggestions and get more information.",
+      "text1":"<strong>Welcome to the Leadership Learning Tool.</strong> This tool will help you to identify and explore learning connected to key leadership capabilities. You will select the skills and behaviours important to you, which will in turn inform personalized recommendations of learning activities that can build on the associated leader capabilities. Remember: great learners make great leaders!",
+      "text2":"If you know what knowledge and skills you’d like to focus on, select <strong>Get Started.</strong> If you’d like more context about this tool, or if you’re unsure of your next step and would like to explore some helpful suggestions to support your evolution as a leader, select <strong>About.</strong>",
       "btn1": "Get started",
-      "btn2": "Learn more"
+      "btn2": "About"
     }
   ],
   "homepage":[
@@ -61,7 +60,7 @@
           "Consider what support and resources you’ll need to complete each activity.",
           "Reflect on the results of your activities on an ongoing basis and reassess as needed."
       ],
-      "emptyPlan": "My learning plan is empty."
+      "emptyPlan": "My learning plan is empty"
     }
   ],
   

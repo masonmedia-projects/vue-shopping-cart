@@ -30,6 +30,7 @@
   type="light" 
   variant="light" 
   class="shadow py-3 py-lg-2">
+
     <router-link class="navbar-brand font-weight-bold d-flex align-items-center" to="/">
     <navbar-brand-icon class="text-lightblue" />Leadership Learning Tool
     </router-link> 
@@ -44,8 +45,8 @@
       <b-navbar-nav class="ml-auto d-flex justify-content-center align-items-start align-items-lg-center">
           <router-link class="nav-link" to="/get-started">Get Started</router-link>
           <router-link class="nav-link" to="/about">About This Tool</router-link>
-          <router-link class="nav-link" to="/cart">My Plan</router-link>
-          <router-link class="nav-link mr-3" to="/cart">
+          <router-link class="nav-link" to="/my-plan">My Plan</router-link>
+          <router-link class="nav-link mr-3" to="/my-plan">
             <!-- <b-avatar badge-variant="success" icon="person-circle"></b-avatar> -->
             <user-icon class="user-icon"></user-icon>
             <b-badge class="cart-count" variant="success">{{ count }}</b-badge>

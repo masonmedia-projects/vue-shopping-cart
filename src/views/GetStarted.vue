@@ -9,13 +9,14 @@
       <b-col lg="6" 
       class="d-flex flex-column justify-content-center align-items-start text-start p-5"
       style="min-height: 75vh;">
-      <h1 class="h5 text-muted mb-3" v-html="items.title"></h1>
+        <h1 class="h5 text-muted mb-3" v-html="items.title"></h1>
         <h5 
         class="font-weight-bold mb-4" 
         style="font-size: 9vmin; line-height: 95%;"
         v-html="items.microTitle"></h5>
         <hr class="d-flex ml-0 mr-auto mt-0 mb-4 bg-orange" style="height: 4px; width: 50px;">
         <p class="mb-0" v-html="items.text"></p>
+        <scroll-down-icon class="mt-4 text-dark"></scroll-down-icon>
       </b-col>
       <b-col lg="6" 
       class="d-flex flex-column justify-content-center align-items-center p-0"
@@ -51,7 +52,7 @@
           <b-card-text class="py-3">
             <h2 v-html="items.name" class="font-weight-bold"></h2>
             <p>{{ items.category }}</p>  
-            <b-button variant="lightblue mr-2" class="">More details</b-button>
+            <b-button variant="lightblue mr-2" class="">Details</b-button>
             <!-- <router-link :to="{ name: 'FoodDetails', params: {id: topRated.id}}"></router-link> -->
           </b-card-text>
         </b-card>
@@ -61,8 +62,13 @@
 </template>
 
 <script>
+import ScrollDownIcon from '../components/icons/ScrollDownIcon.vue'
+
 export default {
-  name: 'Home',
+  name: 'GetStarted',
+  components: {
+    ScrollDownIcon,
+  },
   data() {
     return {
       selected: null,

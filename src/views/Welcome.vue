@@ -4,7 +4,6 @@
         class="d-flex flex-column justify-content-end align-items-start text-left relative" 
         style="min-height: 100vh;"
         v-for="items in $t('quickStart')" :key="items.id">
-        <!-- background: url('./01getstartedcover.jpg') center right; background-size: cover; -->
             <!-- bg-img -->
             <b-img :src="items.bannerImg" 
             class="w-100 h-100" 
@@ -22,19 +21,18 @@
                     border-radius: 14px">
                     <hr class="d-flex m-0 mr-auto bg-orange" style="height: 4px; width: 50px;">
                     <h5 class="py-3 mt-3 mb-0 font-weight-bold text-muted" v-html="items.microTitle"></h5>
-                    <h1 class="display-2 font-weight-bold mb-4"
-                    style="line-height: 90%; letter-spacing: -3px"
+                    <h1 class="font-weight-bold mb-4"
+                    style="font-size: 12vmin; line-height: 90%; letter-spacing: -3px"
                     v-html="items.mainTitle"></h1>
-                    <!-- <hr class="d-flex m-0 mr-auto mt-3 mb-4 bg-orange" style="height: 4px; width: 50px;"> -->
                     <div>
                         <transition name="fade" appear>
                             <div>
                                 <ul class="list-unstyled">
+                                    <li class="mb-3" v-html="items.text1"></li>
                                     <li class="mb-3" v-html="items.text2"></li>
-                                    <li class="mb-3" v-html="items.text3"></li>
                                 </ul>
                                 <div class="d-flex my-4">
-                                    <router-link to="/home">
+                                    <router-link to="/get-started">
                                         <b-button 
                                         variant="orange" 
                                         size="lg"
