@@ -10,6 +10,7 @@
   ],
   "quickStart":[
     {
+      "bannerImg": "./img/quick_start/01getstartedcover.jpg",
       "microTitle":"Leadership Learning Tool",
       "mainTitle":"Quick Start",
       "title2":"Leadership Learning Tool",
@@ -22,6 +23,7 @@
   ],
   "homepage":[
     {
+      "bannerImg": "./img/home_page/01leadershipcover.jpg",
       "microTitle": "Get Started",
       "title":"Leadership Learning Tool",
       "text":"Build your learning plan by selecting the items you’d like to focus on today. Select each item to learn more about what each item represents including the behaviours and capabilities that are included under that item, and when the item might be an appropriate area of focus for you."
@@ -29,6 +31,9 @@
   ],
   "aboutpage":[
     {
+      "bannerImg": "./img/about_page/01welcome_01.jpg",
+      "img2": "./img/about_page/01welcome_02.jpg",
+      "img3": "./img/about_page/01welcome_03.jpg",
       "microTitle": "Welcome",
       "title":"Leadership Development Tool",
       "text1":"Welcome to the Leadership Learning Tool. Please use this tool to discover the learning activities, which are personalized to leadership capabilities, knowledge, and skills. Scroll down for more information on how to use this tool.",

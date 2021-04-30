@@ -6,7 +6,7 @@
         v-for="items in $t('quickStart')" :key="items.id">
         <!-- background: url('./01getstartedcover.jpg') center right; background-size: cover; -->
             <!-- bg-img -->
-            <b-img src="./01getstartedcover.jpg" 
+            <b-img :src="items.bannerImg" 
             class="w-100 h-100" 
             style="object-fit: cover; position: absolute; z-index: 0; left: 0; top: 0;"></b-img>
             <!-- col content -->

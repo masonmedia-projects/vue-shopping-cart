@@ -21,25 +21,23 @@
       class="d-flex flex-column justify-content-center align-items-center p-0"
       style="min-height: 50vh; background: url('./patternpad_3.svg') center no-repeat; background-size: 1200%;">
         <b-img class="w-100 h-100" style="object-fit: cover; border-radius: 0 14px 14px 0;" 
-        src="./01leadershipcover.jpg"></b-img> 
+        :src="items.bannerImg"></b-img> 
       </b-col>
     </b-row>
 
-<!-- filter dropdown/menu -->
-    <!-- <b-form-select v-model="category" :options="options"></b-form-select> -->
-    <!-- <b-navbar fill class="mb-4 border rounded bg-gradient-lightblue" toggleable="lg" type="light" variant="light">
-      <b-navbar-nav class="w-100" fill v-for="item in filterProductsByCategory" :key="item.name">
-        <b-nav-item href="#">{{item.name}}</b-nav-item>
-      </b-navbar-nav>
-  </b-navbar> -->
+    <!-- future filter dropdown/menu -->
+        <!-- <b-form-select v-model="category" :options="options"></b-form-select> -->
+        <!-- <b-navbar fill class="mb-4 border rounded bg-gradient-lightblue" toggleable="lg" type="light" variant="light">
+          <b-navbar-nav class="w-100" fill v-for="item in filterProductsByCategory" :key="item.name">
+            <b-nav-item href="#">{{item.name}}</b-nav-item>
+          </b-navbar-nav>
+      </b-navbar> -->
 
     <b-row class="d-flex text-left">
       <b-col lg="4"
       class="text-center"
       v-on:click="foodDetails(items)" 
       v-for="items in allCategories" :key="items.id">
-      <!-- v-for="items in allCategories" :key="items.id"> -->
-
       <!-- slice limits the number of iterations in the object/array -->
       <!-- <b-col lg="4" v-for="items in topRated.slice(0, 2)" :key="items.id"> -->
         <b-card
@@ -50,12 +48,10 @@
           header-class="font-weight-bold"
           class="border-0 mb-3 shadow"
           >
-          <!-- style="background: url('./bg_dots.webp'); border-radius: 14px;" -->
           <b-card-text class="py-3">
             <h2 v-html="items.name" class="font-weight-bold"></h2>
             <p>{{ items.category }}</p>  
             <b-button variant="lightblue mr-2" class="">More details</b-button>
-            <!-- <b-button variant="info" class="rounded">Add to plan</b-button> -->
             <!-- <router-link :to="{ name: 'FoodDetails', params: {id: topRated.id}}"></router-link> -->
           </b-card-text>
         </b-card>
@@ -95,9 +91,9 @@ export default {
       return this.$store.state.data.dishesNearYou;
     },
     // filter function
-    filterProductsByCategory() {
-      return this.allCategories.filter(item => !item.category.indexOf(this.category))
-      }
+    // filterProductsByCategory() {
+    //   return this.allCategories.filter(item => !item.category.indexOf(this.category))
+    //   }
   },
   // route programmatically to retrieve each food detail without creating a new page
   // https://vueschool.io/lessons/vuejs-router-creating-routes
