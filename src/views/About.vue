@@ -21,7 +21,7 @@
                     <h1 class="display-4 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.title"></h1>
-                    <hr class="d-flex m-0 mr-auto my-3 bg-warning" style="height: 4px; width: 50px;">
+                    <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text1"></p>
 
                     <!-- tabs -->
@@ -67,7 +67,7 @@
             style="object-fit: cover; position: absolute; z-index: 0; right: 0; top: 0;"></b-img>
             <!-- color strip -->
             <div class="absolute bottom h-25 w-100 z-0 bg-purple-trans"></div>
-            <b-col lg="8"
+            <b-col lg="8" offset="4"
             style="position: relative; z-index: 3;"
             class="d-flex flex-column justify-content-center align-items-start p-5 mt-md-0 mt-lg-5">
                 <div class="shadow p-5" style="background: rgba( 255, 255, 255, 0.9 );
@@ -80,7 +80,7 @@
                     <h1 class="display-4 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.title"></h1>
-                    <hr class="d-flex m-0 mr-auto my-3 bg-warning" style="height: 4px; width: 50px;">
+                    <hr class="d-flex m-0 mr-auto my-3 bg-purple" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text1"></p>
                 </div>
                 <!--/content-->
@@ -94,7 +94,7 @@
             class="w-100 h-100" 
             style="object-fit: cover; position: absolute; z-index: 0; right: 0; top: 0;"></b-img>
             <!-- color strip -->
-            <div class="absolute bottom h-25 w-100 z-0 bg-purple-trans"></div>
+            <div class="absolute bottom h-25 w-100 z-0 bg-orange-trans"></div>
             <b-col lg="8"
             style="position: relative; z-index: 3;"
             class="d-flex flex-column justify-content-center align-items-start p-5 mt-md-0 mt-lg-5">
@@ -108,7 +108,7 @@
                     <h1 class="display-4 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.title"></h1>
-                    <hr class="d-flex m-0 mr-auto my-3 bg-warning" style="height: 4px; width: 50px;">
+                    <hr class="d-flex m-0 mr-auto my-3 bg-orange" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text1"></p>
                 </div>
                 <!--/content-->

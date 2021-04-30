@@ -42,8 +42,8 @@
     </b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto d-flex justify-content-center align-items-start align-items-lg-center">
-          <router-link class="nav-link" to="/home">Home</router-link>
-          <router-link class="nav-link" to="/about">About</router-link>
+          <router-link class="nav-link" to="/get-started">Get Started</router-link>
+          <router-link class="nav-link" to="/about">About This Tool</router-link>
           <router-link class="nav-link" to="/cart">My Plan</router-link>
           <router-link class="nav-link mr-3" to="/cart">
             <!-- <b-avatar badge-variant="success" icon="person-circle"></b-avatar> -->
@@ -106,5 +106,5 @@ export default {
     /* border-radius: 100%; */
     position: absolute;
   }
-  
+
 </style>

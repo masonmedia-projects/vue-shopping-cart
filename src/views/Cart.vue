@@ -5,7 +5,7 @@
         class="d-flex justify-content-center align-items-start text-left p-5"
         v-if="totalPrice > 0">
         <b-col lg="12"
-        v-for="item in $t('myLearningPlan')" :key="item.id"
+        v-for="items in $t('myLearningPlan')" :key="items.id"
         class="d-flex flex-column justify-content-center align-items-start text-left pt-5 pb-3">
             <!-- <h1 class="display-4 font-weight-bold my-4" 
             style="line-height: 90%;"
@@ -19,10 +19,10 @@
                     <user-icon class="text-yellow" style="width: 60px; height: 60px;"></user-icon>
                     <h1 class="display-4 font-weight-bold mb-4 mt-3" 
                     style="line-height: 90%;"
-                    v-html="item.title"></h1>
+                    v-html="items.title"></h1>
                     <hr class="d-flex mx-0 mr-auto mt-0 bg-yellow" 
                     style="height: 4px; width: 50px;">
-                    <p class="mb-0" v-html="item.description"></p>                
+                    <p class="mb-0" v-html="items.description"></p>                
                 </b-card-text>
             </b-card>
         </b-col>
@@ -73,8 +73,10 @@
 
         </b-row>
         <b-row v-else>
-            <b-col lg="12" class="d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh">
-               <empty-cart></empty-cart>
+            <b-col lg="12" 
+            class="d-flex flex-column justify-content-center align-items-center min-h-100"
+            v-for="items in $t('myLearningPlan')" :key="items.index">
+               <empty-cart :emptyPlan="items.emptyPlan"></empty-cart>
             </b-col>
         </b-row>
         </b-container>

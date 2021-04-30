@@ -60,7 +60,8 @@
           "Define what success will look like for each activity.",
           "Consider what support and resources you’ll need to complete each activity.",
           "Reflect on the results of your activities on an ongoing basis and reassess as needed."
-      ]
+      ],
+      "emptyPlan": "My learning plan is empty."
     }
   ],
   
@@ -79,7 +80,8 @@
       "selectIf":[
         "You’d like to learn about others perception of you",
         "You’d like to feel empowered to make changes and build on your areas of strengths and opportunities"
-      ]
+      ],
+      "download": ""
     },
     {
       "id":2,

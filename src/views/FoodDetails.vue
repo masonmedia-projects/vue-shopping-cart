@@ -36,7 +36,7 @@
                         <li><span class="font-weight-bold">Description:</span> {{ details.description }}</li>
                     </ul>
                     <!-- modal -->
-                    <b-button v-b-modal.details-modal variant="orange">Learn more</b-button>
+                    <b-button v-b-modal.details-modal variant="lightblue">Learn more</b-button>
                     <b-modal 
                     id="details-modal" 
                     class="d-flex"
@@ -79,7 +79,7 @@
                             </b-card>
                         </b-card-group>   
                     </b-modal>
-                    <hr class="d-flex mx-0 mr-auto bg-orange" style="height: 4px; width: 50px; margin: 30px 0">
+                    <hr class="d-flex mx-0 mr-auto bg-lightblue" style="height: 4px; width: 50px; margin: 30px 0">
                     <div class="d-inline">
                         <b-button variant="orange" class="mr-2 mt-2" @click="addToCart">Add to plan</b-button>
                         <!-- <b-button variant="orange" class="mr-2" @click="removeItem">Remove</b-button> -->
