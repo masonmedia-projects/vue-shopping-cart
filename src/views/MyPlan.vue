@@ -48,7 +48,7 @@
                                 </div> -->
                                 <b-button variant="outline-dark" class="mt-2 mr-2" @click="removeItem(items)">Remove</b-button>
                                 <a :href="cartItems" download target="_blank"> 
-                                    <b-button variant="green" class="mt-2">Download</b-button>
+                                    <b-button variant="green" class="mt-2" >Download</b-button>
                                 </a>
                             </b-card-text>
                         </b-card-body>
