@@ -23,6 +23,7 @@
                     v-html="items.title"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text1"></p>
+                    <scroll-down-icon class="mt-4 text-dark"></scroll-down-icon>
 
                     <!-- tabs -->
                     <!-- <div>
@@ -76,12 +77,17 @@
                     -webkit-backdrop-filter: blur( 4px );
                     border: 1px solid rgba( 255, 255, 255, 0.18 );
                     border-radius: 14px">
-                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle"></h5>
+                    <!-- <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle"></h5> -->
                     <h1 class="display-4 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
-                    v-html="items.title"></h1>
+                    v-html="items.section_title1"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-purple" style="height: 4px; width: 50px;">
-                    <p class="mb-2" v-html="items.text1"></p>
+                    <p class="mb-2" v-html="items.text2"></p>
+                    <scroll-down-icon class="mt-4 text-dark"></scroll-down-icon>
+                    <!-- <b-button 
+                    variant="orange" 
+                    size="lg"
+                    class="mt-3" v-html="items.btn1"></b-button> -->
                 </div>
                 <!--/content-->
             </b-col>
@@ -104,12 +110,12 @@
                     -webkit-backdrop-filter: blur( 4px );
                     border: 1px solid rgba( 255, 255, 255, 0.18 );
                     border-radius: 14px">
-                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle"></h5>
+                    <!-- <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle"></h5> -->
                     <h1 class="display-4 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
-                    v-html="items.title"></h1>
+                    v-html="items.section_title2"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-orange" style="height: 4px; width: 50px;">
-                    <p class="mb-2" v-html="items.text1"></p>
+                    <p class="mb-2" v-html="items.text3"></p>
                 </div>
                 <!--/content-->
             </b-col>
@@ -159,6 +165,7 @@
     // import TabOne from '@/components/tabs/TabOne.vue';
     // import TabTwo from '@/components/tabs/TabTwo.vue';
     // import TabThree from '@/components/tabs/TabThree.vue';
+import ScrollDownIcon from '../components/icons/ScrollDownIcon.vue'
 
 export default {
   name: 'About',
@@ -166,6 +173,7 @@ export default {
     // TabOne,
     // TabTwo,
     // TabThree,
+    ScrollDownIcon
   },
   data() {
     return {

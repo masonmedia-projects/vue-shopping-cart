@@ -5,17 +5,18 @@
     no-gutters
     class="d-flex text-left bg-light shadow-lg mt-3 mb-4 relative"
     style="background: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%); border-radius: 14px"
-    v-for="items in $t('homepage')" :key="items.id">
+    v-for="items in $t('getStarted')" :key="items.id">
       <b-col lg="6" 
       class="d-flex flex-column justify-content-center align-items-start text-start p-5"
       style="min-height: 75vh;">
-        <h1 class="h5 text-muted mb-3" v-html="items.title"></h1>
+        <h1 class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
         <h5 
         class="font-weight-bold mb-4" 
         style="font-size: 9vmin; line-height: 95%;"
-        v-html="items.microTitle"></h5>
+        v-html="items.title"></h5>
         <hr class="d-flex ml-0 mr-auto mt-0 mb-4 bg-orange" style="height: 4px; width: 50px;">
-        <p class="mb-0" v-html="items.text"></p>
+        <p class="" v-html="items.text1"></p>
+        <!-- <p class="" v-html="items.text2"></p> -->
         <scroll-down-icon class="mt-4 text-dark"></scroll-down-icon>
       </b-col>
       <b-col lg="6" 
@@ -85,7 +86,7 @@ export default {
   },
   computed: {
     page1() {
-      return this.$store.state.data.homepage;
+      return this.$store.state.data.getStarted;
     },
     topRated() {
       return this.$store.state.data.topRated;

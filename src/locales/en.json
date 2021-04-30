@@ -20,12 +20,12 @@
       "btn2": "About"
     }
   ],
-  "homepage":[
+  "getStarted":[
     {
       "bannerImg": "./img/home_page/01leadershipcover.jpg",
-      "microTitle": "Get Started",
-      "title":"Leadership Learning Tool",
-      "text":"Build your learning plan by selecting the items you’d like to focus on today. Select each item to learn more about what each item represents including the behaviours and capabilities that are included under that item, and when the item might be an appropriate area of focus for you."
+      "microTitle": "My Leadership Learning Tool",
+      "title":"Get Started",
+      "text1":"Build your learning plan by selecting the items you’d like to focus on today. Select the <strong>Details</strong> button of any competency to learn more about it and what it looks like in action before deciding if it’s an appropriate area of focus for you. "
     }
   ],
   "aboutpage":[
@@ -33,19 +33,16 @@
       "bannerImg": "./img/about_page/01welcome_01.jpg",
       "img2": "./img/about_page/01welcome_02.jpg",
       "img3": "./img/about_page/01welcome_03.jpg",
-      "microTitle": "Welcome",
-      "title":"Leadership Development Tool",
-      "text1":"Welcome to the Leadership Learning Tool. Please use this tool to discover the learning activities, which are personalized to leadership capabilities, knowledge, and skills. Scroll down for more information on how to use this tool.",
-      "section_title1": "Building leaders",
-      "text2":"Great learners make great leaders. At our organization, we have a learning culture that provides opportunities to develop in areas that help us better serve ourselves, our team, and our organization. Whether it’s an area you’re passionate about and wish to explore further or an area where you’ve recently recognized an opportunity to develop, this tool is for you.",
-      "section_title2": "Developing yourself",
-      "text3": "Please use this tool to discover the learning activities, which are personalized to leadership capabilities, knowledge, and skills. This tool will curate the activities that will be most valuable to you.",
+      "microTitle": "My Leadership Learning Tool",
+      "title":"About",
+      "text1":"While many people think of formal study as the obvious route to learning, the 70:20:10 model reveals that this instinct is off base. 10% of learning takes place through traditional methods like courses and formal education. 20% comes through social learning opportunities. 70% comes through on-the-job experience. This tool will support you by organizing these formal, social, and action learning opportunities in a way that will be meaningful and useful to you.",
+      "section_title1": "Where do I start?",
+      "text2":"If you’re unsure of which key leader competencies to focus on,  reflect on what you’re passionate about developing. Connect with those around you for feedback on what you might focus on. Choose your initial 2–3 areas of focus. Return to this tool, and select <strong>Get Started.</strong>",
+      "section_title2": "Bringing it all together",
+      "text3": "This tool will support you by organizing these formal, social, and action learning opportunities in a way that will be meaningful and useful to you.",
       "section_title3": "Grow & discover",
       "text4": "Review the Leadership Behaviour Model and choose your areas of focus through self-reflection and speaking with your colleagues.",
-      "img1": "https://source.unsplash.com/1600x900/?foliage",
-      "btn1": "Welcome",
-      "btn2": "Leadership",
-      "btn3": "Development"
+      "btn1": "Learn more"
     }
   ],
   "myLearningPlan":[
