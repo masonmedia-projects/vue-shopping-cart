@@ -118,6 +118,11 @@ export default {
             })
         },
     },
+    // local storage
+    // created() {
+    //     if (this.$route.params.id !== undefined)
+    //     localStorage.setItem("cartItems", JSON.stringify(this.$route.params));
+    // },
     computed: {
         cartItems() {
             return this.$store.state.cartItems;
