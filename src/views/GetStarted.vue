@@ -21,7 +21,7 @@
       </b-col>
       <b-col lg="6" 
       class="d-flex flex-column justify-content-center align-items-center p-0"
-      style="min-height: 50vh; background: url('./patternpad_3.svg') center no-repeat; background-size: 1200%;">
+      style="min-height: 50vh;">
         <b-img class="w-100 h-100" style="object-fit: cover; border-radius: 0 14px 14px 0;" 
         :src="items.bannerImg"></b-img> 
       </b-col>
