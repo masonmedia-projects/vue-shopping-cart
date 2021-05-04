@@ -11,16 +11,11 @@
             <b-col lg="8"
             style="position: relative; z-index: 3;"
             class="d-flex flex-column justify-content-center align-items-start p-5 mt-md-0 mt-lg-5">
-                <div class="shadow p-5" style="background: rgba( 255, 255, 255, 0.9 );
-                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                    backdrop-filter: blur( 4px );
-                    -webkit-backdrop-filter: blur( 4px );
-                    border: 1px solid rgba( 255, 255, 255, 0.18 );
-                    border-radius: 14px">
-                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle"></h5>
+                 <div class="bg-glass p-5" style="border-radius: 14px">
+                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle1"></h5>
                     <h1 class="display-4 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
-                    v-html="items.title"></h1>
+                    v-html="items.title1"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text1"></p>
                     <scroll-down-icon class="mt-4 text-dark"></scroll-down-icon>
@@ -71,23 +66,14 @@
             <b-col lg="8" offset="4"
             style="position: relative; z-index: 3;"
             class="d-flex flex-column justify-content-center align-items-start p-5 mt-md-0 mt-lg-5">
-                <div class="shadow p-5" style="background: rgba( 255, 255, 255, 0.9 );
-                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                    backdrop-filter: blur( 4px );
-                    -webkit-backdrop-filter: blur( 4px );
-                    border: 1px solid rgba( 255, 255, 255, 0.18 );
-                    border-radius: 14px">
-                    <!-- <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle"></h5> -->
+                <div class="bg-glass p-5" style="border-radius: 14px">
+                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle2"></h5>
                     <h1 class="display-4 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
-                    v-html="items.section_title1"></h1>
+                    v-html="items.title2"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-purple" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text2"></p>
                     <scroll-down-icon class="mt-4 text-dark"></scroll-down-icon>
-                    <!-- <b-button 
-                    variant="orange" 
-                    size="lg"
-                    class="mt-3" v-html="items.btn1"></b-button> -->
                 </div>
                 <!--/content-->
             </b-col>
@@ -104,18 +90,19 @@
             <b-col lg="8"
             style="position: relative; z-index: 3;"
             class="d-flex flex-column justify-content-center align-items-start p-5 mt-md-0 mt-lg-5">
-                <div class="shadow p-5" style="background: rgba( 255, 255, 255, 0.9 );
-                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                    backdrop-filter: blur( 4px );
-                    -webkit-backdrop-filter: blur( 4px );
-                    border: 1px solid rgba( 255, 255, 255, 0.18 );
-                    border-radius: 14px">
-                    <!-- <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle"></h5> -->
+                <div class="bg-glass p-5" style="border-radius: 14px">
+                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle3"></h5>
                     <h1 class="display-4 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
-                    v-html="items.section_title2"></h1>
+                    v-html="items.title3"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-orange" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text3"></p>
+                    <router-link to="/get-started">
+                        <b-button 
+                        variant="orange" 
+                        size="lg"
+                        class="mt-4" v-html="items.btn1"></b-button>
+                    </router-link>
                 </div>
                 <!--/content-->
             </b-col>

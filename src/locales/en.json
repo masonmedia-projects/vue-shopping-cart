@@ -33,16 +33,19 @@
       "bannerImg": "./img/about_page/01welcome_01.jpg",
       "img2": "./img/about_page/01welcome_02.jpg",
       "img3": "./img/about_page/01welcome_03.jpg",
-      "microTitle": "My Leadership Learning Tool",
-      "title":"About",
-      "text1":"While many people think of formal study as the obvious route to learning, the 70:20:10 model reveals that this instinct is off base. 10% of learning takes place through traditional methods like courses and formal education. 20% comes through social learning opportunities. 70% comes through on-the-job experience. This tool will support you by organizing these formal, social, and action learning opportunities in a way that will be meaningful and useful to you.",
-      "section_title1": "Where do I start?",
-      "text2":"If you’re unsure of which key leader competencies to focus on,  reflect on what you’re passionate about developing. Connect with those around you for feedback on what you might focus on.</strong>",
-      "section_title2": "Bringing it all together",
-      "text3": "Choose your initial 2–3 areas of focus. Return to this tool, and select <strong>Get Started.</strong>",
+      "microTitle1": "My Leadership Learning Tool",
+      "title1":"Welcome",
+      "archive1":"While many people think of formal study as the obvious route to learning, the 70:20:10 model reveals that this instinct is off base. 10% of learning takes place through traditional methods like courses and formal education. 20% comes through social learning opportunities. 70% comes through on-the-job experience. This tool will support you by organizing these formal, social, and action learning opportunities in a way that will be meaningful and useful to you. //Choose your initial 2–3 areas of focus. Return to this tool, and select <strong>Get Started.</strong> If you’re unsure of which key leader competencies to focus on, reflect on what you’re passionate about developing. Connect with those around you for feedback on what you might focus on.</strong>",
+      "text1":"<strong>Welcome to the Leadership Learning Tool!</strong> This application was built to develop your leadership skills, and faciliate the evolution of the next generation of leaders in our organization. This app was designed to give you a broad and diverse introduction to the competencies of great leaders, and to provide you with ongoing resources for continued growth over time. Use this tool to explore our leadership model, to follow up on competencies suggested by colleagues or managers, or use it to pinpoint areas you'd like to develop or learn more about.",
+      "microTitle2": "70-20-10",
+      "title2": "How we learn",
+      "text2":"<strong>Learning is more organic than people think.</strong> While many consider formal study as the obvious route to learning, the <strong>70:20:10</strong> model reveals that this instinct is off base: 10% of learning takes place through traditional methods like courses and formal education, 20% comes through social learning opportunities, and 70% comes through on-the-job experience. This tool will support you by organizing these formal, social, and action-learning opportunities in a way that will be meaningful and useful. Scroll down to learn more about how to use this tool.",
+      "microTitle3": "Get started",
+      "title3": "Bringing it all together",
+      "text3": "Begin on the <strong>Get Started</strong> page. Consult the Leadership Behaviour Model diagram and consider which skill areas you'd like to focus on. If you unsure, click the <strong>Details</strong> button on any of the competencies at random and see if they resonate with you. If they do, add them to your learning plan by selecting <strong>Add to plan</strong>. You can add as many competencies to your plan as you wish. When done, select <strong>My Plan</strong> to review your learning plan, and to download your learning resources." ,
       "section_title3": "Grow & discover",
       "text4": "Review the Leadership Behaviour Model and choose your areas of focus through self-reflection and speaking with your colleagues.",
-      "btn1": "Learn more"
+      "btn1": "Get started"
     }
   ],
   "myLearningPlan":[
