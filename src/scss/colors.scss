@@ -3,27 +3,42 @@
 }
 
 .bg-lightblue {
-    background: #62B5E5;
+    background-color: #62B5E5 !important;
+}
+
+.badge-lightblue {
+    color: #fff;
+    background-color: #62B5E5;
 }
 
 .bg-royal {
-    background: #003Da5;
+    background-color: #003Da5;
 }
 
 .bg-orange {
-    background: #ED8B00;
+    background-color: #ED8B00 !important;
+}
+
+.badge-orange {
+    color: #fff;
+    background-color: #ED8B00;
 }
 
 .bg-yellow {
-    background: #FFCF00;
+    background-color: #FFCF00;
 }
 
 .bg-green {
-    background: #00A550;
+    background-color: #00A550;
+}
+
+.badge-green {
+    color: #fff;
+    background-color: #00A550;
 }
 
 .bg-purple {
-    background: #003DA5;
+    background-color: #003DA5;
 }
 
 // text
@@ -52,14 +67,27 @@
     color: #00A550;
 }
 
+// glassmorphism text boxes
+
+.bg-glass {
+    background: rgba( 255, 255, 255, 0.9 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );  
+}
+
 // about page color strips
 
 .bg-yellow-trans {
-    background: #FFCF0083;
+    background-color: #FFCF0083;
 }
 .bg-purple-trans {
-    background: #003DA59A;
+    background-color: #003DA59A;
 }
 .bg-orange-trans {
-    background: #ED8B008E;
+    background-color: #ED8B008E;
+}
+.bg-lightblue-trans {
+    background-color: #62B5E51A !important;
 }

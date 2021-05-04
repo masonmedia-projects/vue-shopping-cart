@@ -32,7 +32,7 @@
   class="shadow py-3 py-lg-2">
 
     <router-link class="navbar-brand font-weight-bold d-flex align-items-center" to="/">
-    <navbar-brand-icon class="text-lightblue" />Leadership Learning Tool
+    Leadership Learning Tool
     </router-link> 
     <b-navbar-toggle target="nav-collapse">
       <!-- custom mobile toggle icon -->
@@ -67,14 +67,14 @@
 </template>
 
 <script>
-import NavbarBrandIcon from '../icons/NavbarBrandIcon.vue';
+// import NavbarBrandIcon from '../icons/NavbarBrandIcon.vue';
 import UserIcon from '../icons/UserIcon.vue';
 import ExitModal from './ExitModal.vue';
 
 export default {
     name: 'HeaderComponent',
     components: {
-        NavbarBrandIcon,
+        // NavbarBrandIcon,
         ExitModal,
         UserIcon,
     },

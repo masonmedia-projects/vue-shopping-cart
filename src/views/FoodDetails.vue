@@ -1,11 +1,11 @@
 <template>
     <b-container fluid class="relative">
-        <b-row class="d-flex text-left bg-lightblue min-h-100"> 
+        <!-- <b-row class="d-flex text-left bg-lightblue min-h-100"> 
             <b-img :src="details.url" class="w-75 h-100" style="object-fit: cover; position: absolute; z-index: 0; left: 0; top: 0;"></b-img>
-            <b-col lg="7" offset-lg="5" 
+            <b-col lg="8" offset-lg="4"
             class="d-flex flex-column justify-content-end align-items-start relative p-5">
                 <div class="shadow-lg p-5 w-100 mt-5 mt-md-0" style="position: relative; background-color: aliceblue; border-radius: 14px;">
-                    <!-- menu -->
+                    /menu
                     <b-dropdown right no-caret
                     class="border-0 "
                     menu-class="text-right"
@@ -14,17 +14,16 @@
                         <template #button-content>
                             <detail-menu-icon></detail-menu-icon>
                         </template>
-                        <router-link class="dropdown-item font-weight-bold text-base" to="/home">
+                        <router-link class="dropdown-item font-weight-bold text-base" to="/get-started">
                             <home-icon class="float-left"></home-icon>
                             Home
                         </router-link>
                         <b-dropdown-divider></b-dropdown-divider>
-                        <router-link class="dropdown-item font-weight-bold text-base" to="/cart">
+                        <router-link class="dropdown-item font-weight-bold text-base" to="/my-plan">
                             <cart-icon class="float-left"></cart-icon>
                             My Plan
                         </router-link>
                     </b-dropdown>
-                    <!-- /menu -->
                     <hr class="d-flex m-0 mr-auto bg-lightblue" style="height: 4px; width: 50px;">
                     <h1 class="font-weight-bold my-4">{{ details.name }}</h1>
                     <ul class="list-unstyled">
@@ -32,24 +31,96 @@
                         <li class="pb-1"><span class="font-weight-bold">Category:</span> {{ details.category }}</li>
                         <li><span class="font-weight-bold">Description:</span> {{ details.description }}</li>
                     </ul>
-                    <!-- modal -->
-                    <b-button v-b-modal.details-modal variant="lightblue">More details</b-button>
-                    <b-modal 
-                    id="details-modal" 
-                    class="d-flex"
-                    body-class="bg-dots p-4"
-                    size="lg" 
-                    centered 
-                    :title="details.name"
-                    ok-only
-                    ok-variant="secondary"
-                    ok-title="Close">
-                        <h3 class="mb-3 mt-2">What It Looks Like:</h3>
-                        <hr class="mx-0 mr-auto mb-4 bg-lightblue" style="width: 50px; height: 4px;"/>
-                       <!-- more details -->
-                        <b-card-group columns> 
-                            <b-card
-                            class="shadow" 
+                    /tabs
+                    <b-card no-body>
+                        <b-tabs card pills active-nav-item-class="">
+                        <b-tab title="Details" active>
+                            <span v-for="item in details.moreDetail" :key="item.index">    
+                                <b-card-text class="" v-html="item">✓</b-card-text>
+                            </span>
+                        </b-tab>
+                        <b-tab title="Select if...">
+                            <span v-for="item in details.selectIf" :key="item.id">    
+                                <b-card-text v-html="item"></b-card-text>
+                            </span>
+                        </b-tab>
+                        </b-tabs>
+                    </b-card>
+                    /modal
+                    <hr class="d-flex mx-0 mr-auto bg-lightblue" style="height: 4px; width: 50px; margin: 30px 0">
+                    <div class="d-inline">
+                        <b-button variant="orange" class="mr-2 mt-2" @click="addToCart">Add to plan</b-button>
+                        <b-button variant="royal" class="mt-2" @click="goToCart">Checkout</b-button>
+                    </div>
+                </div>
+            </b-col>
+        </b-row> -->
+
+
+        <!-- 50-50 split layout -->
+        <b-row class="d-flex text-left min-h-100 relative mt-5"> 
+            <b-col lg="6" class="fixed top left min-h-50 p-0">
+                <b-img :src="details.url" class="page-banner w-100 absolute z-0"></b-img>
+                <!-- trans-black overlay -->
+                <div class="page-banner w-100 absolute z-0" style="background: rgba(0,0,0,0.4);"></div>
+                <div class="relative z-1 text-light p-5" style="top: 50px;">
+                    <h1 class="font-weight-bold mb-4 mt-4">{{ details.name }}</h1>
+                    <b-button disabled variant="outline-light" v-html="details.category"></b-button>
+                </div>
+            </b-col>
+            <b-col lg="6" offset-lg="6"
+            class="d-flex flex-column justify-content-end align-items-start relative bg-lightblue z-1 p-5">
+                    <!-- <b-dropdown right no-caret
+                    class="border-0 "
+                    menu-class="text-right"
+                    variant="trans"
+                    style="position: absolute; right: 5%; top: 3%; background: aliceblue;">
+                        <template #button-content>
+                            <detail-menu-icon></detail-menu-icon>
+                        </template>
+                        <router-link class="dropdown-item font-weight-bold text-base" to="/get-started">
+                            <home-icon class="float-left"></home-icon>
+                            Home
+                        </router-link>
+                        <b-dropdown-divider></b-dropdown-divider>
+                        <router-link class="dropdown-item font-weight-bold text-base" to="/my-plan">
+                            <cart-icon class="float-left"></cart-icon>
+                            My Plan
+                        </router-link>
+                    </b-dropdown> -->
+                    <div class="bg-glass p-4 w-100 mb-3" style="border-radius: 14px;">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
+                            <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
+                            <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
+                        </svg> -->
+                        <h1 class="font-weight-bold mt-3 mb-4 w-100">{{ details.name }}</h1>
+                        <hr class="d-flex m-0 mr-auto my-3 bg-lightblue" style="height: 4px; width: 50px;">
+                   </div>
+
+                    <!-- category alerts -->
+                    <div class="bg-glass p-4 mb-3 w-100" style="border-radius: 14px;">
+                        <ul class="list-unstyled mt-3 w-100">
+                            <b-alert variant="warning" class="alert alert-yellow" show>
+                                <span class="font-weight-bold">Category:</span> {{ details.category }}
+                            </b-alert>
+                            <b-alert variant="info" class="alert alert-lightblue" show>
+                                <span class="font-weight-bold">Name:</span> {{ details.name }}
+                            </b-alert>
+                            <b-alert variant="success" class="alert alert-success" show>
+                                <span class="font-weight-bold">Description:</span> {{ details.description }}
+                            </b-alert>
+                        </ul>   
+                    </div>
+
+                    <b-alert variant="light" class="alert d-flex justify-content-start align-items-center w-100 h5 font-weight-bold bg-glass text-lightblue" show>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" class="bi bi-hash" viewBox="0 0 16 16">
+                            <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
+                        </svg>
+                        What it looks like
+                    </b-alert>
+                    <b-card-group class="mb-1" columns>
+                        <b-card
+                            class="bg-glass" 
                             v-for="item in details.moreDetail" :key="item.id">
                                 <b-card-title>
                                     <info-icon class="text-lightblue"></info-icon>
@@ -58,13 +129,17 @@
                                 </b-card-text>
                                 <b-card-text class="small text-muted" v-html="details.name"></b-card-text>
                             </b-card>
-                        </b-card-group>   
-                        <!-- select this item if... -->
-                        <h3 class="mb-3 mt-4">Select if:</h3>
-                        <hr class="mx-0 mr-auto mb-4 bg-green" style="width: 50px; height: 4px;" />
-                        <b-card-group columns> 
-                            <b-card 
-                            class="shadow"
+                    </b-card-group>
+                    
+                    <b-alert variant="light" class="alert d-flex justify-content-start align-items-center w-100 h5 mb-3 font-weight-bold bg-glass text-green" show>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" class="bi bi-hash" viewBox="0 0 16 16">
+                            <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
+                        </svg>
+                        Add to your plan if:
+                    </b-alert>
+                    <b-card-group class="mb-1" columns>
+                        <b-card 
+                            class="bg-glass"
                             v-for="item in details.selectIf" :key="item.id">
                                 <b-card-title>
                                     <check-icon class="text-green"></check-icon>
@@ -73,15 +148,21 @@
                                 </b-card-text>
                                 <b-card-text class="small text-muted" v-html="details.name"></b-card-text>
                             </b-card>
-                        </b-card-group>   
-                    </b-modal>
-                    <hr class="d-flex mx-0 mr-auto bg-lightblue" style="height: 4px; width: 50px; margin: 30px 0">
-                    <div class="d-inline">
-                        <b-button variant="orange" class="mr-2 mt-2" @click="addToCart">Add to plan</b-button>
-                        <!-- <b-button variant="orange" class="mr-2" @click="removeItem">Remove</b-button> -->
-                        <b-button variant="royal" class="mt-2" @click="goToCart">Checkout</b-button>
+                    </b-card-group>
+                    <!-- <hr class="d-flex mx-0 mr-auto mb-3 my-4 bg-lightblue" style="height: 4px; width: 50px;"> -->
+                    <b-alert variant="light" class="alert d-flex justify-content-start align-items-center w-100 h5 mb-3 font-weight-bold bg-glass text-orange" show>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" class="bi bi-hash" viewBox="0 0 16 16">
+                            <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
+                        </svg>
+                        Next steps
+                    </b-alert>
+                    <div class="d-inline bg-glass p-4 mb-3 w-100 rounded">
+                        <b-button variant="orange" class="mr-2 my-2 border-0 rounded" @click="addToCart">Add to plan</b-button>
+                        <b-button variant="green" class="mr-2 my-2 border-0 rounded" @click="goToCart">Checkout</b-button>
+                        <router-link class="font-weight-bold text-base" to="/get-started">
+                            <b-button variant="lightblue" class="my-2 border-0 rounded">Home</b-button>
+                        </router-link>
                     </div>
-                </div>
             </b-col>
         </b-row>
     </b-container>
@@ -89,20 +170,21 @@
 
 <script>
 import Swal from 'sweetalert2'
-import HomeIcon from '../components/icons/HomeIcon.vue'
-import CartIcon from '../components/icons/CartIcon.vue'
-import DetailMenuIcon from '../components/icons/DetailMenuIcon.vue'
+// import HomeIcon from '../components/icons/HomeIcon.vue'
+// import CartIcon from '../components/icons/CartIcon.vue'
+// import DetailMenuIcon from '../components/icons/DetailMenuIcon.vue'
 import InfoIcon from '../components/icons/InfoIcon.vue'
 import CheckIcon from '../components/icons/CheckIcon.vue'
 
 export default {
     name: 'FoodDetails',
     components: {
-        HomeIcon,
-        CartIcon,
-        DetailMenuIcon,
+        // HomeIcon,
+        // CartIcon,
+        // DetailMenuIcon,
         InfoIcon,
-        CheckIcon
+        CheckIcon,
+        // Slide
     },
     data() {
         return {

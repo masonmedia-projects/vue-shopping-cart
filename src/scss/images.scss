@@ -1,3 +1,10 @@
+// page banner images
+
+.page-banner { 
+    min-height: 100vh;
+    object-fit: cover;
+}
+
 .bg-dots {
     background: url('/bg_dots.webp') center;
     background-size: cover;
@@ -12,4 +19,10 @@
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)),
     url('/01getstartedcover.jpg');
     background-size: cover;
+}
+
+@media(max-width: 992px) {
+    .page-banner { 
+        min-height: 50vh;
+    }
 }
