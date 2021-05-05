@@ -126,24 +126,30 @@
                     </b-alert>
 
                     <!-- action button group connected -->
-                    <b-button-group class="d-flex flex-wrap justify-content-center align-items-center w-100" size="lg">
+                    <!-- <b-button-group class="d-flex flex-wrap justify-content-center align-items-center w-100" size="lg">
                         <b-button variant="orange" @click="addToCart">Add to plan</b-button>
                         <b-button variant="green" @click="goToCart">Checkout</b-button>
-                        <b-button variant="royal" @click="getStarted">Home</b-button>
-                    </b-button-group>
+                        <b-button variant="royal" @click="getStarted">Return</b-button>
+                    </b-button-group> -->
 
                     <!-- action button grid rounded -->
-                    <!-- <b-row class="d-flex justify-content-center align-items-center w-100 bg-glass p-2 mb-3 mx-auto rounded">
+                    <b-row class="d-flex justify-content-center align-items-center w-100 bg-trans text-light p-2 mb-3 mx-auto rounded">
                         <b-col sm class="px-1">
-                            <b-button variant="orange" size="lg" class="my-2 w-100" @click="addToCart">Add to plan</b-button>
+                            <b-button size="lg" class="bg-orange border-0 my-2 w-100" @click="addToCart">
+                                <plus-icon style="width: 30; height: 30;"></plus-icon>
+                            </b-button>
                         </b-col>
                         <b-col sm class="px-1">
-                            <b-button variant="green" size="lg" class="my-2 w-100" @click="goToCart">Checkout</b-button>
+                            <b-button size="lg" class="bg-green border-0 my-2 w-100" @click="goToCart">
+                                <cart-icon style="width: 30; height: 30;"></cart-icon>
+                            </b-button>
                         </b-col>
                         <b-col sm class="px-1">
-                            <b-button variant="royal" size="lg" class="my-2 w-100" @click="getStarted">Return</b-button>
+                            <b-button size="lg" class="bg-royal border-0 my-2 w-100" @click="getStarted">
+                                <home-icon style="width: 30; height: 30;"></home-icon>
+                            </b-button>
                         </b-col>
-                    </b-row> -->
+                    </b-row>
 
                     <!-- OG square buttons -->
                     <!-- <div class="d-inline bg-glass p-4 mb-3 w-100 rounded">
@@ -162,8 +168,9 @@
 
 <script>
 import Swal from 'sweetalert2'
-// import HomeIcon from '../components/icons/HomeIcon.vue'
-// import CartIcon from '../components/icons/CartIcon.vue'
+import HomeIcon from '../components/icons/HomeIcon.vue'
+import CartIcon from '../components/icons/CartIcon.vue'
+import PlusIcon from '../components/icons/PlusIcon.vue'
 // import DetailMenuIcon from '../components/icons/DetailMenuIcon.vue'
 import InfoIcon from '../components/icons/InfoIcon.vue'
 import CheckIcon from '../components/icons/CheckIcon.vue'
@@ -171,9 +178,9 @@ import CheckIcon from '../components/icons/CheckIcon.vue'
 export default {
     name: 'FoodDetails',
     components: {
-        // HomeIcon,
-        // CartIcon,
-        // DetailMenuIcon,
+        HomeIcon,
+        CartIcon,
+        PlusIcon,
         InfoIcon,
         CheckIcon,
         // Slide

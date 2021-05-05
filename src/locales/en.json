@@ -8,6 +8,29 @@
       "btn2": "Proceed"
     }
   ],
+  "homepage":[
+    {
+      "bannerMicroTitle": "Building the future",
+      "bannerTitle":"Welcome<br /> to the Leadership Learning Tool",
+      "bannerSubtitle": "Investing in our people, developing the future of leadership.",
+      "bannerImg": "./img/about_page/01welcome_01.jpg",
+      "img1": "./img/home_page/01_getstartedcover.jpg",
+      "img2": "./img/about_page/01welcome_02.jpg",
+      "img3": "./img/about_page/01welcome_03.jpg",
+      "microTitle1": "The What",
+      "title1": "The Concept",
+      "text1":"This application was built to develop your leadership skills, and faciliate the evolution of the next generation of leaders in our organization. This app was designed to give you a broad and diverse introduction to the competencies of great leadership, and to provide you with ongoing resources for continued growth over time. Use this tool to explore our leadership model, to follow up on competencies suggested by colleagues or managers, or use it to pinpoint areas you'd like to develop",
+      "microTitle2": "The Why",
+      "title2": "Ongoing development",
+      "text2":"<strong>Learning is more organic than people think.</strong> While many consider formal study as the obvious route to growth and development, the <strong>70:20:10</strong> model shows that in practice, it's more complex: <strong>10%</strong> of learning takes place through traditional methods like courses and formal education, <strong>20%</strong> comes through social learning opportunities, and <strong>70%</strong> comes through on-the-job experience. This tool helps to support your learning and growth by integrating these learning approaches, and provides you with a systematic way of faciliating your leadership skill development.",
+      "microTitle3": "The How",
+      "title3": "Getting started",
+      "text3": "If this is your first time using the tool, or you’d like to learn more about it, select <strong>About</strong> to get more information. If you're a returning user, or know what skill areas you’d like to focus on, begin on the <strong>Get Started</strong> page. Consult the Leadership Behaviour Model and consider which areas you'd like to focus on. If you're unsure, click the <strong>Details</strong> button on any of the competencies at random, and see if they resonate with you. If they do, add them to your learning plan. You can add as many competencies to your plan as you wish. When done, go to the <strong>My Plan</strong> page to review your selections and download your personalized resources." ,
+      "section_title3": "Grow & discover",
+      "btn1": "Get started",
+      "btn2": "About"
+    }
+  ],
   "quickStart":[
     {
       "bannerImg": "./img/home_page/01_getstartedcover.jpg",
