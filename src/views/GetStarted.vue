@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid class="bg-light relative z--1 p-5 mt-4">
+  <b-container fluid class="bg-light relative z--1 p-4 p-md-5 mt-5 mt-md-4">
     <div class="w-100 bg-lightblue absolute z-0 left top" style="height: 400px; top: 450px;"></div>
     <b-row 
     no-gutters
@@ -11,8 +11,7 @@
       style="min-height: 75vh;">
         <h1 class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
         <h5 
-        class="font-weight-bold mb-4" 
-        style="font-size: 9vmin; line-height: 95%;"
+        class="page-title font-weight-bold mb-4"
         v-html="items.title"></h5>
         <hr class="d-flex ml-0 mr-auto mt-0 mb-4 bg-orange" style="height: 4px; width: 50px;">
         <p class="" v-html="items.text1"></p>

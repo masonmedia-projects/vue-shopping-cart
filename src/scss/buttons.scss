@@ -103,3 +103,27 @@ svg.focus {
     background-color: #00A55050;
     border-color: #00A55050;
 }
+
+.btn-lg, .btn-group-lg > .btn {
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    // food details btn-group
+
+    .btn-group-lg > .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        border-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:last-child) > .btn {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px; 
+    }
+    .btn-group > .btn:not(:first-child), .btn-group > .btn-group:not(:first-child) > .btn {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+}

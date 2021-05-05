@@ -1,23 +1,16 @@
 <template>
-    <b-container fluid class="min-h-100 bg-cart">
+    <b-container fluid class="min-h-100 bg-taieri mt-5">
         <b-container>
         <b-row 
-        class="d-flex justify-content-center align-items-start text-left p-5"
+        class="d-flex justify-content-center align-items-start text-left p-0"
         v-if="totalPrice > 0">
         <b-col lg="12"
         v-for="items in $t('myLearningPlan')" :key="items.id"
         class="d-flex flex-column justify-content-center align-items-start text-left pt-5 pb-3">
-            <!-- <h1 class="display-4 font-weight-bold my-4" 
-            style="line-height: 90%;"
-            v-html="item.title"></h1>
-            <hr class="d-flex mx-0 mr-auto mt-0 bg-orange" 
-            style="height: 4px; width: 50px;">
-            <p class="mb-0" v-html="item.description"></p> -->
-
             <b-card class="mb-2 border-0 shadow bg-lightblue text-light p-5" style="border-radius: 14px;">
                 <b-card-text>
                     <user-icon class="text-yellow" style="width: 60px; height: 60px;"></user-icon>
-                    <h1 class="display-4 font-weight-bold mb-4 mt-3" 
+                    <h1 class="page-title font-weight-bold mb-4 mt-3" 
                     style="line-height: 90%;"
                     v-html="items.title"></h1>
                     <hr class="d-flex mx-0 mr-auto mt-0 bg-yellow" 
@@ -59,7 +52,15 @@
             <hr class="w-100 mb-4" />
             <!-- next steps -->
             <b-col lg="12" v-for="item in $t('myLearningPlan')" :key="item.id">
-                <h3 class="mb-4 mt-0" v-html="item.subtitle"></h3>
+                <!-- <h3 class="mb-4 mt-0" v-html="item.subtitle"></h3> -->
+
+            <b-alert variant="lightblue" class="alert d-flex justify-content-start align-items-center w-100 h4 py-3 mb-3 text-base text-uppercase" show>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" class="bi bi-hash" viewBox="0 0 16 16">
+                    <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
+                </svg>
+                {{ $t(item.subtitle) }}
+            </b-alert>
+
                 <hr class="w-100 mb-4" />
                 <b-alert show variant="light" class="alert d-flex justify-content-start align-items-center text-base py-3 shadow" 
                 v-for="i in item.nextSteps" :key="i.id">

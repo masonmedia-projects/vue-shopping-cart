@@ -20,9 +20,19 @@
     url('/01getstartedcover.jpg');
     background-size: cover;
 }
+.bg-taieri {
+    background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('/img/Taieri.svg'); 
+    background-size: 500%; 
+    background-attachment: fixed;
+}
 
 @media(max-width: 992px) {
     .page-banner { 
         min-height: 50vh;
+    }
+}
+@media(max-width: 768px) {
+    .bg-taieri {
+        background-attachment: scroll;
     }
 }
