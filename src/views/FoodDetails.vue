@@ -63,31 +63,13 @@
                 <b-img :src="details.url" class="page-banner w-100 absolute z-0"></b-img>
                 <!-- trans-black overlay -->
                 <div class="page-banner w-100 absolute z-0" style="background: rgba(0,0,0,0.4);"></div>
-                <div class="relative z-1 text-light p-5" style="top: 50px;">
+                <div class="relative z-1 text-light text-left p-5" style="top: 50px;">
                     <h1 class="font-weight-bold mb-4 mt-4">{{ details.name }}</h1>
-                    <b-button disabled variant="outline-light" v-html="details.category"></b-button>
+                    <b-button disabled variant="outline-light" class="text-left" v-html="details.category"></b-button>
                 </div>
             </b-col>
             <b-col lg="6" offset-lg="6"
             class="d-flex flex-column justify-content-end align-items-start relative bg-lightblue z-1 p-5">
-                    <!-- <b-dropdown right no-caret
-                    class="border-0 "
-                    menu-class="text-right"
-                    variant="trans"
-                    style="position: absolute; right: 5%; top: 3%; background: aliceblue;">
-                        <template #button-content>
-                            <detail-menu-icon></detail-menu-icon>
-                        </template>
-                        <router-link class="dropdown-item font-weight-bold text-base" to="/get-started">
-                            <home-icon class="float-left"></home-icon>
-                            Home
-                        </router-link>
-                        <b-dropdown-divider></b-dropdown-divider>
-                        <router-link class="dropdown-item font-weight-bold text-base" to="/my-plan">
-                            <cart-icon class="float-left"></cart-icon>
-                            My Plan
-                        </router-link>
-                    </b-dropdown> -->
                     <div class="bg-glass p-4 w-100 mb-3" style="border-radius: 14px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentcolor" class="bi bi-stack text-lightblue" viewBox="0 0 16 16">
                             <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
@@ -120,7 +102,7 @@
                     </b-alert>
 
                     <b-row class="px-2">
-                        <b-col class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.id">
+                        <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.id">
                             <info-icon class="text-lightblue mb-3"></info-icon>
                             <p v-html="item"></p>
                             <p class="small text-muted mt-auto mb-0" v-html="details.name"></p>
@@ -147,27 +129,56 @@
                     </b-alert>
 
                     <b-row class="d-flex px-2">
-                        <b-col class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded"  v-for="item in details.selectIf" :key="item.id">
+                        <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded"  v-for="item in details.selectIf" :key="item.id">
                             <check-icon class="text-green mb-3"></check-icon>
                             <p v-html="item"></p>
                             <p class="small text-muted mt-auto mb-0" v-html="details.name"></p>
                         </b-col>
                     </b-row>
-
-                    <!-- <hr class="d-flex mx-0 mr-auto mb-3 my-4 bg-lightblue" style="height: 4px; width: 50px;"> -->
+                    <!-- next steps -->
                     <b-alert variant="light" class="alert d-flex justify-content-start align-items-center w-100 h5 mb-3 font-weight-bold bg-glass text-orange" show>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" class="bi bi-hash" viewBox="0 0 16 16">
                             <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
                         </svg>
                         Next steps
                     </b-alert>
-                    <div class="d-inline bg-glass p-4 mb-3 w-100 rounded">
+                    <!-- <div class="d-inline bg-glass p-4 mb-3 w-100 rounded">
                         <b-button variant="orange" class="mr-2 my-2 border-0 rounded" @click="addToCart">Add to plan</b-button>
                         <b-button variant="green" class="mr-2 my-2 border-0 rounded" @click="goToCart">Checkout</b-button>
                         <router-link class="font-weight-bold text-base" to="/get-started">
                             <b-button variant="lightblue" class="my-2 border-0 rounded">Home</b-button>
                         </router-link>
-                    </div>
+                    </div> -->
+
+                    <!-- <b-button-group class="d-flex flex-wrap justify-content-center align-items-center w-100" size="lg">
+                        <b-button variant="orange" class="">Add to plan</b-button>
+                        <b-button variant="green">Checkout</b-button>
+                        <b-button variant="royal">Home</b-button>
+                    </b-button-group> -->
+
+                    <b-row class="d-flex justify-content-center align-items-center w-100 bg-glass p-2 mb-3 mx-auto rounded">
+                        <b-col sm class="px-1">
+                            <b-button variant="orange" size="lg" class="my-2 w-100" @click="addToCart">Add to plan</b-button>
+                        </b-col>
+                        <b-col sm class="px-1">
+                            <b-button variant="green" size="lg" class="my-2 w-100" @click="goToCart">Checkout</b-button>
+                        </b-col>
+                        <b-col sm class="px-1">
+                            <router-link class="" to="/get-started">
+                                <b-button variant="royal" size="lg" class="my-2 w-100">Return</b-button>
+                            </router-link>
+                        </b-col>
+                    </b-row>
+
+                    <!-- <div class="d-inline bg-glass p-4 mb-3 w-100 rounded">
+                        <b-button-group class="d-flex justify-content-center align-items-stretch w-100" size="lg">
+                            <b-button variant="orange" class="">Add to plan</b-button>
+                            <b-button variant="green">Checkout</b-button>
+                            <b-button variant="royal">Home</b-button>
+                        </b-button-group>
+                    </div> -->
+
+
             </b-col>
         </b-row>
     </b-container>
