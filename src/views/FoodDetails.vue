@@ -118,7 +118,15 @@
                         </svg>
                         What it looks like
                     </b-alert>
-                    <b-card-group class="mb-1" columns>
+
+                    <b-row class="px-2">
+                        <b-col class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.id">
+                            <info-icon class="text-lightblue mb-3"></info-icon>
+                            <p v-html="item"></p>
+                            <p class="small text-muted mt-auto mb-0" v-html="details.name"></p>
+                        </b-col>
+                    </b-row>
+                    <!-- <b-card-group class="mb-1" columns>
                         <b-card
                             class="bg-glass" 
                             v-for="item in details.moreDetail" :key="item.id">
@@ -129,7 +137,7 @@
                                 </b-card-text>
                                 <b-card-text class="small text-muted" v-html="details.name"></b-card-text>
                             </b-card>
-                    </b-card-group>
+                    </b-card-group> -->
                     
                     <b-alert variant="light" class="alert d-flex justify-content-start align-items-center w-100 h5 mb-3 font-weight-bold bg-glass text-green" show>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" class="bi bi-hash" viewBox="0 0 16 16">
@@ -137,18 +145,15 @@
                         </svg>
                         Add to your plan if:
                     </b-alert>
-                    <b-card-group class="mb-1" columns>
-                        <b-card 
-                            class="bg-glass"
-                            v-for="item in details.selectIf" :key="item.id">
-                                <b-card-title>
-                                    <check-icon class="text-green"></check-icon>
-                                </b-card-title>
-                                <b-card-text v-html="item">
-                                </b-card-text>
-                                <b-card-text class="small text-muted" v-html="details.name"></b-card-text>
-                            </b-card>
-                    </b-card-group>
+
+                    <b-row class="d-flex px-2">
+                        <b-col class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded"  v-for="item in details.selectIf" :key="item.id">
+                            <check-icon class="text-green mb-3"></check-icon>
+                            <p v-html="item"></p>
+                            <p class="small text-muted mt-auto mb-0" v-html="details.name"></p>
+                        </b-col>
+                    </b-row>
+
                     <!-- <hr class="d-flex mx-0 mr-auto mb-3 my-4 bg-lightblue" style="height: 4px; width: 50px;"> -->
                     <b-alert variant="light" class="alert d-flex justify-content-start align-items-center w-100 h5 mb-3 font-weight-bold bg-glass text-orange" show>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" class="bi bi-hash" viewBox="0 0 16 16">
