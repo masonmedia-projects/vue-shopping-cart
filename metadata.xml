@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<lom>
+  <general>
+    <identifier>
+      <catalog>Catalog</catalog>
+      <entry>1</entry>
+    </identifier>
+    <title>
+      <string language="en-US">Approved Elsewhere Matters</string>
+    </title>
+    <language>en</language>
+  </general>
+  <technical>
+    <format>text/html</format>
+  </technical>
+</lom>

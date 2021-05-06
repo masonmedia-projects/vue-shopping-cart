@@ -10,7 +10,7 @@
             <div class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
             <b-col lg="8"
             style="position: relative; z-index: 3;"
-            class="d-flex flex-column justify-content-center align-items-start p-5 mt-md-0 mt-lg-5">
+            class="d-flex flex-column justify-content-center align-items-start p-4 pt-5 p-md-5 mt-5">
                  <div class="bg-glass p-5" style="border-radius: 14px">
                     <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle1"></h5>
                     <h1 class="display-4 font-weight-bold mb-4"
@@ -63,9 +63,9 @@
             style="object-fit: cover; position: absolute; z-index: 0; right: 0; top: 0;"></b-img>
             <!-- color strip -->
             <div class="absolute bottom h-25 w-100 z-0 bg-purple-trans"></div>
-            <b-col lg="8" offset="4"
+            <b-col lg="8" offset-lg="4"
             style="position: relative; z-index: 3;"
-            class="d-flex flex-column justify-content-center align-items-start p-5 mt-md-0 mt-lg-5">
+            class="d-flex flex-column justify-content-center align-items-start p-4 pt-5 p-md-5">
                 <div class="bg-glass p-5" style="border-radius: 14px">
                     <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle2"></h5>
                     <h1 class="display-4 font-weight-bold mb-4"
@@ -89,7 +89,7 @@
             <div class="absolute bottom h-25 w-100 z-0 bg-orange-trans"></div>
             <b-col lg="8"
             style="position: relative; z-index: 3;"
-            class="d-flex flex-column justify-content-center align-items-start p-5 mt-md-0 mt-lg-5">
+            class="d-flex flex-column justify-content-center align-items-start p-4 pt-5 p-md-5">
                 <div class="bg-glass p-5" style="border-radius: 14px">
                     <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle3"></h5>
                     <h1 class="display-4 font-weight-bold mb-4"

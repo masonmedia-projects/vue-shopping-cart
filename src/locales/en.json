@@ -13,10 +13,10 @@
       "bannerMicroTitle": "Building the future",
       "bannerTitle":"Welcome<br /> to the Leadership Learning Tool",
       "bannerSubtitle": "Investing in our people, developing the future of leadership.",
-      "bannerImg": "./img/about_page/01welcome_01.jpg",
-      "img1": "./img/home_page/01_getstartedcover.jpg",
-      "img2": "./img/about_page/01welcome_02.jpg",
-      "img3": "./img/about_page/01welcome_03.jpg",
+      "bannerImg": "img/about_page/01welcome_01.jpg",
+      "img1": "img/home_page/01_getstartedcover.jpg",
+      "img2": "img/about_page/01welcome_02.jpg",
+      "img3": "img/about_page/01welcome_03.jpg",
       "microTitle1": "The What",
       "title1": "The Concept",
       "text1":"This application was built to develop your leadership skills, and faciliate the evolution of the next generation of leaders in our organization. This app was designed to give you a broad and diverse introduction to the competencies of great leadership, and to provide you with ongoing resources for continued growth over time. Use this tool to explore our leadership model, to follow up on competencies suggested by colleagues or managers, or use it to pinpoint areas you'd like to develop",
@@ -33,7 +33,7 @@
   ],
   "quickStart":[
     {
-      "bannerImg": "./img/home_page/01_getstartedcover.jpg",
+      "bannerImg": "img/home_page/01_getstartedcover.jpg",
       "microTitle":"My Leadership Learning Tool",
       "mainTitle":"Quick Start",
       "title2":"Leadership Learning Tool",
@@ -45,8 +45,8 @@
   ],
   "getStarted":[
     {
-      "bannerImg": "./img/get_started/LCL_leadership_wheel_EN.png",
-      "bannerImgArch": "./img/home_page/01leadershipcover.jpg",
+      "bannerImg": "img/get_started/LCL_leadership_wheel_EN.png",
+      "bannerImgArch": "img/home_page/01leadershipcover.jpg",
       "microTitle": "My Leadership Learning Tool",
       "title":"Get Started",
       "text1":"Build your learning plan by selecting the items you’d like to focus on today. Select the <strong>Details</strong> button of any competency to learn more about it and what it looks like in action before deciding if it’s an appropriate area of focus for you. "
@@ -54,9 +54,9 @@
   ],
   "aboutpage":[
     {
-      "bannerImg": "./img/about_page/01welcome_01.jpg",
-      "img2": "./img/about_page/01welcome_02.jpg",
-      "img3": "./img/about_page/01welcome_03.jpg",
+      "bannerImg": "img/about_page/01welcome_01.jpg",
+      "img2": "img/about_page/01welcome_02.jpg",
+      "img3": "img/about_page/01welcome_03.jpg",
       "microTitle1": "My Leadership Learning Tool",
       "title1":"Welcome",
       "archive1":"While many people think of formal study as the obvious route to learning, the 70:20:10 model reveals that this instinct is off base. 10% of learning takes place through traditional methods like courses and formal education. 20% comes through social learning opportunities. 70% comes through on-the-job experience. This tool will support you by organizing these formal, social, and action learning opportunities in a way that will be meaningful and useful to you. //Choose your initial 2–3 areas of focus. Return to this tool, and select <strong>Get Started.</strong> If you’re unsure of which key leader competencies to focus on, reflect on what you’re passionate about developing. Connect with those around you for feedback on what you might focus on.</strong> //This tool will support you by organizing these formal, social, and action-learning opportunities in a way that will be meaningful and useful. Scroll down to learn more about how to use this tool.",
@@ -93,7 +93,7 @@
       "id":1,
       "name":"Self-Awareness",
       "category":"Leading Yourself",
-      "url":"./img/get_started/selfaware.jpg",
+      "url":"img/get_started/selfaware.jpg",
       "description":"Building awareness around the mindsets and behaviours that help you be a successful leader",
       "moreDetail":[
         "Seeing yourself clearly and objectively through reflection and introspection",
@@ -110,7 +110,7 @@
       "id":2,
       "name":"Empowerment",
       "category":"Collaborating with & Inspiring Others",
-      "url":"./img/get_started/empowerment.jpg",
+      "url":"img/get_started/empowerment.jpg",
       "description":"Developing strong relationships and motivating others to perform at their highest potential",
       "moreDetail":[
         "Inspiring ownership and accountability within others",
@@ -129,7 +129,7 @@
       "id":3,
       "name":"Collaboration",
       "category":"Collaborating with & Inspiring Others",
-      "url":"./img/get_started/collaboration.jpg",
+      "url":"img/get_started/collaboration.jpg",
       "description":"Developing strong relationships and motivating others to perform at their highest potential",
       "moreDetail": [
         "Creating and delivering on shared goals through influence and cooperation",
@@ -146,7 +146,7 @@
       "id":4,
       "name":"Communication",
       "category":"Communicating Effectively & with Empathy",
-      "url":"./img/get_started/communication.jpg",
+      "url":"img/get_started/communication.jpg",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Conveying information and ideas persuasively and succinctly",
@@ -165,7 +165,7 @@
       "id":5,
       "name":"Authentic Conversations",
       "category":"Communicating Effectively & with Empathy",
-      "url":"./img/get_started/conversations.jpg",
+      "url":"img/get_started/conversations.jpg",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Listening actively to gain insights to other perspectives",
@@ -186,7 +186,7 @@
       "id":6,
       "name":"Emotional Intelligence ",
       "category":"Communicating Effectively & with Empathy",
-      "url":"./img/get_started/emotionalintell.jpg",
+      "url":"img/get_started/emotionalintell.jpg",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Conveying empathy and recognizing the emotions of others",
@@ -203,7 +203,7 @@
       "id":7,
       "name":"Critical Thinking",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"./img/get_started/criticalthinking.jpg",
+      "url":"img/get_started/criticalthinking.jpg",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Identifying the root cause of a business issue", 
@@ -220,7 +220,7 @@
       "id":8,
       "name": "Strategic Thinking",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"./img/get_started/strategic.jpg",
+      "url":"img/get_started/strategic.jpg",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Analyzing global trends", 
@@ -239,7 +239,7 @@
       "id":9,
       "name": "Performance",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"./img/get_started/performance.jpg",
+      "url":"img/get_started/performance.jpg",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Supporting and trusting others to achieve their highest potential",
@@ -257,7 +257,7 @@
       "id":10,
       "name": "Customer-Centricity",
       "category":"Fostering Innovation and Agility",
-      "url":"./img/get_started/customer.jpg",
+      "url":"img/get_started/customer.jpg",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Demonstrating empathy for the customer", 
@@ -275,7 +275,7 @@
       "id":11,
       "name": "Innovation",
       "category":"Fostering Innovation and Agility",
-      "url":"./img/get_started/innovation.jpg",
+      "url":"img/get_started/innovation.jpg",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Exploring new ideas, methods and alternatives to achieve outcomes",
@@ -292,7 +292,7 @@
       "id":12,
       "name": "Change Agility",
       "category":"Fostering Innovation and Agility",
-      "url":"./img/get_started/change.jpg",
+      "url":"img/get_started/change.jpg",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Seeing the necessity or opportunity created by change",  
