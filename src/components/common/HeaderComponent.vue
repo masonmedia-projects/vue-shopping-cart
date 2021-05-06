@@ -43,7 +43,7 @@
     </b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto d-flex justify-content-center align-items-start align-items-lg-center">
-          <router-link class="nav-link" to="/home">Home</router-link>
+          <router-link class="nav-link" to="/">Home</router-link>
           <router-link class="nav-link" to="/get-started">Get Started</router-link>
           <router-link class="nav-link" to="/about">About This Tool</router-link>
           <router-link class="nav-link" to="/my-plan">My Plan</router-link>

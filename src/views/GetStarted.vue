@@ -4,24 +4,23 @@
     <b-row 
     no-gutters
     class="d-flex text-left bg-light shadow-lg mt-3 mb-4 relative"
-    style="background: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%); border-radius: 14px"
+    style="border-radius: 14px; background: url('./img/Taieri.svg') right bottom; background-size: 500%;"
     v-for="items in $t('getStarted')" :key="items.id">
       <b-col lg="6" 
-      class="d-flex flex-column justify-content-center align-items-start text-start p-5"
-      style="min-height: 75vh;">
+      class="d-flex flex-column justify-content-center align-items-start text-left min-h-75 p-5 bg-light"
+      style="border-radius: 14px;">
         <h1 class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
         <h5 
         class="page-title font-weight-bold mb-4"
         v-html="items.title"></h5>
-        <hr class="d-flex ml-0 mr-auto mt-0 mb-4 bg-orange" style="height: 4px; width: 50px;">
+        <hr class="d-flex ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
         <p class="" v-html="items.text1"></p>
-        <!-- <p class="" v-html="items.text2"></p> -->
-        <scroll-down-icon class="mt-3 text-dark"></scroll-down-icon>
+        <scroll-down-icon class="mt-3 text-lightblue"></scroll-down-icon>
       </b-col>
       <b-col lg="6" 
-      class="d-flex flex-column justify-content-center align-items-center p-0"
+      class="d-flex flex-column justify-content-center align-items-center p-5"
       style="min-height: 50vh;">
-        <b-img class="w-100 h-100" style="object-fit: cover; border-radius: 0 14px 14px 0;" 
+        <b-img class="w-100" style="object-fit: cover; border-radius: 0 14px 14px 0; filter: drop-shadow(2px 4px 10px #222222);" 
         :src="items.bannerImg"></b-img> 
       </b-col>
     </b-row>
