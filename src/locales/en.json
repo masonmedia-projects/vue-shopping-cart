@@ -93,7 +93,7 @@
       "id":1,
       "name":"Self-Awareness",
       "category":"Leading Yourself",
-      "url":"./selfaware.jpg",
+      "url":"./img/get_started/selfaware.jpg",
       "description":"Building awareness around the mindsets and behaviours that help you be a successful leader",
       "moreDetail":[
         "Seeing yourself clearly and objectively through reflection and introspection",
@@ -110,7 +110,7 @@
       "id":2,
       "name":"Empowerment",
       "category":"Collaborating with & Inspiring Others",
-      "url":"./empowerment.jpg",
+      "url":"./img/get_started/empowerment.jpg",
       "description":"Developing strong relationships and motivating others to perform at their highest potential",
       "moreDetail":[
         "Inspiring ownership and accountability within others",
@@ -129,7 +129,7 @@
       "id":3,
       "name":"Collaboration",
       "category":"Collaborating with & Inspiring Others",
-      "url":"./collaboration.jpg",
+      "url":"./img/get_started/collaboration.jpg",
       "description":"Developing strong relationships and motivating others to perform at their highest potential",
       "moreDetail": [
         "Creating and delivering on shared goals through influence and cooperation",
@@ -146,7 +146,7 @@
       "id":4,
       "name":"Communication",
       "category":"Communicating Effectively & with Empathy",
-      "url":"./communication.jpg",
+      "url":"./img/get_started/communication.jpg",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Conveying information and ideas persuasively and succinctly",
@@ -165,7 +165,7 @@
       "id":5,
       "name":"Authentic Conversations",
       "category":"Communicating Effectively & with Empathy",
-      "url":"./conversations.jpg",
+      "url":"./img/get_started/conversations.jpg",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Listening actively to gain insights to other perspectives",
@@ -186,7 +186,7 @@
       "id":6,
       "name":"Emotional Intelligence ",
       "category":"Communicating Effectively & with Empathy",
-      "url":"./emotionalintell.jpg",
+      "url":"./img/get_started/emotionalintell.jpg",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Conveying empathy and recognizing the emotions of others",
@@ -203,7 +203,7 @@
       "id":7,
       "name":"Critical Thinking",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"./criticalthinking.jpg",
+      "url":"./img/get_started/criticalthinking.jpg",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Identifying the root cause of a business issue", 
@@ -220,7 +220,7 @@
       "id":8,
       "name": "Strategic Thinking",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"./strategic.jpg",
+      "url":"./img/get_started/strategic.jpg",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Analyzing global trends", 
@@ -239,7 +239,7 @@
       "id":9,
       "name": "Performance",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"./performance.jpg",
+      "url":"./img/get_started/performance.jpg",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Supporting and trusting others to achieve their highest potential",
@@ -257,7 +257,7 @@
       "id":10,
       "name": "Customer-Centricity",
       "category":"Fostering Innovation and Agility",
-      "url":"./customer.jpg",
+      "url":"./img/get_started/customer.jpg",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Demonstrating empathy for the customer", 
@@ -275,7 +275,7 @@
       "id":11,
       "name": "Innovation",
       "category":"Fostering Innovation and Agility",
-      "url":"./innovation.jpg",
+      "url":"./img/get_started/innovation.jpg",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Exploring new ideas, methods and alternatives to achieve outcomes",
@@ -292,7 +292,7 @@
       "id":12,
       "name": "Change Agility",
       "category":"Fostering Innovation and Agility",
-      "url":"./change.jpg",
+      "url":"./img/get_started/change.jpg",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Seeing the necessity or opportunity created by change",  
