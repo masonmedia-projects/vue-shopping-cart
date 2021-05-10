@@ -99,17 +99,17 @@
             v-html="items.title3"></h1>
             <hr class="d-flex m-0 mr-auto my-3 bg-lightblue" style="height: 4px; width: 50px;">
             <p class="mb-2" v-html="items.text3"></p>
-            <div class="d-flex my-4">
+            <div class="d-inline my-4">
                 <b-button 
                 variant="orange" 
                 size="lg"
-                class="mr-2" 
+                class="mr-2 w-sm-100 mb-2 mb-sm-0" 
                 v-html="items.btn1"
                 @click="getStarted"></b-button>
                 <b-button 
                 variant="lightblue" 
                 size="lg"
-                class="mr-2" 
+                class="mr-2 w-sm-100" 
                 v-html="items.btn2"
                 @click="aboutPage"
                 ></b-button>

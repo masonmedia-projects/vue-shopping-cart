@@ -41,17 +41,51 @@
         <b-icon v-else icon="chevron-bar-down" class="h3 mb-0"></b-icon>
       </template>
     </b-navbar-toggle>
+
+    <!-- <b-sidebar 
+    id="sidebar-right" 
+    title="My plan" 
+    header-class="py-3 h5 border-bottom"
+    right 
+    shadow
+    backdrop>
+    <template #footer="{ hide }">
+       <div class="d-flex flex-wrap bg-yellow text-light justify-content-end px-3 py-2">
+        <b-button size="sm" variant="lightblue" class="mr-1 font-weight-bold" @click="hide">Keep exploring</b-button>
+        <b-button size="sm" variant="orange" class="font-weight-bold" @click="goToCart">Checkout</b-button>
+       </div>
+      </template>
+      <div class="px-4 py-2">
+        <b-navbar-nav class="ml-auto d-flex flex-column text-left">
+          <b-card
+          class="mb-2 shadow bg-lightblue-trans"
+          v-for="items in cartItems" :key="items.id"
+          >
+            <b-card-text>
+              <h5 class="font-weight-bold badge badge-green py-2" v-html="items.name"></h5>
+              <p class="mb-0 pt-2 mt-1 small border-top" style="line-height: 1.3;" v-html="items.description"></p>
+            </b-card-text>
+          </b-card>
+      </b-navbar-nav>
+      </div>
+    </b-sidebar> -->
+
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto d-flex justify-content-center align-items-start align-items-lg-center">
           <router-link class="nav-link" to="/">Home</router-link>
           <router-link class="nav-link" to="/get-started">Get Started</router-link>
           <router-link class="nav-link" to="/about">About This Tool</router-link>
           <router-link class="nav-link" to="/my-plan">My Plan</router-link>
-          <router-link class="nav-link mr-3" to="/my-plan">
-            <!-- <b-avatar badge-variant="success" icon="person-circle"></b-avatar> -->
-            <user-icon class="user-icon"></user-icon>
-            <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
-          </router-link>
+          
+          <!-- //sidebar <div v-b-toggle.sidebar-right class="nav-link mr-3"> -->
+
+            <router-link class="nav-link mr-3" to="/my-plan">
+              <user-icon class="user-icon"></user-icon>
+              <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
+            </router-link>
+
+          <!-- </div> -->
+          
       </b-navbar-nav>
       <b-navbar-nav class="nav-item py-2">
         <!-- lang select -->
@@ -83,11 +117,27 @@ export default {
       return { langs: ['en', 'fr'] }
     },
     methods: {
+      // close exit modal
       hideModal() {
         this.$refs['exit-modal'].hide()
       },
+      // nav to my-plan page
+      goToCart() {
+            this.$router.push("/my-plan");
+        },
     },
     computed: {
+      cartItems() {
+            return this.$store.state.cartItems;
+        },
+        // changed price to id so items without price would be recognized
+        totalPrice() {
+            let price = 0;
+            this.$store.state.cartItems.map(el => {
+                price += el["quantity"] * el["id"]
+            })
+            return price;
+        },
       count() {
         return this.$store.state.cartItemCount;
       }

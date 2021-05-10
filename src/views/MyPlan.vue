@@ -7,7 +7,9 @@
         <b-col lg="12"
         v-for="items in $t('myLearningPlan')" :key="items.id"
         class="d-flex flex-column justify-content-center align-items-start text-left pt-5 pb-3">
-            <b-card class="mb-2 border-0 shadow bg-lightblue text-light p-5" style="border-radius: 14px;">
+            <b-card 
+            body-class="p-0"
+            class="mb-2 border-0 shadow bg-lightblue text-light p-5" style="border-radius: 14px;">
                 <b-card-text>
                     <user-icon class="text-yellow" style="width: 60px; height: 60px;"></user-icon>
                     <h1 class="page-title font-weight-bold mb-4 mt-3" 
