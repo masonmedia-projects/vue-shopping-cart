@@ -31,11 +31,11 @@
                     </b-col>
                     <b-col md="7">
                         <b-card-body 
-                        body-class="d-flex flex-column justify-content-center align-items-start" >
-                            <b-card-text>
-                                <h4 class="mt-3" v-html="items.name"></h4>
-                                <p class="mb-0 my-2 small text-muted" v-html="items.category"></p>
-                                <p class="mb-0 pb-3" v-html="items.description"></p>
+                        body-class="d-flex flex-column justify-content-center align-items-start p-5" >
+                            <b-card-text class="w-100">
+                                <h4 class="font-weight-bold" v-html="items.name"></h4>
+                                <p class="mb-0 my-2 small text-muted border-top pt-2" v-html="items.category"></p>
+                                <p class="mb-0 pb-3 w-100 border-top pt-2" v-html="items.description"></p>
                                 <!-- <div class="">
                                     <b-button @click="removeItem(items)" class="remove">-</b-button>
                                     <span class="cart-quantity px-3">{{ items.quantity }}</span>
