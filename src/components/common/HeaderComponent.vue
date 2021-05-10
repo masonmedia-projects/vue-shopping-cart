@@ -42,10 +42,12 @@
       </template>
     </b-navbar-toggle>
 
+    <!-- sidebar cart review -->
     <!-- <b-sidebar 
     id="sidebar-right" 
     title="My plan" 
     header-class="py-3 h5 border-bottom"
+    body-class="bg-taieri"
     right 
     shadow
     backdrop>
@@ -56,16 +58,31 @@
        </div>
       </template>
       <div class="px-4 py-2">
-        <b-navbar-nav class="ml-auto d-flex flex-column text-left">
+        <b-navbar-nav class="ml-auto text-left">
+          <div v-if="totalPrice > 0" class="d-flex flex-column justify-content-start align-items-start">
           <b-card
           class="mb-2 shadow bg-lightblue-trans"
           v-for="items in cartItems" :key="items.id"
           >
             <b-card-text>
+              /remove item
+              <div @click="removeItem(items)" type="button" aria-label="Close" class="font-weight-bold absolute right top p-2">
+                <close-icon></close-icon>
+              </div>
               <h5 class="font-weight-bold badge badge-green py-2" v-html="items.name"></h5>
               <p class="mb-0 pt-2 mt-1 small border-top" style="line-height: 1.3;" v-html="items.description"></p>
             </b-card-text>
           </b-card>
+          </div>
+          /show empty cart if no items
+          <div v-else>
+            <div 
+            class="d-flex flex-column justify-content-center align-items-center min-h-50"
+            v-for="items in $t('myLearningPlan')" :key="items.index">
+               <user-icon class="text-lightblue shadow rounded-circle" style="height: 75px; width: 75px;"></user-icon>
+                <h5 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h5>
+            </div>
+        </div>
       </b-navbar-nav>
       </div>
     </b-sidebar> -->
@@ -77,14 +94,17 @@
           <router-link class="nav-link" to="/about">About This Tool</router-link>
           <router-link class="nav-link" to="/my-plan">My Plan</router-link>
           
-          <!-- //sidebar <div v-b-toggle.sidebar-right class="nav-link mr-3"> -->
+          <!-- //sidebar activate  -->
+          <!-- <div v-b-toggle.sidebar-right class="nav-link mr-3">
+            <user-icon class="user-icon"></user-icon>
+            <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
+          </div> -->
 
-            <router-link class="nav-link mr-3" to="/my-plan">
-              <user-icon class="user-icon"></user-icon>
-              <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
-            </router-link>
-
-          <!-- </div> -->
+          <!-- my-plan link -->
+          <router-link class="nav-link mr-3" to="/my-plan">
+            <user-icon class="user-icon"></user-icon>
+            <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
+          </router-link>
           
       </b-navbar-nav>
       <b-navbar-nav class="nav-item py-2">
@@ -102,16 +122,16 @@
 </template>
 
 <script>
-// import NavbarBrandIcon from '../icons/NavbarBrandIcon.vue';
+// import CloseIcon from '../icons/CloseIcon.vue';
 import UserIcon from '../icons/UserIcon.vue';
 import ExitModal from './ExitModal.vue';
 
 export default {
     name: 'HeaderComponent',
     components: {
-        // NavbarBrandIcon,
         ExitModal,
         UserIcon,
+        // CloseIcon,
     },
     data () {
       return { langs: ['en', 'fr'] }
@@ -123,8 +143,11 @@ export default {
       },
       // nav to my-plan page
       goToCart() {
-            this.$router.push("/my-plan");
-        },
+        this.$router.push("/my-plan");
+      },
+      removeItem(items) {
+        this.$store.dispatch("removeItem", items)
+      },
     },
     computed: {
       cartItems() {
