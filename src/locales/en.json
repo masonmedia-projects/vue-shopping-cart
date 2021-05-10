@@ -1,4 +1,30 @@
 {
+  "menu": [
+    {
+      "navbarBrand": "Leadership Learning Tool",
+      "menuItems": [
+        {
+          "link": "Home",
+          "url": "/"
+        },
+        {
+          "link": "Get Started",
+          "url": "/get-started"
+        },
+        {
+          "link": "About This Tool",
+          "url": "/about"
+        },
+        {
+          "link": "My Plan",
+          "url": "/my-plan"
+        }
+      ]
+
+
+      
+    }
+  ],
   "exit": [
     {
       "heading": "Exit LLT",
