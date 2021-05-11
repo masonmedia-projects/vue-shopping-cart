@@ -1,114 +1,212 @@
 {
-  "welcome": [
+  "menu": [
     {
-      "img1": "./bg_welcome_desk4.jpg",
-      "img2": "https://source.unsplash.com/1600x900/?cuisine",
-      "img3": "https://source.unsplash.com/1600x900/?leadership",
-      "microTitle": "Outil d’apprentissage du leadership",
-      "mainTitle": "Démarrage rapide",
-      "title2": "Outil d’apprentissage du leadership",
-      "text1": "<strong> Grands apprenants font de grands leaders.</strong> Au cours de notre organisation, nous avons une culture d’apprentissage qui nous donne l’occasion de nous développer dans des domaines qui nous aident à mieux nous servir nous-mêmes, notre équipe et notre organisation. Qu’il s’agisse d’un domaine qui vous passionne et que vous souhaitez explorer davantage ou d’un domaine où vous avez récemment reconnu une opportunité de développement, cet outil est fait pour vous.",
-      "text2": "Bienvenue à l’outil d’apprentissage du leadership. S’il vous plaît utiliser cet outil pour découvrir les activités d’apprentissage, qui sont personnalisés pour les capacités de leadership, les connaissances et les compétences. Cet outil organisera les activités qui vous seront les plus précieuses.",
-      "text3": "Si vous savez sur quelles connaissances et compétences vous souhaitez vous concentrer, sélectionnez Démarrer. Sinon, sélectionnez En savoir plus pour explorer quelques suggestions utiles et obtenir plus d’informations.",
-      "btn1": "démarrer",
-      "btn2": "Pour en savoir plus"
+      "navbarBrand": "Outil d'apprentissage du leadership",
+      "menuItems": [
+        {
+          "link": "Accueil",
+          "url": "/"
+        },
+        {
+          "link": "Commencer",
+          "url": "/get-started"
+        },
+        {
+          "link": "À propos de cet outil",
+          "url": "/about"
+        },
+        {
+          "link": "Mon plan",
+          "url": "/my-plan"
+        }
+      ]
     }
   ],
-  "page1": [
+  "exit": [
     {
-      "introTitle": "Mon outil de développement du leadership!",
-      "introText": "Établis votre plan d’apprentissage en sélectionnant les éléments sur qui vous souhaitez vous concentrer aujourd’hui. Sélectionnez chaque élément pour en savoir plus sur ce que chaque élément représente, y compris les comportements et les capacités qui sont inclus dans cet élément, et quand l’élément peut être un domaine d’intérêt approprié pour vous."
+      "heading": "Quitter LLT",
+      "title": "Êtes-vous sûr?",
+      "message": "Le fait de quitter l'outil de formation au leadership le supprimera de votre plan d'apprentissage et toutes les données enregistrées seront perdues. Voulez-vous vraiment continuer?",
+      "btn1": "Annuler",
+      "btn2": "Continuer"
+    }
+  ],
+  "homepage": [
+    {
+      "bannerMicroTitle": "Construire le futur",
+      "bannerTitle": "Bienvenue <br /> dans l'outil d'apprentissage du leadership",
+      "bannerSubtitle": "Investir dans nos collaborateurs, développer l'avenir du leadership.",
+      "bannerImg": "img / about_page / 01welcome_01.jpg",
+      "img1": "img / page_accueil / 01_getstartedcover.jpg",
+      "img2": "img / about_page / 01welcome_02.jpg",
+      "img3": "img / about_page / 01welcome_03.jpg",
+      "microTitle1": "Le quoi",
+      "title1": "Le Concept",
+      "text1": "Cette application a été conçue pour développer vos compétences en leadership et faciliter l'évolution de la prochaine génération de dirigeants de notre organisation. Cette application a été conçue pour vous donner une introduction large et diversifiée aux compétences d'un grand leadership, et pour vous fournir des ressources continues pour une croissance continue au fil du temps. Utilisez cet outil pour explorer notre modèle de leadership, pour suivre les compétences suggérées par des collègues ou des gestionnaires, ou utilisez-le pour identifier les domaines que vous souhaitez développer ",
+      "microTitle2": "Le pourquoi",
+      "title2": "Développement en cours",
+      "text2": "<strong> L'apprentissage est plus organique que ce que les gens pensent. </strong> Si beaucoup considèrent l'étude formelle comme la voie évidente vers la croissance et le développement, le modèle <strong> 70:20:10 </strong> montre que dans la pratique, c'est plus complexe: <strong> 10% </strong> de l'apprentissage se fait par le biais de méthodes traditionnelles comme les cours et l'éducation formelle, <strong> 20% </strong> par le biais d'opportunités d'apprentissage social, et <strong> 70% </strong> est le fruit d'une expérience sur le tas. Cet outil vous aide à soutenir votre apprentissage et votre croissance en intégrant ces approches d'apprentissage, et vous offre un moyen systématique de faciliter le développement de vos compétences en leadership. ",
+      "microTitle3": "Le Comment",
+      "title3": "Mise en route",
+      "text3": "Si c'est la première fois que vous utilisez l'outil ou si vous souhaitez en savoir plus à ce sujet, sélectionnez <strong> À propos de </strong> pour obtenir plus d'informations. Si vous êtes un utilisateur récurrent, ou si vous savez sur les domaines de compétences sur lesquels vous souhaitez vous concentrer, commencez par la page <strong> Premiers pas </strong>. Consultez le modèle de comportement du leadership et déterminez les domaines sur lesquels vous souhaitez vous concentrer. En cas de doute, cliquez sur le Bouton <strong> Détails </strong> sur l'une des compétences au hasard, et voyez si elles vous intéressent. Si c'est le cas, ajoutez-les à votre plan d'apprentissage. Vous pouvez ajouter autant de compétences que vous le souhaitez à votre plan. Quand terminé, accédez à la page <strong> Mon forfait </strong> pour examiner vos sélections et download vos ressources personnalisées. ",
+      "section_title3": "Grandir et découvrir",
+      "btn1": "Commencer",
+      "btn2": "À propos de"
+    }
+  ],
+  "quickStart": [
+    {
+      "bannerImg": "img / home_page / 01_getstartedcover.jpg",
+      "microTitle": "Mon outil d'apprentissage du leadership",
+      "mainTitle": "Démarrage rapide",
+      "title2": "Outil d'apprentissage du leadership",
+      "text1": "<strong> Bienvenue dans l'outil d'apprentissage du leadership. </strong> Cet outil vous aidera à identifier et à explorer l'apprentissage lié aux capacités clés du leadership. Vous sélectionnerez les compétences et les comportements importants pour vous, qui seront à leur tour formuler des recommandations personnalisées d'activités d'apprentissage qui peuvent s'appuyer sur les capacités de leader associées. N'oubliez pas: les grands apprenants font de grands leaders! ",
+      "text2": "Si vous savez sur quelles connaissances et compétences vous souhaitez vous concentrer, sélectionnez <strong> Premiers pas </strong>. Si vous souhaitez plus de contexte sur cet outil ou si vous n'êtes pas sûr de votre étape suivante et que vous souhaitez découvrir quelques suggestions utiles, sélectionnez <strong> À propos </strong> ",
+      "btn1": "Commencer",
+      "btn2": "À propos de"
+    }
+  ],
+  "getStarted": [
+    {
+      "bannerImg": "img / get_started / LCL_leadership_wheel_EN.png",
+      "bannerImgArch": "img / home_page / 01leadershipcover.jpg",
+      "microTitle": "Mon outil d'apprentissage du leadership",
+      "title": "Commencer",
+      "text1": "Élaborez votre plan d'apprentissage en sélectionnant les éléments sur lesquels vous souhaitez vous concentrer aujourd'hui. Sélectionnez le bouton <strong> Détails </strong> de n'importe quelle compétence pour en savoir plus sur celle-ci et à quoi elle ressemble en action avant de décider. si c'est un domaine d'intérêt approprié pour vous. "
+    }
+  ],
+  "aboutpage": [
+    {
+      "bannerImg": "img / about_page / 01welcome_01.jpg",
+      "img2": "img/about_page/01welcome_02.jpg",
+      "img3": "img/about_page/01welcome_03.jpg",
+      "microTitle1": "Mon outil d'apprentissage du leadership",
+      "title1": "Bienvenue",
+      "archive1": "Alors que beaucoup de gens pensent que les études formelles sont la voie évidente vers l'apprentissage, le modèle 70:20:10 révèle que cet instinct est hors de la base. 10% de l'apprentissage se fait par des méthodes traditionnelles comme les cours et l'éducation formelle. 20 % proviennent d 'occasions d'apprentissage social .70 % proviennent d 'une expérience sur le tas. Cet outil vous aidera en organisant ces opportunités d'apprentissage formel, social et par l 'action d'une manière qui vous sera significative et utile. // Choisissez vos 2 à 3 domaines d'intérêt initiaux. Revenez à cet outil et sélectionnez <strong> Commencer </strong>. Si vous ne savez pas sur quelles compétences clés du leader vous concentrer, réfléchissez à ce qui vous passionne pour le développement. Connectez-vous avec votre entourage pour obtenir des commentaires sur ce sur quoi vous pourriez vous concentrer. </strong> // Cet outil vous aidera en organisant ces opportunités formelles, sociales et d'apprentissage par l'action d'une manière qui sera significative et utile. Faites défiler vers le bas pour en savoir plus sur l'utilisation de cet outil. ",
+      "text1": "<strong> Bienvenue dans l'outil d'apprentissage du leadership! </strong> Cette application a été conçue pour développer vos compétences en leadership et faciliter l'évolution de la prochaine génération de dirigeants de notre organisation. Cette application a été conçue pour vous donner une introduction large et diversifiée aux compétences d'un grand leadership, et pour vous fournir des ressources continues pour une croissance continue au fil du temps. Utilisez cet outil pour explorer notre modèle de leadership, pour suivre les compétences suggérées par des collègues ou des gestionnaires, ou utilisez-le pour identifier domaines que vous souhaitez développer. ",
+      "microTitle2": "70-20-10",
+      "title2": "Comment nous apprenons",
+      "text2": "<strong>L'apprentissage est plus organique que ce que les gens pensent. </strong> Si beaucoup considèrent l'étude formelle comme la voie évidente vers la croissance et le développement, le modèle <strong> 70:20:10 </strong> montre que dans la pratique, c'est plus complexe: <strong> 10% </strong> de l'apprentissage se fait par le biais de méthodes traditionnelles comme les cours et l'éducation formelle, <strong> 20% </strong> par le biais d'opportunités d'apprentissage social, et <strong> 70% </strong> est le fruit d'une expérience sur le tas. Cet outil vous aide à soutenir votre apprentissage et votre croissance en intégrant ces approches d'apprentissage, et vous offre un moyen systématique de faciliter le développement de vos compétences en leadership. ",
+      "microTitle3": "Commencer",
+      "title3": "Tout rassembler",
+      "text3": "Commencez par la page <strong> Premiers pas </strong>. Consultez le diagramme du modèle de comportement du leadership et déterminez les domaines de compétences sur lesquels vous souhaitez vous concentrer. En cas de doute, cliquez sur <strong> Détails </strong> sur l'une des compétences au hasard, et voyez si elles vous intéressent. Si c'est le cas, ajoutez-les à votre plan d'apprentissage en sélectionnant <strong> Ajouter au plan </strong>. Vous pouvez ajouter autant de compétences à votre plan comme vous le souhaitez. Lorsque vous avez terminé, sélectionnez <strong> Mon plan </strong> pour examiner votre plan de formation et pour download vos ressources d'apprentissage personnalisées. ",
+      "section_title3": "Grandir et découvrir",
+      "text4": "Passez en revue le modèle de comportement du leadership et choisissez vos domaines d'intérêt en réfléchissant à vous-même et en discutant avec vos collègues.",
+      "btn1": "Commencer"
+    }
+  ],
+  "myLearningPlan": [
+    {
+      "title": "Mon plan d'apprentissage",
+      "description": "Chaque domaine d'intérêt que vous avez sélectionné possède une carte d'apprentissage que vous pouvez suivre. Passez en revue ces cartes d'apprentissage pour explorer les activités d'apprentissage formelles (10%), sociales (20%) et d'action (70%) qui vous aideront. développer les capacités de leadership, les connaissances et les compétences liées à ce domaine d'intérêt. ",
+      "subtitle": "Prochaines étapes",
+      "nextSteps": [
+        "Téléchargez et examinez chacune de vos cartes d'apprentissage.",
+        "Incorporez des activités d'apprentissage dans votre plan de développement individuel.",
+        "Définissez à quoi ressemblera le succès pour chaque activité.",
+        "Réfléchissez au soutien et aux ressources dont vous aurez besoin pour mener à bien chaque activité.",
+        "Réfléchissez régulièrement aux résultats de vos activités et réévaluez-les au besoin."
+      ],
+      "emptyPlan": "Mon plan d'apprentissage est vide"
     }
   ],
   "allCategories": [
     {
-      "id": "1",
-      "name": "conscience de soi",
-      "category": "Vous diriger soi-même",
-      "price": "100",
-      "url": "https://source.unsplash.com/1600x900/?cake",
-      "description": "Vous diriger soi-même",
+      "id": 1,
+      "name": "Conscience de soi",
+      "category": "Se diriger soi-même",
+      "url": "img/get_started/selfaware.jpg",
+      "description": "Sensibilisation aux mentalités et aux comportements qui vous aident à devenir un leader performant",
       "moreDetail": [
-        "Se voir clairement et objectivement à travers la réflexion et l’introspection",
+        "Se voir clairement et objectivement par la réflexion et l'introspection",
         "Connaître vos forces, vos opportunités, vos croyances, vos préjugés, vos motivations et vos émotions",
-        "Chercher des commentaires pour apprendre comment les autres vous perçoivent, votre attitude et vos réponses à eux"
+        "Rechercher des commentaires pour savoir comment les autres vous perçoivent, votre attitude et vos réactions à leur égard"
       ],
       "selectIf": [
-        "Vous souhaitez en savoir plus sur la perception des autres de vous",
-        "Vous souhaitez vous sentir habilité à apporter des changements et à tirer parti de vos domaines de forces et d’opportunités"
-      ]
+        "Vous aimeriez en savoir plus sur la perception que les autres ont de vous",
+        "Vous aimeriez vous sentir capable d'apporter des changements et de tirer parti de vos points forts et de vos opportunités"
+      ],
+      "download": "./dummy.pdf"
     },
     {
-      "id": "2",
-      "name": "Nouilles",
-      "category": "Vous diriger soi-même",
-      "price": "125",
-      "url": "https://source.unsplash.com/1600x900/?noodles",
-      "description": "Nouilles super savoureuses",
+      "id": 2,
+      "name": "Empowerment",
+      "category": "Collaborer avec et inspirer les autres",
+      "url": "img / get_started / empowerment.jpg",
+      "description": "Développer des relations solides et motiver les autres à performer à leur plus haut potentiel",
       "moreDetail": [
-        "Inspirer la propriété et la responsabilisation au sein des autres",
-        "Permettre aux autres de réussir en encadrer et déléguer efficacement le travail",
+        "Inspirer l'appropriation et la responsabilité chez les autres",
+        "Permettre aux autres de réussir en encadrant et en déléguant efficacement le travail",
         "Reconnaître et respecter les contributions des autres",
-        "Encourager les autres à étendre leurs capacités",
-        "En développer d’autres en fournissant des orientations, des ressources, de la formation et du mentorat pertinents"
+        "Encourager les autres à développer leurs capacités",
+        "Développer les autres atteindre leur plus haut potentiel ",
+        "Travailler avec ténacité pour répondre ou dépasser les attentes",
+        "Équilibrer les priorités concurrentes et gérer les charges de travail"
       ],
       "selectIf": [
-        "Vous souhaitez en savoir plus sur la perception des autres de vous",
-        "Vous souhaitez vous sentir habilité à apporter des changements et à tirer parti de vos domaines de forces et d’opportunités"
-      ]
+        "Vous voulez viser haut et toujours faire de votre mieux",
+        "Vous devez offrir l'excellence en équipe",
+        "Vous voulez créer un environnement de confiance, de réussite et d'optimisme"
+      ],
+      "download": "./dummy.pdf"
     },
     {
-      "id": "3",
-      "name": "frites",
-      "price": "90",
-      "url": "https://source.unsplash.com/1600x900/?fries",
-      "description": "Croustillant, double frit",
-      "moreDetail": "Enim ut et côtes de bœuf. Boulettes de viande au pain de viande lorem shank porc surlonge pariatur, côtes levées capicola tenderloin. Côtes de bœuf Aliqua cillum ipsum. Ut flanc côtes courtes, culpa jerky nulla dolor in pariatur tenderloin kevin pork longe pancetta hamburger. Id nostrud anim sed, sunt eu langue surlonge."
+      "id": 10,
+      "name": "Customer-Centricity",
+      "category": "Favoriser l'innovation et l'agilité",
+      "url": "img / get_started / customer.jpg",
+      "description": "Encourager de nouvelles idées et solutions grâce à des approches créatives",
+      "moreDetail": [
+        "Faire preuve d'empathie envers le client",
+        "Garder les clients au centre des stratégies et des activités tout en s'assurant que les besoins des clients et de l'organisation sont satisfaits",
+        "Être flexible face aux attentes des clients en constante évolution et diversifiées"
+      ],
+      "selectIf": [
+        "Vous travaillez sur un projet ou une initiative centrée sur le client",
+        "Vous souhaitez renforcer votre capacité à sympathiser avec le client",
+        "Vous voulez créer des opportunités pour que tout le monde réussisse"
+      ],
+      "download": "./dummy.pdf"
     },
     {
-      "id": "4",
-      "name": "macaroni",
-      "price": "200",
-      "url": "https://source.unsplash.com/1600x900/?macaroni",
-      "description": "Blasters cheesy",
-      "moreDetail": "Adipisicing ut turducken, et côtes courtes id kielbasa ground round swine esse eu non boudin. Sunt in consectetur, sed bacon ham quis incididunt nostrud ipsum in bresaola non. Bout de boule de langue chislic, ventre de porc de jarret de jambon d’aliquip andouille non meatloaf drumstick laborum porchetta shankle ut. Est officia andouille turducken. Anim de langue ronde moulue, côtes de bœuf t-bone landjaeger in consequat commodo ut qui ullamco. Aute commodo pancetta excepteur, alcatra aliquip esse et adipisicing lorem shankle ground round tri-tip."
+      "id": 11,
+      "name": "Innovation",
+      "category": "Favoriser l'innovation et l'agilité",
+      "url": "img / get_started / innovation.jpg",
+      "description": "Encourager de nouvelles idées et solutions grâce à des approches créatives",
+      "moreDetail": [
+        "Explorer de nouvelles idées, méthodes et alternatives pour obtenir des résultats",
+        "Créer un environnement où les autres se sentent en sécurité pour innover",
+        "Repérer de nouveaux modèles, générer des idées, valoriser diverses perspectives et les traduire en nouvelles idées"
+      ],
+      "selectIf": [
+        "Vous aimeriez essayer différentes approches et adopter une réflexion hors des sentiers battus",
+        "Vous souhaitez créer un environnement sûr pour que votre équipe prenne des risques calculés"
+      ],
+      "download": "./dummy.pdf"
     },
     {
-      "id": "5",
-      "name": "pizza",
-      "price": "150",
-      "url": "https://source.unsplash.com/1600x900/?pizza",
-      "description": "Pizza chessy au fromage",
-      "moreDetail": "Exercitation nostrud de T-bone, dolor non cupim ea ut et officia eu. Meatball porc ventre frankfurter jerky et filet mignon consequat officia aute elit laboris. Nostrud dolore doner, drumstick culpa shankle aliqua saucisse t-bone incididunt kevin. Dolor dinde hamburger labore eiusmod. Tempor andouille meatball côtes courtes ipsum laboris non ut proident elit est bacon. Porc tambour longe court, corned beef leberkas salami deserunt côtelette de porc en côtes courtes ribeye qui."
-    },
-    {
-      "id": "6",
-      "name": "salade",
-      "price": "134",
-      "url": "https://source.unsplash.com/1600x900/?salad",
-      "description": "frais",
-      "moreDetail": "Tenderloin chislic tempor mollit, non vache ut. Consectetur sirloin tempor, chuck adipisicing et tongue côtes levées chislic meatloaf pork long cupidatat fugiat magna deserunt. Boudin dinde culpa capicola épaule prosciutto. Ut ut excepteur qui filet de porc steak consequat. Non croupe shankle ut labore velit ut. Ribeye jambon de porc pancetta ad anim aliquip langue non alcatra ball tip ea. Burgdoggen non drumstick, cow tempor in tongue pancetta ad turkey landjaeger bacon occaecat irure filet mignon."
-    },
-    {
-      "id": "1",
-      "name": "samosa",
-      "price": "100",
-      "url": "https://source.unsplash.com/1600x900/?samosa",
-      "description": "Gâteau très savoureux"
-    },
-    {
-      "id": "2",
-      "name": "soupe",
-      "price": "125",
-      "url": "https://source.unsplash.com/1600x900/?soup",
-      "description": "Nouilles super savoureuses"
-    },
-    {
-      "id": "3",
-      "name": "Tacos",
-      "price": "90",
-      "url": "https://source.unsplash.com/1600x900/?tacos",
-      "description": "Croustillant, double frit"
+      "id": 12,
+      "name": "Changer d'agilité",
+      "category": "Favoriser l'innovation et l'agilité",
+      "url": "img / get_started / change.jpg",
+      "description": "Encourager de nouvelles idées et solutions grâce à des approches créatives",
+      "moreDetail": [
+        "Voir la nécessité ou l'opportunité créée par le changement",
+        "Accepter l'inconfort et poursuivre le changement avec engagement",
+        "Pratiquer la résilience face au changement et aux revers",
+        "Recherche proactive de nouveaux défis et opportunités d'acquérir de nouvelles connaissances, perspectives et compétences",
+        "Conduire les autres à travers des changements organisationnels et culturels",
+        "Supprimer les barrières, gérer la résistance au changement chez les autres et démontrer les avantages du changement"
+      ],
+      "selectIf": [
+        "Vous voulez embrasser et vous adapter au changement",
+        "Vous aimeriez mieux répondre aux incertitudes, aux défis et aux revers",
+        "Vous devez continuellement et rapidement apprendre, désapprendre et réapprendre",
+        "Vous devez conduire un changement organisationnel ou culturel",
+        "Vous devez permettre aux autres de surmonter la résistance au changement"
+      ],
+      "download": "./dummy.pdf"
     }
   ]
 }
