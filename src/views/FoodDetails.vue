@@ -64,7 +64,7 @@
                 <!-- trans-black overlay -->
                 <div class="page-banner w-100 absolute z--1" style="background: rgba(0,0,0,0.4);"></div>
                 <div class="relative z-1 text-light text-left p-5" style="top: 50px;">
-                    <h1 class="font-weight-bold mb-4 mt-4">{{ details.name }}</h1>
+                    <h1 class="font-weight-bold mb-4 mt-4" v-html="details.name"></h1>
                     <b-button disabled variant="outline-light" class="text-left" v-html="details.category"></b-button>
                 </div>
             </b-col>
@@ -182,7 +182,6 @@ export default {
         PlusIcon,
         InfoIcon,
         CheckIcon,
-        // Slide
     },
     data() {
         return {
