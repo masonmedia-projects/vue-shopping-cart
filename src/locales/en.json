@@ -20,9 +20,6 @@
           "url": "/my-plan"
         }
       ]
-
-
-      
     }
   ],
   "exit": [
@@ -80,9 +77,9 @@
   ],
   "aboutpage":[
     {
-      "bannerImg": "img/about_page/01welcome_01.jpg",
-      "img2": "img/about_page/01welcome_02.jpg",
-      "img3": "img/about_page/01welcome_03.jpg",
+      "bannerImg": "img/about_page/about10.jpg",
+      "img2": "img/about_page/about01.jpg",
+      "img3": "img/about_page/about12.jpg",
       "microTitle1": "My Leadership Learning Tool",
       "title1":"Welcome",
       "archive1":"While many people think of formal study as the obvious route to learning, the 70:20:10 model reveals that this instinct is off base. 10% of learning takes place through traditional methods like courses and formal education. 20% comes through social learning opportunities. 70% comes through on-the-job experience. This tool will support you by organizing these formal, social, and action learning opportunities in a way that will be meaningful and useful to you. //Choose your initial 2–3 areas of focus. Return to this tool, and select <strong>Get Started.</strong> If you’re unsure of which key leader competencies to focus on, reflect on what you’re passionate about developing. Connect with those around you for feedback on what you might focus on.</strong> //This tool will support you by organizing these formal, social, and action-learning opportunities in a way that will be meaningful and useful. Scroll down to learn more about how to use this tool.",

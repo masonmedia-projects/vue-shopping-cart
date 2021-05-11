@@ -1,7 +1,7 @@
 <template>
   <b-container fluid contClass="bg-gradient-lightblue">
         <b-row 
-        class="d-flex flex-column justify-content-end align-items-start text-left relative min-h-100" 
+        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100" 
         v-for="items in $t('aboutpage')" :key="items.id">
             <b-img :src="items.bannerImg" 
             class="w-100 h-100" 
@@ -56,7 +56,7 @@
         </b-row>
 
         <b-row 
-        class="d-flex flex-column justify-content-end align-items-start text-left relative min-h-100" 
+        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100" 
         v-for="items in $t('aboutpage')" :key="items.id">
             <b-img :src="items.img2" 
             class="w-100 h-100" 
@@ -80,7 +80,7 @@
         </b-row>
 
         <b-row 
-        class="d-flex flex-column justify-content-end align-items-start text-left relative min-h-100" 
+        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100" 
         v-for="items in $t('aboutpage')" :key="items.id">
             <b-img :src="items.img3" 
             class="w-100 h-100" 
