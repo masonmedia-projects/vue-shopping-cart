@@ -16,16 +16,16 @@
                 <h5 class="my-3 font-weight-bold text-dark" v-html="item.title"></h5>
                 <p class="mb-3" v-html="item.message"></p>
                 <div class="d-inline-block mb-3">
+                    <!-- cancel button -->
                     <b-button class="mt-3 mr-2" 
                     @click="$bvModal.hide('exit-course')" 
                     variant="secondary"
                     v-html="item.btn1"></b-button>
-
+                    <!-- exit LMS -->
                     <b-button class="mt-3" 
                     @click="exitCourse"
                     variant="danger"
                     v-html="item.btn2"></b-button>
-                    <!-- @click="$bvModal.hide('exit-course')"  -->
                 </div>
             </b-modal>
         </div>
@@ -43,11 +43,6 @@ export default {
         GearIcon,
         CautionIcon,
     },
-    data() {
-        return {
-            // SCORM: scormWrapper
-        }
-    },
     computed: {
         exit() {
             return this.$store.state.data.exit;
@@ -55,10 +50,10 @@ export default {
     },
     methods: {
         exitCourse() {
-            this.$bvModal.show("exit-course");
+            this.$bvModal.hide("exit-course");
             SCORM.init();
             // var name = SCORM.get('cmi.core.student_name');
-            SCORM.set('cmi.core.lesson_status', 'completed');
+            SCORM.set('cmi.completion_status', 'completed');
             SCORM.save();
             SCORM.quit();
         }
