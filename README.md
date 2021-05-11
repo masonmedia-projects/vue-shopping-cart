@@ -1,8 +1,12 @@
 # Vue Shopping Cart
 
-## Project
+## Intro
 
-A shopping cart app demo using Vue, Vuex, BootstrapVue, and animate.css based on a tutorial by [Akash Ingole](https://www.youtube.com/watch?v=irr7ACcmW_4).
+A shopping cart app using Vue, Vuex, BootstrapVue, and animate.css based on a tutorial by [Akash Ingole](https://www.youtube.com/watch?v=irr7ACcmW_4).
+
+## Details
+
+The project uses vue-router, SASS, vue-i18n for french translation, and is tailored for use on an LMS.
 
 ## Project setup
 ```
@@ -23,6 +27,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
