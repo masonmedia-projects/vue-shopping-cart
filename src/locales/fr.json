@@ -36,10 +36,10 @@
       "bannerMicroTitle": "Construire le futur",
       "bannerTitle": "Bienvenue <br /> dans l'outil d'apprentissage du leadership",
       "bannerSubtitle": "Investir dans nos collaborateurs, développer l'avenir du leadership.",
-      "bannerImg": "img / about_page / 01welcome_01.jpg",
-      "img1": "img / page_accueil / 01_getstartedcover.jpg",
-      "img2": "img / about_page / 01welcome_02.jpg",
-      "img3": "img / about_page / 01welcome_03.jpg",
+      "bannerImg": "img/about_page/01welcome_01.jpg",
+      "img1": "img/home_page/01_getstartedcover.jpg",
+      "img2": "img/about_page/01welcome_02.jpg",
+      "img3": "img/about_page/01welcome_03.jpg",
       "microTitle1": "Le quoi",
       "title1": "Le Concept",
       "text1": "Cette application a été conçue pour développer vos compétences en leadership et faciliter l'évolution de la prochaine génération de dirigeants de notre organisation. Cette application a été conçue pour vous donner une introduction large et diversifiée aux compétences d'un grand leadership, et pour vous fournir des ressources continues pour une croissance continue au fil du temps. Utilisez cet outil pour explorer notre modèle de leadership, pour suivre les compétences suggérées par des collègues ou des gestionnaires, ou utilisez-le pour identifier les domaines que vous souhaitez développer ",
@@ -56,7 +56,7 @@
   ],
   "quickStart": [
     {
-      "bannerImg": "img / home_page / 01_getstartedcover.jpg",
+      "bannerImg": "img/home_page/01_getstartedcover.jpg",
       "microTitle": "Mon outil d'apprentissage du leadership",
       "mainTitle": "Démarrage rapide",
       "title2": "Outil d'apprentissage du leadership",
@@ -68,16 +68,16 @@
   ],
   "getStarted": [
     {
-      "bannerImg": "img / get_started / LCL_leadership_wheel_EN.png",
-      "bannerImgArch": "img / home_page / 01leadershipcover.jpg",
+      "bannerImg": "img/get_started/LCL_leadership_wheel_FR.png",
       "microTitle": "Mon outil d'apprentissage du leadership",
       "title": "Commencer",
-      "text1": "Élaborez votre plan d'apprentissage en sélectionnant les éléments sur lesquels vous souhaitez vous concentrer aujourd'hui. Sélectionnez le bouton <strong> Détails </strong> de n'importe quelle compétence pour en savoir plus sur celle-ci et à quoi elle ressemble en action avant de décider. si c'est un domaine d'intérêt approprié pour vous. "
+      "text1": "Élaborez votre plan d'apprentissage en sélectionnant les éléments sur lesquels vous souhaitez vous concentrer aujourd'hui. Sélectionnez le bouton <strong>Détails</strong> de n'importe quelle compétence pour en savoir plus sur celle-ci et à quoi elle ressemble en action avant de décider. si c'est un domaine d'intérêt approprié pour vous.",
+      "detailsBtn": "Détails"
     }
   ],
   "aboutpage": [
     {
-      "bannerImg": "img / about_page / 01welcome_01.jpg",
+      "bannerImg": "img/about_page/01welcome_01.jpg",
       "img2": "img/about_page/01welcome_02.jpg",
       "img3": "img/about_page/01welcome_03.jpg",
       "microTitle1": "Mon outil d'apprentissage du leadership",
@@ -110,14 +110,14 @@
       "emptyPlan": "Mon plan d'apprentissage est vide"
     }
   ],
-  "allCategories": [
+  "allCategories":[
     {
       "id": 1,
       "name": "Conscience de soi",
       "category": "Se diriger soi-même",
       "url": "img/get_started/selfaware.jpg",
       "description": "Sensibilisation aux mentalités et aux comportements qui vous aident à devenir un leader performant",
-      "moreDetail": [
+      "moreDetail":[
         "Se voir clairement et objectivement par la réflexion et l'introspection",
         "Connaître vos forces, vos opportunités, vos croyances, vos préjugés, vos motivations et vos émotions",
         "Rechercher des commentaires pour savoir comment les autres vous perçoivent, votre attitude et vos réactions à leur égard"
@@ -132,14 +132,139 @@
       "id": 2,
       "name": "Empowerment",
       "category": "Collaborer avec et inspirer les autres",
-      "url": "img / get_started / empowerment.jpg",
+      "url": "img/get_started/empowerment.jpg",
       "description": "Développer des relations solides et motiver les autres à performer à leur plus haut potentiel",
-      "moreDetail": [
+      "moreDetail":[
         "Inspirer l'appropriation et la responsabilité chez les autres",
         "Permettre aux autres de réussir en encadrant et en déléguant efficacement le travail",
         "Reconnaître et respecter les contributions des autres",
         "Encourager les autres à développer leurs capacités",
-        "Développer les autres atteindre leur plus haut potentiel ",
+        "Développer les autres en fournissant une orientation, des ressources, une formation et un mentorat pertinents"
+      ],
+      "selectIf": [
+        "Vous aimeriez en savoir plus sur la perception que les autres ont de vous",
+        "Vous aimeriez vous sentir capable d'apporter des changements et de tirer parti de vos points forts et de vos opportunités"
+      ],
+      "download": "./dummy.pdf"
+    },
+    {
+      "id": 3,
+      "name": "Collaboration",
+      "category": "Collaborer avec et inspirer les autres",
+      "url": "img/get_started/collaboration.jpg",
+      "description": "Développer des relations solides et motiver les autres à performer à leur plus haut potentiel",
+      "moreDetail": [
+        "Créer et réaliser des objectifs communs grâce à l'influence et à la coopération",
+        "Initier et entretenir des relations avec les autres",
+        "Tirer parti de multiples perspectives pour travailler à des résultats communs"
+      ],
+      "selectIf": [
+        "Vous devez influencer et collaborer avec les autres pour obtenir des résultats",
+        "Vous voulez des points de vue différents pour améliorer vos résultats"
+      ],
+      "download": "./dummy.pdf"
+    },
+    {
+      "id": 4,
+      "name": "Communication",
+      "category": "Communiquer efficacement et avec empathie",
+      "url": "img/get_started/communication.jpg",
+      "description": "Communiquer une vision claire pour atteindre les objectifs clés",
+      "moreDetail": [
+        "Transmettre des informations et des idées de manière convaincante et succincte",
+        "Capturer et retenir l'attention des autres de manière ciblée et captivante",
+        "Adapter le message aux divers besoins du public",
+        "Développer des supports de présentation visuellement attrayants, inclusifs et cohérents"
+      ],
+      "selectIf": [
+        "Vous devez créer et diffuser une présentation ou un message percutant",
+        "Vous voulez renforcer la confiance dans la prise de parole en public",
+        "Vous voulez influencer les autres par la communication"
+      ],
+      "download": "./dummy.pdf"
+    },
+    {
+      "id": 5,
+      "name": "Conversations authentiques",
+      "category": "Communiquer efficacement et avec empathie",
+      "url": "img/get_started/conversations.jpg",
+      "description": "Communiquer une vision claire pour atteindre les objectifs clés",
+      "moreDetail": [
+        "Écouter activement pour mieux comprendre d'autres perspectives",
+        "Aborder les conversations difficiles de manière proactive",
+        "Fournir une rétroaction appréciable et constructive de manière efficace",
+        "Gérer les conflits avec une approche gagnant-gagnant",
+        "Encourager les conversations qui créent une culture d'équité et d'inclusion"
+      ],
+      "selectIf": [
+        "Vous voulez écouter avec l'intention de comprendre",
+        "Vous voulez obtenir des résultats bénéfiques lorsque vous vous engagez dans des conversations difficiles",
+        "Vous devez gérer en toute confiance des conversations, des situations ou des conflits difficiles",
+        "Vous devez partager vos opinions même si elles sont impopulaires"
+      ],
+      "download": "./dummy.pdf"
+    },
+    {
+      "id": 6,
+      "name": "Intelligence émotionnelle",
+      "category": "Communiquer efficacement et avec empathie",
+      "url": "img/get_started/emotionalintell.jpg",
+      "description": "Communiquer une vision claire pour atteindre les objectifs clés",
+      "moreDetail": [
+        "Faire preuve d'empathie et reconnaître les émotions des autres",
+        "Etre authentique, tout en faisant preuve d'une conscience sociale et situationnelle",
+        "Reconnaître quand les émotions et les préjugés affectent la prise de décision"
+      ],
+      "selectIf": [
+        "Vous aimeriez mieux identifier et répondre aux émotions",
+        "Vous devez trouver des solutions aux problèmes dans des situations chargées d'émotion"
+      ],
+      "download": "./dummy.pdf"
+    },
+    {
+      "id": 7,
+      "name": "Pensée critique",
+      "category": "Exécution de l'excellence stratégique et opérationnelle",
+      "url": "img/get_started/criticalthinking.jpg",
+      "description": "Produire constamment des résultats extraordinaires",
+      "moreDetail": [
+        "Identifier la cause première d'un problème commercial",
+        "Prendre des décisions opportunes et judicieuses sur la base de données et d'analyses analytiques"
+      ],
+      "selectIf": [
+        "Vous devez prendre une décision commerciale réfléchie",
+        "Vous devez analyser les données et développer des insights",
+        "Vous souhaitez identifier des modèles"
+      ],
+      "download": "./dummy.pdf"
+    },
+    {
+      "id": 8,
+      "name": "Réflexion stratégique",
+      "category": "Exécution de l'excellence stratégique et opérationnelle",
+      "url": "img/get_started/Strategic.jpg",
+      "description": "Produire constamment des résultats extraordinaires",
+      "moreDetail": [
+        "Analyse des tendances mondiales",
+        "Identifier les forces, les faiblesses, les opportunités et les menaces",
+        "Définir une stratégie pour s'aligner sur l'orientation commerciale à long terme",
+        "Suivi et mesure de l'impact des stratégies mises en œuvre"
+      ],
+      "selectIf": [
+        "Vous devez garder une vue d'ensemble",
+        "Vous devez développer une vision intégrée et un plan à long terme",
+        "Vous devez utiliser vos ressources plus efficacement pour obtenir des résultats"
+      ],
+      "download": "./dummy.pdf"
+    },
+    {
+      "id": 9,
+      "name": "Performance",
+      "category": "Exécution de l'excellence stratégique et opérationnelle",
+      "url": "img/get_started/performance.jpg",
+      "description": "Produire constamment des résultats extraordinaires",
+      "moreDetail": [
+        "Soutenir et faire confiance aux autres pour atteindre leur plus haut potentiel",
         "Travailler avec ténacité pour répondre ou dépasser les attentes",
         "Équilibrer les priorités concurrentes et gérer les charges de travail"
       ],
@@ -154,7 +279,7 @@
       "id": 10,
       "name": "Customer-Centricity",
       "category": "Favoriser l'innovation et l'agilité",
-      "url": "img / get_started / customer.jpg",
+      "url": "img/get_started/customer.jpg",
       "description": "Encourager de nouvelles idées et solutions grâce à des approches créatives",
       "moreDetail": [
         "Faire preuve d'empathie envers le client",
@@ -172,7 +297,7 @@
       "id": 11,
       "name": "Innovation",
       "category": "Favoriser l'innovation et l'agilité",
-      "url": "img / get_started / innovation.jpg",
+      "url": "img/get_started/innovation.jpg",
       "description": "Encourager de nouvelles idées et solutions grâce à des approches créatives",
       "moreDetail": [
         "Explorer de nouvelles idées, méthodes et alternatives pour obtenir des résultats",
@@ -189,7 +314,7 @@
       "id": 12,
       "name": "Changer d'agilité",
       "category": "Favoriser l'innovation et l'agilité",
-      "url": "img / get_started / change.jpg",
+      "url": "img/get_started/change.jpg",
       "description": "Encourager de nouvelles idées et solutions grâce à des approches créatives",
       "moreDetail": [
         "Voir la nécessité ou l'opportunité créée par le changement",

@@ -37,7 +37,7 @@
       <b-col lg="4"
       class="text-center"
       v-on:click="foodDetails(items)" 
-      v-for="items in allCategories" :key="items.id">
+      v-for="items in $t('allCategories')" :key="items.id">
       <!-- slice limits the number of iterations in the object/array -->
       <!-- <b-col lg="4" v-for="items in topRated.slice(0, 2)" :key="items.id"> -->
         <b-card
@@ -48,10 +48,11 @@
           header-class="font-weight-bold"
           class="border-0 mb-3 shadow"
           >
-          <b-card-text class="py-3">
+          <b-card-text class="py-3"
+          v-for="item in $t('getStarted')" :key="item.id">
             <h2 v-html="items.name" class="font-weight-bold"></h2>
-            <p>{{ items.category }}</p>  
-            <b-button variant="lightblue mr-2" class="">Details</b-button>
+            <p v-html="items.category"></p>  
+            <b-button variant="lightblue mr-2" v-html="item.detailsBtn"></b-button>
             <!-- <router-link :to="{ name: 'FoodDetails', params: {id: topRated.id}}"></router-link> -->
           </b-card-text>
         </b-card>
@@ -83,7 +84,7 @@ export default {
     }
   },
   computed: {
-    page1() {
+    getStarted() {
       return this.$store.state.data.getStarted;
     },
     topRated() {

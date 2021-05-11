@@ -72,7 +72,8 @@
       "bannerImgArch": "img/home_page/01leadershipcover.jpg",
       "microTitle": "My Leadership Learning Tool",
       "title":"Get Started",
-      "text1":"Build your learning plan by selecting the items you’d like to focus on today. Select the <strong>Details</strong> button of any competency to learn more about it and what it looks like in action before deciding if it’s an appropriate area of focus for you. "
+      "text1":"Build your learning plan by selecting the items you’d like to focus on today. Select the <strong>Details</strong> button of any competency to learn more about it and what it looks like in action before deciding if it’s an appropriate area of focus for you.",
+      "detailsBtn": "Details"
     }
   ],
   "aboutpage":[
@@ -334,6 +335,5 @@
       ],
       "download": "./dummy.pdf"
     }
-
   ]
 }

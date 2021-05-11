@@ -99,7 +99,7 @@
                     </b-alert>
 
                     <b-row class="px-2">
-                        <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.id">
+                        <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.index">
                             <info-icon class="text-lightblue mb-3"></info-icon>
                             <p v-html="item"></p>
                             <p class="small text-muted mt-auto mb-0" v-html="details.name"></p>
