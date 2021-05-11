@@ -1,45 +1,29 @@
 <template>
-    <!-- <div class="gear-icon">
-        <gear-icon v-b-modal.exit-course></gear-icon>
-        <b-modal 
-        v-for="items in $t('exit')" :key="items.id"
-        ref="exit-modal"
-        id="exit-course" 
-        centered 
-        body-class="text-center p-4"
-        hide-footer
-        title-class="font-weight-bold"
-        :title="items.heading">
-            <caution-icon></caution-icon>
-            <h5 class="my-3 font-weight-bold text-dark" v-html="items.title"></h5>
-            <p class="mb-3" v-html="items.message"></p>
-            <div class="d-inline-block mb-3">
-                <b-button class="mt-3 mr-2" variant="secondary" @click="hideModal" v-html="items.btn1"></b-button>
-                <b-button class="mt-3" variant="danger" v-html="items.btn2"></b-button>
-            </div>
-        </b-modal>
-    </div> -->
-
     <div class="gear-icon">
         <gear-icon v-b-modal.exit-course></gear-icon>
         <div>
-            <!-- v-for="item in $t('exit')" :key="item.index" -->
             <b-modal 
+            v-for="item in $t('exit')" :key="item.id"
             ref="exit-modal"
             id="exit-course" 
             centered 
             body-class="text-center p-4"
             hide-footer
             title-class="font-weight-bold"
-            title="Exit LLT"
+            :title="item.heading"
             >
-            <!-- :title="item.heading" -->
                 <caution-icon></caution-icon>
-                <h5 class="my-3 font-weight-bold text-dark"></h5>
-                <p class="mb-3">Exiting the Leadership Learning Tool will remove it from your learning plan and any saved data will be lost. Are you sure you want to proceed?</p>
+                <h5 class="my-3 font-weight-bold text-dark" v-html="item.title"></h5>
+                <p class="mb-3" v-html="item.message"></p>
                 <div class="d-inline-block mb-3">
-                    <b-button class="mt-3 mr-2" @click="hideModal" variant="secondary">Cancel</b-button>
-                    <b-button class="mt-3" @click="hideModal" variant="danger">Proceed</b-button>
+                    <b-button class="mt-3 mr-2" 
+                    @click="$bvModal.hide('exit-course')" 
+                    variant="secondary"
+                    v-html="item.btn1"></b-button>
+                    <b-button class="mt-3" 
+                    @click="$bvModal.hide('exit-course')" 
+                    variant="danger"
+                    v-html="item.btn2"></b-button>
                 </div>
             </b-modal>
         </div>
@@ -62,11 +46,6 @@ export default {
         },
     },
     methods: {
-        hideModal() {
-            this.$refs['exit-modal'].hide()
-            // document.getElementById('exit-course').style.display = "none";
-            // alert("what the fuck");
-        },
     },
 }
 </script>
