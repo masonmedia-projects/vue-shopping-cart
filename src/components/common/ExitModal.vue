@@ -20,10 +20,12 @@
                     @click="$bvModal.hide('exit-course')" 
                     variant="secondary"
                     v-html="item.btn1"></b-button>
+
                     <b-button class="mt-3" 
-                    @click="$bvModal.hide('exit-course')" 
+                    @click="exitCourse"
                     variant="danger"
                     v-html="item.btn2"></b-button>
+                    <!-- @click="$bvModal.hide('exit-course')"  -->
                 </div>
             </b-modal>
         </div>
@@ -32,7 +34,8 @@
 
 <script>
 import CautionIcon from '../icons/CautionIcon.vue'
-import GearIcon from '../icons/GearIcon'
+import GearIcon from '../icons/GearIcon.vue'
+import { SCORM } from 'pipwerks-scorm-api-wrapper';
 
 export default {
     name: 'ExitModal',
@@ -40,12 +43,25 @@ export default {
         GearIcon,
         CautionIcon,
     },
+    data() {
+        return {
+            // SCORM: scormWrapper
+        }
+    },
     computed: {
         exit() {
             return this.$store.state.data.exit;
         },
     },
     methods: {
+        exitCourse() {
+            this.$bvModal.show("exit-course");
+            SCORM.init();
+            // var name = SCORM.get('cmi.core.student_name');
+            SCORM.set('cmi.core.lesson_status', 'completed');
+            SCORM.save();
+            SCORM.quit();
+        }
     },
 }
 </script>
