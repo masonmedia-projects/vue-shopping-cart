@@ -24,7 +24,7 @@
     <b-sidebar 
     id="sidebar-right" 
     title="My plan" 
-    header-class="py-3 h5 border-bottom"
+    header-class="py-3 mb-0 h5 border-bottom"
     body-class="bg-taieri"
     right 
     shadow
