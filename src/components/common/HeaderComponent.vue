@@ -85,7 +85,7 @@
               font-scale="2"
               title="My learning plan">
               <span class="sr-only">My plan</span>
-              </b-icon-person-circle>
+            </b-icon-person-circle>
             <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
           </router-link>
           
@@ -98,7 +98,7 @@
           </option>
         </select>
         <!-- gear icon/exit modal -->
-        <exit-modal></exit-modal>
+        <exit-modal :logout="items.logout"></exit-modal>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>

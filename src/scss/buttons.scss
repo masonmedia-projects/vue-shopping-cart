@@ -54,6 +54,16 @@ svg.focus {
     border: none;
 }
 
+.btn-outline-base {
+    color: #53565A;;
+    border-color: #53565A;;
+}
+.btn-outline-base:hover {
+    color: #fff;
+    background-color: #53565A;
+    border-color: #53565A;
+}
+
 // hover states
 
 .btn-lightblue:hover,

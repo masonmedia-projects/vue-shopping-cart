@@ -19,7 +19,8 @@
           "link": "My Plan",
           "url": "/my-plan"
         }
-      ]
+      ],
+      "logout": "Logout"
     }
   ],
   "exit": [

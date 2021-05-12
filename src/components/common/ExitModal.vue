@@ -1,6 +1,9 @@
 <template>
-    <div class="gear-icon">
-        <gear-icon v-b-modal.exit-course></gear-icon>
+    <div class="d-flex align-items-center justify-content-start justify-content-lg-center pt-3 pt-lg-0">
+        <!-- removed class="gear-icon" -->
+        <b-button type="button" size="sm" variant="outline-base" class="d-flex mb-0 rounded px-3" v-b-modal.exit-course>
+            <b-icon icon="gear-fill" class="mr-2 align-self-center" aria-hidden="true"></b-icon> {{ Logout }}
+        </b-button>
         <div>
             <b-modal 
             v-for="item in $t('exit')" :key="item.id"
@@ -12,7 +15,7 @@
             title-class="font-weight-bold"
             :title="item.heading"
             >
-                <caution-icon></caution-icon>
+                <b-icon icon="exclamation-triangle-fill" variant="yellow" font-scale="4" title="Proceed with caution"></b-icon>
                 <h5 class="my-3 font-weight-bold text-dark" v-html="item.title"></h5>
                 <p class="mb-3" v-html="item.message"></p>
                 <div class="d-inline-block mb-3">
@@ -33,16 +36,13 @@
 </template>
 
 <script>
-import CautionIcon from '../icons/CautionIcon.vue'
-import GearIcon from '../icons/GearIcon.vue'
 import { SCORM } from 'pipwerks-scorm-api-wrapper';
 
 export default {
     name: 'ExitModal',
-    components: {
-        GearIcon,
-        CautionIcon,
-    },
+    props: [
+        'Logout'
+    ],
     computed: {
         exit() {
             return this.$store.state.data.exit;
