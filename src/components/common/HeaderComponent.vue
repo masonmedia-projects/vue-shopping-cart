@@ -80,7 +80,12 @@
 
           <!-- my-plan link -->
           <router-link class="nav-link mr-3" to="/my-plan">
-            <user-icon class="user-icon"></user-icon>
+            <b-icon-person-circle 
+              variant="base"
+              font-scale="2"
+              title="My learning plan">
+              <span class="sr-only">My plan</span>
+              </b-icon-person-circle>
             <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
           </router-link>
           
@@ -102,14 +107,14 @@
 
 <script>
 // import CloseIcon from '../icons/CloseIcon.vue';
-import UserIcon from '../icons/UserIcon.vue';
 import ExitModal from './ExitModal.vue';
+import { BIconPersonCircle } from 'bootstrap-vue'
 
 export default {
     name: 'HeaderComponent',
     components: {
         ExitModal,
-        UserIcon,
+        BIconPersonCircle,
         // CloseIcon,
     },
     data () {

@@ -31,12 +31,11 @@
             class="min-vh-100 w-75 absolute top right z-0 cover"></b-img>
             <!-- color strip -->
             <div class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
-            <b-col lg="8"
-            class="d-flex flex-column justify-content-center align-items-start relative z-1 p-4 p-md-5 mt-md-0 mt-lg-5">
+            <b-col md="12" lg="10" xl="8"
+            class="d-flex flex-column justify-content-center align-items-start relative z-1 p-4 pt-5 p-md-5 mt-5 mt-md-0">
                 <div class="text-light p-5 bg-purple-trans" style="border-radius: 14px; text-shadow: 2px 2px 5px #000;">
                     <h5 class="mb-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
-                    <h1 class="page-title font-weight-bold mb-4"
-                    style="line-height: 90%; letter-spacing: -3px"
+                    <h1 class="site-title font-weight-bold mb-4"
                     v-html="items.bannerTitle"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">
                     <h4 class="mb-2" v-html="items.bannerSubtitle"></h4>
