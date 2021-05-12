@@ -142,7 +142,7 @@
                             <!-- <b-button size="lg" class="bg-orange border-0 my-2 w-100" @click="addToCart">
                                 <plus-icon style="width: 30; height: 30;"></plus-icon>
                             </b-button> -->
-                            <b-button type="button" size="lg" variant="orange" class="d-flex justify-content-center my-2 w-100" @click="addToCart">
+                            <b-button type="button" size="lg" variant="orange" class="d-flex justify-content-center align-items-center my-2 w-100" @click="addToCart">
                                 <b-icon icon="plus" class="" font-scale="1.5"></b-icon> Add
                             </b-button>
                         </b-col>
@@ -151,13 +151,17 @@
                                 <cart-icon style="width: 30; height: 30;"></cart-icon>
                             </b-button> -->
 
-                            <b-button type="button" size="lg" variant="green" class="d-flex justify-content-center my-2 w-100" @click="goToCart">
+                            <b-button type="button" size="lg" variant="green" class="d-flex justify-content-center align-items-center my-2 w-100" @click="goToCart">
                                 <b-icon icon="cart2" class="mr-2" font-scale="1"></b-icon> Checkout
                             </b-button>
                         </b-col>
                         <b-col sm class="px-1">
-                            <b-button size="lg" class="bg-royal border-0 my-2 w-100" @click="getStarted">
+                            <!-- <b-button size="lg" class="bg-royal border-0 my-2 w-100" @click="getStarted">
                                 <home-icon style="width: 30; height: 30;"></home-icon>
+                            </b-button> -->
+
+                            <b-button type="button" size="lg" variant="royal" class="d-flex justify-content-center align-items-center my-2 w-100" @click="getStarted">
+                                <b-icon icon="search" class="mr-2" font-scale="0.9"></b-icon> Browse
                             </b-button>
                         </b-col>
                     </b-row>
@@ -178,7 +182,7 @@
 
 <script>
 import Swal from 'sweetalert2'
-import HomeIcon from '../components/icons/HomeIcon.vue'
+// import HomeIcon from '../components/icons/HomeIcon.vue'
 // import CartIcon from '../components/icons/CartIcon.vue'
 // import PlusIcon from '../components/icons/PlusIcon.vue'
 // import DetailMenuIcon from '../components/icons/DetailMenuIcon.vue'
@@ -188,7 +192,7 @@ import CheckIcon from '../components/icons/CheckIcon.vue'
 export default {
     name: 'FoodDetails',
     components: {
-        HomeIcon,
+        // HomeIcon,
         // CartIcon,
         // PlusIcon,
         InfoIcon,

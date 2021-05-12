@@ -43,7 +43,7 @@
       <!-- slice limits the number of iterations in the object/array -->
       <!-- <b-col lg="4" v-for="items in topRated.slice(0, 2)" :key="items.id"> -->
         <b-card
-          :img-src="items.url"
+          :img-src="items.img"
           img-alt="Image"
           img-top
           tag="article"
