@@ -19,7 +19,8 @@
           "link": "Mon plan",
           "url": "/my-plan"
         }
-      ]
+      ],
+      "logout": "Logout"
     }
   ],
   "exit": [
@@ -36,10 +37,6 @@
       "bannerMicroTitle": "Construire le futur",
       "bannerTitle": "Bienvenue <br /> dans l'outil d'apprentissage du leadership",
       "bannerSubtitle": "Investir dans nos collaborateurs, développer l'avenir du leadership.",
-      "bannerImg": "img/about_page/01welcome_01.jpg",
-      "img1": "img/home_page/01_getstartedcover.jpg",
-      "img2": "img/about_page/01welcome_02.jpg",
-      "img3": "img/about_page/01welcome_03.jpg",
       "microTitle1": "Le quoi",
       "title1": "Le Concept",
       "text1": "Cette application a été conçue pour développer vos compétences en leadership et faciliter l'évolution de la prochaine génération de dirigeants de notre organisation. Cette application a été conçue pour vous donner une introduction large et diversifiée aux compétences d'un grand leadership, et pour vous fournir des ressources continues pour une croissance continue au fil du temps. Utilisez cet outil pour explorer notre modèle de leadership, pour suivre les compétences suggérées par des collègues ou des gestionnaires, ou utilisez-le pour identifier les domaines que vous souhaitez développer ",
@@ -51,7 +48,19 @@
       "text3": "Si c'est la première fois que vous utilisez l'outil ou si vous souhaitez en savoir plus à ce sujet, sélectionnez <strong> À propos de </strong> pour obtenir plus d'informations. Si vous êtes un utilisateur récurrent, ou si vous savez sur les domaines de compétences sur lesquels vous souhaitez vous concentrer, commencez par la page <strong> Premiers pas </strong>. Consultez le modèle de comportement du leadership et déterminez les domaines sur lesquels vous souhaitez vous concentrer. En cas de doute, cliquez sur le Bouton <strong> Détails </strong> sur l'une des compétences au hasard, et voyez si elles vous intéressent. Si c'est le cas, ajoutez-les à votre plan d'apprentissage. Vous pouvez ajouter autant de compétences que vous le souhaitez à votre plan. Quand terminé, accédez à la page <strong> Mon forfait </strong> pour examiner vos sélections et download vos ressources personnalisées. ",
       "section_title3": "Grandir et découvrir",
       "btn1": "Commencer",
-      "btn2": "À propos de"
+      "btn2": "À propos de",
+      "img": {
+        "banner": "img/about_page/01welcome_01.jpg",
+        "img1": "img/home_page/01_getstartedcover.jpg",
+        "img2": "img/about_page/01welcome_02.jpg",
+        "img3": "img/about_page/01welcome_03.jpg"
+        },
+      "imgAlt": {
+        "banner": "A photo of a man and a woman talking over a laptop.",
+        "img1": "A photo of two women looking across a table in a business environment.",
+        "img2": "A photo of a man sitting on a red sofa laughing in conversation with a woman sitting across from him.",
+        "img3": "A photo of a grocery store employee smiling at a customer"
+      }
     }
   ],
   "quickStart": [
