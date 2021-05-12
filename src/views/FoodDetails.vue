@@ -60,7 +60,10 @@
         <!-- 50-50 split layout -->
         <b-row class="d-flex text-left min-h-100 relative mt-5"> 
             <b-col lg="6" class="fixed top min-h-50 p-0">
-                <b-img :src="details.url" class="page-banner w-100 absolute z--1"></b-img>
+                <b-img 
+                :src="details.img" 
+                :alt="details.imgAlt" 
+                class="page-banner w-100 absolute z--1"></b-img>
                 <!-- trans-black overlay -->
                 <div class="page-banner w-100 absolute z--1" style="background: rgba(0,0,0,0.4);"></div>
                 <div class="relative z-1 text-light text-left p-5" style="top: 50px;">
@@ -81,15 +84,16 @@
 
                     <!-- category alerts -->
                     <div class="bg-glass p-4 mb-3 w-100" style="border-radius: 14px;">
-                        <ul class="list-unstyled mt-3 w-100">
+                        <ul class="list-unstyled mt-3 w-100"
+                        v-for="items in $t('aux')" :key="items.id">
                             <b-alert variant="warning" class="alert alert-yellow" show>
-                                <span class="font-weight-bold">Category:</span> {{ details.category }}
+                                <span class="font-weight-bold">{{ items.categoryTitle }}:</span> {{ details.category }}
                             </b-alert>
                             <b-alert variant="info" class="alert alert-lightblue" show>
-                                <span class="font-weight-bold">Name:</span> {{ details.name }}
+                                <span class="font-weight-bold">{{ items.nameTitle }}:</span> {{ details.name }}
                             </b-alert>
                             <b-alert variant="success" class="alert alert-success" show>
-                                <span class="font-weight-bold">Description:</span> {{ details.description }}
+                                <span class="font-weight-bold">{{ items.descriptionTitle }}:</span> {{ details.description }}
                             </b-alert>
                         </ul>   
                     </div>
@@ -135,13 +139,20 @@
                     <!-- action button grid rounded -->
                     <b-row class="d-flex justify-content-center align-items-center w-100 bg-trans text-light p-2 mx-auto rounded">
                         <b-col sm class="px-1">
-                            <b-button size="lg" class="bg-orange border-0 my-2 w-100" @click="addToCart">
+                            <!-- <b-button size="lg" class="bg-orange border-0 my-2 w-100" @click="addToCart">
                                 <plus-icon style="width: 30; height: 30;"></plus-icon>
+                            </b-button> -->
+                            <b-button type="button" size="lg" variant="orange" class="d-flex justify-content-center my-2 w-100" @click="addToCart">
+                                <b-icon icon="plus" class="" font-scale="1.5"></b-icon> Add
                             </b-button>
                         </b-col>
                         <b-col sm class="px-1">
-                            <b-button size="lg" class="bg-green border-0 my-2 w-100" @click="goToCart">
+                            <!-- <b-button size="lg" class="bg-green border-0 my-2 w-100" @click="goToCart">
                                 <cart-icon style="width: 30; height: 30;"></cart-icon>
+                            </b-button> -->
+
+                            <b-button type="button" size="lg" variant="green" class="d-flex justify-content-center my-2 w-100" @click="goToCart">
+                                <b-icon icon="cart2" class="mr-2" font-scale="1"></b-icon> Checkout
                             </b-button>
                         </b-col>
                         <b-col sm class="px-1">
@@ -168,8 +179,8 @@
 <script>
 import Swal from 'sweetalert2'
 import HomeIcon from '../components/icons/HomeIcon.vue'
-import CartIcon from '../components/icons/CartIcon.vue'
-import PlusIcon from '../components/icons/PlusIcon.vue'
+// import CartIcon from '../components/icons/CartIcon.vue'
+// import PlusIcon from '../components/icons/PlusIcon.vue'
 // import DetailMenuIcon from '../components/icons/DetailMenuIcon.vue'
 import InfoIcon from '../components/icons/InfoIcon.vue'
 import CheckIcon from '../components/icons/CheckIcon.vue'
@@ -178,8 +189,8 @@ export default {
     name: 'FoodDetails',
     components: {
         HomeIcon,
-        CartIcon,
-        PlusIcon,
+        // CartIcon,
+        // PlusIcon,
         InfoIcon,
         CheckIcon,
     },
@@ -187,6 +198,11 @@ export default {
         return {
             details: this.$route.params,
         }
+    },
+    computed: {
+      aux() {
+        return this.$store.state.data.aux;
+      },
     },
     methods: {
         getStarted() {

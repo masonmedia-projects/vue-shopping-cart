@@ -32,6 +32,7 @@
       "btn2": "Proceed"
     }
   ],
+
   "homepage":[
     {
       "bannerMicroTitle": "My Leadership Learning Tool",
@@ -63,6 +64,7 @@
       }
     }
   ],
+
   "quickStart":[
     {
       "bannerImg": "img/home_page/01_getstartedcover.jpg",
@@ -75,6 +77,7 @@
       "btn2": "About"
     }
   ],
+
   "getStarted":[
     {
       "microTitle": "My Leadership Learning Tool",
@@ -89,6 +92,7 @@
       }
     }
   ],
+
   "aboutpage":[
     {
       "microTitle1": "My Leadership Learning Tool",
@@ -116,6 +120,7 @@
       }
     }
   ],
+  
   "myLearningPlan":[
     {
       "title":"My Learning Plan",
@@ -131,13 +136,22 @@
       "emptyPlan": "My learning plan is empty"
     }
   ],
+
+  "aux": [
+    {
+      "categoryTitle": "Category",
+      "descriptionTitle": "Description",
+      "nameTitle": "Name"
+    }
+  ],
   
   "allCategories":[
     {
       "id":1,
       "name":"Self-Awareness",
       "category":"Leading Yourself",
-      "url":"img/get_started/selfaware.jpg",
+      "img":"img/get_started/selfaware.jpg",
+      "imgAlt": "",
       "description":"Building awareness around the mindsets and behaviours that help you be a successful leader",
       "moreDetail":[
         "Seeing yourself clearly and objectively through reflection and introspection",
@@ -154,7 +168,8 @@
       "id":2,
       "name":"Empowerment",
       "category":"Collaborating with & Inspiring Others",
-      "url":"img/get_started/empowerment.jpg",
+      "img":"img/get_started/empowerment.jpg",
+      "imgAlt": "",
       "description":"Developing strong relationships and motivating others to perform at their highest potential",
       "moreDetail":[
         "Inspiring ownership and accountability within others",
@@ -173,7 +188,8 @@
       "id":3,
       "name":"Collaboration",
       "category":"Collaborating with & Inspiring Others",
-      "url":"img/get_started/collaboration.jpg",
+      "img":"img/get_started/collaboration.jpg",
+      "imgAlt": "",
       "description":"Developing strong relationships and motivating others to perform at their highest potential",
       "moreDetail": [
         "Creating and delivering on shared goals through influence and cooperation",
@@ -190,7 +206,8 @@
       "id":4,
       "name":"Communication",
       "category":"Communicating Effectively & with Empathy",
-      "url":"img/get_started/communication.jpg",
+      "img":"img/get_started/communication.jpg",
+      "imgAlt": "",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Conveying information and ideas persuasively and succinctly",
@@ -209,7 +226,8 @@
       "id":5,
       "name":"Authentic Conversations",
       "category":"Communicating Effectively & with Empathy",
-      "url":"img/get_started/conversations.jpg",
+      "img":"img/get_started/conversations.jpg",
+      "imgAlt": "",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Listening actively to gain insights to other perspectives",
@@ -230,7 +248,8 @@
       "id":6,
       "name":"Emotional Intelligence ",
       "category":"Communicating Effectively & with Empathy",
-      "url":"img/get_started/emotionalintell.jpg",
+      "img":"img/get_started/emotionalintell.jpg",
+      "imgAlt": "",
       "description":"Communicating a clear vision to accomplish key objectives",
       "moreDetail": [
         "Conveying empathy and recognizing the emotions of others",
@@ -247,7 +266,8 @@
       "id":7,
       "name":"Critical Thinking",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"img/get_started/criticalthinking.jpg",
+      "img":"img/get_started/criticalthinking.jpg",
+      "imgAlt": "",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Identifying the root cause of a business issue", 
@@ -264,7 +284,8 @@
       "id":8,
       "name": "Strategic Thinking",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"img/get_started/strategic.jpg",
+      "img":"img/get_started/strategic.jpg",
+      "imgAlt": "",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Analyzing global trends", 
@@ -283,7 +304,8 @@
       "id":9,
       "name": "Performance",
       "category":"Executing Strategic & Operational Excellence",
-      "url":"img/get_started/performance.jpg",
+      "img":"img/get_started/performance.jpg",
+      "imgAlt": "",
       "description":"Consistently delivering extraordinary results",
       "moreDetail": [
         "Supporting and trusting others to achieve their highest potential",
@@ -301,7 +323,8 @@
       "id":10,
       "name": "Customer-Centricity",
       "category":"Fostering Innovation and Agility",
-      "url":"img/get_started/customer.jpg",
+      "img":"img/get_started/customer.jpg",
+      "imgAlt": "",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Demonstrating empathy for the customer", 
@@ -319,7 +342,8 @@
       "id":11,
       "name": "Innovation",
       "category":"Fostering Innovation and Agility",
-      "url":"img/get_started/innovation.jpg",
+      "img":"img/get_started/innovation.jpg",
+      "imgAlt": "",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Exploring new ideas, methods and alternatives to achieve outcomes",
@@ -336,7 +360,8 @@
       "id":12,
       "name": "Change Agility",
       "category":"Fostering Innovation and Agility",
-      "url":"img/get_started/change.jpg",
+      "img":"img/get_started/change.jpg",
+      "imgAlt": "",
       "description":"Encouraging new ideas and solutions through creative approaches",
       "moreDetail": [
         "Seeing the necessity or opportunity created by change",  
