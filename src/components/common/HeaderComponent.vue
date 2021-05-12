@@ -21,7 +21,7 @@
     </b-navbar-toggle>
 
     <!-- sidebar cart review -->
-    <!-- <b-sidebar 
+    <b-sidebar 
     id="sidebar-right" 
     title="My plan" 
     header-class="py-3 h5 border-bottom"
@@ -43,7 +43,7 @@
           v-for="items in cartItems" :key="items.id"
           >
             <b-card-text>
-              /remove item
+              <!-- /remove item -->
               <div @click="removeItem(items)" type="button" aria-label="Close" class="font-weight-bold absolute right top p-2">
                 <close-icon></close-icon>
               </div>
@@ -52,18 +52,24 @@
             </b-card-text>
           </b-card>
           </div>
-          /show empty cart if no items
+          <!-- /show empty cart if no items -->
           <div v-else>
             <div 
             class="d-flex flex-column justify-content-center align-items-center min-h-50"
             v-for="items in $t('myLearningPlan')" :key="items.index">
-               <user-icon class="text-lightblue shadow rounded-circle" style="height: 75px; width: 75px;"></user-icon>
+              <b-icon 
+              icon="person-circle" 
+              variant="secondary"
+              font-scale="6"
+              class="align-self-center bg-yellow rounded-circle shadow" 
+              title="There are no items in my plan"></b-icon>
+
                 <h5 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h5>
             </div>
         </div>
       </b-navbar-nav>
       </div>
-    </b-sidebar> -->
+    </b-sidebar>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav 
@@ -73,13 +79,7 @@
         </span>
 
           <!-- //sidebar activate  -->
-          <!-- <div v-b-toggle.sidebar-right class="nav-link mr-3">
-            <user-icon class="user-icon"></user-icon>
-            <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
-          </div> -->
-
-          <!-- my-plan link -->
-          <router-link class="nav-link mr-3" to="/my-plan">
+          <div v-b-toggle.sidebar-right class="nav-link mr-3">
             <b-icon-person-circle 
               variant="base"
               font-scale="2"
@@ -87,7 +87,18 @@
               <span class="sr-only">My plan</span>
             </b-icon-person-circle>
             <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
-          </router-link>
+          </div>
+
+          <!-- my-plan menu link -->
+          <!-- <router-link class="nav-link mr-3" to="/my-plan">
+            <b-icon-person-circle 
+              variant="base"
+              font-scale="2"
+              title="My learning plan">
+              <span class="sr-only">My plan</span>
+            </b-icon-person-circle>
+            <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
+          </router-link> -->
           
       </b-navbar-nav>
       <b-navbar-nav class="nav-item py-2">
@@ -106,7 +117,7 @@
 </template>
 
 <script>
-// import CloseIcon from '../icons/CloseIcon.vue';
+import CloseIcon from '../icons/CloseIcon.vue';
 import ExitModal from './ExitModal.vue';
 import { BIconPersonCircle } from 'bootstrap-vue'
 
@@ -115,7 +126,7 @@ export default {
     components: {
         ExitModal,
         BIconPersonCircle,
-        // CloseIcon,
+        CloseIcon,
     },
     data () {
       return { langs: ['en', 'fr'] }
