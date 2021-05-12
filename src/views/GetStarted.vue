@@ -20,8 +20,10 @@
       <b-col lg="6" 
       class="d-flex flex-column justify-content-center align-items-center p-5"
       style="min-height: 50vh;">
-        <b-img class="w-100" style="object-fit: cover; border-radius: 0 14px 14px 0; filter: drop-shadow(2px 4px 10px #222222);" 
-        :src="items.bannerImg"></b-img> 
+        <b-img 
+        :src="items.img.banner"
+        :alt="items.imgAlt.banner"
+        class="w-100" style="object-fit: cover; border-radius: 0 14px 14px 0; filter: drop-shadow(2px 4px 10px #222222);" ></b-img> 
       </b-col>
     </b-row>
 

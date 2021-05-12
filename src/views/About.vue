@@ -1,11 +1,12 @@
 <template>
   <b-container fluid contClass="bg-gradient-lightblue">
+    <div v-for="items in $t('aboutpage')" :key="items.id">
         <b-row 
-        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100" 
-        v-for="items in $t('aboutpage')" :key="items.id">
-            <b-img :src="items.bannerImg" 
-            class="w-100 h-100" 
-            style="object-fit: cover; position: absolute; z-index: 0; right: 0; top: 0;"></b-img>
+        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100">
+            <b-img 
+            :src="items.img.banner"
+            :alt="items.imgAlt.banner" 
+            class="w-100 h-100 absolute cover z-0 left top"></b-img>
             <!-- color strip -->
             <div class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
             <b-col lg="8"
@@ -19,48 +20,17 @@
                     <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text1"></p>
                     <scroll-down-icon class="mt-4 text-dark"></scroll-down-icon>
-
-                    <!-- tabs -->
-                    <!-- <div>
-                        <transition name="fade" appear>
-                            <div>
-                              <component :is="selectedComponent"></component>
-                              <hr class="d-flex mx-0 mr-auto bg-warning" style="height: 4px; width: 50px; margin: 30px 0">
-                              <div class="d-flex mb-4">
-                                <b-button 
-                                  variant="coral" 
-                                  size="lg"
-                                  class="shadow mr-2" 
-                                  :class="{highlight:selected == 1}"
-                                  @click="selectedComponent = 'TabOne'"
-                                  v-html="items.btn1">Read more</b-button>
-                                  <b-button 
-                                  variant="lightpink" 
-                                  size="lg"
-                                  class="shadow mr-2" 
-                                  @click="selectedComponent = 'TabTwo'"
-                                  v-html="items.btn2"></b-button>
-                                  <b-button 
-                                  variant="bluegrey" 
-                                  size="lg"
-                                  class="shadow" 
-                                  @click="selectedComponent = 'TabThree'"
-                                  v-html="items.btn3">Three</b-button>
-                              </div>
-                            </div>
-                        </transition>
-                    </div> -->
                 </div>
                 <!--/content-->
             </b-col>
         </b-row>
 
         <b-row 
-        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100" 
-        v-for="items in $t('aboutpage')" :key="items.id">
-            <b-img :src="items.img2" 
-            class="w-100 h-100" 
-            style="object-fit: cover; position: absolute; z-index: 0; right: 0; top: 0;"></b-img>
+        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100">
+            <b-img 
+            :src="items.img.img2"
+            :alt="items.imgAlt.img2" 
+            class="w-100 h-100 absolute cover z-0 left top"></b-img>
             <!-- color strip -->
             <div class="absolute bottom h-25 w-100 z-0 bg-purple-trans"></div>
             <b-col lg="8" offset-lg="4"
@@ -80,11 +50,11 @@
         </b-row>
 
         <b-row 
-        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100" 
-        v-for="items in $t('aboutpage')" :key="items.id">
-            <b-img :src="items.img3" 
-            class="w-100 h-100" 
-            style="object-fit: cover; position: absolute; z-index: 0; right: 0; top: 0;"></b-img>
+        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100">
+            <b-img 
+            :src="items.img.img3"
+            :alt="items.imgAlt.img3" 
+            class="w-100 h-100 absolute cover z-0 left top"></b-img>
             <!-- color strip -->
             <div class="absolute bottom h-25 w-100 z-0 bg-orange-trans"></div>
             <b-col lg="8"
@@ -107,7 +77,7 @@
                 <!--/content-->
             </b-col>
         </b-row>
-        
+      </div>
 </b-container>
    <!-- <b-container fluid class="p-5 mt-4">
     <b-row class="text-left">
@@ -149,17 +119,11 @@
 </template>
 
 <script>
-    // import TabOne from '@/components/tabs/TabOne.vue';
-    // import TabTwo from '@/components/tabs/TabTwo.vue';
-    // import TabThree from '@/components/tabs/TabThree.vue';
 import ScrollDownIcon from '../components/icons/ScrollDownIcon.vue'
 
 export default {
   name: 'About',
   components: {
-    // TabOne,
-    // TabTwo,
-    // TabThree,
     ScrollDownIcon
   },
   data() {

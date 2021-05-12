@@ -1,5 +1,4 @@
 <template>
-  
   <div>
   <b-navbar 
   fixed="top" 
