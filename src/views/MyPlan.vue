@@ -54,7 +54,6 @@
             <hr class="w-100 mb-4" />
             <!-- next steps -->
             <b-col lg="12" v-for="item in $t('myLearningPlan')" :key="item.id">
-                <!-- <h3 class="mb-4 mt-0" v-html="item.subtitle"></h3> -->
 
             <b-alert variant="lightblue" class="alert d-flex justify-content-start align-items-center w-100 h4 py-3 mb-3 text-base text-uppercase" show>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" class="bi bi-hash" viewBox="0 0 16 16">
@@ -82,7 +81,10 @@
             <b-col lg="12" 
             class="d-flex flex-column justify-content-center align-items-center min-h-100"
             v-for="items in $t('myLearningPlan')" :key="items.index">
-               <empty-cart :emptyPlan="items.emptyPlan"></empty-cart>
+                <user-icon style="height: 150px; width: 150px;">
+                    <title>{{ items.emptyPlan }}</title>
+                </user-icon>
+                <h3 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h3>
             </b-col>
         </b-row>
         </b-container>
@@ -90,8 +92,6 @@
 </template>
 
 <script>
-// import CartSummary from '../components/common/CartSummary.vue'
-import EmptyCart from '../components/common/EmptyCart.vue'
 import ArrowIcon from '../components/icons/ArrowIcon.vue'
 import Swal from 'sweetalert2'
 import UserIcon from '../components/icons/UserIcon.vue'
@@ -99,10 +99,8 @@ import UserIcon from '../components/icons/UserIcon.vue'
 export default {
     name: 'Cart',
     components: { 
-        EmptyCart,
         ArrowIcon,
         UserIcon,
-        // CartSummary
     },
     methods: {
         addItem(items) {
