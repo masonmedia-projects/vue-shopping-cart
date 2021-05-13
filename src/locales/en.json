@@ -142,8 +142,11 @@
       "categoryTitle": "Category",
       "descriptionTitle": "Description",
       "nameTitle": "Name",
+      "sectionTitle1": "What it looks like",
+      "sectionTitle2": "Add to your plan if",
+      "sectionTitle3": "Next steps",
       "btn1": "Add",
-      "btn2": "Checkout",
+      "btn2": "My Plan",
       "btn3": "Browse"
     }
   ],

@@ -36,7 +36,7 @@
       </b-navbar> -->
 
     <b-row class="d-flex text-left">
-      <b-col lg="4"
+      <b-col lg="4" md="6"
       class="text-center"
       v-on:click="foodDetails(items)" 
       v-for="items in $t('allCategories')" :key="items.id">
