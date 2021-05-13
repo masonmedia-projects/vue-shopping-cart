@@ -19,7 +19,7 @@
                     v-html="items.title1"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text1"></p>
-                    <scroll-down-icon class="mt-4 text-dark"></scroll-down-icon>
+                    <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
                 </div>
                 <!--/content-->
             </b-col>
@@ -43,7 +43,7 @@
                     v-html="items.title2"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-purple" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text2"></p>
-                    <scroll-down-icon class="mt-4 text-dark"></scroll-down-icon>
+                    <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
                 </div>
                 <!--/content-->
             </b-col>
@@ -119,13 +119,8 @@
 </template>
 
 <script>
-import ScrollDownIcon from '../components/icons/ScrollDownIcon.vue'
-
 export default {
   name: 'About',
-  components: {
-    ScrollDownIcon
-  },
   data() {
     return {
       // selected: undefined,

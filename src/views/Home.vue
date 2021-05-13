@@ -39,6 +39,7 @@
                     v-html="items.bannerTitle"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">
                     <h4 class="mb-2" v-html="items.bannerSubtitle"></h4>
+                    <b-icon icon="chevron-double-down" class="mt-3" variant="light" font-scale="2"></b-icon>
                 </div>
             </b-col>
         </b-row>
@@ -61,7 +62,7 @@
                 v-html="items.title1"></h1>
                 <hr class="d-flex m-0 mr-auto my-3 bg-orange" style="height: 4px; width: 50px;">
                 <p class="mb-2" v-html="items.text1"></p>
-                <scroll-down-icon class="mt-4 text-orange"></scroll-down-icon>
+                 <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
             </b-col>
         </b-row>
 
@@ -76,7 +77,7 @@
                 v-html="items.title2"></h1>
                 <hr class="d-flex m-0 mr-auto my-3 bg-danger" style="height: 4px; width: 50px;">
                 <p class="mb-2" v-html="items.text2"></p>
-                <scroll-down-icon class="mt-4 text-danger"></scroll-down-icon>
+                <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
             </b-col>
             <b-col lg="6" class="d-flex align-self-stretch p-0">
                 <b-img 
@@ -126,13 +127,8 @@
 </template>
 
 <script>
-import ScrollDownIcon from '../components/icons/ScrollDownIcon.vue'
-
 export default {
   name: 'About',
-  components: {
-    ScrollDownIcon
-  },
     methods: {
       itemDetails(item) {
             this.$router.push({name: "ItemDetails", params: item });
