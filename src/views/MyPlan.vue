@@ -32,13 +32,26 @@
                 v-for="items in cartItems" :key="items.id">
                     <b-row no-gutters>
                     <b-col md="5">
-                        <b-card-img :src="items.url" alt="Image" class="h-100 rounded-0" style="object-fit: cover"></b-card-img>
+                        <b-card-img 
+                        :src="items.img" 
+                        :alt="items.imgAlt" 
+                        class="h-100 rounded-0 cover">
+                        </b-card-img>
                     </b-col>
                     <b-col md="7">
                         <b-card-body 
-                        body-class="d-flex flex-column justify-content-center align-items-start p-5" >
+                        body-class="d-flex flex-column justify-content-center align-items-start p-4 pb-5 p-md-5 relative" >
                             <b-card-text class="w-100">
-                                <h4 class="font-weight-bold" v-html="items.name"></h4>
+
+                                <b-media class="my-4 d-flex align-items-center bg-light" vertical-align="center">
+                                    <template #aside class="media-aside align-self-center mr-3">
+                                        <span class="font-weight-bolder border-0 px-3 py-4 mb-0 bg-dark text-light" style="border-radius: 14px 0 0 14px;">{{ items.id }}.</span>
+                                    </template>
+                                    <h4 class="checkout-item-title font-weight-bold w-100 mb-0" v-html="items.name"></h4>
+                                </b-media>
+
+                                <!-- <h4><span class="text-muted font-weight-light mb-0">{{ items.id }}.</span></h4>
+                                <h4 class="font-weight-bold">{{ items.name }}</h4> -->
                                 <p class="mb-0 my-2 small text-muted font-weight-bold border-top pt-2" v-html="items.category"></p>
                                 <p class="mb-0 pb-3 w-100 border-top pt-2" v-html="items.description"></p>
                                 <!-- <div class="">
@@ -48,7 +61,7 @@
                                 </div> -->
                                 <b-button variant="outline-dark" class="mt-2 mr-2" @click="removeItem(items)">Remove</b-button>
                                 <a :href="items.download" download target="_blank"> 
-                                    <b-button variant="green" class="mt-2" >Download</b-button>
+                                    <b-button variant="dark" class="mt-2" >Download</b-button>
                                 </a>
                             </b-card-text>
                         </b-card-body>
@@ -138,10 +151,10 @@ export default {
         },
     },
     // local storage
-    // created() {
-    //     if (this.$route.params.id !== undefined)
-    //     localStorage.setItem("cartItems", JSON.stringify(this.$route.params));
-    // },
+    created() {
+        if (this.$route.params.id !== undefined)
+        localStorage.setItem("cartItems", JSON.stringify(this.$route.params));
+    },
     computed: {
         cartItems() {
             return this.$store.state.cartItems;

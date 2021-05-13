@@ -141,13 +141,16 @@
     {
       "categoryTitle": "Category",
       "descriptionTitle": "Description",
-      "nameTitle": "Name"
+      "nameTitle": "Name",
+      "btn1": "Add",
+      "btn2": "Checkout",
+      "btn3": "Browse"
     }
   ],
   
   "allCategories":[
     {
-      "id":1,
+      "id": "01",
       "name":"Self-Awareness",
       "category":"Leading Yourself",
       "img":"img/get_started/selfaware.jpg",
@@ -165,7 +168,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":2,
+      "id": "02",
       "name":"Empowerment",
       "category":"Collaborating with & Inspiring Others",
       "img":"img/get_started/empowerment.jpg",
@@ -185,7 +188,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":3,
+      "id": "03",
       "name":"Collaboration",
       "category":"Collaborating with & Inspiring Others",
       "img":"img/get_started/collaboration.jpg",
@@ -203,7 +206,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":4,
+      "id": "04",
       "name":"Communication",
       "category":"Communicating Effectively & with Empathy",
       "img":"img/get_started/communication.jpg",
@@ -223,7 +226,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":5,
+      "id": "05",
       "name":"Authentic Conversations",
       "category":"Communicating Effectively & with Empathy",
       "img":"img/get_started/conversations.jpg",
@@ -245,7 +248,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":6,
+      "id": "06",
       "name":"Emotional Intelligence ",
       "category":"Communicating Effectively & with Empathy",
       "img":"img/get_started/emotionalintell.jpg",
@@ -263,7 +266,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":7,
+      "id": "07",
       "name":"Critical Thinking",
       "category":"Executing Strategic & Operational Excellence",
       "img":"img/get_started/criticalthinking.jpg",
@@ -281,7 +284,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":8,
+      "id": "08",
       "name": "Strategic Thinking",
       "category":"Executing Strategic & Operational Excellence",
       "img":"img/get_started/strategic.jpg",
@@ -301,7 +304,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":9,
+      "id": "09",
       "name": "Performance",
       "category":"Executing Strategic & Operational Excellence",
       "img":"img/get_started/performance.jpg",
@@ -320,7 +323,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":10,
+      "id": "10",
       "name": "Customer-Centricity",
       "category":"Fostering Innovation and Agility",
       "img":"img/get_started/customer.jpg",
@@ -339,7 +342,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":11,
+      "id": "11",
       "name": "Innovation",
       "category":"Fostering Innovation and Agility",
       "img":"img/get_started/innovation.jpg",
@@ -357,7 +360,7 @@
       "download": "./dummy.pdf"
     },
     {
-      "id":12,
+      "id": "12",
       "name": "Change Agility",
       "category":"Fostering Innovation and Agility",
       "img":"img/get_started/change.jpg",
