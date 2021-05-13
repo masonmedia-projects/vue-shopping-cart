@@ -120,9 +120,9 @@
 
                         <b-row class="px-2">
                             <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.index">
-                                <info-icon class="text-lightblue mb-3"></info-icon>
-                                <p v-html="item"></p>
-                                <p class="small text-muted mt-auto mb-0" v-html="details.name"></p>
+                                <b-icon icon="info-square" variant="lightblue mb-3" class="mr-2" font-scale="2"></b-icon>
+                                <p class="h-100 pl-3 border-left border-lightblue-trans" v-html="item"></p>
+                                <p class="small text-lightblue mt-auto mb-0" v-html="details.name"></p>
                             </b-col>
                         </b-row>
                         
@@ -135,9 +135,9 @@
 
                         <b-row class="d-flex px-2">
                             <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded"  v-for="item in details.selectIf" :key="item.id">
-                                <check-icon class="text-green mb-3"></check-icon>
-                                <p v-html="item"></p>
-                                <p class="small text-muted mt-auto mb-0" v-html="details.name"></p>
+                                <b-icon icon="check2-square" variant="green mb-3" class="mr-2" font-scale="2"></b-icon>
+                                <p class="h-100 pl-3 border-left border-green-trans" v-html="item"></p>
+                                <p class="small text-green mt-auto mb-0" v-html="details.name"></p>
                             </b-col>
                         </b-row>
                         <!-- next steps -->
@@ -187,22 +187,9 @@
 
 <script>
 import Swal from 'sweetalert2'
-// import HomeIcon from '../components/icons/HomeIcon.vue'
-// import CartIcon from '../components/icons/CartIcon.vue'
-// import PlusIcon from '../components/icons/PlusIcon.vue'
-// import DetailMenuIcon from '../components/icons/DetailMenuIcon.vue'
-import InfoIcon from '../components/icons/InfoIcon.vue'
-import CheckIcon from '../components/icons/CheckIcon.vue'
 
 export default {
     name: 'FoodDetails',
-    components: {
-        // HomeIcon,
-        // CartIcon,
-        // PlusIcon,
-        InfoIcon,
-        CheckIcon,
-    },
     data() {
         return {
             details: this.$route.params,
