@@ -122,7 +122,7 @@
                             <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.index">
                                 <b-icon icon="info-square" variant="lightblue mb-3" class="mr-2" font-scale="2"></b-icon>
                                 <p class="h-100 pl-3 border-left border-lightblue-trans" v-html="item"></p>
-                                <p class="small text-lightblue mt-auto mb-0" v-html="details.name"></p>
+                                <p class="small text-lightblue pb-2 border-bottom border-lightblue-trans mt-auto mb-0" v-html="details.name"></p>
                             </b-col>
                         </b-row>
                         
@@ -137,7 +137,7 @@
                             <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded"  v-for="item in details.selectIf" :key="item.id">
                                 <b-icon icon="check2-square" variant="green mb-3" class="mr-2" font-scale="2"></b-icon>
                                 <p class="h-100 pl-3 border-left border-green-trans" v-html="item"></p>
-                                <p class="small text-green mt-auto mb-0" v-html="details.name"></p>
+                                <p class="small text-green mt-auto mb-0 pb-2 border-bottom border-green-trans" v-html="details.name"></p>
                             </b-col>
                         </b-row>
                         <!-- next steps -->
