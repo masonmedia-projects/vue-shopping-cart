@@ -148,13 +148,6 @@
                         v-html="items.sectionTitle3">
                         </b-alert>
 
-                        <!-- action button group connected -->
-                        <!-- <b-button-group class="d-flex flex-wrap justify-content-center align-items-center w-100" size="lg">
-                            <b-button variant="orange" @click="addToCart">Add to plan</b-button>
-                            <b-button variant="green" @click="goToCart">Checkout</b-button>
-                            <b-button variant="royal" @click="getStarted">Return</b-button>
-                        </b-button-group> -->
-
                         <!-- action button grid rounded -->
                         <b-row class="d-flex justify-content-center align-items-center w-100 bg-trans text-light p-2 mx-auto rounded">
                             <b-col sm class="px-1">
@@ -163,7 +156,9 @@
                                 </b-button>
                             </b-col>
                             <b-col sm class="px-1">
-                                <b-button type="button" size="lg" variant="green" class="d-flex justify-content-center align-items-center my-2 w-100" @click="goToCart">
+                                <b-button type="button" size="lg" variant="green" 
+                                class="d-flex justify-content-center align-items-center my-2 w-100" 
+                                v-b-toggle.sidebar-right>
                                     <b-icon icon="cart2" class="mr-2" font-scale="1"></b-icon> {{ items.btn2 }}
                                 </b-button>
                             </b-col>

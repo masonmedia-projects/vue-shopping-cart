@@ -54,7 +54,7 @@
           v-for="item in $t('getStarted')" :key="item.id">
             <h2 v-html="items.name" class="font-weight-bold"></h2>
             <p v-html="items.category"></p>  
-            <b-button variant="lightblue mr-2" v-html="item.detailsBtn"></b-button>
+            <b-button variant="lightblue mr-2 stretched-link" v-html="item.detailsBtn"></b-button>
             <!-- <router-link :to="{ name: 'FoodDetails', params: {id: topRated.id}}"></router-link> -->
           </b-card-text>
         </b-card>

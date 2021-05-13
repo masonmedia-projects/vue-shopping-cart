@@ -63,7 +63,7 @@
               font-scale="6"
               class="align-self-center bg-yellow rounded-circle shadow" 
               title="There are no items in my plan"></b-icon>
-
+              <span class="sr-only">There are no items in my plan</span>
                 <h5 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h5>
             </div>
         </div>
@@ -74,18 +74,27 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav 
       class="d-flex justify-content-center align-items-start align-items-lg-center ml-auto">
-        <span v-for="item in items.menuItems" :key="item.id">
+        <li
+        v-for="item in items.menuItems" :key="item.id">
             <router-link class="nav-link" :to="item.url" v-html="item.link"></router-link>
-        </span>
+        </li>
 
           <!-- //sidebar activate  -->
           <div v-b-toggle.sidebar-right class="nav-link mr-3">
-            <b-icon-person-circle 
+            <b-icon 
+              icon="cart" 
+              variant="secondary"
+              font-scale="2"
+              class="align-self-center" 
+              title="There are no items in my plan"></b-icon>
+              <span class="sr-only">There are no items in my plan</span>
+              
+            <!-- <b-icon-person-circle 
               variant="base"
               font-scale="2"
               title="My learning plan">
               <span class="sr-only">My plan</span>
-            </b-icon-person-circle>
+            </b-icon-person-circle> -->
             <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
           </div>
 
@@ -103,7 +112,7 @@
       </b-navbar-nav>
       <b-navbar-nav class="nav-item py-2">
         <!-- lang select -->
-        <select class="custom-select mr-3" v-model="$i18n.locale">
+        <select class="custom-select mr-3 mt-3 mb-2 mt-lg-0 mb-lg-0" v-model="$i18n.locale">
           <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
             {{ lang }}
           </option>
@@ -119,13 +128,13 @@
 <script>
 import CloseIcon from '../icons/CloseIcon.vue';
 import ExitModal from './ExitModal.vue';
-import { BIconPersonCircle } from 'bootstrap-vue'
+// import { BIconPersonCircle } from 'bootstrap-vue'
 
 export default {
     name: 'HeaderComponent',
     components: {
         ExitModal,
-        BIconPersonCircle,
+        // BIconPersonCircle,
         CloseIcon,
     },
     data () {

@@ -43,7 +43,7 @@
                         body-class="d-flex flex-column justify-content-center align-items-start p-4 pb-5 p-md-5 relative" >
                             <b-card-text class="w-100">
 
-                                <b-media class="my-4 d-flex align-items-center bg-light" vertical-align="center">
+                                <b-media class="mb-3 d-flex align-items-center bg-light" vertical-align="center">
                                     <template #aside class="media-aside align-self-center mr-3">
                                         <span class="font-weight-bolder border-0 px-3 py-4 mb-0 bg-dark text-light" style="border-radius: 14px 0 0 14px;">{{ items.id }}.</span>
                                     </template>
