@@ -88,7 +88,8 @@
                         <!-- /media object header style -->
                         <b-media class="my-3 bg-lightblue-trans text-lightblue d-flex align-items-center" vertical-align="center">
                             <template #aside class="media-aside align-self-center mr-3">
-                                <span class="details-title font-weight-bold text-lightblue border-0 px-3 py-4 px-md-4 py-md-5 mb-0 bg-lightblue text-light shadow" style="border-radius: 14px 0 0 14px;">{{ details.id }}.</span>
+                                <span class="details-title font-weight-bold text-lightblue border-0 px-3 py-4 px-md-4 py-md-5 mb-0 bg-lightblue text-light shadow" 
+                                style="border-radius: 14px 0 0 14px;">{{ details.id }}.</span>
                             </template>
                             <h1 class="details-title font-weight-bold w-100 mb-0" v-html="details.name"></h1>
                         </b-media>
@@ -96,7 +97,6 @@
 
                     <!-- category alerts -->
                     <div v-for="items in $t('aux')" :key="items.id">
-
                         <div class="bg-glass p-4 mb-3 w-100" style="border-radius: 14px;">
                             <ul class="list-unstyled mt-3 w-100">
                                 <b-alert variant="warning" class="alert alert-yellow" show>

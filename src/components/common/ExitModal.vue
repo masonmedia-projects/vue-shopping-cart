@@ -2,7 +2,7 @@
     <div class="d-flex align-items-center justify-content-start justify-content-lg-center pt-3 pt-lg-0">
         <!-- removed class="gear-icon" -->
         <b-button type="button" size="sm" variant="outline-base" class="d-flex mb-0 rounded px-3" v-b-modal.exit-course>
-            <b-icon icon="gear-fill" class="mr-2 align-self-center" aria-hidden="true"></b-icon> {{ Logout }}
+            <b-icon icon="gear-fill" class="mr-2 align-self-center" aria-hidden="true"></b-icon> {{ logout }}
         </b-button>
         <div>
             <b-modal 
@@ -41,7 +41,7 @@ import { SCORM } from 'pipwerks-scorm-api-wrapper';
 export default {
     name: 'ExitModal',
     props: [
-        'Logout'
+        'logout'
     ],
     computed: {
         exit() {

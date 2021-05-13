@@ -42,8 +42,10 @@
                         <b-card-body 
                         body-class="d-flex flex-column justify-content-center align-items-start p-4 pb-5 p-md-5 relative" >
                             <b-card-text class="w-100">
-
-                                <b-media class="mb-3 d-flex align-items-center bg-light" vertical-align="center">
+                                <!-- media object card title -->
+                                <b-media class="mb-3 mt-3 mt-md-0 d-flex align-items-center bg-light border" 
+                                style="border-radius: 14px 0 0 14px;"
+                                vertical-align="center">
                                     <template #aside class="media-aside align-self-center mr-3">
                                         <span class="font-weight-bolder border-0 px-3 py-4 mb-0 bg-dark text-light" style="border-radius: 14px 0 0 14px;">{{ items.id }}.</span>
                                     </template>
@@ -59,9 +61,9 @@
                                     <span class="cart-quantity px-3">{{ items.quantity }}</span>
                                     <b-button @click="addItem(items)" class="add">+</b-button>
                                 </div> -->
-                                <b-button variant="outline-dark" class="mt-2 mr-2" @click="removeItem(items)">Remove</b-button>
+                                <b-button variant="outline-dark" class="w-sm-100 mt-2 mr-2" @click="removeItem(items)">Remove</b-button>
                                 <a :href="items.download" download target="_blank"> 
-                                    <b-button variant="dark" class="mt-2" >Download</b-button>
+                                    <b-button variant="dark" class="w-sm-100 mt-2" >Download</b-button>
                                 </a>
                             </b-card-text>
                         </b-card-body>
@@ -72,37 +74,51 @@
             <hr class="w-100 mb-4" />
             <!-- next steps -->
             <b-col lg="12" v-for="item in $t('myLearningPlan')" :key="item.id">
-
-            <b-alert variant="lightblue" class="alert d-flex justify-content-start align-items-center w-100 h4 py-3 mb-3 text-base text-uppercase" show>
-                <b-icon-hash 
-                    variant=""
-                    font-scale="1.5"
-                    title="Next steps"
-                    aria-hidden="true">
-                </b-icon-hash>
-                {{ $t(item.subtitle) }}
-            </b-alert>
-
-                <hr class="w-100 mb-4" />
-                <b-alert show variant="light" class="alert d-flex justify-content-start align-items-center text-base py-3 shadow" 
-                v-for="i in item.nextSteps" :key="i.id">
-                    <b-icon-box-arrow-right 
-                    variant="lightblue"
-                    font-scale="2"
-                    class="mr-3"
-                    title="Next step details"
-                    aria-hidden="true">
-                    </b-icon-box-arrow-right>
-                    <p class="mb-0" v-html="i"></p>
+                <b-alert variant="lightblue" class="alert d-flex justify-content-start align-items-center w-100 h4 py-3 mb-3 text-base text-uppercase" show>
+                    <b-icon-hash 
+                        variant=""
+                        font-scale="1.5"
+                        title="Next steps"
+                        aria-hidden="true">
+                    </b-icon-hash>
+                    {{ item.subtitle }}
                 </b-alert>
+                <hr class="w-100 mb-4" />
+                <!-- media object card title -->
+                <b-media 
+                class="d-flex align-items-center alert alert-lightblue shadow border-0 py-3 px-0 mb-3 mt-3 mt-md-0"
+                style="border-radius: 14px 0 0 14px;"
+                vertical-align="center" v-for="i in item.nextSteps" :key="i.id">
+                    <template #aside class="align-self-center">
+                        <div class="px-3 py-5 p-md-4" style="border-radius: 14px 0 0 14px;">
+                            <b-icon icon="box-arrow-right" 
+                            class="text-lightblue" 
+                            font-scale="2"
+                            title="Next step details"
+                            aria-hidden="true"></b-icon>
+                        </div>
+                    </template>
+                    <p class="mb-0 p-4 bg-light shadow" style="border-radius: 14px 0 0 14px;" v-html="i"></p>
+                </b-media>
+
+
+                <!-- <b-alert show variant="light" class="alert d-flex justify-content-start align-items-center text-base py-3 shadow" 
+                v-for="i in item.nextSteps" :key="i.id">
+                    <b-icon icon="box-arrow-right" variant="lightblue" 
+                    class="mr-3" 
+                    font-scale="2"
+                    title="Next step details"
+                    aria-hidden="true"></b-icon>
+                    <p class="mb-0" v-html="i"></p>
+                </b-alert> -->
             </b-col>
             <hr class="w-100" />
 
             <!-- <b-col lg="12" class="d-flex flex-column justify-content-start align-items-start p-0">
                 <cart-summary :totalPrice="totalPrice"></cart-summary>
             </b-col> -->
-
         </b-row>
+
         <!-- if learning plan has no items -->
         <b-row v-else>
             <b-col lg="12" 
@@ -124,13 +140,13 @@
 
 <script>
 import Swal from 'sweetalert2'
-import { BIconPersonCircle, BIconBoxArrowRight, BIconHash } from 'bootstrap-vue'
+import { BIconPersonCircle, BIconHash } from 'bootstrap-vue'
 
 export default {
     name: 'Cart',
     components: { 
         BIconPersonCircle,
-        BIconBoxArrowRight,
+        // BIconBoxArrowRight,
         BIconHash,
     },
     methods: {
