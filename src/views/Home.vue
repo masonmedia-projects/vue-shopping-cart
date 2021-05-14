@@ -25,21 +25,22 @@
 <!-- v.2 banner -->
     <div v-for="items in $t('homepage')" :key="items.id">
         <b-row class="d-flex flex-column justify-content-center align-items-start text-left relative min-h-100 bg-orange" >
-            <b-img 
+            <b-img-lazy 
             :src="items.img.banner" 
             :alt="items.imgAlt.banner"
-            class="min-vh-100 w-75 absolute top right z-0 cover"></b-img>
+            class="min-vh-100 w-75 absolute top right z-0 cover animate__animated animate__fadeIn"></b-img-lazy>
             <!-- color strip -->
             <div class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
             <b-col md="12" lg="10" xl="8"
             class="d-flex flex-column justify-content-center align-items-start relative z-1 p-4 pt-5 p-md-5 mt-5">
-                <div class="text-light p-5 bg-purple-trans" style="border-radius: 14px; text-shadow: 2px 2px 5px #000;">
+                <div class="p-5 bg-glass bg-taieri" style="border-radius: 14px; background-attachment: scroll;">
+                <!-- <div class="text-light p-5 bg-purple-trans" style="border-radius: 14px; text-shadow: 2px 2px 5px #000;"> -->
                     <h5 class="mb-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
                     <h1 class="site-title font-weight-bold mb-4"
                     v-html="items.bannerTitle"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">
                     <h4 class="mb-2" v-html="items.bannerSubtitle"></h4>
-                    <b-icon icon="chevron-double-down" class="mt-3" variant="light" font-scale="2"></b-icon>
+                    <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
                 </div>
             </b-col>
         </b-row>
