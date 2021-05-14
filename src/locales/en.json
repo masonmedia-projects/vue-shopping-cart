@@ -27,7 +27,7 @@
     {
       "heading": "Exit LDT",
       "title": "Are you sure?",
-      "message": "Exiting the Leadership Learning Tool will remove it from your learning plan. Are you sure you want to proceed?",
+      "message": "Exiting the Leadership Development Tool will remove it from your learning plan. Are you sure you want to proceed?",
       "btn1": "Cancel",
       "btn2": "Proceed"
     }
@@ -68,10 +68,10 @@
   "quickStart":[
     {
       "bannerImg": "img/home_page/01_getstartedcover.jpg",
-      "microTitle":"My Leadership Learning Tool",
+      "microTitle":"My Leadership Development Tool",
       "mainTitle":"Quick Start",
-      "title2":"Leadership Learning Tool",
-      "text1":"<strong>Welcome to the Leadership Learning Tool.</strong> This tool will help you to identify and explore learning connected to key leadership capabilities. You will select the skills and behaviours important to you, which will in turn inform personalized recommendations of learning activities that can build on the associated leader capabilities. Remember: great learners make great leaders!",
+      "title2":"Leadership Development Tool",
+      "text1":"<strong>Welcome to the Leadership Development Tool.</strong> This tool will help you to identify and explore learning connected to key leadership capabilities. You will select the skills and behaviours important to you, which will in turn inform personalized recommendations of learning activities that can build on the associated leader capabilities. Remember: great learners make great leaders!",
       "text2":"If you know what knowledge and skills you’d like to focus on, select <strong>Get Started.</strong> If you’d like more context about this tool, or if you’re unsure of your next step and would like to explore some helpful suggestions, select <strong>About.</strong>",
       "btn1": "Get started",
       "btn2": "About"
@@ -80,7 +80,7 @@
 
   "getStarted":[
     {
-      "microTitle": "My Leadership Learning Tool",
+      "microTitle": "My Leadership Development Tool",
       "title":"Get Started",
       "text1":"Build your learning plan by selecting the items you’d like to focus on today. Select the <strong>Details</strong> button of any competency to learn more about it and what it looks like in action before deciding if it’s an appropriate area of focus for you.",
       "detailsBtn": "Details",
@@ -95,10 +95,10 @@
 
   "aboutpage":[
     {
-      "microTitle1": "My Leadership Learning Tool",
+      "microTitle1": "My Leadership Development Tool",
       "title1":"Welcome",
       "archive1":"While many people think of formal study as the obvious route to learning, the 70:20:10 model reveals that this instinct is off base. 10% of learning takes place through traditional methods like courses and formal education. 20% comes through social learning opportunities. 70% comes through on-the-job experience. This tool will support you by organizing these formal, social, and action learning opportunities in a way that will be meaningful and useful to you. //Choose your initial 2–3 areas of focus. Return to this tool, and select <strong>Get Started.</strong> If you’re unsure of which key leader competencies to focus on, reflect on what you’re passionate about developing. Connect with those around you for feedback on what you might focus on.</strong> //This tool will support you by organizing these formal, social, and action-learning opportunities in a way that will be meaningful and useful. Scroll down to learn more about how to use this tool.",
-      "text1":"<strong>Welcome to the Leadership Learning Tool!</strong> This application was designed to provide you with an intuitive, engaging, and multidisciplinary experience to faciliate your leadership journey. You might have been referred to the <strong>LDT</strong> by a manager or colleague, or you may have come in pursuit of a specific leadership goal. Whichever the case, this tool is here to support your learning and development.",
+      "text1":"<strong>Welcome to the Leadership Development Tool!</strong> This application was designed to provide you with an intuitive, engaging, and multidisciplinary experience to faciliate your leadership journey. You might have been referred to the <strong>LDT</strong> by a manager or colleague, or you may have come in pursuit of a specific leadership goal. Whichever the case, this tool is here to support your learning and development.",
       "microTitle2": "Learn by doing",
       "title2": "How to use",
       "text2":"The <strong>LDT</strong> contains a library of leadership competencies that are integral both to our organization, and to the development of great leadership ability. Each competency is part of a larger category of skills outlined in our Leadership Behaviour Model (see <strong>Get Started</strong> page). The <strong>LDT</strong> was designed to give first time users an engaging way to explore and delve into our leadership approach, but also to offer a multifaceted resource that provides ongoing support and learning potential for returning users. The goal of the tool is to lead you on a journey from initial exploration, to a final destination from which you take away personalized learning materials to faciliate your development. Read more below about how to navigate the tool.",
