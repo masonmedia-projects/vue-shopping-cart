@@ -32,7 +32,7 @@
             <!-- color strip -->
             <div class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
             <b-col md="12" lg="10" xl="8"
-            class="d-flex flex-column justify-content-center align-items-start relative z-1 p-4 pt-5 p-md-5 mt-5 mt-md-0">
+            class="d-flex flex-column justify-content-center align-items-start relative z-1 p-4 pt-5 p-md-5 mt-5">
                 <div class="text-light p-5 bg-purple-trans" style="border-radius: 14px; text-shadow: 2px 2px 5px #000;">
                     <h5 class="mb-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
                     <h1 class="site-title font-weight-bold mb-4"
@@ -128,7 +128,7 @@
 
 <script>
 export default {
-  name: 'About',
+  name: 'Home',
     methods: {
       itemDetails(item) {
             this.$router.push({name: "ItemDetails", params: item });
