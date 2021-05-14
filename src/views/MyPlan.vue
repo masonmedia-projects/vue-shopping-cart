@@ -9,10 +9,10 @@
         class="d-flex flex-column justify-content-center align-items-start text-left pt-5 pb-3">
             <b-card 
             body-class="p-0"
-            class="mb-2 border-0 shadow bg-lightblue text-light p-5" style="border-radius: 14px;">
+            class="mb-2 border-0 shadow bg-glass p-5" style="border-radius: 14px;">
                 <b-card-text>
                     <b-icon-person-circle 
-                    variant="yellow"
+                    variant="lightblue"
                     font-scale="3.5"
                     title="My learning plan">
                     <span class="sr-only">My plan</span>
@@ -20,7 +20,7 @@
                     <h1 class="page-title font-weight-bold mb-4 mt-3" 
                     style="line-height: 90%;"
                     v-html="items.title"></h1>
-                    <hr class="d-flex mx-0 mr-auto mt-0 bg-yellow" 
+                    <hr class="d-flex mx-0 mr-auto mt-0 bg-lightblue" 
                     style="height: 4px; width: 50px;">
                     <p class="mb-0" v-html="items.description"></p>                
                 </b-card-text>

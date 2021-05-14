@@ -67,11 +67,59 @@
                     v-html="items.title3"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-orange" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text3"></p>
+                    <!-- modal -->
+                    <b-button 
+                    v-b-modal.modal-center
+                    variant="lightblue" 
+                    size="lg"
+                    class="w-sm-100 mt-4 mr-2">Learn more</b-button>
+                    <b-modal 
+                    id="modal-center" 
+                    centered 
+                    size="lg"
+                    title="Leadership Learning Tool"
+                    body-class="px-5 pt-4 pb-5"
+                    content-class="bg-glass"
+                    ok-title="Get started"
+                    ok-variant="orange">
+
+<!-- card layout from details page -->
+                    <!-- <b-row class="px-2">
+                        <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.index">
+                            <b-icon icon="info-square" variant="lightblue mb-3" class="mr-2" font-scale="2"></b-icon>
+                            <p class="h-100 pl-3 border-left border-lightblue-trans" v-html="item"></p>
+                            <p class="small text-lightblue pb-2 border-bottom border-lightblue-trans mt-auto mb-0" v-html="details.name"></p>
+                        </b-col>
+                    </b-row> -->
+                      
+                      <b-icon icon="info-square" variant="lightblue mb-3" class="" font-scale="3"></b-icon>
+                      <h3 class="font-weight-bold text-lightblue mb-3 py-3 border-top border-bottom border-lightblue-trans">Where to start</h3>
+                      <h5 class="alert alert-lightblue my-4">If you’re unsure of which key leader competencies to focus on:</h5>
+                      <ul>
+                        <li>Review the Leadership Behaviour Model and choose your areas of focus through self-reflection and speaking with your colleagues.</li> 
+                        <li>Reflect on what you’re passionate about developing.</li>
+                      </ul>
+                      <h5 class="alert alert-yellow my-4">Talk to others</h5>
+                      <ul>
+                        <li>Connect with those around you – your leader, other team members, and your direct reports.</li>
+                        <li>Set the context for the conversation by sharing your desire to grow as a leader and ask them: 
+                      What do you appreciate about me?</li>
+                        <li>What could I do to be even more effective?</li>
+                      </ul>
+                      <h5 class="alert alert-green my-4">Reflect </h5>
+                      <ul>
+                        <li>How did this feedback make you feel?</li>
+                        <li>Did it reinforce or add to what you considered were your areas for growth?</li>
+                        <li>Choose your initial 2–3 areas of focus. Return to this tool, and select Get Started.</li>
+                      </ul>
+
+                    </b-modal>
+
                     <router-link to="/get-started">
                         <b-button 
                         variant="orange" 
                         size="lg"
-                        class="mt-4" v-html="items.btn1"></b-button>
+                        class="w-sm-100 mt-4" v-html="items.btn1"></b-button>
                     </router-link>
                 </div>
                 <!--/content-->
