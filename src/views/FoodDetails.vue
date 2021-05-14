@@ -163,7 +163,7 @@
                                 </b-button>
                             </b-col>
                             <b-col sm class="px-1">
-                                <b-button type="button" size="lg" variant="royal" class="d-flex justify-content-center align-items-center my-2 w-100" @click="getStarted">
+                                <b-button type="button" size="lg" variant="lightblue" class="d-flex justify-content-center align-items-center my-2 w-100" @click="getStarted">
                                     <b-icon icon="search" class="mr-2" font-scale="0.9"></b-icon> {{ items.btn3 }}
                                 </b-button>
                             </b-col>
