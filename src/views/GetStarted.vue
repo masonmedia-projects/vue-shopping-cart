@@ -21,10 +21,12 @@
       <b-col lg="6" 
       class="d-flex flex-column justify-content-center align-items-center p-5"
       style="min-height: 50vh;">
-        <b-img 
+        <b-img-lazy
         :src="items.img.banner"
         :alt="items.imgAlt.banner"
-        class="w-100" style="object-fit: cover; border-radius: 0 14px 14px 0; filter: drop-shadow(2px 4px 10px #222222);" ></b-img> 
+        v-bind="imgProps"
+        class="w-100" style="object-fit: cover; border-radius: 0 14px 14px 0; filter: drop-shadow(2px 4px 10px #222222);" >
+        </b-img-lazy> 
       </b-col>
     </b-row>
 
@@ -37,20 +39,22 @@
       </b-navbar> -->
 
     <b-row class="d-flex text-left">
-      <b-col lg="4" md="6"
+      <b-col xl="4" md="6"
       class="text-center"
       v-on:click="foodDetails(items)" 
       v-for="items in $t('allCategories')" :key="items.id">
       <!-- slice limits the number of iterations in the object/array -->
       <!-- <b-col lg="4" v-for="items in topRated.slice(0, 2)" :key="items.id"> -->
         <b-card
-          :img-src="items.img"
-          img-alt="Image"
-          img-top
           tag="article"
           header-class="font-weight-bold"
           class="border-0 mb-3 shadow"
           >
+          <b-card-img-lazy
+          :img-alt="items.imgAlt"
+          :src="items.img"
+          v-bind="imgProps"
+          ></b-card-img-lazy>
           <b-card-text class="py-3"
           v-for="item in $t('getStarted')" :key="item.id">
             <h2 v-html="items.name" class="font-weight-bold"></h2>
@@ -84,6 +88,14 @@ export default {
           { value: 'Fostering Innovation and Agility', text: 'Stationary' },
           ],
       category: '',
+      imgProps: {
+          center: true,
+          fluidGrow: true,
+          blank: true,
+          blankColor: '#bbb',
+          width: "100%",
+          height: "100%"        
+        }
     }
   },
   computed: {
