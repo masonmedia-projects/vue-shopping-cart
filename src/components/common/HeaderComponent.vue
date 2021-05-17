@@ -45,7 +45,7 @@
             <b-card-text>
               <!-- /remove item -->
               <div @click="removeItem(items)" type="button" aria-label="Close" class="font-weight-bold absolute right top p-2">
-                <close-icon></close-icon>
+                <b-icon icon="x" class="mr-2" font-scale="1"></b-icon>
               </div>
               <h5 class="font-weight-bold badge badge-green py-2" v-html="items.name"></h5>
               <p class="mb-0 pt-2 mt-1 small border-top" style="line-height: 1.3;" v-html="items.description"></p>
@@ -126,16 +126,12 @@
 </template>
 
 <script>
-import CloseIcon from '../icons/CloseIcon.vue';
 import ExitModal from './ExitModal.vue';
-// import { BIconPersonCircle } from 'bootstrap-vue'
 
 export default {
     name: 'HeaderComponent',
     components: {
         ExitModal,
-        // BIconPersonCircle,
-        CloseIcon,
     },
     data () {
       return { langs: ['en', 'fr'] }

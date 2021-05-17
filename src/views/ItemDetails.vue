@@ -183,21 +183,10 @@
 
 <script>
 import Swal from 'sweetalert2'
-// import HomeIcon from '../components/icons/HomeIcon.vue'
-// import CartIcon from '../components/icons/CartIcon.vue'
-// import PlusIcon from '../components/icons/PlusIcon.vue'
-// import DetailMenuIcon from '../components/icons/DetailMenuIcon.vue'
-import InfoIcon from '../components/icons/InfoIcon.vue'
-import CheckIcon from '../components/icons/CheckIcon.vue'
 
 export default {
     name: 'FoodDetails',
     components: {
-        // HomeIcon,
-        // CartIcon,
-        // PlusIcon,
-        InfoIcon,
-        CheckIcon,
     },
     data() {
         return {

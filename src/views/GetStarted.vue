@@ -25,7 +25,7 @@
         :src="items.img.banner"
         :alt="items.imgAlt.banner"
         v-bind="imgProps"
-        class="w-100" style="object-fit: cover; border-radius: 0 14px 14px 0; filter: drop-shadow(2px 4px 10px #222222);" >
+        class="w-100 cover animate__animated animate__fadeIn" style="border-radius: 0 14px 14px 0; filter: drop-shadow(2px 4px 10px #222222);" >
         </b-img-lazy> 
       </b-col>
     </b-row>
