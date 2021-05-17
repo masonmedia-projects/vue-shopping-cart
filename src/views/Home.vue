@@ -35,7 +35,7 @@
             class="d-flex flex-column justify-content-center align-items-start relative z-1 p-4 pt-5 p-md-5 mt-5">
                 <div class="p-5 bg-glass bg-taieri" style="border-radius: 14px; background-attachment: scroll;">
                 <!-- <div class="text-light p-5 bg-purple-trans" style="border-radius: 14px; text-shadow: 2px 2px 5px #000;"> -->
-                    <h5 class="mb-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
+                    <h5 class="my-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
                     <h1 class="site-title font-weight-bold mb-4"
                     v-html="items.bannerTitle"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">

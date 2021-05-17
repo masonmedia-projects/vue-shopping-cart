@@ -3,11 +3,16 @@ h1, .h1 {
     line-height: 1;
 }
 
-.page-title,
-.site-title {
+.page-title {
   font-size: 10vmin;
   line-height: 90%;
   letter-spacing: -2px;
+}
+
+.site-title {
+  font-size: 10vmin;
+  line-height: 85%;
+  letter-spacing: -3px;
 }
 
 .details-title {
