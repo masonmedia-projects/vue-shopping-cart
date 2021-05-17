@@ -12,7 +12,7 @@
             centered 
             body-class="text-center p-4"
             hide-footer
-            title-class="font-weight-bold"
+            title-class="font-weight-bold badge badge-danger px-3 py-1"
             :title="item.heading"
             >
                 <b-icon icon="exclamation-triangle-fill" variant="yellow" font-scale="4" title="Proceed with caution"></b-icon>

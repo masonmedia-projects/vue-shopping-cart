@@ -3,10 +3,11 @@
     <div v-for="items in $t('aboutpage')" :key="items.id">
         <b-row 
         class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100">
-            <b-img 
+            <b-img-lazy
             :src="items.img.banner"
             :alt="items.imgAlt.banner" 
-            class="w-100 h-100 absolute cover z-0 left top"></b-img>
+            v-bind="imgProps"
+            class="w-100 h-100 absolute cover z-0 left top animate__animated animate__fadeIn"></b-img-lazy>
             <!-- color strip -->
             <div class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
             <b-col lg="8"
@@ -27,10 +28,11 @@
 
         <b-row 
         class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100">
-            <b-img 
+            <b-img-lazy
             :src="items.img.img2"
             :alt="items.imgAlt.img2" 
-            class="w-100 h-100 absolute cover z-0 left top"></b-img>
+            v-bind="imgProps"
+            class="w-100 h-100 absolute cover z-0 left top"></b-img-lazy>
             <!-- color strip -->
             <div class="absolute bottom h-25 w-100 z-0 bg-purple-trans"></div>
             <b-col lg="8" offset-lg="4"
@@ -51,10 +53,11 @@
 
         <b-row 
         class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100">
-            <b-img 
+            <b-img-lazy
             :src="items.img.img3"
             :alt="items.imgAlt.img3" 
-            class="w-100 h-100 absolute cover z-0 left top"></b-img>
+            v-bind="imgProps"
+            class="w-100 h-100 absolute cover z-0 left top"></b-img-lazy>
             <!-- color strip -->
             <div class="absolute bottom h-25 w-100 z-0 bg-orange-trans"></div>
             <b-col lg="8"
@@ -72,12 +75,13 @@
                     v-b-modal.modal-center
                     variant="lightblue" 
                     size="lg"
-                    class="w-sm-100 mt-4 mr-2">Learn more</b-button>
-                    <b-modal 
+                    class="w-sm-100 mt-3 mr-2" v-html="items.btn1"></b-button>
+                    <b-modal
+                    title-class="font-weight-bolder badge badge-lightblue px-3 py-1" 
                     id="modal-center" 
                     centered 
                     size="lg"
-                    title="Leadership Learning Tool"
+                    :title="items.modalTitle"
                     body-class="px-5 pt-4 pb-5"
                     content-class="bg-glass"
                     ok-title="Get started"
@@ -112,14 +116,13 @@
                         <li>Did it reinforce or add to what you considered were your areas for growth?</li>
                         <li>Choose your initial 2–3 areas of focus. Return to this tool, and select Get Started.</li>
                       </ul>
-
                     </b-modal>
 
                     <router-link to="/get-started">
                         <b-button 
                         variant="orange" 
                         size="lg"
-                        class="w-sm-100 mt-4" v-html="items.btn1"></b-button>
+                        class="w-sm-100 mt-3" v-html="items.btn2"></b-button>
                     </router-link>
                 </div>
                 <!--/content-->
@@ -171,7 +174,14 @@ export default {
   name: 'About',
   data() {
     return {
-      // selected: undefined,
+      imgProps: {
+          center: true,
+          fluidGrow: true,
+          blank: true,
+          blankColor: '#bbb',
+          width: "100%",
+          height: "100%"        
+        },
       selectedComponent: 'TabOne',
       selected: null,
         options: [
@@ -180,7 +190,6 @@ export default {
           { value: 'Laptop', text: 'Laptops' },
           { value: 'Stationary', text: 'Stationary' },
           ],
-    
             category: '',
             products: [
                 { name: "Keyboard", 

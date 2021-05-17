@@ -97,7 +97,6 @@
     {
       "microTitle1": "My Leadership Development Tool",
       "title1":"Welcome",
-      "archive1":"While many people think of formal study as the obvious route to learning, the 70:20:10 model reveals that this instinct is off base. 10% of learning takes place through traditional methods like courses and formal education. 20% comes through social learning opportunities. 70% comes through on-the-job experience. This tool will support you by organizing these formal, social, and action learning opportunities in a way that will be meaningful and useful to you. //Choose your initial 2–3 areas of focus. Return to this tool, and select <strong>Get Started.</strong> If you’re unsure of which key leader competencies to focus on, reflect on what you’re passionate about developing. Connect with those around you for feedback on what you might focus on.</strong> //This tool will support you by organizing these formal, social, and action-learning opportunities in a way that will be meaningful and useful. Scroll down to learn more about how to use this tool.",
       "text1":"<strong>Welcome to the Leadership Development Tool!</strong> This application was designed to provide you with an intuitive, engaging, and multidisciplinary experience to faciliate your leadership journey. You might have been referred to the <strong>LDT</strong> by a manager or colleague, or you may have come in pursuit of a specific leadership goal. Whichever the case, this tool is here to support your learning and development.",
       "microTitle2": "Learn by doing",
       "title2": "How to use",
@@ -107,7 +106,9 @@
       "text3": "Begin on the <strong>Get Started</strong> page. Consult the Leadership Behaviour Model and consider which skill areas you'd like to focus on. If you're unsure, click the <strong>Details</strong> button on any of the competencies at random, and see if they resonate with you. If they do, add them to your learning plan by selecting the <strong>Add</strong> button. You can add as many competencies to your plan as you wish. When ready, select the <strong>View</strong> button to review the items in your plan, select <strong>Browse</strong> to keep exploring, or select <strong>Checkout</strong> to download your personalized learning resources. You can logout of the LDT at any time by selecting <strong>Logout</strong> in the top right of the menu." ,
       "section_title3": "Grow & discover",
       "text4": "Review the Leadership Behaviour Model and choose your areas of focus through self-reflection and speaking with your colleagues.",
-      "btn1": "Get started",
+      "modalTitle": "LDT",
+      "btn1": "Learn more",
+      "btn2": "Get started",
       "img": {
         "banner": "img/about_page/about10.jpg",
         "img2": "img/about_page/about01.jpg",

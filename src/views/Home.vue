@@ -50,11 +50,12 @@
         class="d-flex justify-content-end align-items-start text-left relative min-h-75 mx-2 my-4 bg-glass border-0"
         style="border-radius: 14px;" >
             <b-col lg="6" class="d-flex align-self-stretch p-0">
-                <b-img 
+                <b-img-lazy 
                 :src="items.img.img1" 
                 :alt="items.imgAlt.img1"
+                v-bind="imgProps"
                 class="h-100 w-100 cover" 
-                style="border-radius: 14px 0 0 14px;"></b-img>
+                style="border-radius: 14px 0 0 14px;"></b-img-lazy>
             </b-col>
             <b-col lg="6" class="d-flex flex-column justify-content-center align-items-start p-5">
                 <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle1"></h5>
@@ -81,11 +82,12 @@
                 <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
             </b-col>
             <b-col lg="6" class="d-flex align-self-stretch p-0">
-                <b-img 
+                <b-img-lazy 
                 :src="items.img.img2" 
                 :alt="items.imgAlt.img2" 
+                v-bind="imgProps"
                 class="h-100 w-100 cover" 
-                style="border-radius: 0 14px 14px 0;"></b-img>
+                style="border-radius: 0 14px 14px 0;"></b-img-lazy>
             </b-col>
         </b-row>
 
@@ -94,11 +96,12 @@
         class="d-flex justify-content-end align-items-start text-left relative min-h-75 mx-2 my-4 bg-glass border-0"
         style="border-radius: 14px;">
             <b-col lg="6" class="d-flex align-self-stretch p-0">
-                <b-img 
+                <b-img-lazy
                 :src="items.img.img3" 
                 :alt="items.imgAlt.img3" 
+                v-bind="imgProps"
                 class="h-100 w-100 cover" 
-                style="border-radius: 14px 0 0 14px;"></b-img>
+                style="border-radius: 14px 0 0 14px;"></b-img-lazy>
             </b-col>
             <b-col lg="6" class="d-flex flex-column justify-content-center align-items-start p-5">
                 <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle3"></h5>
@@ -130,6 +133,18 @@
 <script>
 export default {
   name: 'Home',
+  data() {
+      return {
+          imgProps: {
+          center: true,
+          fluidGrow: true,
+          blank: true,
+          blankColor: '#bbb',
+          width: "100%",
+          height: "100%"        
+        }
+      }
+  },
     methods: {
       itemDetails(item) {
             this.$router.push({name: "ItemDetails", params: item });
