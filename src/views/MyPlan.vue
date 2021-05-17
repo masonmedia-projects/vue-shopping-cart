@@ -1,6 +1,6 @@
 <template>
-    <b-container fluid class="min-h-100 mt-5" 
-    style="background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 500%;">
+    <b-container fluid class="min-h-100 mt-5 bg-taieri">
+    <!-- style="background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 500%;" -->
         <b-container>
         <b-row 
         class="d-flex justify-content-center align-items-start text-left p-0"

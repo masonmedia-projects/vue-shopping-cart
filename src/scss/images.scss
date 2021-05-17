@@ -21,7 +21,8 @@
     background-size: cover;
 }
 .bg-taieri {
-    background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('/img/Taieri.svg'); 
+    // background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('/img/Taieri.svg'); 
+    background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('~@/assets/Taieri.svg'); 
     background-size: 500%; 
     background-attachment: fixed;
 }
