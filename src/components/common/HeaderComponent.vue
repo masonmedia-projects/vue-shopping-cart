@@ -39,7 +39,7 @@
         <b-navbar-nav class="ml-auto text-left">
           <div v-if="totalPrice > 0" class="d-flex flex-column justify-content-start align-items-start">
           <b-card
-          class="mb-2 shadow bg-lightblue-trans"
+          class="mb-2 shadow bg-glass"
           v-for="items in cartItems" :key="items.id"
           >
             <b-card-text>

@@ -15,7 +15,6 @@
         v-html="items.title"></h5>
         <hr class="d-flex ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
         <p class="" v-html="items.text1"></p>
-        <!-- <scroll-down-icon class="mt-3 text-lightblue"></scroll-down-icon> -->
          <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
       </b-col>
       <b-col lg="6" 
@@ -54,6 +53,7 @@
           :img-alt="items.imgAlt"
           :src="items.img"
           v-bind="imgProps"
+          class="animate__animated animate__fadeIn"
           ></b-card-img-lazy>
           <b-card-text class="py-3"
           v-for="item in $t('getStarted')" :key="item.id">
@@ -69,13 +69,9 @@
 </template>
 
 <script>
-// import ScrollDownIcon from '../components/icons/ScrollDownIcon.vue'
 
 export default {
   name: 'GetStarted',
-  components: {
-    // ScrollDownIcon,
-  },
   data() {
     return {
       selected: null,

@@ -74,8 +74,8 @@
 
             <!-- /content -->
             <b-col lg="6" offset-lg="6"
-            class="d-flex flex-column justify-content-end align-items-start relative z-1 p-4 p-md-5 bg-light"
-            style="background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 500%;">
+            class="d-flex flex-column justify-content-end align-items-start relative z-1 p-4 p-md-5"
+            style="background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 1000%;">
                     <div class="bg-glass p-4 w-100 mb-3" style="border-radius: 14px;">
 
                         <!-- /traditional title + hr header style -->
