@@ -25,7 +25,6 @@
     id="sidebar-right" 
     title="My plan" 
     header-class="py-3 mb-0 h5 border-bottom"
-    body-class="bg-taieri"
     right 
     shadow
     backdrop>
@@ -35,7 +34,7 @@
         <b-button size="sm" variant="royal" class="font-weight-bold" @click="goToCart(); hide()">Checkout</b-button>
        </div>
       </template>
-      <div class="px-4 py-2">
+      <div class="px-4 py-2 h-100" style="background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('./img/Taieri.svg') 20% 90%; background-size: 800%;">
         <b-navbar-nav class="ml-auto text-left">
           <div v-if="totalPrice > 0" class="d-flex flex-column justify-content-start align-items-start">
           <b-card
