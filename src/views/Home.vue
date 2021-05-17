@@ -33,7 +33,7 @@
             <div class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
             <b-col md="12" lg="10" xl="7"
             class="d-flex flex-column justify-content-center align-items-start relative z-1 p-4 pt-5 p-md-5 mt-5">
-                <div class="p-5 bg-glass" style="border-radius: 14px; background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 500%;">
+                <div class="p-5 bg-glass" style="border-radius: 14px; background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 800%;">
                 <!-- <div class="text-light p-5 bg-purple-trans" style="border-radius: 14px; text-shadow: 2px 2px 5px #000;"> -->
                     <h5 class="my-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
                     <h1 class="site-title font-weight-bold mb-4"

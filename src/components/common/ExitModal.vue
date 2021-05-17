@@ -10,6 +10,7 @@
             ref="exit-modal"
             id="exit-course" 
             centered 
+            content-class="bg-glass"
             body-class="text-center p-4"
             hide-footer
             title-class="font-weight-bold badge badge-danger px-3 py-1"

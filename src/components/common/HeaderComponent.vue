@@ -36,7 +36,6 @@
        </div>
       </template>
       <div class="px-4 py-2 h-100">
-      <!-- style="background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 500%;" -->
         <b-navbar-nav class="ml-auto text-left">
           <div v-if="totalPrice > 0" class="d-flex flex-column justify-content-start align-items-start">
           <b-card
