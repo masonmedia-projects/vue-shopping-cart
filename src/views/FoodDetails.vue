@@ -60,10 +60,10 @@
         <!-- 50-50 split layout -->
         <b-row class="d-flex text-left min-h-100 relative mt-5"> 
             <b-col lg="6" class="fixed top min-h-50 p-0">
-                <b-img 
+                <b-img-lazy 
                 :src="details.img"
                 :alt="details.imgAlt" 
-                class="page-banner w-100 absolute z--1"></b-img>
+                class="page-banner w-100 absolute z--1 animate__animated animate__fadeIn"></b-img-lazy>
                 <!-- trans-black overlay -->
                 <div class="page-banner w-100 absolute z--1" style="background: rgba(0,0,0,0.4);"></div>
                 <div class="relative z-1 text-light text-left p-5" style="top: 50px;">
