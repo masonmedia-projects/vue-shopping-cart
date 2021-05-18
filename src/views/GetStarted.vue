@@ -48,6 +48,7 @@
           tag="article"
           header-class="font-weight-bold"
           class="border-0 mb-3 shadow"
+          body-class="p-0"
           >
           <b-card-img-lazy
           :img-alt="items.imgAlt"
@@ -55,9 +56,10 @@
           v-bind="imgProps"
           class="animate__animated animate__fadeIn"
           ></b-card-img-lazy>
-          <b-card-text class="py-3"
+          <b-card-text class="pt-4 px-5 pb-5"
           v-for="item in $t('getStarted')" :key="item.id">
             <h2 v-html="items.name" class="font-weight-bold"></h2>
+            <!-- <hr class="mx-auto my-3 bg-lightblue" style="height: 4px; width: 50px;" /> -->
             <p v-html="items.category"></p>  
             <b-button variant="lightblue mr-2 stretched-link" v-html="item.detailsBtn"></b-button>
             <!-- <router-link :to="{ name: 'FoodDetails', params: {id: topRated.id}}"></router-link> -->
