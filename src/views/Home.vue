@@ -40,7 +40,11 @@
                     v-html="items.bannerTitle"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">
                     <h4 class="mb-2" v-html="items.bannerSubtitle"></h4>
-                    <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
+                   
+                    <!-- <b-button
+                    :disabled="isDisabled">Disabled Until...</b-button>
+                    <b-button @click="active = !active">Activate!</b-button>
+                    <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon> -->
                 </div>
             </b-col>
         </b-row>
@@ -142,7 +146,8 @@ export default {
           blankColor: '#bbb',
           width: "100%",
           height: "100%"        
-        }
+        },
+        active: false,
       }
   },
     methods: {
@@ -153,18 +158,48 @@ export default {
             this.$router.push("/get-started");
         },
       aboutPage() {
-            this.$router.push("/about");
+          this.$router.push("/about");
         },
     },
     computed: {
       homepage() {
         return this.$store.state.data.homepage;
       },
+      isDisabled: function() {
+          return !this.active;
+        }
+        
+//    data: {
+//   	terms: false
+//   },
+//   computed: {
+//   	isDisabled: function(){
+//     	return !this.terms;
+//     }
+//   }
     },
 }
+
+//    data: {
+//   	terms: false
+//   },
+//   computed: {
+//   	isDisabled: function(){
+//     	return !this.terms;
+//     }
+//   }
 </script>
 
 <style>
+    .btn.disabled,
+    .btn-secondary.disabled,
+    .btn.disabled, .btn:disabled,
+    .disabled {
+      opacity: 0.5 !important;
+      cursor: pointer;
+      /* pointer-events: none;    */
+    }
+
   .active {
     filter: drop-shadow(2px 2px 10px black);
   }

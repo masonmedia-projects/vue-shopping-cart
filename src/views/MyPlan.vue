@@ -87,7 +87,7 @@
                 <hr class="w-100 mb-4" />
                 <!-- media object card title -->
                 <b-media 
-                class="d-flex align-items-center alert alert-lightblue shadow border-0 py-3 px-0 mb-3 mt-3 mt-md-0"
+                class="d-flex align-items-center alert alert-lightblue text-base shadow border-0 py-3 px-0 mb-3 mt-3 mt-md-0"
                 style="border-radius: 14px 0 0 14px;"
                 vertical-align="center" v-for="i in item.nextSteps" :key="i.id">
                     <template #aside class="align-self-center">
@@ -101,8 +101,6 @@
                     </template>
                     <p class="mb-0 p-4 bg-light shadow" style="border-radius: 14px 0 0 14px;" v-html="i"></p>
                 </b-media>
-
-
                 <!-- <b-alert show variant="light" class="alert d-flex justify-content-start align-items-center text-base py-3 shadow" 
                 v-for="i in item.nextSteps" :key="i.id">
                     <b-icon icon="box-arrow-right" variant="lightblue" 
@@ -114,7 +112,6 @@
                 </b-alert> -->
             </b-col>
             <hr class="w-100" />
-
             <!-- <b-col lg="12" class="d-flex flex-column justify-content-start align-items-start p-0">
                 <cart-summary :totalPrice="totalPrice"></cart-summary>
             </b-col> -->

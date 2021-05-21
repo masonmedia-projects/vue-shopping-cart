@@ -8,12 +8,12 @@
           "url": "/"
         },
         {
-          "link": "Get Started",
-          "url": "/get-started"
-        },
-        {
           "link": "About This Tool",
           "url": "/about"
+        },
+        {
+          "link": "Get Started",
+          "url": "/get-started"
         },
         {
           "link": "My Plan",

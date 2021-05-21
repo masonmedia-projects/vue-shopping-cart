@@ -78,6 +78,14 @@
         v-for="item in items.menuItems" :key="item.id">
             <router-link class="nav-link" :to="item.url" v-html="item.link"></router-link>
         </li>
+        <!-- <li>
+            <router-link 
+            class="nav-link border-0"
+            :class="[isDisabled ? 'disabled' : '']"
+            to="/about">Disabled</router-link>
+        </li>
+        <li @click="active = true">Active</li> -->
+
 
           <!-- //sidebar activate  -->
           <div v-b-toggle.sidebar-right class="nav-link mr-3">
@@ -134,9 +142,16 @@ export default {
         ExitModal,
     },
     data () {
-      return { langs: ['en', 'fr'] }
+      return { 
+        langs: ['en', 'fr'],
+        // isActive: false,
+        // isDisabled: true,
+        // active: false,
+        // activeClass: 'active',
+        // disabled: 'disabled',
+        }
     },
-    methods: {
+    methods: {  
       // close exit modal
       hideModal() {
         this.$refs['exit-modal'].hide()
@@ -150,6 +165,9 @@ export default {
       },
     },
     computed: {
+      isDisabled() {
+          return !this.active;
+        },
       cartItems() {
             return this.$store.state.cartItems;
         },
@@ -172,6 +190,20 @@ export default {
 </script>
 
 <style>
+
+.disabled
+  {
+    cursor: none;
+    pointer-events: none;
+    opacity: 0.6;
+  }
+
+.active {
+  background: #f00;
+  color: pink;
+  opacity: 1;
+  cursor: pointer;
+}
 
   .cart-count {
     font-size: 14px;

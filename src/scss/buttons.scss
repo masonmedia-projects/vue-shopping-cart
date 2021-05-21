@@ -98,18 +98,19 @@ svg.focus {
 
 // alerts
 
+.alert {
+    color: #53565A;
+}
+
 .alert-yellow {
-    color: #856404;
     background-color: #FFCF0050;
     border-color: #FFCF0050;
 }
 .alert-lightblue {
-    color: #856404;
     background-color: #62B5E550;
     border-color: #62B5E550;
 }
 .alert-green {
-    color: #856404;
     background-color: #00A55050;
     border-color: #00A55050;
 }
