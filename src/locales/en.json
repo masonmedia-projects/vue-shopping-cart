@@ -20,7 +20,9 @@
           "url": "/my-plan"
         }
       ],
-      "logout": "Logout"
+      "logout": "Logout",
+      "close": "Close",
+      "checkout": "Checkout"
     }
   ],
   "exit": [
@@ -145,10 +147,9 @@
       "nameTitle": "Name",
       "sectionTitle1": "What it looks like",
       "sectionTitle2": "Add to your plan if",
-      "sectionTitle3": "Next steps",
       "btn1": "Add",
       "btn2": "View",
-      "btn3": "Browse"
+      "btn3": "Explore"
     }
   ],
   

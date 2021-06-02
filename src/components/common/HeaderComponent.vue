@@ -31,8 +31,8 @@
     backdrop>
     <template #footer="{ hide }">
        <div class="d-flex flex-wrap bg-yellow text-light justify-content-center align-items-center px-3 py-2">
-        <b-button size="sm" variant="lightblue" class="mr-1 font-weight-bold" @click="hide">Keep exploring</b-button>
-        <b-button size="sm" variant="royal" class="font-weight-bold" @click="goToCart(); hide()">Checkout</b-button>
+        <b-button size="sm" variant="lightblue" class="flex-fill mr-1 font-weight-bold" @click="hide" v-html="items.close"></b-button>
+        <b-button size="sm" variant="royal" class="flex-fill font-weight-bold" @click="goToCart(); hide()" v-html="items.checkout"></b-button>
        </div>
       </template>
       <div class="px-4 py-2 h-100">

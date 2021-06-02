@@ -1,7 +1,7 @@
 <template>
     <b-container fluid class="relative">
         <!-- 50-50 split layout -->
-        <b-row class="d-flex text-left min-h-100 relative mt-5"> 
+        <b-row class="text-left min-h-100 relative mt-5"> 
             <b-col lg="6" class="fixed top min-h-50 p-0">
                 <b-img-lazy 
                 :src="details.img"
@@ -14,22 +14,12 @@
                     <b-button disabled variant="outline-light" class="text-left" v-html="details.category"></b-button>
                 </div>
             </b-col>
-
             <!-- /content -->
             <b-col lg="6" offset-lg="6"
             class="d-flex flex-column justify-content-end align-items-start relative z-1 p-4 p-md-5"
             style="background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 1000%;">
-                    <div class="bg-glass p-4 w-100 mb-3" style="border-radius: 14px;">
-
-                        <!-- /traditional title + hr header style -->
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentcolor" class="bi bi-stack text-lightblue" viewBox="0 0 16 16">
-                            <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
-                            <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
-                        </svg>
-                        <h1 class="font-weight-bold mt-3 mb-4 w-100" v-html="details.name"></h1>
-                        <hr class="d-flex m-0 mr-auto my-3 bg-lightblue" style="height: 4px; width: 50px;"> -->
-                   
-                        <!-- /media object header style -->
+                     <!-- /media object header -->
+                    <!-- <div class="bg-glass p-4 w-100 mb-3" style="border-radius: 14px;">
                         <b-media class="my-3 bg-lightblue-trans text-lightblue d-flex align-items-center" vertical-align="center">
                             <template #aside class="media-aside align-self-center mr-3">
                                 <span class="details-title font-weight-bold text-lightblue border-0 px-3 py-4 px-md-4 py-md-5 mb-0 bg-lightblue text-light shadow" 
@@ -37,7 +27,7 @@
                             </template>
                             <h1 class="details-title font-weight-bold w-100 mb-0" v-html="details.name"></h1>
                         </b-media>
-                   </div>
+                   </div> -->
 
                     <!-- category alerts -->
                     <div v-for="items in $t('aux')" :key="items.id">

@@ -14,8 +14,10 @@ svg.focus {
 }
 
 // disable default disable styling
-.btn.disabled, .btn:disabled {
-    opacity: 1;
+.disabled,
+.btn.disabled,
+.btn:disabled {
+    opacity: 0.9 !important;
 }
 
 .btn-lightblue {
