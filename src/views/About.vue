@@ -2,7 +2,7 @@
   <b-container fluid contClass="bg-gradient-lightblue">
     <div v-for="items in $t('aboutpage')" :key="items.id">
         <b-row 
-        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100">
+        class="flex-column justify-content-end align-items-start text-left relative min-vh-100">
             <b-img-lazy
             :src="items.img.banner"
             :alt="items.imgAlt.banner" 
@@ -12,7 +12,7 @@
             <div class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
             <b-col lg="8"
             style="position: relative; z-index: 3;"
-            class="d-flex flex-column justify-content-center align-items-start p-4 pt-5 p-md-5 mt-5">
+            class="flex-column justify-content-center align-items-start p-4 pt-5 p-md-5 mt-5">
                  <div class="bg-glass p-5" style="border-radius: 14px">
                     <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle1"></h5>
                     <h1 class="display-4 font-weight-bold mb-4"
@@ -27,7 +27,7 @@
         </b-row>
 
         <b-row 
-        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100">
+        class="flex-column justify-content-end align-items-start text-left relative min-vh-100">
             <b-img-lazy
             :src="items.img.img2"
             :alt="items.imgAlt.img2" 
@@ -37,7 +37,7 @@
             <div class="absolute bottom h-25 w-100 z-0 bg-purple-trans"></div>
             <b-col lg="8" offset-lg="4"
             style="position: relative; z-index: 3;"
-            class="d-flex flex-column justify-content-center align-items-start p-4 pt-5 p-md-5">
+            class="flex-column justify-content-center align-items-start p-4 pt-5 p-md-5">
                 <div class="bg-glass p-5" style="border-radius: 14px">
                     <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle2"></h5>
                     <h1 class="display-4 font-weight-bold mb-4"
@@ -52,7 +52,7 @@
         </b-row>
 
         <b-row 
-        class="d-flex flex-column justify-content-end align-items-start text-left relative min-vh-100">
+        class="flex-column justify-content-end align-items-start text-left relative min-vh-100">
             <b-img-lazy
             :src="items.img.img3"
             :alt="items.imgAlt.img3" 
@@ -62,7 +62,7 @@
             <div class="absolute bottom h-25 w-100 z-0 bg-orange-trans"></div>
             <b-col lg="8"
             style="position: relative; z-index: 3;"
-            class="d-flex flex-column justify-content-center align-items-start p-4 pt-5 p-md-5">
+            class="flex-column justify-content-center align-items-start p-4 pt-5 p-md-5">
                 <div class="bg-glass p-5" style="border-radius: 14px">
                     <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle3"></h5>
                     <h1 class="display-4 font-weight-bold mb-4"
@@ -86,15 +86,6 @@
                     content-class="bg-glass"
                     ok-title="Get started"
                     ok-variant="orange">
-
-<!-- card layout from details page -->
-                    <!-- <b-row class="px-2">
-                        <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.index">
-                            <b-icon icon="info-square" variant="lightblue mb-3" class="mr-2" font-scale="2"></b-icon>
-                            <p class="h-100 pl-3 border-left border-lightblue-trans" v-html="item"></p>
-                            <p class="small text-lightblue pb-2 border-bottom border-lightblue-trans mt-auto mb-0" v-html="details.name"></p>
-                        </b-col>
-                    </b-row> -->
                       
                       <b-icon icon="info-square" variant="lightblue mb-3" class="" font-scale="3"></b-icon>
                       <h3 class="font-weight-bold text-lightblue mb-3 py-3 border-top border-bottom border-lightblue-trans">Where to start</h3>

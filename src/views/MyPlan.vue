@@ -7,7 +7,7 @@
         v-if="totalPrice > 0">
         <b-col lg="12"
         v-for="items in $t('myLearningPlan')" :key="items.id"
-        class="d-flex flex-column justify-content-center align-items-start text-left pt-5 pb-3">
+        class="flex-column justify-content-center align-items-start text-left pt-5 pb-3">
             <b-card 
             body-class="p-0"
             class="mb-2 border-0 shadow bg-glass p-5" style="border-radius: 14px;">
@@ -28,7 +28,7 @@
             </b-card>
         </b-col>
         <hr class="w-100" />
-            <b-col lg="12" class="d-flex flex-column justify-content-start align-items-start py-3">
+            <b-col lg="12" class="flex-column justify-content-start align-items-start py-3">
                 <b-card no-body class="shadow border-0 overflow-hidden mb-3"
                 v-for="items in cartItems" :key="items.id">
                     <b-row no-gutters>

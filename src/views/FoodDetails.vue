@@ -84,13 +84,6 @@
                                 <p class="small text-green mt-auto mb-0 pb-2 border-bottom border-green-trans" v-html="details.name"></p>
                             </b-col>
                         </b-row>
-                        <!-- next steps -->
-                        <b-alert 
-                        variant="yellow" 
-                        class="alert d-flex justify-content-start align-items-center w-100 h6 mb-1 font-weight-normal text-uppercase" 
-                        show
-                        v-html="items.sectionTitle3">
-                        </b-alert>
 
                         <!-- action button grid rounded -->
                         <b-row class="d-flex justify-content-center align-items-center w-100 bg-trans text-light p-2 mx-auto rounded">

@@ -3,22 +3,22 @@
     <div class="w-100 bg-lightblue absolute z-0 left top" style="height: 400px; top: 450px;"></div>
     <b-row 
     no-gutters
-    class="d-flex text-left bg-light shadow-lg mt-3 mb-4 relative"
+    class="text-left bg-light shadow-lg mt-3 mb-4 relative"
     style="border-radius: 14px; background: url('./img/Taieri.svg') right bottom; background-size: 500%;"
     v-for="items in $t('getStarted')" :key="items.id">
       <b-col lg="6" 
-      class="d-flex flex-column justify-content-center align-items-start text-left min-h-75 p-5 bg-light"
+      class="flex-column justify-content-center align-items-start text-left min-h-75 p-5 bg-light"
       style="border-radius: 14px;">
         <h1 class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
         <h5 
         class="page-title font-weight-bold mb-4"
         v-html="items.title"></h5>
-        <hr class="d-flex ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
+        <hr class="ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
         <p class="" v-html="items.text1"></p>
          <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
       </b-col>
       <b-col lg="6" 
-      class="d-flex flex-column justify-content-center align-items-center p-5"
+      class="flex-column justify-content-center align-items-center p-5"
       style="min-height: 50vh;">
         <b-img-lazy
         :src="items.img.banner"
@@ -37,7 +37,7 @@
           </b-navbar-nav>
       </b-navbar> -->
 
-    <b-row class="d-flex text-left">
+    <b-row class="text-left">
       <b-col xl="4" md="6"
       class="text-center"
       v-on:click="foodDetails(items)" 
@@ -59,7 +59,6 @@
           <b-card-text class="pt-4 px-5 pb-5"
           v-for="item in $t('getStarted')" :key="item.id">
             <h2 v-html="items.name" class="font-weight-bold"></h2>
-            <!-- <hr class="mx-auto my-3 bg-lightblue" style="height: 4px; width: 50px;" /> -->
             <p v-html="items.category"></p>  
             <b-button variant="lightblue mr-2 stretched-link" v-html="item.detailsBtn"></b-button>
             <!-- <router-link :to="{ name: 'FoodDetails', params: {id: topRated.id}}"></router-link> -->
