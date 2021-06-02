@@ -87,7 +87,7 @@
         <li @click="active = true">Active</li> -->
 
 
-          <!-- //sidebar activate  -->
+          <!-- //cart icon sidebar activate  -->
           <div v-b-toggle.sidebar-right class="nav-link mr-3">
             <b-icon 
               icon="cart" 
@@ -96,26 +96,9 @@
               class="align-self-center" 
               title="There are no items in my plan"></b-icon>
               <span class="sr-only">There are no items in my plan</span>
-              
-            <!-- <b-icon-person-circle 
-              variant="base"
-              font-scale="2"
-              title="My learning plan">
-              <span class="sr-only">My plan</span>
-            </b-icon-person-circle> -->
-            <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
+            <!-- menu cart counter -->
+            <!-- <b-badge class="cart-count" variant="success">{{ count }}</b-badge> -->
           </div>
-
-          <!-- my-plan menu link -->
-          <!-- <router-link class="nav-link mr-3" to="/my-plan">
-            <b-icon-person-circle 
-              variant="base"
-              font-scale="2"
-              title="My learning plan">
-              <span class="sr-only">My plan</span>
-            </b-icon-person-circle>
-            <b-badge class="cart-count" variant="success">{{ count }}</b-badge>
-          </router-link> -->
           
       </b-navbar-nav>
       <b-navbar-nav class="nav-item py-2">

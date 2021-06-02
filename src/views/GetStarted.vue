@@ -8,7 +8,7 @@
     style="border-radius: 14px; background: url('./img/Taieri.svg') right bottom; background-size: 500%;"
     v-for="items in $t('getStarted')" :key="items.id">
       <b-col lg="6" 
-      class="flex-column justify-content-center align-items-start text-left min-h-75 p-5 bg-light"
+      class="d-flex flex-column justify-content-center align-items-start text-left min-h-75 p-5 bg-light"
       style="border-radius: 14px;">
         <h1 class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
         <h5 

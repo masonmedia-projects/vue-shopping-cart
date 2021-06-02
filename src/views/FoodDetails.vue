@@ -54,7 +54,8 @@
 
                         <b-row class="px-2">
                             <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.index">
-                                <b-icon icon="info-square" variant="lightblue mb-3" class="mr-2" font-scale="2"></b-icon>
+                                <!-- <b-icon icon="grip-horizontal" variant="lightblue mb-3" class="mr-2" font-scale="2"></b-icon> -->
+                                <b-icon icon="bookmark-check" variant="lightblue" class="mr-2 mb-4" font-scale="2"></b-icon>
                                 <p class="h-100 pl-3 border-left border-lightblue-trans" v-html="item"></p>
                                 <p class="small text-lightblue pb-2 border-bottom border-lightblue-trans mt-auto mb-0" v-html="details.name"></p>
                             </b-col>
@@ -69,7 +70,8 @@
 
                         <b-row class="d-flex px-2">
                             <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded"  v-for="item in details.selectIf" :key="item.id">
-                                <b-icon icon="check2-square" variant="green mb-3" class="mr-2" font-scale="2"></b-icon>
+                                <b-icon icon="bookmark-plus" variant="green" class="mr-2 mb-4" font-scale="2"></b-icon>
+                                <!-- <b-icon icon="check2-square" variant="green mb-3" class="mr-2" font-scale="2"></b-icon> -->
                                 <p class="h-100 pl-3 border-left border-green-trans" v-html="item"></p>
                                 <p class="small text-green mt-auto mb-0 pb-2 border-bottom border-green-trans" v-html="details.name"></p>
                             </b-col>
@@ -95,18 +97,7 @@
                                 </b-button>
                             </b-col>
                         </b-row>
-
                     </div>
-
-                    <!-- OG square buttons -->
-                    <!-- <div class="d-inline bg-glass p-4 mb-3 w-100 rounded">
-                        <b-button variant="orange" class="w-100 mr-2 mb-2 border-0 rounded" @click="addToCart">Add to plan</b-button>
-                        <b-button variant="green" class="w-100 mr-2 mb-2 border-0 rounded" @click="goToCart">Checkout</b-button>
-                        <router-link class="font-weight-bold text-base" to="/get-started">
-                            <b-button variant="lightblue" class="w-100 mb-2 border-0 rounded">Home</b-button>
-                        </router-link>
-                    </div> -->
-
             </b-col>
         </b-row>
     </b-container>
