@@ -2,14 +2,14 @@
     <b-container fluid contClass="bg-gradient-lightblue mb-4">
         <div v-for="items in $t('homepage')" :key="items.id">
             <!-- banner -->
-            <b-row align-v="stretch" class="relative min-vh-100 bg-orange">
+            <b-row align-v="center" class="relative min-vh-100 bg-orange">
                 <b-img-lazy 
                 :src="items.img.banner" 
                 :alt="items.imgAlt.banner"
                 class="min-vh-100 w-75 absolute top right z-0 cover animate__animated animate__fadeIn"></b-img-lazy>
                 <!-- color strip -->
                 <div class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
-                <b-col md="12" lg="10" xl="7" align-self="center" class="p-5">
+                <b-col md="12" lg="10" xl="7" align-self="end" class="p-5 mt-4">
                     <div class="p-5 bg-glass" style="border-radius: 14px; background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 800%;">
                         <h5 class="my-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
                         <h1 class="site-title font-weight-bold mb-4"
@@ -87,12 +87,13 @@
                     <hr class="d-flex m-0 mr-auto my-4 bg-lightblue" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text3"></p>
                     <div class="d-flex flex-wrap my-3">
-                        <b-button 
+                        <!-- <b-button 
                         variant="lightblue" 
                         size="lg"
                         class="mr-2 mt-2 w-sm-100" 
                         v-html="items.btn2"
-                        @click="aboutPage"></b-button>
+                        @click="aboutPage"></b-button> -->
+                        <about-modal></about-modal>
                         <b-button 
                         variant="orange" 
                         size="lg"
@@ -107,8 +108,13 @@
 </template>
 
 <script>
+import AboutModal from '../components/AboutModal';
+
 export default {
   name: 'Home',
+  components: {
+      AboutModal
+  },
   data() {
       return {
           imgProps: {
