@@ -8,7 +8,7 @@
           "url": "/"
         },
         {
-          "link": "About This Tool",
+          "link": "About",
           "url": "/about"
         },
         {
@@ -16,7 +16,7 @@
           "url": "/get-started"
         },
         {
-          "link": "My Plan",
+          "link": "My Learning Plan",
           "url": "/my-plan"
         }
       ],

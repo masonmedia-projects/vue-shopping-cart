@@ -147,6 +147,11 @@ export default {
         // BIconBoxArrowRight,
         BIconHash,
     },
+    data() {
+        return {
+            details: this.$route.params,
+        }
+    },
     methods: {
         addItem(items) {
             this.$store.dispatch("addToCart", items)
@@ -164,11 +169,6 @@ export default {
             })
         },
     },
-    // local storage
-    created() {
-        if (this.$route.params.id !== undefined)
-        localStorage.setItem("cartItems", JSON.stringify(this.$route.params));
-    },
     computed: {
         cartItems() {
             return this.$store.state.cartItems;
@@ -181,6 +181,9 @@ export default {
             })
             return price;
         },
+        myLearningPlan() {
+            return this.$store.state.data.myLearningPlan;
+        }
         // original for getting/calculating price
         // totalPrice() {
         //     let price = 0;
@@ -189,9 +192,6 @@ export default {
         //     })
         //     return price;
         // },
-        myLearningPlan() {
-            return this.$store.state.data.myLearningPlan;
-        }
         // checkoutTotal() {
         //     let total = 0;
         //     this.$store.state.cartItems.map(el => {
@@ -199,6 +199,14 @@ export default {
         //     })
         //     return total;
         // }
+    },
+     // add localStorage for product/food details
+    created() {
+        if (this.$route.params.id !== undefined)
+        localStorage.setItem("details", JSON.stringify(this.$route.params));
+    },
+    mounted() {
+        this.details = JSON.parse(localStorage.getItem("details"));
     },
 }
 </script>
