@@ -17,7 +17,7 @@
             content-class="bg-glass"
             ok-title="Get started"
             ok-variant="orange"> 
-                <b-icon icon="info-square" variant="lightblue mb-3" class="" font-scale="3"></b-icon>
+                <b-icon icon="bookmark-check-fill" variant="lightblue mb-3" class="" font-scale="3"></b-icon>
                 <h3 class="font-weight-bold text-lightblue mb-3 py-3 border-top border-bottom border-lightblue-trans">Where to start</h3>
                 <h5 class="alert alert-lightblue my-4">If you’re unsure of which key leader competencies to focus on:</h5>
                 <ul>

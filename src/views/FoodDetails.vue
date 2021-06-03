@@ -10,7 +10,7 @@
                 <!-- trans-black overlay -->
                 <div class="page-banner w-100 absolute z--1" style="background: rgba(0,0,0,0.4);"></div>
                 <div class="relative z-1 text-light text-left p-5" style="top: 50px;">
-                    <b-avatar icon="bookmarks-fill" size="4rem" rounded="lg" :class="details.color" class="shadow"></b-avatar>
+                    <b-avatar icon="bookmarks-fill" size="3.5rem" rounded="lg" :class="details.color" class="shadow"></b-avatar>
                     <h1 class="font-weight-bold mb-4 mt-3" v-html="details.name"></h1>
                     <b-button disabled variant="outline-light" class="text-left" v-html="details.category"></b-button>
                 </div>

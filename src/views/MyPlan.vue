@@ -2,7 +2,9 @@
     <b-container fluid class="min-h-100 mt-5 bg-taieri">
         <b-container>
         <b-row 
-        class="d-flex justify-content-center align-items-start text-left p-0"
+        align-v="center"
+        align-h="center"
+        class="p-0"
         v-if="totalPrice > 0">
         <b-col lg="12"
         v-for="items in $t('myLearningPlan')" :key="items.id"
@@ -27,50 +29,34 @@
             </b-card>
         </b-col>
         <hr class="w-100" />
-            <b-col lg="12" class="flex-column justify-content-start align-items-start py-3">
-                <b-card no-body class="shadow border-0 overflow-hidden mb-3"
-                v-for="items in cartItems" :key="items.id">
-                    <b-row no-gutters>
-                    <b-col md="5">
-                        <b-card-img 
-                        :src="items.img" 
-                        :alt="items.imgAlt" 
-                        class="h-100 rounded-0 cover">
-                        </b-card-img>
-                    </b-col>
-                    <b-col md="7">
-                        <b-card-body 
-                        body-class="d-flex flex-column justify-content-center align-items-start p-4 pb-5 p-md-5 relative" >
-                            <b-card-text class="w-100">
-                                <!-- media object card title -->
-                                <b-media class="mb-3 mt-3 mt-md-0 d-flex align-items-center bg-light border" 
-                                style="border-radius: 14px 0 0 14px;"
-                                vertical-align="center">
-                                    <template #aside class="media-aside align-self-center mr-3">
-                                        <span class="font-weight-bolder border-0 px-3 py-4 mb-0 bg-dark text-light" style="border-radius: 14px 0 0 14px;">{{ items.id }}.</span>
-                                    </template>
-                                    <h4 class="checkout-item-title font-weight-bold w-100 mb-0" v-html="items.name"></h4>
-                                </b-media>
-
-                                <!-- <h4><span class="text-muted font-weight-light mb-0">{{ items.id }}.</span></h4>
-                                <h4 class="font-weight-bold">{{ items.name }}</h4> -->
-                                <p class="small my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="items.category"></p>
-                                <!-- <p class="mb-0 pb-3 w-100 border-top pt-2" v-html="items.description"></p> -->
-                                <!-- <div class="">
-                                    <b-button @click="removeItem(items)" class="remove">-</b-button>
-                                    <span class="cart-quantity px-3">{{ items.quantity }}</span>
-                                    <b-button @click="addItem(items)" class="add">+</b-button>
-                                </div> -->
-                                <b-button variant="outline-dark" class="w-sm-100 mt-2 mr-2" @click="removeItem(items)">Remove</b-button>
-                                <a :href="items.download" download target="_blank"> 
-                                    <b-button variant="dark" class="w-sm-100 mt-2" >Download</b-button>
-                                </a>
-                            </b-card-text>
-                        </b-card-body>
-                    </b-col>
-                    </b-row>
-                </b-card>
-            </b-col>
+        <b-col lg="12" class="flex-column justify-content-start align-items-start py-3">
+            <b-card no-body class="bg-glass border-0 overflow-hidden mb-3"
+            v-for="items in cartItems" :key="items.id">
+                <b-row no-gutters>
+                <b-col md="3">
+                    <b-card-img 
+                    :src="items.img" 
+                    :alt="items.imgAlt" 
+                    class="h-100 rounded-0 cover">
+                    </b-card-img>
+                </b-col>
+                <b-col md="9">
+                    <b-card-body 
+                    body-class="d-flex flex-column justify-content-center align-items-start p-4 pb-5 p-md-5 relative" >
+                        <b-card-text class="w-100">
+                            <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2 shadow"></b-avatar>
+                            <h2 v-html="items.name" class="font-weight-bold m-0"></h2>
+                            <p class="my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="items.category"></p>
+                            <b-button variant="outline-dark" class="w-sm-100 mt-2 mr-2" @click="removeItem(items)">Remove</b-button>
+                            <a :href="items.download" download target="_blank"> 
+                                <b-button variant="dark" class="w-sm-100 mt-2 border-0">Download</b-button>
+                            </a>
+                        </b-card-text>
+                    </b-card-body>
+                </b-col>
+                </b-row>
+            </b-card>
+        </b-col>
             <hr class="w-100 mb-4" />
             <!-- next steps -->
             <b-col lg="12" v-for="item in $t('myLearningPlan')" :key="item.id">
