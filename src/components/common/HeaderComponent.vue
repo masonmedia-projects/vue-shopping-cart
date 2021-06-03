@@ -44,15 +44,22 @@
           >
             <b-card-text>
               <!-- /remove item -->
-              <div @click="removeItem(items)" type="button" aria-label="Close" class="font-weight-bold absolute right top p-2">
+              <div @click="removeItem(items)" type="button" aria-label="Close" class="font-weight-bold absolute right top p-1">
                 <b-icon icon="x" class="mr-2" font-scale="1"></b-icon>
               </div>
-              <h5 class="font-weight-bold badge badge-green py-2" v-html="items.name"></h5>
+              <!-- item title -->
+              <b-media class="mb-3 mt-3 d-flex align-items-center bg-light rounded" 
+              vertical-align="center">
+                    <template #aside class="media-aside align-self-center mr-3">
+                      <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="left" :class="items.color"></b-avatar>
+                    </template>
+                    <h5 class="small font-weight-bold w-100 mb-0" v-html="items.name"></h5>
+                </b-media>
               <p class="mb-0 pt-2 mt-1 small border-top" style="line-height: 1.3;" v-html="items.description"></p>
             </b-card-text>
           </b-card>
           </div>
-          <!-- /show empty cart if no items -->
+          <!-- show empty cart if no items -->
           <div v-else>
             <div 
             class="d-flex flex-column justify-content-center align-items-center min-h-50"
@@ -85,7 +92,6 @@
             to="/about">Disabled</router-link>
         </li>
         <li @click="active = true">Active</li> -->
-
 
           <!-- //cart icon sidebar activate  -->
           <div v-b-toggle.sidebar-right class="nav-link mr-3">
