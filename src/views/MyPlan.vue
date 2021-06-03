@@ -1,6 +1,5 @@
 <template>
     <b-container fluid class="min-h-100 mt-5 bg-taieri">
-    <!-- style="background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 500%;" -->
         <b-container>
         <b-row 
         class="d-flex justify-content-center align-items-start text-left p-0"
@@ -15,8 +14,8 @@
                     <b-icon-person-circle 
                     variant="lightblue"
                     font-scale="3.5"
-                    title="My learning plan">
-                    <span class="sr-only">My plan</span>
+                    :title="items.title">
+                    <span class="sr-only" v-html="items.title"></span>
                     </b-icon-person-circle>
                     <h1 class="page-title font-weight-bold mb-4 mt-3" 
                     style="line-height: 90%;"
@@ -55,8 +54,8 @@
 
                                 <!-- <h4><span class="text-muted font-weight-light mb-0">{{ items.id }}.</span></h4>
                                 <h4 class="font-weight-bold">{{ items.name }}</h4> -->
-                                <p class="mb-0 my-2 small text-muted font-weight-bold border-top pt-2" v-html="items.category"></p>
-                                <p class="mb-0 pb-3 w-100 border-top pt-2" v-html="items.description"></p>
+                                <p class="small my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="items.category"></p>
+                                <!-- <p class="mb-0 pb-3 w-100 border-top pt-2" v-html="items.description"></p> -->
                                 <!-- <div class="">
                                     <b-button @click="removeItem(items)" class="remove">-</b-button>
                                     <span class="cart-quantity px-3">{{ items.quantity }}</span>
@@ -126,8 +125,8 @@
                 variant="secondary"
                 font-scale="9"
                 class="shadow rounded-circle bg-yellow"
-                title="There are no items in my plan">
-                    <span class="sr-only">There are no items in my plan</span>
+                :title="items.emptyPlan">
+                    <span class="sr-only" v-html="items.emptyPlan"></span>
                 </b-icon-person-circle>
                 <h3 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h3>
             </b-col>
@@ -144,7 +143,6 @@ export default {
     name: 'Cart',
     components: { 
         BIconPersonCircle,
-        // BIconBoxArrowRight,
         BIconHash,
     },
     data() {

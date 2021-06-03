@@ -121,9 +121,7 @@ export default {
           center: true,
           fluidGrow: true,
           blank: true,
-          blankColor: '#bbb',
-          width: "100%",
-          height: "100%"        
+          blankColor: '#bbb',        
         },
         active: false,
       }

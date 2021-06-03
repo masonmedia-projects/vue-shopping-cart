@@ -1,26 +1,30 @@
 <template>
   <b-container fluid class="bg-light relative z--1 p-4 p-md-5 mt-5 mt-md-4">
+    <!-- bg taieri img -->
     <div class="w-100 bg-lightblue absolute z-0 left top" style="height: 400px; top: 450px;"></div>
-    
+    <!-- banner -->
     <b-row 
     no-gutters
-    class="text-left bg-light shadow-lg mt-3 mb-4 relative"
+    align-v="center"
+    align-h="center"
+    class="bg-light shadow-lg mt-3 mb-4 relative"
     style="border-radius: 14px; background: url('./img/Taieri.svg') right bottom; background-size: 500%;"
     v-for="items in $t('getStarted')" :key="items.id">
+    <!-- white fs bg -->
+    <div class="absolute left top z-0 bg-light w-50 h-100" style="border-radius: 14px;"></div>
       <b-col lg="6" 
-      class="d-flex flex-column justify-content-center align-items-start text-left min-h-75 p-5 bg-light"
-      style="border-radius: 14px;">
+      align-self="center"
+      class="text-left p-5 bg-light">
         <h1 class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
-        <h5 
-        class="page-title font-weight-bold mb-4"
+        <h5 class="page-title font-weight-bold mb-4"
         v-html="items.title"></h5>
         <hr class="ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
         <p class="" v-html="items.text1"></p>
-         <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
+        <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
       </b-col>
       <b-col lg="6" 
-      class="flex-column justify-content-center align-items-center p-5 min-h-50"
-      style="min-height: 50vh;">
+      align-self="stretch"
+      class="p-5 min-h-50">
         <b-img-lazy
         :src="items.img.banner"
         :alt="items.imgAlt.banner"
@@ -29,28 +33,6 @@
         </b-img-lazy> 
       </b-col>
     </b-row>
-
-    <!-- <b-row align-v="stretch" 
-    class="bg-light shadow-lg mt-3 mb-4 relative"
-    style="border-radius: 14px; background: url('./img/Taieri.svg') right bottom; background-size: 500%;"
-    v-for="items in $t('getStarted')" :key="items.id">
-          <b-col lg="6" align-self="stretch" class=" my-auto text-left min-h-75 p-5 bg-light">
-              <h1 class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
-              <h5 class="page-title font-weight-bold mb-4"
-              v-html="items.title"></h5>
-              <hr class="ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
-              <p class="" v-html="items.text1"></p>
-              <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
-          </b-col>
-          <b-col lg="6" align-self="stretch" class="min-h-50 p-5">
-              <b-img-lazy 
-              :src="items.img.banner"
-              :alt="items.imgAlt.banner"
-              v-bind="imgProps"
-              class="w-100 cover animate__animated animate__fadeIn" 
-              style="border-radius: 0 14px 14px 0; filter: drop-shadow(2px 4px 10px #222222);" ></b-img-lazy>
-          </b-col>
-      </b-row> -->
 
     <!-- future filter dropdown/menu -->
         <!-- <b-form-select v-model="category" :options="options"></b-form-select> -->
@@ -73,10 +55,14 @@
           class="border-0 mb-3 shadow"
           body-class="p-0"
           >
+          <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2 shadow"></b-avatar>
+          <!-- <b-avatar icon="bookmark-fill" size="3rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2" style="background: transparent;"></b-avatar> -->
+          <!-- card content -->
           <b-card-img-lazy
           :img-alt="items.imgAlt"
           :src="items.img"
           v-bind="imgProps"
+          style="filter: brightness(0.9)"
           class="animate__animated animate__fadeIn"
           ></b-card-img-lazy>
           <b-card-text class="pt-4 px-5 pb-5"
@@ -114,7 +100,7 @@ export default {
           blank: true,
           blankColor: '#bbb',
           width: "100%",
-          height: "100%"        
+          height: "100%"       
         }
     }
   },
