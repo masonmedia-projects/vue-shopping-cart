@@ -55,7 +55,7 @@
           class="border-0 mb-3 shadow"
           body-class="p-0"
           >
-          <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2 shadow"></b-avatar>
+          <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute left top z-1 m-2 shadow"></b-avatar>
           <!-- <b-avatar icon="bookmark-fill" size="3rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2" style="background: transparent;"></b-avatar> -->
           <!-- card content -->
           <b-card-img-lazy

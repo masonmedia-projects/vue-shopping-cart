@@ -4,13 +4,13 @@
             <!-- banner -->
             <b-row class="text-left min-h-100 relative mt-5" 
             v-if="totalPrice > 0"> 
-                <b-col lg="6" class="fixed top min-h-50 p-0">
+                <b-col lg="6" class="fixed top min-h-75 p-0">
                     <b-img-lazy 
                     :src="items.img"
                     :alt="items.imgAlt" 
-                    class="page-banner w-100 absolute z--1 animate__animated animate__fadeIn"></b-img-lazy>
+                    class="page-banner w-100 min-vh-100 absolute z--1 animate__animated animate__fadeIn"></b-img-lazy>
                     <!-- trans-black overlay -->
-                    <div class="page-banner w-100 absolute z--1" style="background: rgba(0,0,0,0.6);"></div>
+                    <div class="page-banner w-100 h-100 absolute z--1" style="background: rgba(0,0,0,0.6);"></div>
                     <div class="relative z-1 text-light text-left p-5" style="top: 70px;">
                         <b-icon-person-circle 
                         variant="lightblue"
@@ -26,8 +26,11 @@
                         <p class="mb-0" v-html="items.description"></p>   
                     </div>
                 </b-col>
-                <b-col lg="6" align-self="stretch" offset-lg="6"
-                class="p-4 p-md-5">
+
+                <!-- cart items -->
+                
+                <b-col lg="6" align-self="start" offset-lg="6"
+                class="relative z-1 bg-taieri bg-light p-4 p-md-5">
                     <b-card no-body class="bg-glass border-0 overflow-hidden mb-3"
                     v-for="items in cartItems" :key="items.id">
                         <b-row no-gutters>
@@ -36,7 +39,7 @@
                                 <b-card-img 
                                 :src="items.img" 
                                 :alt="items.imgAlt" 
-                                class="h-100 rounded-0 cover">
+                                class="img-fluid h-100 rounded-0 cover">
                                 </b-card-img>
                             </b-col>
                             <b-col md="9">
@@ -44,18 +47,18 @@
                                 body-class="d-flex flex-column justify-content-center align-items-start p-4 pb-5 p-md-5 relative" >
                                     <b-card-text class="w-100">
                                         <!-- <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2 shadow"></b-avatar> -->
-                                        <h2 v-html="items.name" class="font-weight-bold m-0"></h2>
+                                        <h3 v-html="items.name" class="font-weight-bold m-0"></h3>
                                         <p class="my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="items.category"></p>
                                         <a :href="items.download" download target="_blank"> 
-                                            <b-button variant="dark" class="w-sm-100 mt-2 mr-2 border-0">
+                                            <b-button variant="dark" class="flex-fill w-sm-100 mt-2 mr-2 border-0">
                                                 <span v-for="items in $t('myLearningPlan')" :key="items.id">
-                                                    <p class="m-0" style="font-size: 17px" v-html="items.btnDownload"></p>
+                                                    <p class="m-0" style="font-size: 16px" v-html="items.btnDownload"></p>
                                                 </span>
                                             </b-button>
                                         </a>
-                                        <b-button variant="outline-dark" class="w-sm-100 mt-2" @click="removeItem(items)">
+                                        <b-button variant="outline-dark" class="flex-fill w-sm-100 mt-2" @click="removeItem(items)">
                                             <span v-for="items in $t('myLearningPlan')" :key="items.id">
-                                                <p class="m-0" style="font-size: 17px" v-html="items.btnRemove"></p>
+                                                <p class="m-0" style="font-size: 16px" v-html="items.btnRemove"></p>
                                             </span>
                                         </b-button>
                                     </b-card-text>
