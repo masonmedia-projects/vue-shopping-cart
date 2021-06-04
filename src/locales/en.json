@@ -129,8 +129,9 @@
       "img": "img/about_page/about10.jpg",
       "imgAlt": "A photo of four women sitting at a table discussing contents on a laptop.",
       "title":"My Learning Plan",
-      "description":"Each area of focus you selected has a learning map with suggested courses and activities to get you started on your learning journey. Review these learning maps to explore the formal (10%), social (20%), and action (70%) learning activities that will help you develop the leadership capabilities, knowledge, and skills related to that area of focus.",
+      "description":"Each area of focus you selected has a learning map with suggested courses and activities to get you started on your learning journey. Use these maps to help you develop the leadership capabilities, knowledge, and skills related to that area of focus.",
       "subtitle": "Next steps",
+      "text": "<strong>Download</strong> and review each of your learning maps. <strong>Incorporate</strong> learning activities into your Individual Development Plan. <strong>Define</strong> what success will look like for each activity. <strong>Consider</strong> what support and resources you’ll need to complete each activity. <strong>Reflect</strong> on the results of your activities on an ongoing basis and reassess as needed.",
       "nextSteps": [
           "<strong>Download</strong> and review each of your learning maps.", 
           "<strong>Incorporate</strong> learning activities into your Individual Development Plan.",

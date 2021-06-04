@@ -32,8 +32,14 @@
 .relative {
     position: relative;
 }
+
 .fixed {
     position: fixed;
+}
+
+.sticky {
+    position: sticky; 
+    top: 15%;
 }
 
 .top {
@@ -90,3 +96,17 @@
       width: 100%;
   }
 }
+
+@media (max-width: 1091px) {
+    .sticky {
+        position: relative; 
+        top: 0;
+    }
+}
+// @media only screen 
+//   and (max-device-width: 1091px) {
+//     .sticky {
+//         position: relative; 
+//         top: 0;
+//     }
+// }

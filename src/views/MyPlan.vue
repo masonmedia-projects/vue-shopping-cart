@@ -1,41 +1,60 @@
 <template>
-    <b-container fluid class="min-h-100 mt-5 bg-taieri">
+    <b-container fluid class="mt-5 bg-taieri">
         <div v-for="items in $t('myLearningPlan')" :key="items.id">
             <!-- banner -->
-            <b-row class="text-left min-h-100 relative mt-5" 
-            v-if="totalPrice > 0"> 
-                <b-col lg="6" class="fixed top min-h-75 p-0">
-                    <b-img-lazy 
+            <b-row 
+            align-v="center"
+            class="text-left mt-5 min-vh-100" 
+            >
+            <!-- v-if="totalPrice > 0"  -->
+                <b-col lg="6" 
+                align-self="stretch" class="min-vh-50 p-5 bg-royal">
+                    <!-- <b-img-lazy 
                     :src="items.img"
                     :alt="items.imgAlt" 
-                    class="page-banner w-100 min-vh-100 absolute z--1 animate__animated animate__fadeIn"></b-img-lazy>
+                    class="page-banner w-100 min-vh-100 absolute z--1 animate__animated animate__fadeIn">
+                    </b-img-lazy> -->
                     <!-- trans-black overlay -->
-                    <div class="page-banner w-100 h-100 absolute z--1" style="background: rgba(0,0,0,0.6);"></div>
-                    <div class="relative z-1 text-light text-left p-5" style="top: 70px;">
-                        <b-icon-person-circle 
-                        variant="lightblue"
+                    <!-- <div class="page-banner w-100 h-100 absolute z--1" style="background: rgba(0,0,0,0.6);"></div> -->
+                    <div class="sticky z-1 text-light text-left px-5">
+                        <b-icon
+                        icon="arrow-up-right-square-fill" 
+                        class="text-yellow" 
                         font-scale="3"
-                        :title="items.title">
-                        <span class="sr-only" v-html="items.title"></span>
-                        </b-icon-person-circle>
+                        title="Next step details"
+                        aria-hidden="true"></b-icon>
                         <h1 class="page-title font-weight-bold mb-4 mt-3" 
                         style="line-height: 90%;"
                         v-html="items.title"></h1>
-                        <hr class="d-flex mx-0 mr-auto mt-0 bg-lightblue" 
+                        <hr class="d-flex mx-0 mr-auto mt-3 mb-4 bg-yellow" 
                         style="height: 4px; width: 50px;">
-                        <p class="mb-0" v-html="items.description"></p>   
+                        <h3 class="bg-glass bg-lightblue-trans my-3 p-4 font-weight-bold" v-html="items.subtitle"></h3>
+                        <p 
+                        class="bg-glass bg-lightblue-trans my-3 p-4"
+                        v-html="items.description"></p>
                     </div>
                 </b-col>
 
                 <!-- cart items -->
                 
-                <b-col lg="6" align-self="start" offset-lg="6"
+                <template v-if="totalPrice > 0">
+                <b-col lg="6" align-self="stretch"
                 class="relative z-1 bg-taieri bg-light p-4 p-md-5">
+                    <div class="p-4 bg-glass mb-3">
+                        <ol class="mb-0">
+                            <span v-for="item in items.nextSteps" :key="item.id">
+                                <li v-html="item"></li>
+                            </span>
+                        </ol>
+                        <p class="mb-0" style="border-radius: 14px 0 0 14px;" v-html="item"></p>
+                    </div>
+
+
                     <b-card no-body class="bg-glass border-0 overflow-hidden mb-3"
                     v-for="items in cartItems" :key="items.id">
                         <b-row no-gutters>
                             <b-col md="3">
-                                <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute left top z-1 m-2 shadow"></b-avatar>
+                                <!-- <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute left top z-1 m-2 shadow"></b-avatar> -->
                                 <b-card-img 
                                 :src="items.img" 
                                 :alt="items.imgAlt" 
@@ -46,7 +65,7 @@
                                 <b-card-body 
                                 body-class="d-flex flex-column justify-content-center align-items-start p-4 pb-5 p-md-5 relative" >
                                     <b-card-text class="w-100">
-                                        <!-- <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2 shadow"></b-avatar> -->
+                                        <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2 shadow"></b-avatar>
                                         <h3 v-html="items.name" class="font-weight-bold m-0"></h3>
                                         <p class="my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="items.category"></p>
                                         <a :href="items.download" download target="_blank"> 
@@ -67,12 +86,30 @@
                         </b-row>
                     </b-card>
                 </b-col>
+                </template>
+
+            <template v-else>
+                <b-col lg="6" 
+                align-self="center"
+                class="p-5 text-center"
+                v-for="items in $t('myLearningPlan')" :key="items.index">
+                    <b-icon-person-circle 
+                    variant="secondary"
+                    font-scale="8"
+                    class="shadow rounded-circle bg-yellow"
+                    :title="items.emptyPlan">
+                        <span class="sr-only" v-html="items.emptyPlan"></span>
+                    </b-icon-person-circle>
+                    <h3 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h3>
+                </b-col>
+            </template>
+
             </b-row>    
 
 
 
         <!-- if learning plan has no items -->
-        <b-row v-else>
+        <!-- <b-row v-else>
             <b-col lg="12" 
             class="d-flex flex-column justify-content-center align-items-center min-h-100"
             v-for="items in $t('myLearningPlan')" :key="items.index">
@@ -85,23 +122,23 @@
                 </b-icon-person-circle>
                 <h3 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h3>
             </b-col>
-        </b-row>
+        </b-row> -->
         </div>
     </b-container>
 </template>
 
 <script>
 import Swal from 'sweetalert2'
-import { BIconPersonCircle } from 'bootstrap-vue'
+// import { BIconPersonCircle } from 'bootstrap-vue'
 
 export default {
-    name: 'Cart',
+    name: 'MyPlan',
     components: { 
-        BIconPersonCircle
+        // BIconPersonCircle
     },
     data() {
         return {
-            details: this.$route.params,
+            details: this.$route.params
         }
     },
     methods: {
