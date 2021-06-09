@@ -93,12 +93,17 @@
                         class="mr-2 mt-2 w-sm-100" 
                         v-html="items.btn2"
                         @click="aboutPage"></b-button> -->
-                        <about-modal></about-modal>
+                        <b-button 
+                        v-b-modal.modal-center
+                        variant="lightblue" 
+                        size="lg"
+                        class="mr-2 mt-2 w-sm-100 mb-2 mb-sm-0" v-html="items.btn1">
+                        </b-button>
                         <b-button 
                         variant="orange" 
                         size="lg"
                         class="mr-2 mt-2 w-sm-100 mb-2 mb-sm-0" 
-                        v-html="items.btn1"
+                        v-html="items.btn2"
                         @click="getStarted"></b-button>
                     </div>
                 </b-col>
@@ -108,12 +113,12 @@
 </template>
 
 <script>
-import AboutModal from '../components/AboutModal';
+// import AboutModal from '../components/AboutModal';
 
 export default {
   name: 'Home',
   components: {
-      AboutModal
+    //   AboutModal
   },
   data() {
       return {

@@ -8,10 +8,6 @@
           "url": "/"
         },
         {
-          "link": "About",
-          "url": "/about"
-        },
-        {
           "link": "Get Started",
           "url": "/get-started"
         },
@@ -50,8 +46,8 @@
       "title3": "Getting started",
       "text3": "If this is your first time using the tool, or you’d like to learn more about it, select <strong>About</strong> to get more information. If you're a returning user, or know what skill areas you’d like to focus on, begin on the <strong>Get Started</strong> page. Consult the Leadership Behaviour Model and consider which areas you'd like to focus on. If you're unsure, click the <strong>Details</strong> button on any of the competencies at random, and see if they resonate with you. If they do, add them to your learning plan. You can add as many competencies to your plan as you wish. When done, select the <strong>cart icon</strong> to review your plan, and go to the <strong>My Plan</strong> page to download your personalized resources." ,
       "section_title3": "Grow & discover",
-      "btn1": "Get started",
-      "btn2": "About",
+      "btn1": "Learn more",
+      "btn2": "Get started",
       "img": {
         "banner": "img/about_page/01welcome_01.jpg",
         "img1": "img/home_page/01_getstartedcover.jpg",
@@ -148,8 +144,8 @@
   "aux": [
     {
       "categoryTitle": "Category",
-      "descriptionTitle": "Description",
-      "nameTitle": "Name",
+      "descriptionTitle": "Category Description",
+      "nameTitle": "Capability",
       "sectionTitle1": "What it looks like",
       "sectionTitle2": "Add to your plan if",
       "btn1": "Add",

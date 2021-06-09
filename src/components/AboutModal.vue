@@ -2,11 +2,6 @@
     <div>
         <div v-for="items in $t('aboutpage')" :key="items.id">
             <!-- modal -->
-            <b-button 
-            v-b-modal.modal-center
-            variant="lightblue" 
-            size="lg"
-            class="mr-2 mt-2 w-sm-100 mb-2 mb-sm-0" v-html="items.btn1"></b-button>
             <b-modal
             title-class="font-weight-bolder badge badge-lightblue px-3 py-1" 
             id="modal-center" 
@@ -40,19 +35,18 @@
                 <template #modal-footer="{ hide }">
                     <b-button
                         variant="lightblue"
-                        size="lg"
                         class="float-right"
                         @click="hide()">
                         Close
                     </b-button>
-                    <b-button
+                    <!-- <b-button
                         variant="orange"
                         size="lg"
                         class="float-right"
                         @click="getStarted"
                         >
                         Get Started
-                    </b-button>
+                    </b-button> -->
                 </template>
             </b-modal>
         </div>

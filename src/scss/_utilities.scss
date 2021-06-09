@@ -37,9 +37,23 @@
     position: fixed;
 }
 
+// % only prints when used with @extend
+
+%sticky {
+    position: sticky;
+}
+
+.sticky,
+.sticky__details {
+    @extend %sticky;
+}
+
 .sticky {
-    position: sticky; 
     top: 15%;
+}
+
+.sticky__details {
+    top: 6%;
 }
 
 .top {
@@ -98,7 +112,8 @@
 }
 
 @media (max-width: 1091px) {
-    .sticky {
+    .sticky,
+    .sticky__details {
         position: relative; 
         top: 0;
     }

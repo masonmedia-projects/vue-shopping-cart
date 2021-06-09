@@ -16,7 +16,7 @@
                     </b-img-lazy> -->
                     <!-- trans-black overlay -->
                     <!-- <div class="page-banner w-100 h-100 absolute z--1" style="background: rgba(0,0,0,0.6);"></div> -->
-                    <div class="sticky z-1 text-light text-left px-5">
+                    <div class="sticky z-1 text-light text-left px-4 px-md-5">
                         <b-icon
                         icon="arrow-up-right-square-fill" 
                         class="text-yellow" 
@@ -93,14 +93,17 @@
                 align-self="center"
                 class="p-5 text-center"
                 v-for="items in $t('myLearningPlan')" :key="items.index">
-                    <b-icon-person-circle 
-                    variant="secondary"
-                    font-scale="8"
-                    class="shadow rounded-circle bg-yellow"
-                    :title="items.emptyPlan">
-                        <span class="sr-only" v-html="items.emptyPlan"></span>
-                    </b-icon-person-circle>
-                    <h3 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h3>
+                    <b-button variant="yellow" class="shadow mb-2 mt-5 mt-lg-0">
+                        <b-icon 
+                        icon="cart-plus" 
+                        variant="royal"
+                        font-scale="6"
+                        class="p-3"
+                        :title="items.emptyPlan"
+                        @click="getStarted"
+                        :aria-label="items.emptyPlan"></b-icon>
+                    </b-button>
+                    <h4 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h4>
                 </b-col>
             </template>
 
@@ -147,6 +150,9 @@ export default {
         },
         removeItem(items) {
             this.$store.dispatch("removeItem", items)
+        },
+        getStarted() {
+          this.$router.push("/get-started");
         },
         success(){
             Swal.fire({

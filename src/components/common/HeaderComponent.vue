@@ -93,15 +93,24 @@
         </li>
         <li @click="active = true">Active</li> -->
 
+            <!-- info question mark icon for about modal -->
+            <div  v-b-modal.modal-center class="nav-link mr-1">
+            <b-icon 
+              icon="question-circle" 
+              variant="secondary"
+              font-scale="1.5"
+              class="align-self-center"></b-icon>
+            </div>
+            <about-modal></about-modal>
+
           <!-- //cart icon sidebar activate  -->
           <div v-b-toggle.sidebar-right class="nav-link mr-3">
             <b-icon 
               icon="cart" 
               variant="secondary"
-              font-scale="2"
+              font-scale="1.8"
               class="align-self-center" 
               title="There are no items in my plan"></b-icon>
-              <span class="sr-only">There are no items in my plan</span>
             <!-- menu cart counter -->
             <!-- <b-badge class="cart-count" variant="success">{{ count }}</b-badge> -->
           </div>
@@ -123,12 +132,14 @@
 </template>
 
 <script>
+import AboutModal from '../AboutModal.vue';
 import ExitModal from './ExitModal.vue';
 
 export default {
     name: 'HeaderComponent',
     components: {
         ExitModal,
+        AboutModal,
     },
     data () {
       return { 

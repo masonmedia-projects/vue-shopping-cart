@@ -2,43 +2,50 @@
     <b-container fluid class="relative">
         <!-- 50-50 split layout -->
         <b-row class="text-left min-h-100 relative mt-5"> 
-            <b-col lg="6" class="fixed top min-h-50 p-0">
+            <!-- <b-col lg="6" class="fixed top min-h-50 p-0">
                 <b-img-lazy 
                 :src="details.img"
                 :alt="details.imgAlt" 
                 class="page-banner w-100 absolute z--1 animate__animated animate__fadeIn"></b-img-lazy>
-                <!-- trans-black overlay -->
                 <div class="page-banner w-100 absolute z--1" style="background: rgba(0,0,0,0.4);"></div>
                 <div class="relative z-1 text-light text-left p-5" style="top: 50px;">
                     <b-avatar icon="bookmarks-fill" size="3.5rem" rounded="lg" :class="details.color" class="shadow"></b-avatar>
                     <h1 class="font-weight-bold mb-4 mt-3" v-html="details.name"></h1>
                     <b-button disabled variant="outline-light" class="text-left" v-html="details.category"></b-button>
                 </div>
-            </b-col>
+            </b-col> -->
+
+            <b-col lg="6" align-self="stretch" class="min-vh-50 p-0">
+                <div class="sticky__details">
+                    <b-img-lazy 
+                    :src="details.img"
+                    :alt="details.imgAlt" 
+                    class="page-banner w-100 min-vh-100 absolute z--1 animate__animated animate__fadeIn">
+                    </b-img-lazy>
+                    <!-- trans-black overlay -->
+                    <div class="page-banner w-100 h-100 absolute z--1" style="background: rgba(0,0,0,0.6);"></div>
+                    <div class="z-1 text-light text-left px-5 min-h-50">
+                        <div class="relative z-1 text-light text-left" style="top: 50px;">
+                        <b-avatar icon="bookmarks-fill" size="3.5rem" rounded="lg" :class="details.color" class="shadow"></b-avatar>
+                        <h1 class="font-weight-bold mb-4 mt-3" v-html="details.name"></h1>
+                        <b-button disabled variant="outline-light" class="text-left" v-html="details.category"></b-button>
+                        </div>
+                    </div>
+                </div>
+                </b-col>
             <!-- /content -->
-            <b-col lg="6" offset-lg="6"
-            class="d-flex flex-column justify-content-end align-items-start relative z-1 p-4 p-md-5"
-            style="background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 1000%;">
-                     <!-- /media object header -->
-                    <!-- <div class="bg-glass p-4 w-100 mb-3" style="border-radius: 14px;">
-                        <b-media class="my-3 bg-lightblue-trans text-lightblue d-flex align-items-center" vertical-align="center">
-                            <template #aside class="media-aside align-self-center mr-3">
-                                <span class="details-title font-weight-bold text-lightblue border-0 px-3 py-4 px-md-4 py-md-5 mb-0 bg-lightblue text-light shadow" 
-                                style="border-radius: 14px 0 0 14px;">{{ details.id }}.</span>
-                            </template>
-                            <h1 class="details-title font-weight-bold w-100 mb-0" v-html="details.name"></h1>
-                        </b-media>
-                   </div> -->
+            <b-col lg="6" align-self="stretch"
+                class="relative z-1 bg-taieri bg-light p-4 p-md-5">
 
                     <!-- category alerts -->
                     <div v-for="items in $t('aux')" :key="items.id">
                         <div class="bg-glass p-4 mb-3 w-100" style="border-radius: 14px;">
                             <ul class="list-unstyled mt-3 w-100">
-                                <b-alert variant="warning" class="alert alert-yellow" show>
-                                    <span class="font-weight-bold">{{ items.categoryTitle }}:</span> {{ details.category }}
-                                </b-alert>
                                 <b-alert variant="info" class="alert alert-lightblue" show>
                                     <span class="font-weight-bold">{{ items.nameTitle }}:</span> {{ details.name }}
+                                </b-alert>
+                                <b-alert variant="warning" class="alert alert-yellow" show>
+                                    <span class="font-weight-bold">{{ items.categoryTitle }}:</span> {{ details.category }}
                                 </b-alert>
                                 <b-alert variant="success" class="alert alert-success" show>
                                     <span class="font-weight-bold">{{ items.descriptionTitle }}:</span> {{ details.description }}
