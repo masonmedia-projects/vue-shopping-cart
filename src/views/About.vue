@@ -26,60 +26,35 @@
             </b-col>
         </b-row>
 
-        <b-row 
-        class="flex-column justify-content-end align-items-start text-left relative min-vh-100">
-            <b-img-lazy
-            :src="items.img.img2"
-            :alt="items.imgAlt.img2" 
-            v-bind="imgProps"
-            class="w-100 h-100 absolute cover z-0 left top"></b-img-lazy>
-            <!-- color strip -->
-            <div class="absolute bottom h-25 w-100 z-0 bg-purple-trans"></div>
-            <b-col lg="8" offset-lg="4"
-            style="position: relative; z-index: 3;"
-            class="flex-column justify-content-center align-items-start p-4 pt-5 p-md-5">
-                <div class="bg-glass p-5" style="border-radius: 14px">
-                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle2"></h5>
-                    <h1 class="display-4 font-weight-bold mb-4"
-                    style="line-height: 90%; letter-spacing: -3px"
-                    v-html="items.title2"></h1>
-                    <hr class="d-flex m-0 mr-auto my-3 bg-purple" style="height: 4px; width: 50px;">
-                    <p class="mb-2" v-html="items.text2"></p>
-                    <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
-                </div>
-                <!--/content-->
-            </b-col>
-        </b-row>
 
-        <b-row 
-        class="flex-column justify-content-end align-items-start text-left relative min-vh-100">
-            <b-img-lazy
-            :src="items.img.img3"
-            :alt="items.imgAlt.img3" 
-            v-bind="imgProps"
-            class="w-100 h-100 absolute cover z-0 left top"></b-img-lazy>
-            <!-- color strip -->
-            <div class="absolute bottom h-25 w-100 z-0 bg-orange-trans"></div>
-            <b-col lg="8"
-            style="position: relative; z-index: 3;"
-            class="flex-column justify-content-center align-items-start p-4 pt-5 p-md-5">
-                <div class="bg-glass p-5" style="border-radius: 14px">
-                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle3"></h5>
-                    <h1 class="display-4 font-weight-bold mb-4"
-                    style="line-height: 90%; letter-spacing: -3px"
-                    v-html="items.title3"></h1>
-                    <hr class="d-flex m-0 mr-auto my-3 bg-orange" style="height: 4px; width: 50px;">
-                    <p class="mb-2" v-html="items.text3"></p>
-                    <router-link to="/get-started">
-                        <b-button 
-                        variant="orange" 
-                        size="lg"
-                        class="w-sm-100 mt-3" v-html="items.btn2"></b-button>
-                    </router-link>
-                </div>
-                <!--/content-->
-            </b-col>
+        <b-row
+        class="flex-column justify-content-end align-items-start text-left">
+          <b-col lg="12" class="p-5">
+            <b-card no-body class="bg-glass border-0 overflow-hidden mb-3"
+            v-for="items in cartArchive" :key="items.id">
+                <b-row no-gutters>
+                    <b-col md="3">
+                        <b-card-img 
+                        :src="items.img" 
+                        :alt="items.imgAlt" 
+                        class="img-fluid h-100 rounded-0 cover">
+                        </b-card-img>
+                    </b-col>
+                    <b-col md="9">
+                        <b-card-body 
+                        body-class="d-flex flex-column justify-content-center align-items-start p-4 pb-5 p-md-5 relative" >
+                            <b-card-text class="w-100">
+                                <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2 shadow"></b-avatar>
+                                <h3 v-html="items.name" class="font-weight-bold m-0"></h3>
+                                <p class="my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="items.category"></p>
+                            </b-card-text>
+                        </b-card-body>
+                    </b-col>
+                </b-row>
+            </b-card>
+          </b-col>
         </b-row>
+        
       </div>
 </b-container>
    <!-- <b-container fluid class="p-5 mt-4">
@@ -178,6 +153,9 @@ export default {
       aboutpage() {
         return this.$store.state.data.aboutpage;
       },
+        cartArchive() {
+            return this.$store.state.cartArchive;
+        },
       filterProductsByCategory() {
         return this.products.filter(product => !product.category.indexOf(this.category))
       },

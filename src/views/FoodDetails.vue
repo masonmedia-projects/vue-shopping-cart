@@ -61,7 +61,7 @@
                         </b-alert>
 
                         <b-row class="px-2">
-                            <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.index">
+                            <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.id">
                                 <!-- <b-icon icon="grip-horizontal" variant="lightblue mb-3" class="mr-2" font-scale="2"></b-icon> -->
                                 <b-icon icon="bookmark-check" variant="lightblue" class="mr-2 mb-4" font-scale="2"></b-icon>
                                 <p class="h-100 pl-3 border-left border-lightblue-trans" v-html="item"></p>
@@ -88,7 +88,7 @@
                         <!-- action button grid rounded -->
                         <b-row class="d-flex justify-content-center align-items-center w-100 bg-trans text-light p-2 mx-auto rounded">
                             <b-col sm class="px-1">
-                                <b-button type="button" size="lg" variant="orange" class="d-flex justify-content-center align-items-center my-2 w-100" @click="addToCart">
+                                <b-button type="button" size="lg" variant="orange" class="d-flex justify-content-center align-items-center my-2 w-100" @click="addToCart(); addToArchive()">
                                     <b-icon icon="plus" font-scale="1.5"></b-icon> {{ items.btn1 }}
                                 </b-button>
                             </b-col>
@@ -158,11 +158,15 @@ export default {
         removeItem() {
             this.$store.dispatch("removeItem", this.details);
         },
+        addToArchive() {
+            this.$store.dispatch("addToArchive", this.details);
+        },
     },
-    // add localStorage for product/food details
+    // add localStorage for product/food details => this is not technically 'state';
+    // it's route parameter details, so vuex/state related local storage will not work
     created() {
         if (this.$route.params.id !== undefined)
-        localStorage.setItem("details", JSON.stringify(this.$route.params));
+        localStorage.setItem("details", JSON.stringify(this.details));
     },
     mounted() {
         this.details = JSON.parse(localStorage.getItem("details"));

@@ -45,10 +45,10 @@
             <b-card-text>
               <!-- /remove item -->
               <div @click="removeItem(items)" type="button" aria-label="Close" class="font-weight-bold absolute right top p-1">
-                <b-icon icon="x" class="mr-2" font-scale="1"></b-icon>
+                <b-icon icon="x" class="mr-1" font-scale="1"></b-icon>
               </div>
               <!-- item title -->
-              <b-media class="mb-3 mt-3 d-flex align-items-center bg-light rounded" 
+              <b-media class="mb-3 mt-2 d-flex align-items-center bg-light rounded" 
               vertical-align="center">
                     <template #aside class="media-aside align-self-center mr-3">
                       <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="left" :class="items.color"></b-avatar>

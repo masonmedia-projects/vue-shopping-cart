@@ -35,7 +35,7 @@
                     </div>
                 </b-col>
 
-                <!-- cart items -->
+                <!-- cart item instructions -->
                 
                 <template v-if="totalPrice > 0">
                 <b-col lg="6" align-self="stretch"
@@ -46,15 +46,14 @@
                                 <li v-html="item"></li>
                             </span>
                         </ol>
-                        <p class="mb-0" style="border-radius: 14px 0 0 14px;" v-html="item"></p>
                     </div>
 
+                    <!-- cart items -->
 
                     <b-card no-body class="bg-glass border-0 overflow-hidden mb-3"
                     v-for="items in cartItems" :key="items.id">
                         <b-row no-gutters>
                             <b-col md="3">
-                                <!-- <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute left top z-1 m-2 shadow"></b-avatar> -->
                                 <b-card-img 
                                 :src="items.img" 
                                 :alt="items.imgAlt" 
@@ -69,9 +68,10 @@
                                         <h3 v-html="items.name" class="font-weight-bold m-0"></h3>
                                         <p class="my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="items.category"></p>
                                         <a :href="items.download" download target="_blank"> 
-                                            <b-button variant="dark" class="flex-fill w-sm-100 mt-2 mr-2 border-0">
+                                            <b-button variant="dark" class="flex-fill w-sm-100 mt-2 mr-2 border-0" @click="removeItem(items)">
                                                 <span v-for="items in $t('myLearningPlan')" :key="items.id">
-                                                    <p class="m-0" style="font-size: 16px" v-html="items.btnDownload"></p>
+                                                    <p class="m-0" style="font-size: 16px" 
+                                                    v-html="items.btnDownload"></p>
                                                 </span>
                                             </b-button>
                                         </a>
@@ -86,7 +86,7 @@
                         </b-row>
                     </b-card>
                 </b-col>
-                </template>
+            </template>
 
             <template v-else>
                 <b-col lg="6" 
@@ -107,9 +107,9 @@
                 </b-col>
             </template>
 
-            </b-row>    
+            
 
-
+        </b-row>    
 
         <!-- if learning plan has no items -->
         <!-- <b-row v-else>
@@ -132,16 +132,12 @@
 
 <script>
 import Swal from 'sweetalert2'
-// import { BIconPersonCircle } from 'bootstrap-vue'
 
 export default {
     name: 'MyPlan',
-    components: { 
-        // BIconPersonCircle
-    },
     data() {
         return {
-            details: this.$route.params
+            cartCheckout: this.$store.state.cartItems
         }
     },
     methods: {
@@ -195,13 +191,14 @@ export default {
         //     return total;
         // }
     },
-     // add localStorage for product/food details
-    created() {
-        if (this.$route.params.id !== undefined)
-        localStorage.setItem("details", JSON.stringify(this.$route.params));
-    },
-    mounted() {
-        this.details = JSON.parse(localStorage.getItem("details"));
-    },
+     // add localStorage for cart item details
+    // vuex/state needs to be used for state changes (see store.js), standard local storage below doesn't work
+    // created() {
+    //     if (this.cartItems !== undefined)
+    //     localStorage.setItem("cart", JSON.stringify(this.$store.state.cartItems));
+    // },
+    // mounted() {
+    //     this.cart = JSON.parse(localStorage.getItem("cart"));
+    // },
 }
 </script>

@@ -21,6 +21,32 @@
       "checkout": "Checkout"
     }
   ],
+
+  "aboutPopup": [
+    {
+        "modalTitle": "LDT",
+        "mainTitle": "Where to start",
+        "heading1": "If you’re unsure of which key leader competencies to focus on:",
+        "list1": [
+          "Review the Leadership Behaviour Model and choose your areas of focus through self-reflection and speaking with your colleagues.", 
+          "Reflect on what you’re passionate about developing."
+        ],
+        "heading2": "Talk to others",
+        "list2": [
+          "Connect with those around you – your leader, other team members, and your direct reports.", 
+          "Set the context for the conversation by sharing your desire to grow as a leader and ask them:",
+          "'What do you appreciate about me?'",
+          "'What could I do to be even more effective?'"
+        ],
+        "heading3": "Reflect",
+        "list3": [
+          "How did this feedback make you feel?",
+          "Did it reinforce or add to what you considered were your areas for growth?",
+          "Choose your initial 2–3 areas of focus. Return to this tool, and select Get Started."
+        ]
+    }
+  ],
+
   "exit": [
     {
       "heading": "Exit LDT",
@@ -104,7 +130,6 @@
       "text3": "Begin on the <strong>Get Started</strong> page. Consult the Leadership Behaviour Model and consider which skill areas you'd like to focus on. If you're unsure, click the <strong>Details</strong> button on any of the competencies at random, and see if they resonate with you. If they do, add them to your learning plan by selecting the <strong>Add</strong> button. You can add as many competencies to your plan as you wish. When ready, select the <strong>View</strong> button to review the items in your plan, select <strong>Browse</strong> to keep exploring, or select <strong>Checkout</strong> to download your personalized learning resources. You can logout of the LDT at any time by selecting <strong>Logout</strong> in the top right of the menu." ,
       "section_title3": "Grow & discover",
       "text4": "Review the Leadership Behaviour Model and choose your areas of focus through self-reflection and speaking with your colleagues.",
-      "modalTitle": "LDT",
       "btn1": "Learn more",
       "btn2": "Get started",
       "img": {
