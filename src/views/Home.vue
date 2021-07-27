@@ -8,19 +8,16 @@
                 :alt="items.imgAlt.banner"
                 class="min-vh-100 w-75 absolute top right z-0 cover animate__animated animate__fadeIn"></b-img-lazy>
                 <!-- color strip -->
-                <div class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
+                <div :class="fadeUp" class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
                 <b-col md="12" lg="10" xl="7" align-self="end" class="p-5 mt-4">
-                    <div class="p-5 bg-glass" style="border-radius: 14px; background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 800%;">
-                        <h5 class="my-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
-                        <h1 class="site-title font-weight-bold mb-4"
+                    <div :class="fadeUp" class="p-5 bg-glass" style="border-radius: 14px; background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 800%;">
+                        <h5 :class="fadeUp" class="my-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
+                        <h1 :class="fadeUp" class="site-title font-weight-bold mb-4"
                         v-html="items.bannerTitle"></h1>
-                        <div class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;"></div>
-                        <h4 class="mb-2" v-html="items.bannerSubtitle"></h4>
-                        <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
+                        <div :class="fadeUp" class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;"></div>
+                        <h4 :class="fadeUp" class="mb-2" v-html="items.bannerSubtitle"></h4>
+                        <b-icon icon="chevron-double-down" :class="fadeUp" class="mt-3" variant="dark" font-scale="2"></b-icon>
                     </div>
-                    <!-- <b-button
-                        :disabled="isDisabled">Disabled Until...</b-button>
-                        <b-button @click="active = !active">Activate!</b-button> -->
                 </b-col>
             </b-row>
 
@@ -128,6 +125,7 @@ export default {
           blank: true,
           blankColor: '#bbb',        
         },
+        fadeUp: "animate__animated animate__fadeInUp animate__slow",
         active: false,
       }
   },
@@ -141,6 +139,8 @@ export default {
       aboutPage() {
           this.$router.push("/about");
         },
+      
+     
     },
     computed: {
       homepage() {
@@ -149,26 +149,12 @@ export default {
       isDisabled: function() {
           return !this.active;
         }
-        
-//    data: {
-//   	terms: false
-//   },
-//   computed: {
-//   	isDisabled: function(){
-//     	return !this.terms;
-//     }
-//   }
     },
+    mounted() {
+    }
 }
 
-//    data: {
-//   	terms: false
-//   },
-//   computed: {
-//   	isDisabled: function(){
-//     	return !this.terms;
-//     }
-//   }
+
 </script>
 
 <style>

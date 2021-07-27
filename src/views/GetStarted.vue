@@ -15,12 +15,13 @@
       <b-col lg="6" 
       align-self="center"
       class="text-left p-5 bg-light">
-        <h1 class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
-        <h5 class="page-title font-weight-bold mb-4"
+        <h1 :class="fadeUp" class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
+        <h5 :class="fadeUp" class="page-title font-weight-bold mb-4"
         v-html="items.title"></h5>
-        <hr class="ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
-        <p class="" v-html="items.text1"></p>
-        <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
+        <hr :class="fadeUp" class="ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
+        <p :class="fadeUp" v-html="items.text"></p>
+        <b-icon icon="chevron-double-down" 
+        :class="fadeUp" class="mt-2" variant="dark" font-scale="2"></b-icon>
       </b-col>
       <b-col lg="6" 
       align-self="stretch"
@@ -45,7 +46,7 @@
     <b-row class="text-left">
       <b-col xl="4" md="6"
       class="text-center"
-      v-on:click="foodDetails(items)" 
+      v-on:click="itemDetails(items)" 
       v-for="items in $t('allCategories')" :key="items.id">
       <!-- slice limits the number of iterations in the object/array -->
       <!-- <b-col lg="4" v-for="items in topRated.slice(0, 2)" :key="items.id"> -->
@@ -55,15 +56,14 @@
           class="border-0 mb-3 shadow"
           body-class="p-0"
           >
-          <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute left top z-1 m-2 shadow"></b-avatar>
-          <!-- <b-avatar icon="bookmark-fill" size="3rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2" style="background: transparent;"></b-avatar> -->
+          <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" 
+          :class="items.color" class="absolute left top z-1 m-2 shadow"></b-avatar>
           <!-- card content -->
           <b-card-img-lazy
           :img-alt="items.imgAlt"
           :src="items.img"
           v-bind="imgProps"
           style="filter: brightness(0.9)"
-          class="animate__animated animate__fadeIn"
           ></b-card-img-lazy>
           <b-card-text class="pt-4 px-5 pb-5"
           v-for="item in $t('getStarted')" :key="item.id">
@@ -85,6 +85,7 @@ export default {
   data() {
     return {
       selected: null,
+      fadeUp: "animate__animated animate__fadeInUp animate__slow",
         options: [
           { value: '', text: 'All' },
           { value: 'Leading Yourself', text: 'Accessories' },
@@ -125,8 +126,8 @@ export default {
   // route programmatically to retrieve each food detail without creating a new page
   // https://vueschool.io/lessons/vuejs-router-creating-routes
   methods: {
-      foodDetails(item) {
-        this.$router.push({name: "FoodDetails", params: item });
+      itemDetails(item) {
+        this.$router.push({name: "ItemDetails", params: item });
       }
     },  
 }

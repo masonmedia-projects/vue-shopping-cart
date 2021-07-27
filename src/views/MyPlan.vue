@@ -68,7 +68,7 @@
                                         <h3 v-html="items.name" class="font-weight-bold m-0"></h3>
                                         <p class="my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="items.category"></p>
                                         <a :href="items.download" download target="_blank"> 
-                                            <b-button variant="dark" class="flex-fill w-sm-100 mt-2 mr-2 border-0" @click="removeItem(items)">
+                                            <b-button variant="dark" class="flex-fill w-sm-100 mt-2 mr-2 border-0">
                                                 <span v-for="items in $t('myLearningPlan')" :key="items.id">
                                                     <p class="m-0" style="font-size: 16px" 
                                                     v-html="items.btnDownload"></p>
@@ -106,9 +106,6 @@
                     <h4 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h4>
                 </b-col>
             </template>
-
-            
-
         </b-row>    
 
         <!-- if learning plan has no items -->
@@ -137,7 +134,8 @@ export default {
     name: 'MyPlan',
     data() {
         return {
-            cartCheckout: this.$store.state.cartItems
+            cartCheckout: this.$store.state.cartItems,
+            // isActive: false,
         }
     },
     methods: {
@@ -159,6 +157,9 @@ export default {
                 timer: 1500
             })
         },
+        // downloaded() {
+        //  this.isActive = true;
+        // },
     },
     computed: {
         cartItems() {
@@ -202,3 +203,9 @@ export default {
     // },
 }
 </script>
+
+<style>
+.downloaded {
+  opacity: 0.6 !important;
+}
+</style>

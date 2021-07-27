@@ -1,11 +1,11 @@
 <template>
   <b-container fluid contClass="bg-gradient-lightblue">
-    <div v-for="items in $t('aboutpage')" :key="items.id">
+    <div v-for="items in $t('myHistory')" :key="items.id">
         <b-row 
-        class="flex-column justify-content-end align-items-start text-left relative min-vh-100">
+        class="flex-column justify-content-end align-items-start text-left relative min-h-75">
             <b-img-lazy
-            :src="items.img.banner"
-            :alt="items.imgAlt.banner" 
+            :src="items.img.img2"
+            :alt="items.imgAlt.img2" 
             v-bind="imgProps"
             class="w-100 h-100 absolute cover z-0 left top animate__animated animate__fadeIn"></b-img-lazy>
             <!-- color strip -->
@@ -26,17 +26,17 @@
             </b-col>
         </b-row>
 
-
         <b-row
-        class="flex-column justify-content-end align-items-start text-left">
+        class="flex-column justify-content-end align-items-start text-left bg-taieri">
           <b-col lg="12" class="p-5">
             <b-card no-body class="bg-glass border-0 overflow-hidden mb-3"
-            v-for="items in cartArchive" :key="items.id">
+            v-for="item in cartArchive" :key="item.id"
+            @click="itemDetails(items)">
                 <b-row no-gutters>
                     <b-col md="3">
                         <b-card-img 
-                        :src="items.img" 
-                        :alt="items.imgAlt" 
+                        :src="item.img" 
+                        :alt="item.imgAlt" 
                         class="img-fluid h-100 rounded-0 cover">
                         </b-card-img>
                     </b-col>
@@ -44,9 +44,13 @@
                         <b-card-body 
                         body-class="d-flex flex-column justify-content-center align-items-start p-4 pb-5 p-md-5 relative" >
                             <b-card-text class="w-100">
-                                <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2 shadow"></b-avatar>
-                                <h3 v-html="items.name" class="font-weight-bold m-0"></h3>
-                                <p class="my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="items.category"></p>
+                                <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" 
+                                :class="item.color" 
+                                class="absolute right top z-1 m-2 shadow"></b-avatar>
+                                <h3 v-html="item.name" class="font-weight-bold m-0"></h3>
+                                <p class="my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="item.category"></p>
+                                <p class="mt-3" v-html="item.description"></p> 
+                                <b-button variant="lightblue mt-2 stretched-link" v-html="items.btn"></b-button>
                             </b-card-text>
                         </b-card-body>
                     </b-col>
@@ -98,7 +102,7 @@
 
 <script>
 export default {
-  name: 'About',
+  name: 'MyHistory',
   data() {
     return {
       imgProps: {
@@ -109,39 +113,7 @@ export default {
           width: "100%",
           height: "100%"        
         },
-      selectedComponent: 'TabOne',
-      selected: null,
-        options: [
-          { value: '', text: 'All' },
-          { value: 'Accessories', text: 'Accessories' },
-          { value: 'Laptop', text: 'Laptops' },
-          { value: 'Stationary', text: 'Stationary' },
-          ],
-            category: '',
-            products: [
-                { name: "Keyboard", 
-                  price: 44, 
-                  category: 'Accessories', 
-                  details: [
-                    "Seeing yourself clearly and objectively through reflection and introspection",
-                    "Knowing your strengths, opportunities, beliefs, biases, motivations, and emotions",
-                    "Seeking feedback to learn how others perceive you, your attitude, and your responses to them",
-                  ],
-                  selectIf: [
-                    "You’d like to learn about others perception of you",
-                    "You’d like to feel empowered to make changes and build on your areas of strengths and opportunities"
-                  ],
-                },
-                { name: "Mouse", price: 20, category: 'Accessories'},
-                { name: "Monitor", price: 399, category: 'Accessories'},
-                { name: "Dell XPS", price: 599, category: 'Laptop'},
-                { name: "MacBook Pro", price: 899, category: 'Laptop'},
-                { name: "Pencil Box", price: 6, category: 'Stationary'},
-                { name: "Pen", price: 2, category: 'Stationary'},
-                { name: "USB Cable", price: 7, category: 'Accessories'},
-                { name: "Eraser", price: 2, category: 'Stationary'},
-                { name: "Highlighter", price: 5, category: 'Stationary'}
-            ]
+        selected: null,
           }
         },
     methods: {
@@ -150,12 +122,12 @@ export default {
       }
     },
     computed: {
-      aboutpage() {
-        return this.$store.state.data.aboutpage;
+      myHistory() {
+        return this.$store.state.data.myHistory;
       },
-        cartArchive() {
-            return this.$store.state.cartArchive;
-        },
+      cartArchive() {
+          return this.$store.state.cartArchive;
+      },
       filterProductsByCategory() {
         return this.products.filter(product => !product.category.indexOf(this.category))
       },

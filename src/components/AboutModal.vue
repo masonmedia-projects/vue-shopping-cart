@@ -5,17 +5,17 @@
             <b-modal
             title-class="font-weight-bolder badge badge-lightblue px-3 py-1" 
             id="modal-center" 
+            hide-header
             centered 
             size="lg"
             :title="items.modalTitle"
-            body-class="px-5 pt-4 pb-5"
+            body-class="p-4 p-md-5"
             content-class="bg-glass"
             ok-title="Get started"
             ok-variant="orange"> 
                 <b-icon icon="bookmark-check-fill" variant="lightblue mb-3" class="" font-scale="3"></b-icon>
                 <h3 class="font-weight-bold text-lightblue mb-3 py-3 border-top border-bottom border-lightblue-trans" 
                 v-html="items.mainTitle"></h3>
-                
                 <h5 class="alert alert-lightblue my-4" v-html="items.heading1"></h5>
                 <ul>
                     <span v-for="i in items.list1" :key="i.id">
@@ -27,6 +27,11 @@
                     <span v-for="i in items.list2" :key="i.id">
                         <li v-html="i"></li> 
                     </span>
+                    <ul>
+                        <span v-for="j in items.nestedlist" :key="j.id">
+                            <li v-html="j"></li>   
+                        </span>
+                    </ul>
                 </ul>
                 <h5 class="alert alert-green my-4" v-html="items.heading3"></h5>
                 <ul>
