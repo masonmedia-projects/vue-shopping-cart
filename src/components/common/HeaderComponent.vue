@@ -93,13 +93,22 @@
         </li>
         <li @click="active = true">Active</li> -->
 
+        <div v-b-modal.modal-xl class="nav-link mr-1">
+              <b-icon 
+              icon="person-circle" 
+              variant="secondary"
+              font-scale="1.8"
+              class="d-flex align-self-center"></b-icon>
+        </div>
+  <b-modal id="modal-xl" size="xl" title="Extra Large Modal">Hello Extra Large Modal!</b-modal>
+
             <!-- info question mark icon for about modal -->
             <div  v-b-modal.modal-center class="nav-link mr-1">
             <b-icon 
               icon="question-circle" 
               variant="secondary"
-              font-scale="1.5"
-              class="align-self-center"></b-icon>
+              font-scale="1.7"
+              class="d-flex align-self-center"></b-icon>
             </div>
             <about-modal></about-modal>
 

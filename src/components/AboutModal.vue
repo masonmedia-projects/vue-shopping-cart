@@ -7,6 +7,7 @@
             id="modal-center" 
             hide-header
             centered 
+            scrollable
             size="lg"
             :title="items.modalTitle"
             body-class="p-4 p-md-5"

@@ -46,7 +46,7 @@
     <b-row class="text-left">
       <b-col xl="4" md="6"
       class="text-center"
-      v-on:click="itemDetails(items)" 
+      @click="itemDetails(items)" 
       v-for="items in $t('allCategories')" :key="items.id">
       <!-- slice limits the number of iterations in the object/array -->
       <!-- <b-col lg="4" v-for="items in topRated.slice(0, 2)" :key="items.id"> -->

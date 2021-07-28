@@ -53,7 +53,8 @@
                         <!-- action button grid rounded -->
                         <b-row class="d-flex justify-content-center align-items-center w-100 bg-trans text-light p-2 mx-auto rounded">
                             <b-col sm :class="fadeUp" class="px-1">
-                                <b-button type="button" size="lg" variant="orange" class="d-flex justify-content-center align-items-center my-2 w-100" @click="addToCart(); addToArchive()">
+                                <b-button type="button" size="lg" variant="orange" class="d-flex justify-content-center align-items-center my-2 w-100" 
+                                @click="addToCart(); addToArchive()">
                                     <b-icon icon="plus" font-scale="1.5"></b-icon> {{ items.btn1 }}
                                 </b-button>
                             </b-col>
@@ -78,9 +79,12 @@
 
 <script>
 import Swal from 'sweetalert2'
+import {lms} from '../mixins/lms'
+import {animate} from '../mixins/animate'
 
 export default {
-    name: 'FoodDetails',
+    name: 'ItemDetails',
+    mixins: [animate, lms],
     data() {
         return {
             details: this.$route.params,
@@ -119,7 +123,9 @@ export default {
                 customClass: {
                 cancelButton: 'btn-lg btn-lightblue border-0 mb-4',
                 }
-            });
+            });  
+            // call LMS save
+            this.updateSuspendData();
         },
         removeItem() {
             this.$store.dispatch("removeItem", this.details);
@@ -127,6 +133,15 @@ export default {
         addToArchive() {
             this.$store.dispatch("addToArchive", this.details);
         },
+        // save item route param details to LMS
+        updateSuspendData() {
+            this.lmsSet({
+                key: "cmi.suspend_data",
+                value: [this.details.name, this.details.description, this.details.category, this.details.img],
+            });
+            console.log(this.value, 'item details saving!')
+        },
+
     },
     // add localStorage for product/food details => this is not technically 'state';
     // it's route parameter details, so vuex/state related local storage will not work

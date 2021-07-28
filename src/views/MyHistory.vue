@@ -30,13 +30,12 @@
         class="flex-column justify-content-end align-items-start text-left bg-taieri">
           <b-col lg="12" class="p-5">
             <b-card no-body class="bg-glass border-0 overflow-hidden mb-3"
-            v-for="item in cartArchive" :key="item.id"
+            v-for="item in retrieveData" :key="item.id"
             @click="itemDetails(items)">
                 <b-row no-gutters>
                     <b-col md="3">
                         <b-card-img 
                         :src="item.img" 
-                        :alt="item.imgAlt" 
                         class="img-fluid h-100 rounded-0 cover">
                         </b-card-img>
                     </b-col>
@@ -101,8 +100,12 @@
 </template>
 
 <script>
+import {lms} from '../mixins/lms'
+import {animate} from '../mixins/animate'
+
 export default {
   name: 'MyHistory',
+  mixins: [animate, lms],
   data() {
     return {
       imgProps: {
@@ -113,13 +116,17 @@ export default {
           width: "100%",
           height: "100%"        
         },
-        selected: null,
-          }
-        },
+      }
+    },
     methods: {
       itemDetails(item) {
         this.$router.push({name: "ItemDetails", params: item });
-      }
+      },
+      // retrieve item route param details to LMS
+      readSuspendData() {
+        this.details = this.lmsGet("cmi.suspend_data");
+        console.log('Item details retrieved!')
+      },
     },
     computed: {
       myHistory() {
@@ -132,6 +139,9 @@ export default {
         return this.products.filter(product => !product.category.indexOf(this.category))
       },
     },
+    mounted() {
+      this.readSuspendData();
+    }
 }
 </script>
 

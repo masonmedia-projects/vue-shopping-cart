@@ -9,7 +9,7 @@
                 class="text min-vh-100 w-75 absolute top right z-0 cover"></b-img-lazy>
                 <!-- color strip -->
                 <div class="text absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
-                <b-col md="12" lg="10" xl="7" align-self="end" class="p-5 mt-4">
+                <b-col md="12" lg="10" align-self="end" class="p-5 mt-4">
                     <div class="text p-5 bg-glass bg-taieri" style="border-radius: 14px; background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 800%;">
                         <h5 class="text my-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
                         <h1 class="text site-title font-weight-bold mb-4"
@@ -18,6 +18,23 @@
                         <h4 class="text mb-2" v-html="items.bannerSubtitle"></h4>
                         <b-icon icon="chevron-double-down" class="text mt-3" variant="dark" font-scale="2"></b-icon>
                     </div>
+                </b-col>
+            </b-row>
+
+            <!-- LMS -->
+
+            <b-row align-v="stretch" class="min-h-75 mx-2 my-4 bg-glass border-0">
+                <b-col md="4">
+                    <b-button block class="mb-2" @click="lmsInitialize()">Initialize</b-button>
+                    <b-button block class="mb-2" @click="readSuspendData()">Read SuspendData</b-button>
+                    <b-button block class="mb-2" @click="updateSuspendData()">Write SuspendData</b-button>
+                    <b-button block class="mb-2" @click="setCompletion()">setCompletion</b-button>
+                    <b-button block class="mb-2" @click="setSuccessStatus()">setSuccessStatus</b-button>
+                    <b-button block class="mb-2" @click="lmsSave()">Save</b-button>
+                    <b-button block class="mb-2" @click="lmsQuit()">Quit</b-button>
+                </b-col>
+                <b-col md="8">
+                    <b-form-textarea id="textarea" v-model="text" rows="10"></b-form-textarea>
                 </b-col>
             </b-row>
 
@@ -112,10 +129,11 @@
 <script>
 // import AboutModal from '../components/AboutModal';
 import { animate } from "../mixins/animate";
+import { lms } from "../mixins/lms";
 
 export default {
   name: 'Home',
-  mixins: [animate],
+  mixins: [animate, lms],
   components: {
     //   AboutModal
   },

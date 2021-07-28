@@ -69,6 +69,10 @@ export const store = new Vuex.Store({
             }
             state.cartItemCount++
         },
+        readSuspendData() {
+            this.details = this.lmsGet("cmi.suspend_data");
+            console.log('Item details retrieved!')
+        },
         removeItem(state, payload) {
             if(state.cartItems.length > 0) {
                 let bool = state.cartItems.some(i => i.id === payload.id)
