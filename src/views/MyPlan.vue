@@ -9,13 +9,6 @@
             <!-- v-if="totalPrice > 0"  -->
                 <b-col lg="6" 
                 align-self="stretch" class="min-vh-50 p-5 bg-royal">
-                    <!-- <b-img-lazy 
-                    :src="items.img"
-                    :alt="items.imgAlt" 
-                    class="page-banner w-100 min-vh-100 absolute z--1 animate__animated animate__fadeIn">
-                    </b-img-lazy> -->
-                    <!-- trans-black overlay -->
-                    <!-- <div class="page-banner w-100 h-100 absolute z--1" style="background: rgba(0,0,0,0.6);"></div> -->
                     <div class="sticky z-1 text-light text-left px-4 px-md-5">
                         <b-icon
                         icon="arrow-up-right-square-fill" 

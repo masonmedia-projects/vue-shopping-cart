@@ -6,17 +6,17 @@
                 <b-img-lazy 
                 :src="items.img.banner" 
                 :alt="items.imgAlt.banner"
-                class="min-vh-100 w-75 absolute top right z-0 cover animate__animated animate__fadeIn"></b-img-lazy>
+                class="text min-vh-100 w-75 absolute top right z-0 cover"></b-img-lazy>
                 <!-- color strip -->
-                <div :class="fadeUp" class="absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
+                <div class="text absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
                 <b-col md="12" lg="10" xl="7" align-self="end" class="p-5 mt-4">
-                    <div :class="fadeUp" class="p-5 bg-glass" style="border-radius: 14px; background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 800%;">
-                        <h5 :class="fadeUp" class="my-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
-                        <h1 :class="fadeUp" class="site-title font-weight-bold mb-4"
+                    <div class="text p-5 bg-glass bg-taieri" style="border-radius: 14px; background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 800%;">
+                        <h5 class="text my-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
+                        <h1 class="text site-title font-weight-bold mb-4"
                         v-html="items.bannerTitle"></h1>
-                        <div :class="fadeUp" class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;"></div>
-                        <h4 :class="fadeUp" class="mb-2" v-html="items.bannerSubtitle"></h4>
-                        <b-icon icon="chevron-double-down" :class="fadeUp" class="mt-3" variant="dark" font-scale="2"></b-icon>
+                        <div class="text d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;"></div>
+                        <h4 class="text mb-2" v-html="items.bannerSubtitle"></h4>
+                        <b-icon icon="chevron-double-down" class="text mt-3" variant="dark" font-scale="2"></b-icon>
                     </div>
                 </b-col>
             </b-row>
@@ -29,17 +29,17 @@
                     :src="items.img.img1" 
                     :alt="items.imgAlt.img1"
                     v-bind="imgProps"
-                    class="h-100 w-100 cover" 
+                    class="up h-100 w-100 cover" 
                     style="border-radius: 14px 0 0 14px;"></b-img-lazy>
                 </b-col>
                 <b-col lg="6" align-self="center" class="p-5">
-                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle1"></h5>
-                    <h1 class="display-4 font-weight-bold"
+                    <h5 class="up mb-3 font-weight-bold text-muted" v-html="items.microTitle1"></h5>
+                    <h1 class="up display-4 font-weight-bold"
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.title1"></h1>
-                    <hr class="d-flex m-0 mr-auto my-4 bg-orange" style="height: 4px; width: 50px;">
-                    <p class="mb-2" v-html="items.text1"></p>
-                    <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
+                    <hr class="up d-flex m-0 mr-auto my-4 bg-orange" style="height: 4px; width: 50px;">
+                    <p class="up mb-2" v-html="items.text1"></p>
+                    <b-icon icon="chevron-double-down" class="up mt-3" variant="dark" font-scale="2"></b-icon>
                 </b-col>
             </b-row>
 
@@ -111,9 +111,11 @@
 
 <script>
 // import AboutModal from '../components/AboutModal';
+import { animate } from "../mixins/animate";
 
 export default {
   name: 'Home',
+  mixins: [animate],
   components: {
     //   AboutModal
   },
@@ -139,7 +141,7 @@ export default {
       aboutPage() {
           this.$router.push("/about");
         },
-      
+    
      
     },
     computed: {
@@ -151,6 +153,8 @@ export default {
         }
     },
     mounted() {
+        // this.banner();
+        // this.batch();
     }
 }
 

@@ -14,6 +14,20 @@
     min-height: 25vh;
 }
 
+// visibility (for gsap scrolltrigger)
+
+.hidden {
+    visibility: hidden;
+}
+
+%hidden {
+    visibility: hidden;
+}
+.up,
+.text {
+    @extend %hidden;
+}
+
 // borders
 
 .border-green-trans {
