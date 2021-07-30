@@ -105,12 +105,12 @@
 
 <script>
 // import AboutModal from '../components/AboutModal';
-import { animate } from "../mixins/animate";
+// import { animate } from "../mixins/animate";
 import { lms } from "../mixins/lms";
 
 export default {
   name: 'Home',
-  mixins: [animate, lms],
+  mixins: [lms],
   components: {
     //   AboutModal
   },

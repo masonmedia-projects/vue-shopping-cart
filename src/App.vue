@@ -3,7 +3,7 @@
     <header-component/>
     <transition
       mode="out-in"
-      enter-active-class="fade-up"
+      enter-active-class="animate__animated animate__fadeIn"
       leave-active-class="animate__animated animate__fadeOut blur-out"
       >
     <router-view/>
@@ -21,7 +21,6 @@ export default {
     HeaderComponent,
   },
   mounted() {
-    this.lmsInitialize();
     this.setSuccessStatus();
   }
 }

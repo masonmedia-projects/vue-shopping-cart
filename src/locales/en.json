@@ -14,16 +14,19 @@
         {
           "link": "My Learning Plan",
           "url": "/my-plan"
-        },
-        {
-          "link": "My History",
-          "url": "/my-history"
         }
       ],
       "logout": "Logout",
       "close": "Close",
       "checkout": "Checkout"
     }
+  ],
+
+  "myHistoryMenuLink": [
+        {
+          "link": "My History",
+          "url": "/my-history"
+        }
   ],
 
   "aboutPopup": [

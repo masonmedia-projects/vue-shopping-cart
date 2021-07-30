@@ -32,7 +32,7 @@
                         v-html="items.sectionTitle1"></h4>
                     
                         <b-row class="px-2">
-                            <b-col md :class="fadeUp" class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.id">
+                            <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded" v-for="item in details.moreDetail" :key="item.id">
                                 <b-icon icon="bookmark-check" variant="lightblue" class="mr-2 mb-4" font-scale="2"></b-icon>
                                 <p class="h-100 pl-3 border-left border-lightblue-trans" v-html="item"></p>
                                 <p class="small text-lightblue pb-2 border-bottom border-lightblue-trans mt-auto mb-0" v-html="details.name"></p>
@@ -43,7 +43,7 @@
                         v-html="items.sectionTitle2"></h4>
 
                         <b-row class="d-flex px-2">
-                            <b-col md :class="fadeUp" class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded"  v-for="item in details.selectIf" :key="item.id">
+                            <b-col md class="d-flex flex-column mx-2 mb-3 p-4 bg-glass rounded"  v-for="item in details.selectIf" :key="item.id">
                                 <b-icon icon="bookmark-plus" variant="green" class="mr-2 mb-4" font-scale="2"></b-icon>
                                 <p class="h-100 pl-3 border-left border-green-trans" v-html="item"></p>
                                 <p class="small text-green mt-auto mb-0 pb-2 border-bottom border-green-trans" v-html="details.name"></p>
@@ -52,20 +52,20 @@
 
                         <!-- action button grid rounded -->
                         <b-row class="d-flex justify-content-center align-items-center w-100 bg-trans text-light p-2 mx-auto rounded">
-                            <b-col sm :class="fadeUp" class="px-1">
+                            <b-col sm class="px-1">
                                 <b-button type="button" size="lg" variant="orange" class="d-flex justify-content-center align-items-center my-2 w-100" 
                                 @click="addToCart(); addToArchive()">
                                     <b-icon icon="plus" font-scale="1.5"></b-icon> {{ items.btn1 }}
                                 </b-button>
                             </b-col>
-                            <b-col sm :class="fadeUp" class="px-1">
+                            <b-col sm class="px-1">
                                 <b-button type="button" size="lg" variant="green" 
                                 class="d-flex justify-content-center align-items-center my-2 w-100" 
                                 v-b-toggle.sidebar-right>
                                     <b-icon icon="cart2" class="mr-2" font-scale="1"></b-icon> {{ items.btn2 }}
                                 </b-button>
                             </b-col>
-                            <b-col sm :class="fadeUp" class="px-1">
+                            <b-col sm class="px-1">
                                 <b-button type="button" size="lg" variant="lightblue" class="d-flex justify-content-center align-items-center my-2 w-100" @click="getStarted">
                                     <b-icon icon="search" class="mr-2" font-scale="0.9"></b-icon> {{ items.btn3 }}
                                 </b-button>

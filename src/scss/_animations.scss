@@ -17,17 +17,17 @@ $ease: cubic-bezier(0.390, 0.575, 0.565, 1.000);
 
 // visibility (for gsap scrolltrigger)
 
-.hidden {
-  visibility: hidden;
-}
+// .hidden {
+//   visibility: hidden;
+// }
 
-%hidden {
-  visibility: hidden;
-}
-.up,
-.text {
-  @extend %hidden;
-}
+// %hidden {
+//   visibility: hidden;
+// }
+// .up,
+// .text {
+//   @extend %hidden;
+// }
 
 /**
  * ----------------------------------------

@@ -26,7 +26,16 @@
             </b-col>
         </b-row>
 
-        <b-row v-if="mergedArray < 0"
+        <b-row v-if="!mergedArray.length"
+        class="min-h-50 flex-column justify-content-center align-items-center text-center bg-taieri">
+          <b-col lg="12" class="p-5">
+            <h2 class="display-4 font-weight-bold"
+            style="line-height: 90%; letter-spacing: -3px"
+            v-html="items.emptyArchive"></h2>
+          </b-col>
+        </b-row>
+
+        <b-row v-else
         class="min-h-50 flex-column justify-content-end align-items-start text-left bg-taieri">
           <b-col lg="12" class="p-5">
             <b-card no-body class="bg-glass border-0 overflow-hidden mb-3"
@@ -55,15 +64,6 @@
                     </b-col>
                 </b-row>
             </b-card>
-          </b-col>
-        </b-row>
-
-        <b-row v-else
-        class="min-h-50 flex-column justify-content-center align-items-center text-center bg-taieri">
-          <b-col lg="12" class="p-5">
-            <h2 class="display-4 font-weight-bold"
-            style="line-height: 90%; letter-spacing: -3px"
-            v-html="items.emptyArchive"></h2>
           </b-col>
         </b-row>
         
@@ -118,7 +118,6 @@ export default {
   data() {
     return {
       details: this.$route.params,
-      data: '',
       mergedArray: [],
       imgProps: {
           center: true,
@@ -141,7 +140,7 @@ export default {
         // convert incoming string to object
         let rehydrate = JSON.parse( array );
         // add object to empty data string for UI
-        this.data = rehydrate;
+        // this.data = rehydrate;
 
         // create final merged array of suspended data marker + original data
         // var mergedArray = [];

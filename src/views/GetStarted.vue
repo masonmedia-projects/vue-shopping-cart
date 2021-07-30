@@ -15,13 +15,13 @@
       <b-col lg="6" 
       align-self="center"
       class="text-left p-5 bg-light">
-        <h1 :class="fadeUp" class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
-        <h5 :class="fadeUp" class="page-title font-weight-bold mb-4"
+        <h1 class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
+        <h5 class="page-title font-weight-bold mb-4"
         v-html="items.title"></h5>
-        <hr :class="fadeUp" class="ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
-        <p :class="fadeUp" v-html="items.text"></p>
+        <hr class="ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
+        <p v-html="items.text"></p>
         <b-icon icon="chevron-double-down" 
-        :class="fadeUp" class="mt-2" variant="dark" font-scale="2"></b-icon>
+        class="mt-2" variant="dark" font-scale="2"></b-icon>
       </b-col>
       <b-col lg="6" 
       align-self="stretch"

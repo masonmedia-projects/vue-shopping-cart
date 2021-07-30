@@ -85,23 +85,19 @@
         v-for="item in items.menuItems" :key="item.id">
             <router-link class="nav-link" :to="item.url" v-html="item.link"></router-link>
         </li>
-        <!-- <li>
-            <router-link 
-            class="nav-link border-0"
-            :class="[isDisabled ? 'disabled' : '']"
-            to="/about">Disabled</router-link>
-        </li>
-        <li @click="active = true">Active</li> -->
 
-            <div v-b-modal.history-modal class="nav-link mr-1">
+
+            <!-- <div v-b-modal.history-modal @click="showModal" class="nav-link mr-1">
                   <b-icon 
                   icon="person-circle" 
                   variant="secondary"
                   font-scale="1.8"
                   class="d-flex align-self-center"></b-icon>
             </div>
-            <!-- <b-modal id="modal-xl" size="xl" title="Extra Large Modal">Hello Extra Large Modal!</b-modal> -->
-            <history-modal></history-modal>
+            <history-modal
+            v-for="item in mergedArray" :key="item.id"
+            :img="item.img"
+            :name="item.name"></history-modal> -->
 
             <!-- info question mark icon for about modal -->
             <div  v-b-modal.modal-center class="nav-link mr-1">
@@ -143,27 +139,46 @@
 
 <script>
 import AboutModal from '../AboutModal.vue';
-import HistoryModal from '../HistoryModal.vue';
+// import HistoryModal from '../HistoryModal.vue';
 import ExitModal from './ExitModal.vue';
+import {lms} from '@/mixins/lms'
 
 export default {
     name: 'HeaderComponent',
+    mixins: [lms],
     components: {
         ExitModal,
         AboutModal,
-        HistoryModal,
+        // HistoryModal,
     },
     data () {
       return { 
-        langs: ['en', 'fr'],
-        // isActive: false,
-        // isDisabled: true,
-        // active: false,
-        // activeClass: 'active',
-        // disabled: 'disabled',
+          langs: ['en', 'fr'],
+          mergedArray: [],
         }
     },
-    methods: {  
+    methods: { 
+        itemDetails(item) {
+        this.$router.push({name: "ItemDetails", params: item });
+      },
+      showModal() {
+        this.readSuspendData();
+      },
+      // retrieve item route param details to LMS
+      readSuspendData() {
+        let array = this.lmsGet("cmi.suspend_data");
+        console.log(array, 'History modal retrieving data')
+        let rehydrate = JSON.parse( array );
+        // create final merged array of suspended data marker + original data
+        rehydrate.forEach(elementA => {
+            this.cartArchive.forEach(elementB => {
+                if (elementA.id == elementB.id) {
+                    this.mergedArray.push(elementB);
+                }
+            });
+        });
+        console.log(this.array, 'History modal activating')
+      }, 
       // close exit modal
       hideModal() {
         this.$refs['exit-modal'].hide()
@@ -183,6 +198,9 @@ export default {
       cartItems() {
             return this.$store.state.cartItems;
         },
+      cartArchive() {
+        return this.$store.state.cartArchive;
+      },
         // changed price to id so items without price would be recognized
         totalPrice() {
             let price = 0;
@@ -198,6 +216,8 @@ export default {
         return this.$store.state.cartItemCount;
       }
     },
+     mounted() {
+    }
 }
 </script>
 

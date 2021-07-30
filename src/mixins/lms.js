@@ -53,7 +53,7 @@ export const lms = {
             });
         },
 
-        readSuspendData() {
+        ogSuspendData() {
             this.text = this.lmsGet("cmi.suspend_data");
         },
 

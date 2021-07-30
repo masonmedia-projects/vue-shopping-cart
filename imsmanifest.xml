@@ -23,9 +23,9 @@ Provided by Rustici Software - www.scorm.com.
 	</metadata>
 	<organizations default="OTJ_TOOL_TAM_v2">
 		<organization identifier="OTJ_TOOL_TAM_v2" adlseq:objectivesGlobalToSystem="false">
-			<title>Leadership Learning Tool</title>
+			<title>Leadership Development Tool</title>
 			<item identifier="i1" identifierref="resource_1" isvisible="true">
-				<title>Leadership Learning Tool</title>
+				<title>Leadership Development Tool</title>
 			</item>
 		</organization>
 	</organizations>
