@@ -21,27 +21,10 @@
                 </b-col>
             </b-row>
 
-            <!-- LMS -->
-
-            <b-row align-v="stretch" class="min-h-75 mx-2 my-4 bg-glass border-0">
-                <b-col md="4">
-                    <b-button block class="mb-2" @click="lmsInitialize()">Initialize</b-button>
-                    <b-button block class="mb-2" @click="readSuspendData()">Read SuspendData</b-button>
-                    <b-button block class="mb-2" @click="updateSuspendData()">Write SuspendData</b-button>
-                    <b-button block class="mb-2" @click="setCompletion()">setCompletion</b-button>
-                    <b-button block class="mb-2" @click="setSuccessStatus()">setSuccessStatus</b-button>
-                    <b-button block class="mb-2" @click="lmsSave()">Save</b-button>
-                    <b-button block class="mb-2" @click="lmsQuit()">Quit</b-button>
-                </b-col>
-                <b-col md="8">
-                    <b-form-textarea id="textarea" v-model="text" rows="10"></b-form-textarea>
-                </b-col>
-            </b-row>
-
             <!-- row 1 -->
 
             <b-row align-v="stretch" class="min-h-75 mx-2 my-4 bg-glass border-0">
-                <b-col lg="6" align-self="stretch" class="p-0">
+                <b-col lg="5" align-self="stretch" class="p-0">
                     <b-img-lazy 
                     :src="items.img.img1" 
                     :alt="items.imgAlt.img1"
@@ -49,7 +32,7 @@
                     class="up h-100 w-100 cover" 
                     style="border-radius: 14px 0 0 14px;"></b-img-lazy>
                 </b-col>
-                <b-col lg="6" align-self="center" class="p-5">
+                <b-col lg="7" align-self="center" class="p-5">
                     <h5 class="up mb-3 font-weight-bold text-muted" v-html="items.microTitle1"></h5>
                     <h1 class="up display-4 font-weight-bold"
                     style="line-height: 90%; letter-spacing: -3px"
@@ -63,7 +46,7 @@
             <!-- row 2 -->
 
             <b-row align-v="stretch" class="min-h-75 mx-2 my-4 bg-glass border-0">
-                <b-col lg="6" align-self="center" class="p-5">
+                <b-col lg="7" align-self="center" class="p-5">
                     <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle2"></h5>
                     <h1 class="display-4 font-weight-bold"
                     style="line-height: 90%; letter-spacing: -3px"
@@ -72,7 +55,7 @@
                     <p class="mb-2" v-html="items.text2"></p>
                     <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
                 </b-col>
-                <b-col lg="6" align-self="stretch" class="p-0">
+                <b-col lg="5" align-self="stretch" class="p-0">
                     <b-img-lazy 
                     :src="items.img.img2" 
                     :alt="items.imgAlt.img2" 
@@ -85,7 +68,7 @@
             <!-- row 3 -->
 
             <b-row align-v="stretch" class="min-h-75 mx-2 my-4 bg-glass border-0">
-                <b-col lg="6" align-self="stretch" class="p-0">
+                <b-col lg="5" align-self="stretch" class="p-0">
                     <b-img-lazy
                     :src="items.img.img3" 
                     :alt="items.imgAlt.img3" 
@@ -93,7 +76,7 @@
                     class="h-100 w-100 cover" 
                     style="border-radius: 14px 0 0 14px;"></b-img-lazy>
                 </b-col>
-                <b-col lg="6" align-self="center" class="p-5">
+                <b-col lg="7" align-self="center" class="p-5">
                     <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle3"></h5>
                     <h1 class="display-4 font-weight-bold"
                     style="line-height: 90%; letter-spacing: -3px"
@@ -101,12 +84,6 @@
                     <hr class="d-flex m-0 mr-auto my-4 bg-lightblue" style="height: 4px; width: 50px;">
                     <p class="mb-2" v-html="items.text3"></p>
                     <div class="d-flex flex-wrap my-3">
-                        <!-- <b-button 
-                        variant="lightblue" 
-                        size="lg"
-                        class="mr-2 mt-2 w-sm-100" 
-                        v-html="items.btn2"
-                        @click="aboutPage"></b-button> -->
                         <b-button 
                         v-b-modal.modal-center
                         variant="lightblue" 

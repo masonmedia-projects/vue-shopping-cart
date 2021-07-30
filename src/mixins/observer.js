@@ -9,13 +9,13 @@ export const observer = {
     },
     methods: {
         observeAnimate() {
-        const fadeUp = document.querySelectorAll(".up")
-        const blur = document.querySelectorAll(".blur")
-        const options = {
-            root: null,
-            rootMargin: '200%',
-            threshold: 0
-        }
+            const fadeUp = document.querySelectorAll(".up")
+            const blur = document.querySelectorAll(".blur")
+            const options = {
+                root: null,
+                rootMargin: '200%',
+                threshold: 0
+            }
     
     // let callback1 = (entries) => { 
     //     entries.forEach(entry => {
@@ -47,32 +47,33 @@ export const observer = {
         });
     }, options);
     // https://staygolddesign.club/2019/06/26/multiple-intersection-observer/
-    // loop over all right classes + observe (elements is random variable name)
+    // loop over all up classes + observe (elements is random variable name)
     fadeUp.forEach(elements => {
         observer1.observe(elements);
     });
 
-    // blur
+        // blur
     
-    const observer2 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('blur');
-                observer6.unobserve(entry.target);
-            }
-        });
-    }, options);
+        const observer2 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('blur');
+                    console.log('blur activasted!')
+                }
+            });
+        }, options);
 
-    blur.forEach(elements => {
-        observer2.observe(elements);
-    });
+        blur.forEach(elements => {
+            observer2.observe(elements);
+        });
     }
 
     },// end methods
     mounted() {
         this.observeAnimate();
+        console.log("Observing!")
     }
 
-},
+}
 
 

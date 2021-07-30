@@ -9,6 +9,9 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '@/scss/main.scss'
 import 'animate.css'
 import i18n from './i18n'
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)

@@ -15,15 +15,19 @@ $ease: cubic-bezier(0.390, 0.575, 0.565, 1.000);
     // animation-duration: 0.8s;
 }
 
-// .fade-in,
-// .fade-up,
-// .fade-left,
-// .fade-right {
-//     @include base_animation;
-//     animation-timing-function: $ease;
-//     animation-direction: normal;
-//     animation-duration: 0.8s;
-// }
+// visibility (for gsap scrolltrigger)
+
+.hidden {
+  visibility: hidden;
+}
+
+%hidden {
+  visibility: hidden;
+}
+.up,
+.text {
+  @extend %hidden;
+}
 
 /**
  * ----------------------------------------
@@ -231,19 +235,6 @@ $ease: cubic-bezier(0.390, 0.575, 0.565, 1.000);
             filter: blur(0px);
     opacity: 1;
   }
-}
-
-
-// animation utilities
-
-.slow {
-    animation-duration: 1s !important;
-}
-.slower {
-    animation-duration: 1.5s !important;
-}
-.slowest {
-    animation-duration: 2s !important;
 }
 
 @media (prefers-reduced-motion) {

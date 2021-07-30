@@ -60,7 +60,9 @@
                                         <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" :class="items.color" class="absolute right top z-1 m-2 shadow"></b-avatar>
                                         <h3 v-html="items.name" class="font-weight-bold m-0"></h3>
                                         <p class="my-2 text-muted font-weight-bold border-top border-bottom py-3" v-html="items.category"></p>
-                                        <a :href="items.download" download target="_blank"> 
+                                       <!-- download -->
+                                        <a :href="items.download" download target="_blank"
+                                        @click="addToArchive"> 
                                             <b-button variant="dark" class="flex-fill w-sm-100 mt-2 mr-2 border-0">
                                                 <span v-for="items in $t('myLearningPlan')" :key="items.id">
                                                     <p class="m-0" style="font-size: 16px" 
@@ -122,18 +124,25 @@
 
 <script>
 import Swal from 'sweetalert2'
+import {lms} from '../mixins/lms'
+import {animate} from '../mixins/animate'
 
 export default {
     name: 'MyPlan',
+    mixins: [lms, animate],
     data() {
         return {
             cartCheckout: this.$store.state.cartItems,
-            // isActive: false,
+            details: this.$route.params,
         }
     },
     methods: {
         addItem(items) {
             this.$store.dispatch("addToCart", items)
+        },
+        addToArchive() {
+            this.$store.dispatch("addToArchive", this.details);
+            this.updateSuspendData();
         },
         removeItem(items) {
             this.$store.dispatch("removeItem", items)
@@ -150,9 +159,30 @@ export default {
                 timer: 1500
             })
         },
-        // downloaded() {
-        //  this.isActive = true;
-        // },
+         // save item route param details to LMS
+        updateSuspendData() { 
+            let newArray = [];
+            // loop over full params object
+            this.cartItems.forEach(element => {
+                var newElement = {
+                    id: element.id
+                }
+                newArray.push(newElement);
+            })
+
+            let stringVAR = JSON.stringify(newArray)
+            // let stringVAR = JSON.stringify(this.cartItems)
+            this.lmsSet({
+                key: "cmi.suspend_data",
+                value: stringVAR
+            });
+            console.log(this.value, 'item details saving!')    
+
+            // loop over cartItems
+            // reduce the object to only ids element.id
+            // push the new ids to a new array
+            // this array would take the place of JSON.stringify...  
+        },
     },
     computed: {
         cartItems() {

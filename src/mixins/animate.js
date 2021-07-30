@@ -1,12 +1,6 @@
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-
-// Vue.mixin({
-//   created: function () {
-//     this.gsap = gsap;
-//   }
-// });
 
 export const animate = {
     data() {
@@ -33,11 +27,11 @@ export const animate = {
                 gsap.from(elements, {
                   // interval: 0.1, // time window (in seconds) for batching to occur. 
                   // start: 'top bottom-=1',
-                  start: '20px bottom',
+                  trigger: ".up",
+                  start: "-50% bottom",
+                  // start: '20px bottom',
                   end: '+=200',                  
-                  // start: 'top center', //this string defines the trigger and scroller start
-                  // end: 'bottom center', //this string defines the trigger and scroller end
-                  scrub: 1,
+                  // scrub: 1,
                   autoAlpha: 0, 
                   y: 50,
                   stagger: 0.5,

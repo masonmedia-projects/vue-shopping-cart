@@ -61,17 +61,14 @@ export const store = new Vuex.Store({
                 if (bool) {
                     let itemIndex = state.cartArchive.findIndex(el => el.id === item.id)
                     state.cartArchive[itemIndex]["quantity"] += 1;
-                } else {
+                } 
+                else {
                     state.cartArchive.push(item)
                 }
              } else {
                 state.cartArchive.push(item)
             }
             state.cartItemCount++
-        },
-        readSuspendData() {
-            this.details = this.lmsGet("cmi.suspend_data");
-            console.log('Item details retrieved!')
         },
         removeItem(state, payload) {
             if(state.cartItems.length > 0) {

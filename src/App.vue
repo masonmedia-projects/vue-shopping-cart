@@ -13,11 +13,24 @@
 
 <script>
 import HeaderComponent from '@/components/common/HeaderComponent'
+import { lms } from './mixins/lms';
 
 export default {
+  mixins: [lms],
   components: {
     HeaderComponent,
   },
+  methods: {
+    setSuccessStatus() {
+          this.lmsSet({
+            key: "cmi.success_status",
+            value: "passed",
+        });
+    }
+  },
+  mounted() {
+    this.setSuccessStatus();
+  }
 }
 </script>
 

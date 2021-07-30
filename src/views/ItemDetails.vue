@@ -125,7 +125,7 @@ export default {
                 }
             });  
             // call LMS save
-            this.updateSuspendData();
+            // this.updateSuspendData();
         },
         removeItem() {
             this.$store.dispatch("removeItem", this.details);
@@ -133,15 +133,6 @@ export default {
         addToArchive() {
             this.$store.dispatch("addToArchive", this.details);
         },
-        // save item route param details to LMS
-        updateSuspendData() {
-            this.lmsSet({
-                key: "cmi.suspend_data",
-                value: [this.details.name, this.details.description, this.details.category, this.details.img],
-            });
-            console.log(this.value, 'item details saving!')
-        },
-
     },
     // add localStorage for product/food details => this is not technically 'state';
     // it's route parameter details, so vuex/state related local storage will not work

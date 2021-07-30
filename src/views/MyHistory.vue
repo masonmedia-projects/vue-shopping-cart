@@ -26,11 +26,25 @@
             </b-col>
         </b-row>
 
+        <!-- <b-row
+        class="flex-column justify-content-end align-items-start text-left bg-taieri">
+          <b-col lg="12" class="p-5">
+            <ul>
+              <span v-for="item in mergedArray" :key="item.id">
+                <b-img :src="item.img" style="width: 80px; height: 80px" class="shadow rounded"></b-img>
+                <li v-html="item.id"></li>
+                <li v-html="item.name"></li>
+                <li v-html="item.category"></li>
+              </span>
+            </ul>
+          </b-col>
+        </b-row> -->
+
         <b-row
         class="flex-column justify-content-end align-items-start text-left bg-taieri">
           <b-col lg="12" class="p-5">
             <b-card no-body class="bg-glass border-0 overflow-hidden mb-3"
-            v-for="item in retrieveData" :key="item.id"
+            v-for="item in mergedArray" :key="item.id"
             @click="itemDetails(items)">
                 <b-row no-gutters>
                     <b-col md="3">
@@ -108,6 +122,9 @@ export default {
   mixins: [animate, lms],
   data() {
     return {
+      details: this.$route.params,
+      data: '',
+      mergedArray: [],
       imgProps: {
           center: true,
           fluidGrow: true,
@@ -124,8 +141,24 @@ export default {
       },
       // retrieve item route param details to LMS
       readSuspendData() {
-        this.details = this.lmsGet("cmi.suspend_data");
-        console.log('Item details retrieved!')
+        // assign returning data to a variable        
+        let array = this.lmsGet("cmi.suspend_data");
+        // convert incoming string to object
+        let rehydrate = JSON.parse( array );
+        // add object to empty data string for UI
+        this.data = rehydrate;
+
+        // create final merged array of suspended data marker + original data
+        // var mergedArray = [];
+
+        rehydrate.forEach(elementA => {
+            this.cartArchive.forEach(elementB => {
+                if (elementA.id == elementB.id) {
+                    this.mergedArray.push(elementB);
+                }
+            });
+        });
+        console.log(this.mergedArray, 'My Archive activating')
       },
     },
     computed: {
@@ -140,6 +173,8 @@ export default {
       },
     },
     mounted() {
+      // rerun init in case window is refreshed
+      this.lmsInitialize();
       this.readSuspendData();
     }
 }
