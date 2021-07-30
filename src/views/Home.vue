@@ -6,11 +6,11 @@
                 <b-img-lazy 
                 :src="items.img.banner" 
                 :alt="items.imgAlt.banner"
-                class="text min-vh-100 w-75 absolute top right z-0 cover"></b-img-lazy>
+                class="blur fade-in min-vh-100 w-75 absolute top right z-0 cover"></b-img-lazy>
                 <!-- color strip -->
                 <div class="text absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
                 <b-col md="12" lg="10" align-self="end" class="p-5 mt-4">
-                    <div class="text p-5 bg-glass bg-taieri" style="border-radius: 14px; background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./img/Taieri.svg'); background-size: 800%;">
+                    <div class="text p-5 bg-glass bg-taieri" style="border-radius: 14px;">
                         <h5 class="text my-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
                         <h1 class="text site-title font-weight-bold mb-4"
                         v-html="items.bannerTitle"></h1>
@@ -123,7 +123,6 @@ export default {
           blankColor: '#bbb',        
         },
         fadeUp: "animate__animated animate__fadeInUp animate__slow",
-        active: false,
       }
   },
     methods: {
@@ -136,8 +135,6 @@ export default {
       aboutPage() {
           this.$router.push("/about");
         },
-    
-     
     },
     computed: {
       homepage() {

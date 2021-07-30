@@ -139,6 +139,7 @@ export default {
     created() {
         if (this.$route.params.id !== undefined)
         localStorage.setItem("details", JSON.stringify(this.details));
+        console.log("reading local storage");
     },
     mounted() {
         this.details = JSON.parse(localStorage.getItem("details"));

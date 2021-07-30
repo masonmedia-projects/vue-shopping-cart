@@ -237,6 +237,37 @@ $ease: cubic-bezier(0.390, 0.575, 0.565, 1.000);
   }
 }
 
+.blur-out {
+	-webkit-animation: blur-out 0.5s $ease both;;
+	animation: blur-out 0.5s $ease both;;
+}
+/**
+ * ----------------------------------------
+ * animation blur-out
+ * ----------------------------------------
+ */
+ @-webkit-keyframes blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+}
+
+
 @media (prefers-reduced-motion) {
   * {
     animation: none !important;

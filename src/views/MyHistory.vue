@@ -26,22 +26,8 @@
             </b-col>
         </b-row>
 
-        <!-- <b-row
-        class="flex-column justify-content-end align-items-start text-left bg-taieri">
-          <b-col lg="12" class="p-5">
-            <ul>
-              <span v-for="item in mergedArray" :key="item.id">
-                <b-img :src="item.img" style="width: 80px; height: 80px" class="shadow rounded"></b-img>
-                <li v-html="item.id"></li>
-                <li v-html="item.name"></li>
-                <li v-html="item.category"></li>
-              </span>
-            </ul>
-          </b-col>
-        </b-row> -->
-
-        <b-row
-        class="flex-column justify-content-end align-items-start text-left bg-taieri">
+        <b-row v-if="mergedArray < 0"
+        class="min-h-50 flex-column justify-content-end align-items-start text-left bg-taieri">
           <b-col lg="12" class="p-5">
             <b-card no-body class="bg-glass border-0 overflow-hidden mb-3"
             v-for="item in mergedArray" :key="item.id"
@@ -69,6 +55,15 @@
                     </b-col>
                 </b-row>
             </b-card>
+          </b-col>
+        </b-row>
+
+        <b-row v-else
+        class="min-h-50 flex-column justify-content-center align-items-center text-center bg-taieri">
+          <b-col lg="12" class="p-5">
+            <h2 class="display-4 font-weight-bold"
+            style="line-height: 90%; letter-spacing: -3px"
+            v-html="items.emptyArchive"></h2>
           </b-col>
         </b-row>
         
@@ -173,8 +168,6 @@ export default {
       },
     },
     mounted() {
-      // rerun init in case window is refreshed
-      this.lmsInitialize();
       this.readSuspendData();
     }
 }

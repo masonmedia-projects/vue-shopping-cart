@@ -11,9 +11,7 @@
             size="lg"
             :title="items.modalTitle"
             body-class="p-4 p-md-5"
-            content-class="bg-glass"
-            ok-title="Get started"
-            ok-variant="orange"> 
+            content-class="bg-glass"> 
                 <b-icon icon="bookmark-check-fill" variant="lightblue mb-3" class="" font-scale="3"></b-icon>
                 <h3 class="font-weight-bold text-lightblue mb-3 py-3 border-top border-bottom border-lightblue-trans" 
                 v-html="items.mainTitle"></h3>

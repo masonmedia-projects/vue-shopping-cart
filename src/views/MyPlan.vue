@@ -124,8 +124,8 @@
 
 <script>
 import Swal from 'sweetalert2'
-import {lms} from '../mixins/lms'
-import {animate} from '../mixins/animate'
+import { lms } from '../mixins/lms'
+import { animate } from '../mixins/animate'
 
 export default {
     name: 'MyPlan',

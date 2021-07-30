@@ -37,7 +37,7 @@ export const animate = {
                   stagger: 0.5,
                   duration: 1.5,
                   ease: "back",
-                  once: true
+                  // once: true
                   });
                 console.log(elements.length, "elements entered");
               },

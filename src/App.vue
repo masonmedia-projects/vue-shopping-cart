@@ -3,8 +3,8 @@
     <header-component/>
     <transition
       mode="out-in"
-      enter-active-class="animate__animated animate__fadeIn"
-      leave-active-class="animate__animated animate__fadeOut"
+      enter-active-class="fade-up"
+      leave-active-class="animate__animated animate__fadeOut blur-out"
       >
     <router-view/>
     </transition>
@@ -20,15 +20,8 @@ export default {
   components: {
     HeaderComponent,
   },
-  methods: {
-    setSuccessStatus() {
-          this.lmsSet({
-            key: "cmi.success_status",
-            value: "passed",
-        });
-    }
-  },
   mounted() {
+    this.lmsInitialize();
     this.setSuccessStatus();
   }
 }
