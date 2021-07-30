@@ -13,10 +13,10 @@
                     <!-- trans-black overlay -->
                     <div class="page-banner w-100 h-100 absolute z--1" style="background: rgba(0,0,0,0.6);"></div>
                     <div class="z-1 text-light text-left px-5 min-h-50">
-                        <div :class="fadeUp" class="relative z-1 text-light text-left" style="top: 50px;">
+                        <div class="relative z-1 text-light text-left" style="top: 50px;">
                         <b-avatar icon="bookmarks-fill" size="3.5rem" rounded="lg" :class="details.color" class="shadow"></b-avatar>
-                        <h1 :class="fadeUp" class="font-weight-bold mb-4 mt-3" v-html="details.name"></h1>
-                        <b-button :class="fadeUp" disabled variant="outline-light" class="text-left" v-html="details.category"></b-button>
+                        <h1 class="font-weight-bold mb-4 mt-3" v-html="details.name"></h1>
+                        <b-button disabled variant="outline-light" class="text-left" v-html="details.category"></b-button>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                     <!-- category alerts -->
                     <div v-for="items in $t('aux')" :key="items.id">
 
-                        <h4 :class="fadeUp" class="bg-glass bg-lightblue p-4 mb-3 text-light font-weight-bold"
+                        <h4 class="bg-glass bg-lightblue p-4 mb-3 text-light font-weight-bold"
                         v-html="items.sectionTitle1"></h4>
                     
                         <b-row class="px-2">
@@ -39,7 +39,7 @@
                             </b-col>
                         </b-row>
 
-                        <h4 :class="fadeUp" class="bg-glass bg-green p-4 mb-3 text-light font-weight-bold"
+                        <h4 class="bg-glass bg-green p-4 mb-3 text-light font-weight-bold"
                         v-html="items.sectionTitle2"></h4>
 
                         <b-row class="d-flex px-2">
