@@ -13,7 +13,8 @@ export const observer = {
             const blur = document.querySelectorAll(".blur")
             const options = {
                 root: null,
-                rootMargin: '200%',
+                // rootMargin: '200%',
+                rootMargin: '-100px',
                 threshold: 0
             }
     

@@ -137,8 +137,18 @@ export default {
         }
     },
     methods: {
+        checkForDuplicates() {
+            // const data = [1, 2, 2, 2, 3, 6, 5, 5, 5, 7, 8, 8]
+            const data = this.$store.state.cartItems;
+            // const unique = Array.from(new Set(data));
+            const unique = Array.from(new Set(data));
+             console.log(unique);
+            return unique;
+        },
+
         addItem(items) {
             this.$store.dispatch("addToCart", items)
+            // this.checkForDuplicates(items);
         },
         addToArchive() {
             this.$store.dispatch("addToArchive", this.details);
@@ -186,7 +196,8 @@ export default {
     },
     computed: {
         cartItems() {
-            return this.$store.state.cartItems;
+            const newArray = this.checkForDuplicates();
+            return newArray;
         },
         // changed price to id so items without price would be recognized
         totalPrice() {
@@ -221,9 +232,10 @@ export default {
     //     if (this.cartItems !== undefined)
     //     localStorage.setItem("cart", JSON.stringify(this.$store.state.cartItems));
     // },
-    // mounted() {
-    //     this.cart = JSON.parse(localStorage.getItem("cart"));
-    // },
+    mounted() {
+        // this.cart = JSON.parse(localStorage.getItem("cart"));
+        this.checkForDuplicates();
+    },
 }
 </script>
 

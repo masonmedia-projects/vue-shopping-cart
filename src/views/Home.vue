@@ -11,12 +11,19 @@
                 <div class="text absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
                 <b-col md="12" lg="10" align-self="end" class="p-5 mt-4">
                     <div class="text p-5 bg-glass bg-taieri" style="border-radius: 14px;">
-                        <h5 class="text my-3 font-weight-bold" v-html="items.bannerMicroTitle"></h5>
-                        <h1 class="text site-title font-weight-bold mb-4"
+                        <h5 class="animate my-3 font-weight-bold" 
+                        data-animate="fade-up 1s"
+                        v-html="items.bannerMicroTitle"></h5>
+                        <h1 class="animate site-title font-weight-bold mb-4"
+                        data-animate="fade-up 1s"
                         v-html="items.bannerTitle"></h1>
-                        <div class="text d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;"></div>
-                        <h4 class="text mb-2" v-html="items.bannerSubtitle"></h4>
-                        <b-icon icon="chevron-double-down" class="text mt-3" variant="dark" font-scale="2"></b-icon>
+                        <div class="animate d-flex m-0 mr-auto my-3 bg-yellow" 
+                        data-animate="fade-up 1.3s" style="height: 4px; width: 50px;"></div>
+                        <h4 class="animate mb-2"
+                        data-animate="fade-up 1.6s"
+                        v-html="items.bannerSubtitle"></h4>
+                        <b-icon icon="chevron-double-down" class="animate mt-3"
+                        data-animate="fade-up 1.9s" variant="dark" font-scale="2"></b-icon>
                     </div>
                 </b-col>
             </b-row>
@@ -29,17 +36,27 @@
                     :src="items.img.img1" 
                     :alt="items.imgAlt.img1"
                     v-bind="imgProps"
-                    class="up h-100 w-100 cover" 
+                    class="animate h-100 w-100 cover" 
+                    :data-animate="fade"
                     style="border-radius: 14px 0 0 14px;"></b-img-lazy>
                 </b-col>
                 <b-col lg="7" align-self="center" class="p-5">
-                    <h5 class="up mb-3 font-weight-bold text-muted" v-html="items.microTitle1"></h5>
-                    <h1 class="up display-4 font-weight-bold"
+                    <h5 class="animate mb-3 font-weight-bold text-muted" 
+                    :data-animate="fadeUp"
+                    v-html="items.microTitle1"></h5>
+                    <h1 class="animate display-4 font-weight-bold"
+                    :data-animate="fadeUp"
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.title1"></h1>
-                    <hr class="up d-flex m-0 mr-auto my-4 bg-orange" style="height: 4px; width: 50px;">
-                    <p class="up mb-2" v-html="items.text1"></p>
-                    <b-icon icon="chevron-double-down" class="up mt-3" variant="dark" font-scale="2"></b-icon>
+                    <hr :data-animate="fadeUp" class="animate d-flex m-0 mr-auto my-4 bg-orange" style="height: 4px; width: 50px;">
+                    <p class="animate mb-2"
+                    :data-animate="fadeUp"
+                     v-html="items.text1"></p>
+                    <b-icon icon="chevron-double-down"
+                    class="animate mt-3" 
+                    :data-animate="fadeUp" 
+                    variant="dark" 
+                    font-scale="2"></b-icon>
                 </b-col>
             </b-row>
 
@@ -47,20 +64,26 @@
 
             <b-row align-v="stretch" class="min-h-75 mx-2 my-4 bg-glass border-0">
                 <b-col lg="7" align-self="center" class="p-5">
-                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle2"></h5>
-                    <h1 class="display-4 font-weight-bold"
+                    <h5 :data-animate="fadeUp" class="animate mb-3 font-weight-bold text-muted" 
+                    v-html="items.microTitle2"></h5>
+                    <h1 :data-animate="fadeUp" class="animate display-4 font-weight-bold"
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.title2"></h1>
-                    <hr class="d-flex m-0 mr-auto my-4 bg-danger" style="height: 4px; width: 50px;">
-                    <p class="mb-2" v-html="items.text2"></p>
-                    <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
+                    <hr :data-animate="fadeUp" 
+                    class="animate d-flex m-0 mr-auto my-4 bg-danger" style="height: 4px; width: 50px;">
+                    <p :data-animate="fadeUp" 
+                    class="animate mb-2" v-html="items.text2"></p>
+                    <b-icon icon="chevron-double-down" 
+                    :data-animate="fadeUp"
+                    class="animate mt-3" variant="dark" font-scale="2"></b-icon>
                 </b-col>
                 <b-col lg="5" align-self="stretch" class="p-0">
                     <b-img-lazy 
                     :src="items.img.img2" 
                     :alt="items.imgAlt.img2" 
                     v-bind="imgProps"
-                    class="h-100 w-100 cover" 
+                    class="animate h-100 w-100 cover" 
+                    :data-animate="fade"
                     style="border-radius: 0 14px 14px 0;"></b-img-lazy>
                 </b-col>
             </b-row>
@@ -107,13 +130,11 @@
 // import AboutModal from '../components/AboutModal';
 // import { animate } from "../mixins/animate";
 import { lms } from "../mixins/lms";
+import {obsAnimate} from '../mixins/obsAnimate'
 
 export default {
   name: 'Home',
-  mixins: [lms],
-  components: {
-    //   AboutModal
-  },
+  mixins: [lms, obsAnimate],
   data() {
       return {
           imgProps: {
@@ -122,7 +143,6 @@ export default {
           blank: true,
           blankColor: '#bbb',        
         },
-        fadeUp: "animate__animated animate__fadeInUp animate__slow",
       }
   },
     methods: {
@@ -145,8 +165,6 @@ export default {
         }
     },
     mounted() {
-        // this.banner();
-        // this.batch();
     }
 }
 

@@ -44,7 +44,8 @@ export const store = new Vuex.Store({
                 let bool = state.cartItems.some(i => i.id === item.id)
                 if (bool) {
                     let itemIndex = state.cartItems.findIndex(el => el.id === item.id)
-                    state.cartItems[itemIndex]["quantity"] += 1;
+                    // state.cartItems[itemIndex]["quantity"] += 1; add as many of each item as desired 
+                    state.cartItems[itemIndex]["quantity"] = 1; //add only 1
                 } else {
                     state.cartItems.push(item)
                 }
@@ -60,7 +61,7 @@ export const store = new Vuex.Store({
                 let bool = state.cartArchive.some(i => i.id === item.id)
                 if (bool) {
                     let itemIndex = state.cartArchive.findIndex(el => el.id === item.id)
-                    state.cartArchive[itemIndex]["quantity"] += 1;
+                    state.cartArchive[itemIndex]["quantity"] = 1;
                 } 
                 else {
                     state.cartArchive.push(item)
@@ -90,7 +91,7 @@ export const store = new Vuex.Store({
     },
     actions: {
         addToCart: (context, payload) => {
-            context.commit("addToCart", payload)
+            context.commit("addToCart", payload);
         },
         addToArchive: (context, payload) => {
             context.commit("addToArchive", payload)

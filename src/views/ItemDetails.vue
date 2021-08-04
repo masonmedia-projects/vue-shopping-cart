@@ -106,6 +106,8 @@ export default {
         addToCart() {
             // this.$store.commit("addToCart")
             this.$store.dispatch("addToCart", this.details);
+            console.log("item added")
+            
             // added https://sweetalert2.github.io/ for success alert
             Swal.fire({
                 position: 'top-end',

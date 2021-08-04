@@ -14,6 +14,10 @@
         {
           "link": "My Learning Plan",
           "url": "/my-plan"
+        },
+        {
+          "link": "My History",
+          "url": "/my-history"
         }
       ],
       "logout": "Logout",
@@ -102,12 +106,12 @@
     {
       "microTitle": "My Leadership Development Tool",
       "title":"Get Started",
-      "text": "Build your learning plan by exploring the list of skills below. Select the <strong>Details</strong> button of any competency to learn more about it and what it looks like in action before deciding if it’s appropriate for you. If you need more information you can consult the Leadership Behaviour Model and consider which areas you'd like to focus on. You can find a definition of each area of the model and a list of the competencies that fall under each category <a class='font-weight-bold text-royal' href='https://drive.google.com/file/d/1Wm0W8-mDVybGIScATiljV-Tq9bVxaijC/view?usp=sharing]' target='_blank'>here.</a>",
+      "text": "Build your learning plan by exploring the list of skills below. Select the <strong>Details</strong> button of any competency to learn more about it and what it looks like in action before deciding if it’s appropriate for you. If you need more information you can consult the Leadership Behaviour Model and consider which areas you'd like to focus on. You can find a definition of each area of the model and a list of the competencies that fall under each category <a class='font-weight-bold text-royal' href='./LCL_Leadership_Behaviour_Model_Details.pdf' target='_blank'>here.</a>",
       "ogTextToCut":"Build your learning plan by selecting the items you’d like to focus on today. Select the <strong>Details</strong> button of any competency to learn more about it and what it looks like in action before deciding if it’s an appropriate area of focus for you.",
       "linkBtn": "Learn more",
       "detailsBtn": "Details",
       "img": {
-        "banner": "img/get_started/LCL_leadership_wheel_EN.png"
+        "banner": "img/get_started/LCL_leadership_wheel_equal_EN.svg"
         },
       "imgAlt": {
         "banner": "A diagram of the Loblaw leadership behaviour model outlining 4 areas of focus: Collaboration, Communication, Innovation, and Excellence."
@@ -139,7 +143,7 @@
     {
       "microTitle": "My Leadership Development Tool",
       "title":"My History",
-      "text":"This space is dedicated to archiving your journey using the <strong>Leadership Development Tool.</strong> Your previous selections have been saved here for easy reference and future reflection. Feel free to go back and explore the details of any of the items you've downloaded, and stay up to date with ongoing additions to these and other leadership skills as the tool grows. The Leadership Development Tool is here to support your continual learning and growth",
+      "text":"This space is dedicated to archiving your journey using the <strong>Leadership Development Tool.</strong> Your previous downloads have been saved here for easy reference and future reflection. Feel free to go back and explore the details of any of the items you've downloaded, and stay up to date with ongoing additions to these and other leadership skills as the tool grows. The Leadership Development Tool is here to support your continual learning and growth.",
       "btn": "Details",
       "img": {
         "banner": "img/about_page/about10.jpg"

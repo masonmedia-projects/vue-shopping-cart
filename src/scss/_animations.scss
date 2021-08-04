@@ -63,7 +63,7 @@ $ease: cubic-bezier(0.390, 0.575, 0.565, 1.000);
  */
 
 .fade-up {
-    -webkit-animation: fade-up 0.8s $ease both;
+    // -webkit-animation: fade-up 0.8s $ease both;
     animation: fade-up 0.8s $ease both;
 }
 
@@ -72,11 +72,13 @@ $ease: cubic-bezier(0.390, 0.575, 0.565, 1.000);
     -webkit-transform: translateY(100px);
             transform: translateY(100px);
     opacity: 0;
+    // visibility: hidden;
   }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+    // visibility: visible;
   }
 }
 @keyframes fade-up {

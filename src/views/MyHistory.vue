@@ -4,8 +4,8 @@
         <b-row 
         class="flex-column justify-content-end align-items-start text-left relative min-h-75">
             <b-img-lazy
-            :src="items.img.img2"
-            :alt="items.imgAlt.img2" 
+            :src="items.img.banner"
+            :alt="items.imgAlt.banner" 
             v-bind="imgProps"
             class="w-100 h-100 absolute cover z-0 left top animate__animated animate__fadeIn"></b-img-lazy>
             <!-- color strip -->
@@ -14,12 +14,12 @@
             style="position: relative; z-index: 3;"
             class="flex-column justify-content-center align-items-start p-4 pt-5 p-md-5 mt-5">
                  <div class="bg-glass p-5" style="border-radius: 14px">
-                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle1"></h5>
+                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle"></h5>
                     <h1 class="display-4 font-weight-bold mb-4"
                     style="line-height: 90%; letter-spacing: -3px"
-                    v-html="items.title1"></h1>
+                    v-html="items.title"></h1>
                     <hr class="d-flex m-0 mr-auto my-3 bg-yellow" style="height: 4px; width: 50px;">
-                    <p class="mb-2" v-html="items.text1"></p>
+                    <p class="mb-2" v-html="items.text"></p>
                     <b-icon icon="chevron-double-down" class="mt-3" variant="dark" font-scale="2"></b-icon>
                 </div>
                 <!--/content-->
@@ -69,43 +69,6 @@
         
       </div>
 </b-container>
-   <!-- <b-container fluid class="p-5 mt-4">
-    <b-row class="text-left">
-      <b-col lg="12">
-        <h1>This is an about page</h1>
-        <h3>Filter products by category</h3>
-        <b-form-select v-model="category" :options="options"></b-form-select>
-        <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
-        <select v-model="category">
-                <option valeu="Accessories">Accessories</option>
-                <option valeu="Laptop">Laptop</option>
-                <option valeu="Stationary">Stationary</option>
-            </select> 
-      </b-col>
-    </b-row>
-    <b-row class="d-flex py-5">
-      <b-col lg="3" v-for="product in filterProductsByCategory" :key="product.name">
-        <b-card
-          :title="product.name"
-          img-src="https://picsum.photos/600/300/?image=25"
-          img-alt="Image"
-          img-top
-          tag="article"
-          class="mb-2"
-        >
-          <b-card-text>
-            <ul class="list-unstyled">
-              <li>{{ product.name }}</li>
-              <li>{{ product.price }}</li>
-              <li>{{ product.category }}</li>
-            </ul>
-          </b-card-text>
-
-          <b-button href="#" variant="primary">Go somewhere</b-button>
-        </b-card>
-      </b-col>
-      </b-row>
-   </b-container> -->
 </template>
 
 <script>
@@ -139,12 +102,7 @@ export default {
         let array = this.lmsGet("cmi.suspend_data");
         // convert incoming string to object
         let rehydrate = JSON.parse( array );
-        // add object to empty data string for UI
-        // this.data = rehydrate;
-
         // create final merged array of suspended data marker + original data
-        // var mergedArray = [];
-
         rehydrate.forEach(elementA => {
             this.cartArchive.forEach(elementB => {
                 if (elementA.id == elementB.id) {
