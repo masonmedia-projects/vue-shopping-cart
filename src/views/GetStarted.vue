@@ -1,7 +1,9 @@
 <template>
   <b-container fluid class="bg-light relative z--1 p-4 p-md-5 mt-5 mt-md-4">
     <!-- bg taieri img -->
-    <div class="w-100 bg-lightblue absolute z-0 left top" style="height: 400px; top: 450px;"></div>
+    <div class="animate w-100 bg-lightblue absolute z-0 left top" 
+    data-animate="fade 1s"
+    style="height: 400px; top: 450px;"></div>
     <!-- banner -->
     <b-row 
     no-gutters
@@ -15,23 +17,28 @@
       <b-col lg="6" 
       align-self="center"
       class="text-left p-5 bg-light">
-        <h1 class="h5 text-muted mb-3" v-html="items.microTitle"></h1>
-        <h5 class="page-title font-weight-bold mb-4"
+        <h1 class="animate h5 text-muted mb-3" 
+        data-animate="fade-up 1s"
+        v-html="items.microTitle"></h1>
+        <h5 class="animate page-title font-weight-bold mb-4"
+        data-animate="fade-up 1.3s"
         v-html="items.title"></h5>
-        <hr class="ml-0 mr-auto mt-0 mb-4 bg-lightblue" style="height: 4px; width: 50px;">
-        <p v-html="items.text"></p>
+        <hr class="animate ml-0 mr-auto mt-0 mb-4 bg-lightblue" 
+        data-animate="fade-up 1.6s" style="height: 4px; width: 50px;">
+        <p class="animate" data-animate="fade-up 1.9s" v-html="items.text"></p>
         <b-icon icon="chevron-double-down" 
-        class="mt-2" variant="dark" font-scale="2"></b-icon>
+        class="animate mt-2" data-animate="fade-up 2s" variant="dark" font-scale="2"></b-icon>
       </b-col>
       <b-col lg="6" 
       align-self="stretch"
       class="p-5 min-h-50">
-        <b-img-lazy
+        <b-img
         :src="items.img.banner"
         :alt="items.imgAlt.banner"
-        v-bind="imgProps"
-        class="w-100 cover animate__animated animate__fadeIn" style="border-radius: 0 14px 14px 0; filter: drop-shadow(2px 4px 10px #222222);" >
-        </b-img-lazy> 
+        class="animate w-100 cover" 
+        data-animate="fade-in 1s"
+        style="border-radius: 0 14px 14px 0; filter: drop-shadow(2px 4px 10px #222222);" >
+        </b-img> 
       </b-col>
     </b-row>
 
@@ -45,7 +52,8 @@
 
     <b-row class="text-left">
       <b-col xl="4" md="6"
-      class="text-center"
+      class="animate text-center"
+      :data-animate="fadeUp"
       @click="itemDetails(items)" 
       v-for="items in $t('allCategories')" :key="items.id">
       <!-- slice limits the number of iterations in the object/array -->
@@ -79,13 +87,14 @@
 </template>
 
 <script>
+import { obsAnimate } from '../mixins/obsAnimate'
 
 export default {
   name: 'GetStarted',
+  mixins: [obsAnimate],
   data() {
     return {
       selected: null,
-      fadeUp: "animate__animated animate__fadeInUp animate__slow",
         options: [
           { value: '', text: 'All' },
           { value: 'Leading Yourself', text: 'Accessories' },

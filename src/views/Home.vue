@@ -136,7 +136,7 @@
 // import AboutModal from '../components/AboutModal';
 // import { animate } from "../mixins/animate";
 import { lms } from "../mixins/lms";
-import {obsAnimate} from '../mixins/obsAnimate'
+import { obsAnimate } from '../mixins/obsAnimate'
 
 export default {
   name: 'Home',

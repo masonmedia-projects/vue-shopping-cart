@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import "core-js/stable";
-import "regenerator-runtime/runtime";
 import VueI18n from 'vue-i18n'
 import {store} from './store/store'
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
