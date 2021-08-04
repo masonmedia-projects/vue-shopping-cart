@@ -102,7 +102,12 @@ export default {
         let array = this.lmsGet("cmi.suspend_data");
         // convert incoming string to object
         let rehydrate = JSON.parse( array );
+        // add object to empty data string for UI
+        // this.data = rehydrate;
+
         // create final merged array of suspended data marker + original data
+        // var mergedArray = [];
+
         rehydrate.forEach(elementA => {
             this.cartArchive.forEach(elementB => {
                 if (elementA.id == elementB.id) {

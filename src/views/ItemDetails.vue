@@ -14,14 +14,13 @@
                     <div class="page-banner w-100 h-100 absolute z--1" style="background: rgba(0,0,0,0.6);"></div>
                     <div class="z-1 text-light text-left px-5 min-h-50">
                         <div class="animate relative z-1 text-light text-left" 
-                        :data-animate="fade"
+                        data-animate="fade-in"
                         style="top: 50px;">
                         <b-avatar icon="bookmarks-fill" size="3.5rem" rounded="lg" :class="details.color" 
-                        class="animate shadow" :data-animate="fade"></b-avatar>
-                        <h1 class="animate font-weight-bold mb-4 mt-3" 
-                        :data-animate="fade" v-html="details.name"></h1>
-                        <b-button disabled variant="outline-light" class="animate text-left"
-                        :data-animate="fade" v-html="details.category"></b-button>
+                        class="shadow"></b-avatar>
+                        <h1 class="font-weight-bold mb-4 mt-3" v-html="details.name"></h1>
+                        <b-button disabled variant="outline-light" class="text-left"
+                        v-html="details.category"></b-button>
                         </div>
                     </div>
                 </div>
@@ -29,7 +28,7 @@
             <!-- /content -->
             <b-col lg="6" align-self="stretch"
                 class="animate relative z-1 bg-taieri bg-light p-4 p-md-5"
-                :data-animate="fadeUp">
+                data-animate="fade-in">
 
                     <!-- category alerts -->
                     <div v-for="items in $t('aux')" :key="items.id">

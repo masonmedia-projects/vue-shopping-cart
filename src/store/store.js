@@ -61,7 +61,7 @@ export const store = new Vuex.Store({
                 let bool = state.cartArchive.some(i => i.id === item.id)
                 if (bool) {
                     let itemIndex = state.cartArchive.findIndex(el => el.id === item.id)
-                    state.cartArchive[itemIndex]["quantity"] = 1;
+                    state.cartArchive[itemIndex]["quantity"] += 1; //this can't be =1 or only allows one item at a time in the archive array
                 } 
                 else {
                     state.cartArchive.push(item)
@@ -69,7 +69,6 @@ export const store = new Vuex.Store({
              } else {
                 state.cartArchive.push(item)
             }
-            state.cartItemCount++
         },
         removeItem(state, payload) {
             if(state.cartItems.length > 0) {
