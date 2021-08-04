@@ -96,17 +96,23 @@
                     :src="items.img.img3" 
                     :alt="items.imgAlt.img3" 
                     v-bind="imgProps"
-                    class="h-100 w-100 cover" 
+                    class="animate h-100 w-100 cover" 
+                    :data-animate="fade"
                     style="border-radius: 14px 0 0 14px;"></b-img-lazy>
                 </b-col>
                 <b-col lg="7" align-self="center" class="p-5">
-                    <h5 class="mb-3 font-weight-bold text-muted" v-html="items.microTitle3"></h5>
-                    <h1 class="display-4 font-weight-bold"
+                    <h5 class="animate mb-3 font-weight-bold text-muted" 
+                    :data-animate="fadeUp"
+                    v-html="items.microTitle3"></h5>
+                    <h1 class="animate display-4 font-weight-bold"
+                    :data-animate="fadeUp"
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.title3"></h1>
-                    <hr class="d-flex m-0 mr-auto my-4 bg-lightblue" style="height: 4px; width: 50px;">
-                    <p class="mb-2" v-html="items.text3"></p>
-                    <div class="d-flex flex-wrap my-3">
+                    <hr class="animate d-flex m-0 mr-auto my-4 bg-lightblue" 
+                    :data-animate="fadeUp"
+                    style="height: 4px; width: 50px;">
+                    <p class="animate mb-2" :data-animate="fadeUp" v-html="items.text3"></p>
+                    <div class="animate d-flex flex-wrap my-3" :data-animate="fadeUp">
                         <b-button 
                         v-b-modal.modal-center
                         variant="lightblue" 
