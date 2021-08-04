@@ -3,10 +3,11 @@
         <div v-for="items in $t('homepage')" :key="items.id">
             <!-- banner -->
             <b-row align-v="center" class="relative min-vh-100 bg-orange">
-                <b-img-lazy 
+                <b-img
                 :src="items.img.banner" 
                 :alt="items.imgAlt.banner"
-                class="blur fade-in min-vh-100 w-75 absolute top right z-0 cover"></b-img-lazy>
+                class="animate min-vh-100 w-75 absolute top right z-0 cover"
+                data-animate="fade 2s"></b-img>
                 <!-- color strip -->
                 <div class="text absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
                 <b-col md="12" lg="10" align-self="end" class="p-5 mt-4">

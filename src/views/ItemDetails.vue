@@ -5,25 +5,31 @@
 
             <b-col lg="6" align-self="stretch" class="min-vh-50 p-0">
                 <div class="sticky__details">
-                    <b-img-lazy 
+                    <b-img 
                     :src="details.img"
                     :alt="details.imgAlt" 
                     class="page-banner w-100 min-vh-100 absolute z--1 animate__animated animate__fadeIn">
-                    </b-img-lazy>
+                    </b-img>
                     <!-- trans-black overlay -->
                     <div class="page-banner w-100 h-100 absolute z--1" style="background: rgba(0,0,0,0.6);"></div>
                     <div class="z-1 text-light text-left px-5 min-h-50">
-                        <div class="relative z-1 text-light text-left" style="top: 50px;">
-                        <b-avatar icon="bookmarks-fill" size="3.5rem" rounded="lg" :class="details.color" class="shadow"></b-avatar>
-                        <h1 class="font-weight-bold mb-4 mt-3" v-html="details.name"></h1>
-                        <b-button disabled variant="outline-light" class="text-left" v-html="details.category"></b-button>
+                        <div class="animate relative z-1 text-light text-left" 
+                        :data-animate="fade"
+                        style="top: 50px;">
+                        <b-avatar icon="bookmarks-fill" size="3.5rem" rounded="lg" :class="details.color" 
+                        class="animate shadow" :data-animate="fade"></b-avatar>
+                        <h1 class="animate font-weight-bold mb-4 mt-3" 
+                        :data-animate="fade" v-html="details.name"></h1>
+                        <b-button disabled variant="outline-light" class="animate text-left"
+                        :data-animate="fade" v-html="details.category"></b-button>
                         </div>
                     </div>
                 </div>
             </b-col>
             <!-- /content -->
             <b-col lg="6" align-self="stretch"
-                class="relative z-1 bg-taieri bg-light p-4 p-md-5">
+                class="animate relative z-1 bg-taieri bg-light p-4 p-md-5"
+                :data-animate="fadeUp">
 
                     <!-- category alerts -->
                     <div v-for="items in $t('aux')" :key="items.id">
@@ -80,15 +86,14 @@
 <script>
 import Swal from 'sweetalert2'
 import {lms} from '../mixins/lms'
-import {animate} from '../mixins/animate'
+import {obsAnimate} from '../mixins/obsAnimate'
 
 export default {
     name: 'ItemDetails',
-    mixins: [animate, lms],
+    mixins: [obsAnimate, lms],
     data() {
         return {
             details: this.$route.params,
-            fadeUp: "animate__animated animate__fadeInUp animate__slow",
         }
     },
     computed: {
@@ -126,8 +131,6 @@ export default {
                 cancelButton: 'btn-lg btn-lightblue border-0 mb-4',
                 }
             });  
-            // call LMS save
-            // this.updateSuspendData();
         },
         removeItem() {
             this.$store.dispatch("removeItem", this.details);

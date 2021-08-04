@@ -12,11 +12,9 @@ export const obsAnimate = {
             const options = {
                 root: null,
                 rootMargin: '100px 0px',
-                // threshold: 0
-                threshold: [0, 0.1, 0.2, 0.5, 1]
+                threshold: 0
+                // threshold: [0, 0.1, 0.2, 0.5, 1]
             }
-    //         rootMargin: '100px 0px',
-    // threshold: [0, 0.1, 0.2, 0.5, 1]
 
             const callback = (entries) => {
                 entries.forEach(

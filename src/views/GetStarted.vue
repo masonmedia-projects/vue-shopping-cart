@@ -52,8 +52,7 @@
 
     <b-row class="text-left">
       <b-col xl="4" md="6"
-      class="animate text-center"
-      :data-animate="fadeUp"
+      class="text-center"
       @click="itemDetails(items)" 
       v-for="items in $t('allCategories')" :key="items.id">
       <!-- slice limits the number of iterations in the object/array -->
@@ -67,12 +66,12 @@
           <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" 
           :class="items.color" class="absolute left top z-1 m-2 shadow"></b-avatar>
           <!-- card content -->
-          <b-card-img-lazy
+          <b-card-img
           :img-alt="items.imgAlt"
           :src="items.img"
           v-bind="imgProps"
           style="filter: brightness(0.9)"
-          ></b-card-img-lazy>
+          ></b-card-img>
           <b-card-text class="pt-4 px-5 pb-5"
           v-for="item in $t('getStarted')" :key="item.id">
             <h2 v-html="items.name" class="font-weight-bold"></h2>

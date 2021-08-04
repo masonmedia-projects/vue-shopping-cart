@@ -6,7 +6,6 @@
             align-v="center"
             class="text-left mt-5 min-vh-100" 
             >
-            <!-- v-if="totalPrice > 0"  -->
                 <b-col lg="6" 
                 align-self="stretch" class="min-vh-50 p-5 bg-royal">
                     <div class="sticky z-1 text-light text-left px-4 px-md-5">
@@ -102,22 +101,6 @@
                 </b-col>
             </template>
         </b-row>    
-
-        <!-- if learning plan has no items -->
-        <!-- <b-row v-else>
-            <b-col lg="12" 
-            class="d-flex flex-column justify-content-center align-items-center min-h-100"
-            v-for="items in $t('myLearningPlan')" :key="items.index">
-                <b-icon-person-circle 
-                variant="secondary"
-                font-scale="9"
-                class="shadow rounded-circle bg-yellow"
-                :title="items.emptyPlan">
-                    <span class="sr-only" v-html="items.emptyPlan"></span>
-                </b-icon-person-circle>
-                <h3 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h3>
-            </b-col>
-        </b-row> -->
         </div>
     </b-container>
 </template>
