@@ -37,9 +37,16 @@
     {
         "modalTitle": "Leadership Development Tool",
         "mainTitle": "Where to start",
-        "heading1": "Review the behaviours:",
+        "introTitle": "How to use",
+        "introList": [
+          "The Leadership Development Tool is resource for ongoing growth and exploration. Think of it like a website or web app. You can leave it in your learning plan and launch it whenever you want to explore new leadership capabilities, or expand your leadership skills.", 
+          "The tool works like a shopping cart: explore items on the <strong>Get Started</strong> page, add them to your cart, then download the associated learning maps from the <strong>My Plan</strong> page.",
+          "The items you download will be saved in your <strong>My History</strong> page. Use it to track your progress and review your previous downloads.",
+          "If you choose, you can log out of the tool: but be aware that this will <strong>mark the tool as 'complete', reset your progress, and any saved data will be lost.</strong>"
+        ],
+        "heading1": "Review the behaviours",
         "list1": [
-          "Review the Leadership Behaviour Model and choose your areas of focus through self-reflection and speaking with your team members.", 
+          "Review the Leadership Behaviour Model available on the Get Started page and choose your areas of focus through self-reflection and speaking with your team members.", 
           "Reflect on what you’re passionate about developing."
         ],
         "heading2": "Talk to others",
@@ -62,11 +69,11 @@
 
   "exit": [
     {
-      "heading": "Exit LDT",
+      "heading": "Log out",
       "title": "Are you sure?",
-      "message": "Exiting the Leadership Development Tool will mark it as complete and any saved data will be lost. Are you sure you want to proceed?",
+      "message": "Logging out of the Leadership Development Tool will mark it as complete and any saved data will be lost. Select <strong>Cancel</strong> to keep your changes and continue exploring. Select <strong>Logout</strong> to exit and delete your progress.",
       "btn1": "Cancel",
-      "btn2": "Proceed"
+      "btn2": "Logout"
     }
   ],
 
@@ -77,13 +84,13 @@
       "bannerSubtitle": "Investing in our people. Developing the future of leadership.",
       "microTitle1": "The What",
       "title1": "The Concept",
-      "text1":"This tool will help you identify and explore key leadership capabilities. It was designed to give you a broad and diverse introduction to the attributes of great leadership, and to provide you with ongoing resources for continued growth. Use the tool to explore the skills and behaviours important to you, and download resources for continued learning that build on the associated leadership capabilities.",
+      "text1":"This tool will help you identify and explore key leadership capabilities. It was designed to give you a broad and diverse introduction to the competencies of great leadership, and to provide you with ongoing resources for continued growth. Use the tool to explore the skills and behaviours important to you, and download resources for continued learning that build on the associated leadership capabilities.",
       "microTitle2": "The Why",
       "title2": "Ongoing development",
       "text2": "While many of us think of formal education as the obvious route to learning, the 70:20:10 model reveals that there is more for us to explore. Only 10% of job-related learning is acquired through traditional methods like courses and formal study. 20% of skill development comes through social learning opportunities like mentorship, coaching, and collaborative opportunities with peers. The bulk of learning, 70%, comes through on-the-job experience. This tool will support you by identifying some of these learning opportunities and help you get started on this learning journey.",
       "microTitle3": "The How",
       "title3": "Getting started",
-      "text3": "If you’d like more context about this tool, or if you’re unsure of your next step and would like to explore some helpful suggestions to support your evolution as a leader, select <strong>Learn More</strong>. If you're a returning user, or know what skill areas you’d like to focus on, select <strong>Get Started.</strong> " ,
+      "text3": "This tool is meant to be used and reused as an ongoing personal development resource. You can leave it in your learning plan and launch it whenever you want to expand your leadership skills. If you’d like more context about this tool, or if you’re unsure of your next step and would like to explore some helpful suggestions to support your evolution as a leader, select <strong>Learn More</strong>. If you're a returning user, or know what skill areas you’d like to focus on, select <strong>Get Started.</strong> " ,
       "section_title3": "Grow & discover",
       "btn1": "Learn more",
       "btn2": "Get started",
@@ -173,7 +180,7 @@
       "id": "01",
       "name":"Self-Awareness",
       "category":"Leading Yourself",
-      "color": "bg-orange",
+      "color": "bg-secondary",
       "img":"img/get_started/selfaware.jpg",
       "imgAlt": "",
       "description":"Building awareness around the mindsets and behaviours that help you be a successful leader",
@@ -333,7 +340,7 @@
     },
     {
       "id": "09",
-      "name": "Performance",
+      "name": "High Performing Environment",
       "category":"Executing Strategic & Operational Excellence",
       "color": "bg-yellow",
       "img":"img/get_started/performance.jpg",

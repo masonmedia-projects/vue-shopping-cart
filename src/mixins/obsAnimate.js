@@ -11,7 +11,7 @@ export const obsAnimate = {
         obsAnimate() {
             const options = {
                 root: null,
-                rootMargin: '100px 0px',
+                rootMargin: '150px 0px',
                 threshold: 0
                 // threshold: [0, 0.1, 0.2, 0.5, 1]
             }
@@ -28,7 +28,7 @@ export const obsAnimate = {
                             entry.target.style.animation = 
                             entry.target.dataset.animate;
                         } else {
-                            //We take of the animation if not in view
+                            //We take off the animation if not in view
                             entry.target.style.animation="none";
                         }
                     }

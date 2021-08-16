@@ -1,8 +1,7 @@
 <template>
     <b-container fluid class="relative">
         <!-- 50-50 split layout -->
-        <b-row class="text-left min-h-100 relative mt-5"> 
-
+        <b-row class="text-left min-h-100 relative mt-5">
             <b-col lg="6" align-self="stretch" class="min-vh-50 p-0">
                 <div class="sticky__details">
                     <b-img 
@@ -86,6 +85,7 @@
 import Swal from 'sweetalert2'
 import {lms} from '../mixins/lms'
 import {obsAnimate} from '../mixins/obsAnimate'
+// import store from '../store/store'
 
 export default {
     name: 'ItemDetails',
@@ -93,9 +93,15 @@ export default {
     data() {
         return {
             details: this.$route.params,
+            // detailId: this.$route.params.id,
         }
     },
     computed: {
+        // detail() {
+        //     return this.$store.state.data.allCategories.find(
+        //         detail => detail.id === this.details
+        //     )
+        // },
       aux() {
         return this.$store.state.data.aux;
       },

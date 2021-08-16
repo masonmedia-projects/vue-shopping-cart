@@ -57,9 +57,10 @@
       
       <b-col xl="4" md="6"
       class="text-center"
-      v-for="items in $t('allCategories')" :key="items.id"
-      @click="itemDetails(items)">
-      <!-- <router-link :to="{ name: 'ItemDetails', params: {id:items.id} }"> -->
+      
+      v-for="items in details" :key="items.id">
+      <router-link :to="{ name: 'ItemDetails', params: { id: items.id } }">
+      <!-- @click="itemDetails(items)"  -->
       <!-- slice limits the number of iterations in the object/array -->
       <!-- <b-col lg="4" v-for="items in topRated.slice(0, 2)" :key="items.id"> -->
         <b-card
@@ -85,7 +86,7 @@
             <!-- <router-link :to="{ name: 'FoodDetails', params: {id: topRated.id}}"></router-link> -->
           </b-card-text>
         </b-card>
-      <!-- </router-link> -->
+      </router-link>
       </b-col>
     </b-row>
   </b-container>
@@ -99,6 +100,8 @@ export default {
   mixins: [obsAnimate],
   data() {
     return {
+        detailId: this.$route.params.id,
+          details: this.$store.state.data.allCategories,
       selected: null,
         options: [
           { value: '', text: 'All' },
@@ -140,9 +143,9 @@ export default {
   // route programmatically to retrieve each food detail without creating a new page
   // https://vueschool.io/lessons/vuejs-router-creating-routes
   methods: {
-      itemDetails(item) {
-        this.$router.push({name: "ItemDetails", params: item });
-      }
+      // itemDetails(item) {
+      //   this.$router.push({name: "ItemDetails", params: item });
+      // }
     },  
 }
 </script>

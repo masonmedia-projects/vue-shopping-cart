@@ -15,7 +15,13 @@
                 <b-icon icon="bookmark-check-fill" variant="lightblue mb-3" class="" font-scale="3"></b-icon>
                 <h3 class="font-weight-bold text-lightblue mb-3 py-3 border-top border-bottom border-lightblue-trans" 
                 v-html="items.mainTitle"></h3>
-                <h5 class="alert alert-lightblue my-4" v-html="items.heading1"></h5>
+                <h5 class="alert alert-lightblue my-4" v-html="items.introTitle"></h5>
+                <ul>
+                    <span v-for="i in items.introList" :key="i.id">
+                        <li v-html="i"></li> 
+                    </span>
+                </ul>
+                <h5 class="alert alert-green my-4" v-html="items.heading1"></h5>
                 <ul>
                     <span v-for="i in items.list1" :key="i.id">
                         <li v-html="i"></li> 
@@ -32,7 +38,7 @@
                         </span>
                     </ul>
                 </ul>
-                <h5 class="alert alert-green my-4" v-html="items.heading3"></h5>
+                <h5 class="alert alert-lightblue bg-orange-trans my-4" v-html="items.heading3"></h5>
                 <ul>
                     <span v-for="i in items.list3" :key="i.id">
                         <li v-html="i"></li> 

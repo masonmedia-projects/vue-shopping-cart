@@ -16,8 +16,13 @@ nav {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.6);
     font-weight: bold;
+}
+
+// active link color
+.router-link-exact-active {
+    color:rgba(0, 0, 0, 1) !important
 }
 
 .fixed-top {
