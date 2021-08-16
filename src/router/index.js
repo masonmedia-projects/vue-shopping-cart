@@ -39,7 +39,12 @@ const routes = [
     path: '/item-details/:id',
     name: 'ItemDetails',
     component: () => import(/* webpackChunkName: "about" */ '../views/ItemDetails.vue')
-  }
+  },
+  {
+    path: '/:catchAll(.*)*',
+    name: "PageNotFound",
+    component: () => import(/* webpackChunkName: "about" */ '../views/PageNotFound.vue')
+  },
 ]
 
 const router = new VueRouter({
