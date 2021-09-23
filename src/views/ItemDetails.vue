@@ -58,7 +58,7 @@
                         <b-row class="d-flex justify-content-center align-items-center w-100 bg-trans text-light p-2 mx-auto rounded">
                             <b-col sm class="px-1">
                                 <b-button type="button" size="lg" variant="orange" class="d-flex justify-content-center align-items-center my-2 w-100" 
-                                @click="addToCart(); addToArchive()">
+                                @click.once="addToCart(); addToArchive()">
                                     <b-icon icon="plus" font-scale="1.5"></b-icon> {{ items.btn1 }}
                                 </b-button>
                             </b-col>

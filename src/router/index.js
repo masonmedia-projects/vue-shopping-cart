@@ -14,12 +14,12 @@ const routes = [
   {
     path: '/get-started',
     name: 'GetStarted',
-    component: () => import(/* webpackChunkName: "about" */ '../views/GetStarted.vue')
+    component: () => import(/* webpackChunkName: "get-started" */ '../views/GetStarted.vue')
   },
   {
     path: '/my-plan',
     name: 'MyPlan',
-    component: () => import(/* webpackChunkName: "about" */ '../views/MyPlan.vue')
+    component: () => import(/* webpackChunkName: "my-plan" */ '../views/MyPlan.vue')
   },
   {
     path: '/my-history',
@@ -27,7 +27,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/MyHistory.vue')
+    component: () => import(/* webpackChunkName: "my-history" */ '../views/MyHistory.vue')
   },
   {
     path: '/food-details',
@@ -38,12 +38,12 @@ const routes = [
   {
     path: '/item-details/:id',
     name: 'ItemDetails',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ItemDetails.vue')
+    component: () => import(/* webpackChunkName: "item-details" */ '../views/ItemDetails.vue')
   },
   {
     path: '/:catchAll(.*)*',
     name: "PageNotFound",
-    component: () => import(/* webpackChunkName: "about" */ '../views/PageNotFound.vue')
+    component: () => import(/* webpackChunkName: "page-not-found" */ '../views/PageNotFound.vue')
   },
 ]
 
