@@ -51,10 +51,6 @@
       </b-navbar> -->
 
     <b-row class="text-left">
-      
-
-
-      
       <b-col xl="4" md="6"
       class="text-center"
       v-for="items in $t('allCategories')" :key="items.id"

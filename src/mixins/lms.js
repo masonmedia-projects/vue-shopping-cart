@@ -46,6 +46,27 @@ export const lms = {
             console.log("### lmsQuit: ", status);
         },
 
+        // ----- uses SCORM_API -----
+        com_exit({ state }) {
+            switch (state.com.settings.type) {
+                case "SCORM": {
+                    // need code if we want to implement it
+                    // timeUtility.sco_set_session_time();
+
+                    console.log("COM", "Terminating connection.");
+                    var callSucceeded = SCORM.quit();
+                    console.log("COM", "Call succeeded? " + callSucceeded);
+                    if (callSucceeded) {
+                        top.window.close();
+                    }
+                    break;
+                }
+                case "DEBUG":
+                    console.log("COM", "(DEBUG) Terminating connection.");
+                    break;
+            }
+        },
+
         updateSuspendData() {
             this.lmsSet({
                 key: "cmi.suspend_data",

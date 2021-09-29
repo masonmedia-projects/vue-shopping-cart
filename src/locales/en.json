@@ -39,7 +39,7 @@
         "mainTitle": "Where to start",
         "introTitle": "How to use",
         "introList": [
-          "The Leadership Development Tool is resource for ongoing growth and exploration. Think of it like a website or web app. You can leave it in your learning plan and launch it whenever you want to explore new leadership capabilities, or expand your leadership skills.", 
+          "The Leadership Development Tool is a resource for ongoing growth and exploration. Think of it like a website or web app. You can leave it in your learning plan and launch it whenever you want to explore new leadership capabilities, or expand your leadership skills.", 
           "The tool works like a shopping cart: explore items on the <strong>Get Started</strong> page, add them to your cart, then download the associated learning maps from the <strong>My Plan</strong> page.",
           "The items you download will be saved in your <strong>My History</strong> page. Use it to track your progress and review your previous downloads.",
           "If you choose, you can exit the tool: but be aware that this will <strong>mark the tool as 'complete', reset your progress, and any saved data will be lost.</strong>"
@@ -69,11 +69,13 @@
 
   "exit": [
     {
-      "heading": "Log out",
+      "heading": "Exit",
       "title": "Are you sure?",
-      "message": "Logging out of the Leadership Development Tool will mark it as complete and any saved data will be lost. Select <strong>Cancel</strong> to keep your changes and continue exploring. Select <strong>Logout</strong> to exit and delete your progress.",
+      "message": "Select <strong>Cancel</strong> to continue browsing. Select <strong>Close session</strong> to close the window and save your progress. Select <strong>Complete</strong> to mark the tool as complete in your dashboard.",
+      "warning": "<strong>*Please note:</strong> selecting 'Complete' will mark the tool as complete and your saved data will be lost.",
       "btn1": "Cancel",
-      "btn2": "Logout"
+      "btn2": "Close session",
+      "btn3": "Complete"
     }
   ],
 
@@ -113,8 +115,8 @@
     {
       "microTitle": "My Leadership Development Tool",
       "title":"Get Started",
-      "text": "Build your learning plan by exploring the list of skills below. Select the <strong>Details</strong> button of any competency to learn more about it and what it looks like in action before deciding if it’s appropriate for you. If you need more information you can consult the Leadership Behaviour Model and consider which areas you'd like to focus on. You can find a definition of each area of the model and a list of the competencies that fall under each category <a class='font-weight-bold text-royal' href='./LCL_Leadership_Behaviour_Model_Details.pdf' target='_blank'>here.</a>",
-      "ogTextToCut":"Build your learning plan by selecting the items you’d like to focus on today. Select the <strong>Details</strong> button of any competency to learn more about it and what it looks like in action before deciding if it’s an appropriate area of focus for you.",
+      "text": "Build your learning plan by exploring the list of leadership capabilities below. Select the <strong>Details</strong> button of any capability to learn more about it and what it looks like in action before deciding if it’s appropriate for you. If you need more information you can consult the Leadership Behaviour Model and consider which areas you'd like to focus on. You can find a definition of each area of the model and a list of the capabilities that fall under each category <a class='font-weight-bold text-royal' href='./LCL_Leadership_Behaviour_Model_Details.pdf' target='_blank'>here.</a>",
+      "ogTextToCut":"Build your learning plan by selecting the items you’d like to focus on today. Select the <strong>Details</strong> button of any capability to learn more about it and what it looks like in action before deciding if it’s an appropriate area of focus for you.",
       "linkBtn": "Learn more",
       "detailsBtn": "Details",
       "img": {
@@ -193,7 +195,7 @@
         "You’d like to learn about others perception of you",
         "You’d like to feel empowered to make changes and build on your areas of strengths and opportunities"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Self_Awareness.pdf"
     },
     {
       "id": "02",
@@ -214,7 +216,7 @@
         "You’d like to learn about others perception of you",
         "You’d like to feel empowered to make changes and build on your areas of strengths and opportunities"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Empowerment.pdf"
     },
     {
       "id": "03",
@@ -233,7 +235,7 @@
         "You need to influence and partner with others to achieve outcomes",
         "You want different points of view to enhance your outcomes"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Collaboration.pdf"
     },
     {
       "id": "04",
@@ -254,7 +256,7 @@
         "You want to build confidence in public speaking",
         "You want to influence others through communication"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Compelling_Communication.pdf"
     },
     {
       "id": "05",
@@ -277,7 +279,7 @@
         "You need to confidently manage challenging conversations, situations or conflict", 
         "You need to share your opinions even if they are unpopular"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Authentic_Conversations.pdf"
     },
     {
       "id": "06",
@@ -296,7 +298,7 @@
         "You’d like to get better at identifying and responding to emotions",  
         "You’re required to find solutions to problems in emotionally charged situations"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Emotional_Intelligence.pdf"
     },
     {
       "id": "07",
@@ -315,7 +317,7 @@
         "You need to analyze data and develop insights",
         "You’d like to identify patterns"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Critical_Thinking.pdf"
     },
     {
       "id": "08",
@@ -336,7 +338,7 @@
         "You need to develop an integrated vision and long-term plan",
         "You need to use your resources more effectively to achieve outcomes"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Strategic_Thinking.pdf"
     },
     {
       "id": "09",
@@ -356,11 +358,11 @@
         "You need to deliver excellence as a team",
         "You want to create an environment of trust, achievement and optimism"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_High_Performing_Environment.pdf"
     },
     {
       "id": "10",
-      "name": "Customer-Centricity",
+      "name": "Customer Centricity",
       "category":"Fostering Innovation and Agility",
       "color": "bg-danger",
       "img":"img/get_started/customer.jpg",
@@ -376,7 +378,7 @@
         "You’d like to strengthen your ability to empathize with the customer",
         "You want to create opportunities for everyone to succeed"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Customer_Centricity.pdf"
     },
     {
       "id": "11",
@@ -395,7 +397,7 @@
         "You’d like to try different approaches and adopt outside the box thinking",
         "You’d like to create a safe environment for your team to take calculated risks"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Innovation.pdf"
     },
     {
       "id": "12",
@@ -420,7 +422,7 @@
         "You need to lead organizational or cultural change",
         "You need to enable others to overcome resistance to change"
       ],
-      "download": "./dummy.pdf"
+      "download": "./learning_maps/LDT_Change_Agility.pdf"
     }
   ]
 }
