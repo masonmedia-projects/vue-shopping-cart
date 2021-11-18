@@ -4,6 +4,8 @@
 ---
 A shopping cart app using Vue, Vuex, BootstrapVue, and animate.css based on a tutorial by [Akash Ingole](https://www.youtube.com/watch?v=irr7ACcmW_4).
 
+Designed based on an ecomm/shopping cart functionality, the app channels users from a landing page, to a products library, funneling to a 'cart' displaying all chosen products, and a final download/checkout process.  There is LMS functionality archiving user downloads for future reference (SCORM cloud), and IE detection with an automatic alert directing users to use a more modern browser.
+
 ## Details
 ---
 The project uses vuex, vue-router, SASS, vue-i18n for french translation, and is tailored for use on an LMS (`.xml` files, and router config in `router/index.js`). 
