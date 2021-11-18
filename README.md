@@ -8,7 +8,7 @@ Designed based on an ecomm/shopping cart functionality, the app channels users f
 
 ## Details
 ---
-The project uses vuex, vue-router, SASS, vue-i18n for french translation, and is tailored for use on an LMS (`.xml` files, and router config in `router/index.js`). 
+The project uses vuex, vue-router, SASS, vue-i18n for french translation, and is tailored for use on an LMS (`.xml` files are located in the `xml_files` folder, and router config in `router/index.js`). 
 
 ## Notes
 ---
