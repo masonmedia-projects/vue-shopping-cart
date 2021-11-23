@@ -32,7 +32,7 @@
 
   "myHistoryMenuLink": [
         {
-          "link": "My History",
+          "link": "Mon Historique",
           "url": "/my-history"
         }
   ],
@@ -73,8 +73,8 @@
 
   "exit": [
     {
-      "heading": "Exit",
-      "title": "Are you sure?",
+      "heading": "Sortir",
+      "title": "Vous êtes certain?",
       "message": "Select <strong>Cancel</strong> to continue browsing. Select <strong>Close session</strong> to close the window and save your progress. Select <strong>Complete</strong> to mark the tool as complete in your dashboard.",
       "warning": "<strong>*Please note:</strong> selecting 'Complete' will mark the tool as complete and your saved data will be lost.",
       "btn1": "Annuler",
@@ -197,6 +197,8 @@
         "Vous souhaitez en savoir plus sur la façon dont les autres vous perçoivent. ",
         "Vous souhaitez vous sentir apte à apporter des changements et à développer vos points forts et vos possibilités. "
       ],
+      "successTitle": "Succès!",
+      "successMessage": "a été ajouté a vôtre panier!",
       "download": "./learning_maps/LDT_Self_Awareness.pdf"
     },
     {
@@ -426,5 +428,10 @@
       ],
       "download": "./learning_maps/LDT_Change_Agility.pdf"
     }
-  ]
+  ],
+  "success": {
+    "title": "Succès!",
+    "message": "a été ajouté a vôtre panier!",
+    "closeBtn": "Fermer"
+  }
 }

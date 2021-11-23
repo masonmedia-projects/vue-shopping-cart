@@ -22,7 +22,8 @@ body {
     overflow-x: hidden;
     width: 100%;
     max-width: 1600px;
-    
+    // add animation for FOUC with bg image ^
+    animation: fade-in .5s ease-in-out;
 }
 
 p {
