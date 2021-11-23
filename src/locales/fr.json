@@ -8,23 +8,27 @@
           "url": "/"
         },
         {
-          "link": "Get Started",
+          "link": "Démarrer",
           "url": "/get-started"
         },
         {
-          "link": "My Learning Plan",
+          "link": "Mon plan",
           "url": "/my-plan"
         },
         {
-          "link": "My History",
+          "link": "Mon historique",
           "url": "/my-history"
         }
       ],
-      "logout": "Logout",
-      "close": "Close",
-      "checkout": "Checkout"
+      "logout": "Déconnexion",
+      "close": "Fermer",
+      "checkout": "Caisse"
     }
   ],
+
+  "global": {
+    "modalClose": "Fermer"
+  },
 
   "myHistoryMenuLink": [
         {
@@ -35,34 +39,34 @@
 
   "aboutPopup": [
     {
-        "modalTitle": "Leadership Development Tool",
-        "mainTitle": "Where to start",
-        "introTitle": "How to use",
+        "modalTitle": "Outil de développement des gestionnaires",
+        "mainTitle": "Par où commencer",
+        "introTitle": "Mode d’emploi",
         "introList": [
-          "The Leadership Development Tool is a resource for ongoing growth and exploration. Think of it like a website or web app. You can leave it in your learning plan and launch it whenever you want to explore new leadership capabilities, or expand your leadership skills.", 
-          "The tool works like a shopping cart: explore items on the <strong>Get Started</strong> page, add them to your cart, then download the associated learning maps from the <strong>My Plan</strong> page.",
-          "The items you download will be saved in your <strong>My History</strong> page. Use it to track your progress and review your previous downloads.",
-          "If you choose, you can exit the tool: but be aware that this will <strong>mark the tool as 'complete', reset your progress, and any saved data will be lost.</strong>"
+          "L’outil de développement des gestionnaires est une ressource de développement continu et d’exploration. Considérez-le comme un site Web ou une application Web. Vous pouvez le laisser dans votre plan d’apprentissage pour le lancer dès que vous souhaitez explorer de nouvelles capacités de leadership ou élargir vos compétences en leadership.",
+          "L’outil fonctionne comme un panier d’achat: explorez les sujets à la page <strong>Démarrer,</strong> ajoutez-les à votre panier, puis téléchargez les plans d’apprentissage correspondants dans la page <strong>Mon plan.</strong>",
+          "Les sujets que vous téléchargez sont enregistrés dans votre page <strong>Mon historique.</strong> Utilisez cette page pour faire le suivi de vos progrès et revoir vos téléchargements précédents.",
+          "Si vous le souhaitez, vous pouvez quitter l’outil, mais sachez que cela <strong>marquera l’outil comme « Terminé », remettra votre progression à zéro et toutes les données sauvegardées seront perdues.</strong>"
         ],
-        "heading1": "Review the behaviours",
+        "heading1": "Examiner les comportements",
         "list1": [
-          "Review the Leadership Behaviour Model available on the Get Started page and choose your areas of focus through self-reflection and speaking with your team members.", 
-          "Reflect on what you’re passionate about developing."
+          "Examinez le modèle de comportement de leadership et choisissez vos domaines d’intérêt en fonction de votre réflexion personnelle et en parlant avec les membres de votre équipe.",
+          "Réfléchissez à une compétence à développer qui vous passionne."
         ],
-        "heading2": "Talk to others",
+        "heading2": "Parler aux Autres",
         "list2": [
-          "Connect with those around you – your leader, other team members, and your direct reports.", 
-          "Set the context for the conversation by sharing your desire to grow as a leader and ask them:"
+          "Communiquez avec votre entourage : votre dirigeant, les autres membres de l’équipe et vos subordonnés directs.",
+          "Établissez le contexte de la conversation en exprimant votre désir d’évoluer en tant que dirigeant et posez-leur les questions suivantes:"
         ],
         "nestedlist": [
-          "'What do you appreciate about me?'",
-          "'What could I do to be even more effective?'"
+          "« Qu’est-ce que vous appréciez chez moi? »",
+          "« Que pourrais-je faire pour être encore plus efficace? »"
         ],
-        "heading3": "Reflect",
+        "heading3": "Réfléchir",
         "list3": [
-          "How did this feedback make you feel?",
-          "Did it reinforce or add to what you considered were your areas for growth?",
-          "Choose your initial 2–3 areas of focus. Return to this tool, and select Get Started."
+          "Comment vous êtes-vous senti à la suite de cette rétroaction?",
+          "Cela a-t-il renforcé ou complété ce que vous considériez comme vos domaines à développer?",
+          "Choisissez vos deux ou trois premiers domaines d’intérêt. Revenez à cet outil et sélectionnez Démarrer."
         ]
     }
   ],
@@ -73,7 +77,7 @@
       "title": "Are you sure?",
       "message": "Select <strong>Cancel</strong> to continue browsing. Select <strong>Close session</strong> to close the window and save your progress. Select <strong>Complete</strong> to mark the tool as complete in your dashboard.",
       "warning": "<strong>*Please note:</strong> selecting 'Complete' will mark the tool as complete and your saved data will be lost.",
-      "btn1": "Cancel",
+      "btn1": "Annuler",
       "btn2": "Close session",
       "btn3": "Complete"
     }
@@ -81,7 +85,7 @@
 
   "homepage":[
     {
-      "bannerMicroTitle": "Mon outil de développement des gestionnaires",
+      "bannerMicroTitle": "Mon Outil de Développement des Gestionnaires",
       "bannerTitle":"Bienvenue dans l’outil de développement des gestionnaires",
       "bannerSubtitle": "Investir dans notre personnel. Développer le leadership de demain.",
       "microTitle1": "Le Quoi",
@@ -113,14 +117,12 @@
 
   "getStarted":[
     {
-      "microTitle": "My Leadership Development Tool",
-      "title":"Get Started",
-      "text": "Build your learning plan by exploring the list of leadership capabilities below. Select the <strong>Details</strong> button of any capability to learn more about it and what it looks like in action before deciding if it’s appropriate for you. If you need more information you can consult the Leadership Behaviour Model and consider which areas you'd like to focus on. You can find a definition of each area of the model and a list of the capabilities that fall under each category <a class='font-weight-bold text-royal' href='./LCL_Leadership_Behaviour_Model_Details.pdf' target='_blank'>here.</a>",
-      "ogTextToCut":"Build your learning plan by selecting the items you’d like to focus on today. Select the <strong>Details</strong> button of any capability to learn more about it and what it looks like in action before deciding if it’s an appropriate area of focus for you.",
-      "linkBtn": "Learn more",
-      "detailsBtn": "Details",
+      "microTitle": "Mon outil de développement des gestionnaires",
+      "title":"Démarrer",
+      "text": "Élaborez votre plan d’apprentissage en explorant la liste des capacités de leadership ci-dessous. Sélectionnez le bouton <strong>Détails</strong> associé à une capacité pour en savoir plus à son sujet et voir la forme qu’elle prend concrètement avant de décider si elle vous convient. S’il vous faut plus d’informations, vous pouvez consulter le modèle de comportement de leadership pour déterminer les domaines sur lesquels vous aimeriez vous concentrer. Vous trouverez une définition de chaque domaine du modèle ainsi qu’une liste des capacités entrant dans chaque catégorie <a class='font-weight-bold text-royal' href='./LCL_Leadership_Behaviour_Model_Details.pdf' target='_blank'>ici.</a>",
+      "detailsBtn": "Détails",
       "img": {
-        "banner": "img/get_started/LCL_leadership_wheel_equal_EN.svg"
+        "banner": "img/get_started/LCL_leadership_wheel_FR.png"
         },
       "imgAlt": {
         "banner": "A diagram of the Loblaw leadership behaviour model outlining 4 areas of focus: Collaboration, Communication, Innovation, and Excellence."
@@ -132,19 +134,19 @@
     {
       "img": "img/about_page/about10.jpg",
       "imgAlt": "A photo of four women sitting at a table discussing contents on a laptop.",
-      "title":"My Learning Plan",
-      "description":"Each area of focus you selected has a learning map with suggested courses and activities to get you started on your learning journey. Review these learning maps to explore the formal (10%), social (20%) and action (70%) learning activities that will help you develop the leadership capabilities, knowledge, and skills related to that area of focus.",
-      "subtitle": "Next steps",
+      "title":"Mon plan d’apprentissage",
+      "description":"Chaque domaine d’intérêt que vous avez sélectionné s’accompagne d’un plan d’apprentissage contenant des suggestions de cours et d’activités pour vous aider à commencer votre parcours d’apprentissage. Passez en revue ces plans d’apprentissage pour explorer les activités d’apprentissage structuré (10 %), par les réseaux (20 %) et par l’action (70 %) qui vous aideront à développer les capacités de leadership ainsi que les connaissances et les compétences se rapportant au domaine d’intérêt en question.",
+      "subtitle": "Prochaines étapes",
       "nextSteps": [
-          "<strong>Download</strong> and review each of your learning maps.", 
-          "<strong>Incorporate</strong> learning activities into your Individual Development Plan.",
-          "<strong>Define</strong> what success will look like for each activity.",
-          "<strong>Consider</strong> what support and resources you’ll need to complete each activity.",
-          "<strong>Reflect</strong> on the results of your activities on an ongoing basis and reassess as needed."
+          "<strong>Téléchargez</strong> et passez en revue chacun de vos plans d’apprentissage.",
+          "<strong>Intégrez</strong> les activités d’apprentissage à votre plan de développement individuel.",
+          "<strong>Définissez</strong> la forme que prendra le succès pour chaque activité.",
+          "<strong>Réfléchissez</strong> au soutien et aux ressources dont vous aurez besoin pour effectuer chaque activité.",
+          "<strong>Analysez</strong> systématiquement les résultats de vos activités et réévaluez-les au besoin."
       ],
-      "btnRemove": "Remove",
-      "btnDownload": "Download",
-      "emptyPlan": "My learning plan is empty"
+      "btnRemove": "Supprimer",
+      "btnDownload": "Télécharger",
+      "emptyPlan": "Mon plan d’apprentissage est vide"
     }
   ],
 
@@ -160,47 +162,47 @@
       "imgAlt": {
         "banner": "A photo of four women sitting at a table discussing contents on a laptop."
       },
-      "emptyArchive": "My history is empty!"
+      "emptyArchive": "Mon historique est vide!"
     }
   ],
 
   "aux": [
     {
-      "categoryTitle": "Category",
-      "descriptionTitle": "Category Description",
+      "categoryTitle": "Catégorie",
+      "descriptionTitle": "Catégorie Description",
       "nameTitle": "Capability",
-      "sectionTitle1": "What it looks like",
-      "sectionTitle2": "Add to your plan if",
-      "btn1": "Add",
-      "btn2": "View",
-      "btn3": "Return"
+      "sectionTitle1": "Description",
+      "sectionTitle2": "Ajoutez-la à votre plan si",
+      "btn1": "Ajouter",
+      "btn2": "Afficher",
+      "btn3": "Retour"
     }
   ],
   
   "allCategories":[
     {
       "id": "01",
-      "name":"Self-Awareness",
-      "category":"Leading Yourself",
+      "name":"Connaissance de soi",
+      "category":"Dirigez Vous Même",
       "color": "bg-secondary",
       "img":"img/get_started/selfaware.jpg",
       "imgAlt": "",
       "description":"Building awareness around the mindsets and behaviours that help you be a successful leader",
       "moreDetail":[
-        "Seeing yourself clearly and objectively through reflection and introspection",
-        "Knowing your strengths, opportunities, beliefs, biases, motivations, and emotions",
-        "Seeking feedback to learn how others perceive you, your attitude, and your responses to them"
+        "Voir clairement et objectivement qui vous êtes, en réfléchissant et en faisant une introspection",
+        "Connaître vos forces, vos possibilités, vos croyances, vos préjugés, vos motivations et vos émotions ",
+        "Demander de la rétroaction pour savoir comment les autres vous perçoivent, ce qu’ils pensent de votre attitude et de vos réactions"
       ],
       "selectIf":[
-        "You’d like to learn about others perception of you",
-        "You’d like to feel empowered to make changes and build on your areas of strengths and opportunities"
+        "Vous souhaitez en savoir plus sur la façon dont les autres vous perçoivent. ",
+        "Vous souhaitez vous sentir apte à apporter des changements et à développer vos points forts et vos possibilités. "
       ],
       "download": "./learning_maps/LDT_Self_Awareness.pdf"
     },
     {
       "id": "02",
-      "name":"Empowerment",
-      "category":"Collaborating with & Inspiring Others",
+      "name":"Autonomisation",
+      "category":"Collaborer avec les Autres et les Inspirer",
       "color": "bg-royal",
       "img":"img/get_started/empowerment.jpg",
       "imgAlt": "",
@@ -221,7 +223,7 @@
     {
       "id": "03",
       "name":"Collaboration",
-      "category":"Collaborating with & Inspiring Others",
+      "category":"Collaborer avec les Autres et les Inspirer",
       "color": "bg-royal",
       "img":"img/get_started/collaboration.jpg",
       "imgAlt": "",
