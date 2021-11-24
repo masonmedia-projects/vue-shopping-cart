@@ -23,7 +23,7 @@
     <!-- sidebar cart review -->
     <b-sidebar 
     id="sidebar-right" 
-    title="My plan" 
+    :title="$t('sidebar.title')" 
     header-class="py-3 mb-0 h5 border-bottom"
     body-class="bg-taieri"
     right 

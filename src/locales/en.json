@@ -26,6 +26,10 @@
     }
   ],
 
+  "sidebar": {
+    "title": "My Plan"
+  },
+
   "global": {
     "modalClose": "Close"
   },
@@ -243,7 +247,7 @@
     },
     {
       "id": "04",
-      "name":"Communication",
+      "name":"Compelling Communication",
       "category":"Communicating Effectively & with Empathy",
       "color": "bg-green",
       "img":"img/get_started/communication.jpg",

@@ -26,6 +26,10 @@
     }
   ],
 
+  "sidebar": {
+    "title": "Mon Plan"
+  },
+
   "global": {
     "modalClose": "Fermer"
   },
@@ -187,18 +191,16 @@
       "color": "bg-secondary",
       "img":"img/get_started/selfaware.jpg",
       "imgAlt": "",
-      "description":"Building awareness around the mindsets and behaviours that help you be a successful leader",
+      "description":"Prendre conscience des états d’esprit et des comportements qui vous aident à être un dirigeant efficace",
       "moreDetail":[
         "Voir clairement et objectivement qui vous êtes, en réfléchissant et en faisant une introspection",
-        "Connaître vos forces, vos possibilités, vos croyances, vos préjugés, vos motivations et vos émotions ",
+        "Connaître vos forces, vos possibilités, vos croyances, vos préjugés, vos motivations et vos émotions",
         "Demander de la rétroaction pour savoir comment les autres vous perçoivent, ce qu’ils pensent de votre attitude et de vos réactions"
       ],
       "selectIf":[
-        "Vous souhaitez en savoir plus sur la façon dont les autres vous perçoivent. ",
-        "Vous souhaitez vous sentir apte à apporter des changements et à développer vos points forts et vos possibilités. "
+        "Vous souhaitez en savoir plus sur la façon dont les autres vous perçoivent",
+        "Vous souhaitez vous sentir apte à apporter des changements et à développer vos points forts et vos possibilités"
       ],
-      "successTitle": "Succès!",
-      "successMessage": "a été ajouté a vôtre panier!",
       "download": "./learning_maps/LDT_Self_Awareness.pdf"
     },
     {
@@ -208,17 +210,18 @@
       "color": "bg-royal",
       "img":"img/get_started/empowerment.jpg",
       "imgAlt": "",
-      "description":"Developing strong relationships and motivating others to perform at their highest potential",
+      "description":"Établir des relations solides et motiver les autres à travailler en exprimant tout leur potentiel",
       "moreDetail":[
-        "Inspiring ownership and accountability within others",
-        "Enabling others to succeed by effectively coaching and delegating work",
-        "Recognizing and respecting others’ contributions",
-        "Encouraging others to stretch their capabilities",
-        "Developing others by providing relevant direction, resources, training and mentoring"
+        "Inspirer chez les autres un sentiment de responsabilité et de responsabilisation ",
+        "Permettre aux autres de réussir en les encadrant efficacement et en déléguant les tâches",
+        "Reconnaître et respecter les contributions des autres",
+        "Encourager les autres à développer au maximum leurs aptitudes",
+        "Développer les autres en leur fournissant des directives, des ressources, des formations et un mentorat pertinents "
       ],
       "selectIf": [
-        "You’d like to learn about others perception of you",
-        "You’d like to feel empowered to make changes and build on your areas of strengths and opportunities"
+        "Vous voulez permettre à votre équipe d’être responsable",
+        "Vous voulez concrétiser les priorités grâce à l’action inspirée des autre",
+        "Vous souhaitez mettre l’accent sur le développement de l’équipe"
       ],
       "download": "./learning_maps/LDT_Empowerment.pdf"
     },
@@ -229,202 +232,202 @@
       "color": "bg-royal",
       "img":"img/get_started/collaboration.jpg",
       "imgAlt": "",
-      "description":"Developing strong relationships and motivating others to perform at their highest potential",
+      "description":"Établir des relations solides et motiver les autres à travailler en exprimant tout leur potentiel",
       "moreDetail": [
-        "Creating and delivering on shared goals through influence and cooperation",
-        "Initiating and maintaining relationships with others",
-        "Leveraging multiple perspectives to work towards common outcomes"
+        "Créer et réaliser des objectifs communs par l’influence et la coopération",
+        "Établir et entretenir des relations avec les autres",
+        "Tirer parti de plusieurs points de vue pour travailler à l’atteinte de résultats communs"
       ],
       "selectIf":[
-        "You need to influence and partner with others to achieve outcomes",
-        "You want different points of view to enhance your outcomes"
+        "Vous devez influencer les autres et collaborer avec eux pour obtenir des résultats",
+        "Vous voulez obtenir différents points de vue pour améliorer vos résultats"
       ],
       "download": "./learning_maps/LDT_Collaboration.pdf"
     },
     {
       "id": "04",
-      "name":"Communication",
-      "category":"Communicating Effectively & with Empathy",
+      "name":"Communication convaincante",
+      "category":"Communiquer efficacement et avec empathie",
       "color": "bg-green",
       "img":"img/get_started/communication.jpg",
       "imgAlt": "",
-      "description":"Communicating a clear vision to accomplish key objectives",
+      "description":"Communiquer une vision claire pour atteindre les objectifs clés",
       "moreDetail": [
-        "Conveying information and ideas persuasively and succinctly",
-        "Capturing and holding others’ attention in a focused and captivating way", 
-        "Adapting the message to the audience’s diverse needs",
-        "Developing visually appealing, inclusive and coherent presentation materials"
+        "Transmettre l’information et les idées de façon convaincante et succincte",
+        "Capter et retenir l’attention des autres d’une manière ciblée et captivante",
+        "Adapter le message aux besoins diversifiés de l’auditoire",
+        "Élaborer des documents de présentation attrayants, inclusifs et cohérents"
       ],
       "selectIf":[
-        "You need to create and deliver an impactful presentation or message",
-        "You want to build confidence in public speaking",
-        "You want to influence others through communication"
+        "Vous devez créer et donner une présentation ou un message percutants",
+        "Vous voulez gagner en assurance pour parler en public",
+        "Vous voulez influencer les autres par la communication"
       ],
       "download": "./learning_maps/LDT_Compelling_Communication.pdf"
     },
     {
       "id": "05",
-      "name":"Authentic Conversations",
-      "category":"Communicating Effectively & with Empathy",
+      "name":"Conversations authentiques",
+      "category":"Communiquer efficacement et avec empathie",
       "color": "bg-green",
       "img":"img/get_started/conversations.jpg",
       "imgAlt": "",
-      "description":"Communicating a clear vision to accomplish key objectives",
+      "description":"Communiquer une vision claire pour atteindre les objectifs clés",
       "moreDetail": [
-        "Listening actively to gain insights to other perspectives",
-        "Addressing challenging conversations proactively",
-        "Providing appreciative and constructive feedback effectively",
-        "Managing conflict with a win-win approach", 
-        "Encouraging conversations that build a culture of equity and inclusion"
+        "Écouter activement pour mieux comprendre les autres perspectives",
+        "Aborder les conversations difficiles sans attendre",
+        "Donner une rétroaction approbatrice et constructive efficacement",
+        "Gérer les conflits dans une optique gagnant-gagnant",
+        "Favoriser les conversations qui créent une culture d’équité et d’inclusion"
       ],
       "selectIf":[
-        "You want to listen with the intent to understand",  
-        "You want to achieve beneficial outcomes when engaging in challenging conversations",
-        "You need to confidently manage challenging conversations, situations or conflict", 
-        "You need to share your opinions even if they are unpopular"
+        "Vous voulez écouter les autres dans l’intention de les comprendre",
+        "Vous voulez obtenir des résultats bénéfiques lorsque vous vous lancez dans des conversations difficiles",
+        "Vous devez gérer avec assurance les conversations, les situations ou les conflits difficiles",
+        "Vous devez exprimer vos opinions même si elles sont impopulaires"
       ],
       "download": "./learning_maps/LDT_Authentic_Conversations.pdf"
     },
     {
       "id": "06",
-      "name":"Emotional Intelligence ",
-      "category":"Communicating Effectively & with Empathy",
+      "name":"Intelligence émotionnelle",
+      "category":"Communiquer efficacement et avec empathie",
       "color": "bg-green",
       "img":"img/get_started/emotionalintell.jpg",
       "imgAlt": "",
-      "description":"Communicating a clear vision to accomplish key objectives",
+      "description":"Communiquer une vision claire pour atteindre les objectifs clés",
       "moreDetail": [
-        "Conveying empathy and recognizing the emotions of others",
-        "Being authentic, while also demonstrating social and situational awareness",
-        "Recognizing when emotions and biases affect decision-making"
+        "Faire preuve d’empathie et reconnaître les émotions des autres",
+        "Être authentique tout en se montrant conscient du contexte social et de la situation",
+        "Reconnaître les émotions et les préjugés qui influent sur la prise de décisions"
       ],
       "selectIf":[
-        "You’d like to get better at identifying and responding to emotions",  
-        "You’re required to find solutions to problems in emotionally charged situations"
+        "Vous souhaitez mieux parvenir à reconnaître les émotions et y réagir",
+        "Vous êtes tenu de trouver des solutions aux problèmes dans des situations chargées émotionnellement"
       ],
       "download": "./learning_maps/LDT_Emotional_Intelligence.pdf"
     },
     {
       "id": "07",
-      "name":"Critical Thinking",
-      "category":"Executing Strategic & Operational Excellence",
+      "name":"Pensée critique",
+      "category":"Mettre en pratique l’excellence stratégique et opérationnelle",
       "color": "bg-yellow",
       "img":"img/get_started/criticalthinking.jpg",
       "imgAlt": "",
-      "description":"Consistently delivering extraordinary results",
+      "description":"Produire systématiquement des résultats extraordinaires",
       "moreDetail": [
-        "Identifying the root cause of a business issue", 
-        "Making timely and sound decisions based on data and analytical insights"
+        "Déterminer la cause fondamentale d’un problème commercial",
+        "Prendre des décisions judicieuses en temps opportun fondées sur des données et des prévisions analytiques"
       ],
       "selectIf":[
-        "You need to make a thoughtful business decision",
-        "You need to analyze data and develop insights",
-        "You’d like to identify patterns"
+        "Vous devez prendre une décision d’affaires éclairée",
+        "Vous devez analyser des données et trouver des perspectives",
+        "Vous souhaitez identifier des schémas"
       ],
       "download": "./learning_maps/LDT_Critical_Thinking.pdf"
     },
     {
       "id": "08",
-      "name": "Strategic Thinking",
-      "category":"Executing Strategic & Operational Excellence",
+      "name": "Pensée stratégique",
+      "category":"Mettre en pratique l’excellence stratégique et opérationnelle",
       "color": "bg-yellow",
       "img":"img/get_started/strategic.jpg",
       "imgAlt": "",
-      "description":"Consistently delivering extraordinary results",
+      "description":"Produire systématiquement des résultats extraordinaires",
       "moreDetail": [
-        "Analyzing global trends", 
-        "Identifying strengths, weaknesses, opportunities and threats", 
-        "Defining a strategy to align with long-term business direction", 
-        "Monitoring and measuring the impact of implemented strategies"
+        "Analyser les tendances mondiales",
+        "Déterminer les forces, les faiblesses, les possibilités et les menaces",
+        "Définir une stratégie qui cadre avec l’orientation à long terme de l’entreprise",
+        "Surveiller et mesurer l’incidence des stratégies mises en œuvre"
       ],
       "selectIf":[
-        "You need to keep sight of the big picture",
-        "You need to develop an integrated vision and long-term plan",
-        "You need to use your resources more effectively to achieve outcomes"
+        "Vous ne devez pas perdre de vue la vision globale",
+        "Vous devez élaborer une vision intégrée et un plan à long terme",
+        "Vous devez utiliser vos ressources plus efficacement pour obtenir des résultats"
       ],
       "download": "./learning_maps/LDT_Strategic_Thinking.pdf"
     },
     {
       "id": "09",
-      "name": "High Performing Environment",
-      "category":"Executing Strategic & Operational Excellence",
+      "name": "Environnement très performant",
+      "category":"Mettre en pratique l’excellence stratégique et opérationnelle",
       "color": "bg-yellow",
       "img":"img/get_started/performance.jpg",
       "imgAlt": "",
-      "description":"Consistently delivering extraordinary results",
+      "description":"Produire systématiquement des résultats extraordinaires",
       "moreDetail": [
-        "Supporting and trusting others to achieve their highest potential",
-        "Working tenaciously to meet or exceed expectations",
-        "Balancing competing priorities and managing workloads"
+        "Soutenir les autres et leur faire confiance pour réaliser tout leur potentiel",
+        "Travailler sans relâche pour répondre aux attentes ou les surpasser",
+        "Équilibrer les priorités concurrentes et la gestion du volume de travail"
       ],
       "selectIf":[
-        "You want to aim high and always do your best",
-        "You need to deliver excellence as a team",
-        "You want to create an environment of trust, achievement and optimism"
+        "Vous souhaitez viser haut et toujours faire de votre mieux",
+        "Vous devez assurer l’excellence en équipe",
+        "Vous voulez créer un environnement de confiance, d’accomplissement et d’optimisme"
       ],
       "download": "./learning_maps/LDT_High_Performing_Environment.pdf"
     },
     {
       "id": "10",
-      "name": "Customer Centricity",
-      "category":"Fostering Innovation and Agility",
+      "name": "Approche axée sur le client",
+      "category":"Favoriser l’innovation et l’agilité face au changement",
       "color": "bg-danger",
       "img":"img/get_started/customer.jpg",
       "imgAlt": "",
-      "description":"Encouraging new ideas and solutions through creative approaches",
+      "description":"Encourager les nouvelles idées et solutions au moyen d’approches créatives",
       "moreDetail": [
-        "Demonstrating empathy for the customer", 
-        "Keeping customers central to strategies and activities while ensuring the needs of the customers and the organization are met",
-        "Being flexible to continually changing and diverse customer expectations"
+        "Faire preuve d’empathie envers le client",
+        "Garder les clients au cœur des stratégies et des activités tout en veillant à répondre à leurs besoins et à ceux de l’entreprise",
+        "S’adapter aux attentes diversifiées et en constante évolution des clients"
       ],
       "selectIf":[
-        "You're working on a project or initiative that is focused on the customer",
-        "You’d like to strengthen your ability to empathize with the customer",
-        "You want to create opportunities for everyone to succeed"
+        "Vous travaillez sur un projet ou une initiative axés sur le client",
+        "Vous souhaitez renforcer votre aptitude à faire preuve d’empathie envers le client",
+        "Vous voulez créer des occasions pour que tout le monde réussisse"
       ],
       "download": "./learning_maps/LDT_Customer_Centricity.pdf"
     },
     {
       "id": "11",
       "name": "Innovation",
-      "category":"Fostering Innovation and Agility",
+      "category":"Favoriser l’innovation et l’agilité face au changement",
       "color": "bg-danger",
       "img":"img/get_started/innovation.jpg",
       "imgAlt": "",
-      "description":"Encouraging new ideas and solutions through creative approaches",
+      "description":"Encourager les nouvelles idées et solutions au moyen d’approches créatives",
       "moreDetail": [
-        "Exploring new ideas, methods and alternatives to achieve outcomes",
-        "Creating an environment where others feel safe to innovate",
-        "Spotting new patterns, generating insights, valuing diverse perspectives and translating them into new ideas"
+        "Explorer de nouvelles idées, méthodes et solutions de rechange pour obtenir des résultats",
+        "Créer un environnement où les autres n’ont pas peur d’innover",
+        "Repérer de nouveaux modèles, générer des idées, valoriser différentes perspectives et les traduire en nouvelles idées"
       ],
       "selectIf":[
-        "You’d like to try different approaches and adopt outside the box thinking",
-        "You’d like to create a safe environment for your team to take calculated risks"
+        "Vous souhaitez essayer différentes approches et adopter une réflexion qui sort des sentiers battus",
+        "Vous souhaitez instaurer un environnement sûr pour que votre équipe puisse prendre des risques calculés"
       ],
       "download": "./learning_maps/LDT_Innovation.pdf"
     },
     {
       "id": "12",
-      "name": "Change Agility",
-      "category":"Fostering Innovation and Agility",
+      "name": "Agilité face au changement",
+      "category":"Favoriser l’innovation et l’agilité face au changement",
       "color": "bg-danger",
       "img":"img/get_started/change.jpg",
       "imgAlt": "",
-      "description":"Encouraging new ideas and solutions through creative approaches",
+      "description":"Encourager les nouvelles idées et solutions au moyen d’approches créatives",
       "moreDetail": [
-        "Seeing the necessity or opportunity created by change",  
-        "Embracing discomfort and pursuing change with commitment",
-        "Practicing resilience in the face of change and setbacks",
-        "Proactively seeking out new challenges and opportunities to acquire new knowledge, perspectives and skills",
-        "Leading others through organizational and cultural changes",
-        "Removing barriers, managing resistance to change in others and demonstrating the benefits of change"
+        "Voir la nécessité ou la possibilité créée par le changement",
+        "Accepter d’être mal à l’aise et favoriser le changement en s’engageant ",
+        "Faire preuve de résilience face au changement et aux revers",
+        "Rechercher activement de nouveaux défis et possibilités afin d’acquérir de nouvelles connaissances, perspectives et compétences",
+        "Diriger les autres pendant les changements organisationnels et culturels",
+        "Éliminer les obstacles, gérer la résistance au changement chez les autres et démontrer les avantages du changement"
       ],
       "selectIf":[
-        "You want to embrace and adapt to change",
-        "You’d like to respond better to uncertainty, challenges and setbacks",
-        "You need to continually and rapidly learn, unlearn, and relearn",
-        "You need to lead organizational or cultural change",
-        "You need to enable others to overcome resistance to change"
+        "Vous voulez accepter le changement et vous y adapter",
+        "Vous souhaitez mieux réagir face à l’incertitude, aux difficultés et aux revers",
+        "Vous devez apprendre, désapprendre et réapprendre continuellement et rapidement",
+        "Vous devez diriger un changement organisationnel ou culturel",
+        "Vous devez donner les moyens aux autres de surmonter la résistance au changement"
       ],
       "download": "./learning_maps/LDT_Change_Agility.pdf"
     }

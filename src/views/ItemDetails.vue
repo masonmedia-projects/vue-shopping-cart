@@ -17,7 +17,8 @@
                         style="top: 50px;">
                         <b-avatar icon="bookmarks-fill" size="3.5rem" rounded="lg" :class="details.color" 
                         class="shadow"></b-avatar>
-                        <h1 class="font-weight-bold mb-4 mt-3" v-html="details.name"></h1>
+                        <h1 class="font-weight-bold mb-4 mt-3">{{ details.name }}</h1>
+                        <!-- <h1 class="font-weight-bold mb-4 mt-3" v-html="details.name"></h1> -->
                         <b-button disabled variant="outline-light" class="text-left"
                         v-html="details.category"></b-button>
                         </div>
@@ -93,20 +94,19 @@ export default {
     data() {
         return {
             details: this.$route.params,
+            successItem: this.$store.state.data.success.title
             // detailId: this.$route.params.id,
         }
     },
     computed: {
-        // detail() {
-        //     return this.$store.state.data.allCategories.find(
-        //         detail => detail.id === this.details
-        //     )
-        // },
-      aux() {
-        return this.$store.state.data.aux;
-      },
+        aux() {
+            return this.$store.state.data.aux;
+        },
     },
     methods: {
+        returnText: function(key) {
+            return this.$t(key);
+        },
         getStarted() {
             this.$router.push("/get-started");
         },
@@ -116,18 +116,18 @@ export default {
         addToCart() {
             // this.$store.commit("addToCart")
             this.$store.dispatch("addToCart", this.details);
-            console.log("item added")
-            
+            console.log("item added", this.successItem)
+
             // added https://sweetalert2.github.io/ for success alert
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',
-                title: 'Success!',
-                text: `${this.details.name} has been added to you cart!`,
+                title: `${this.returnText('success.title')}`,
+                text: `${this.details.name}` + ` ${this.returnText('success.message')}`,
                 showCancelButton: true,
-                cancelButtonText: 'Close',
-                cancelButtonAriaLabel: 'Close window',
-                  showConfirmButton: false,
+                cancelButtonText: `${this.returnText('success.closeBtn')}`,
+                cancelButtonAriaLabel: 'Close',
+                showConfirmButton: false,
                 timer: 2000,
                 cancelButtonColor: '',
                 // remove default styles, add custom classes
