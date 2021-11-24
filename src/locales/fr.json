@@ -77,13 +77,13 @@
 
   "exit": [
     {
-      "heading": "Sortir",
-      "title": "Vous êtes certain?",
-      "message": "Select <strong>Cancel</strong> to continue browsing. Select <strong>Close session</strong> to close the window and save your progress. Select <strong>Complete</strong> to mark the tool as complete in your dashboard.",
-      "warning": "<strong>*Please note:</strong> selecting 'Complete' will mark the tool as complete and your saved data will be lost.",
+      "heading": "Quitter",
+      "title": "Vous êtes sûr?",
+      "message": "Sélectionnez <strong>Annuler</strong> pour continuer à naviguer. Sélectionnez <strong>Fermer la session</strong> pour fermer la fenêtre et enregistrer votre progression. Sélectionnez <strong>Terminer</strong> pour marquer l’outil comme étant terminé dans votre tableau de bord.",
+      "warning": "<strong>*Remarque:</strong> En sélectionnant « Terminer », vous marquerez l’outil comme étant terminé et vos données sauvegardées seront perdues.",
       "btn1": "Annuler",
-      "btn2": "Close session",
-      "btn3": "Complete"
+      "btn2": "Fermer la session",
+      "btn3": "Terminer"
     }
   ],
 
@@ -123,7 +123,7 @@
     {
       "microTitle": "Mon outil de développement des gestionnaires",
       "title":"Démarrer",
-      "text": "Élaborez votre plan d’apprentissage en explorant la liste des capacités de leadership ci-dessous. Sélectionnez le bouton <strong>Détails</strong> associé à une capacité pour en savoir plus à son sujet et voir la forme qu’elle prend concrètement avant de décider si elle vous convient. S’il vous faut plus d’informations, vous pouvez consulter le modèle de comportement de leadership pour déterminer les domaines sur lesquels vous aimeriez vous concentrer. Vous trouverez une définition de chaque domaine du modèle ainsi qu’une liste des capacités entrant dans chaque catégorie <a class='font-weight-bold text-royal' href='./LCL_Leadership_Behaviour_Model_Details.pdf' target='_blank'>ici.</a>",
+      "text": "Élaborez votre plan d’apprentissage en explorant la liste des capacités de leadership ci-dessous. Sélectionnez le bouton <strong>Détails</strong> associé à une capacité pour en savoir plus à son sujet et voir la forme qu’elle prend concrètement avant de décider si elle vous convient. S’il vous faut plus d’informations, vous pouvez consulter le modèle de comportement de leadership pour déterminer les domaines sur lesquels vous aimeriez vous concentrer. Vous trouverez une définition de chaque domaine du modèle ainsi qu’une liste des capacités entrant dans chaque catégorie <a class='font-weight-bold text-royal' href='./LCL_Leadership_Behaviour_Model_Details-FR.pdf' target='_blank'>ici.</a>",
       "detailsBtn": "Détails",
       "img": {
         "banner": "img/get_started/LCL_leadership_wheel_FR.png"
@@ -156,15 +156,15 @@
 
   "myHistory":[
     {
-      "microTitle": "My Leadership Development Tool",
-      "title":"My History",
-      "text":"This space is dedicated to archiving your journey using the <strong>Leadership Development Tool.</strong> Your previous downloads have been saved here for easy reference and future reflection. Feel free to go back and explore the details of any of the items you've downloaded, and stay up to date with ongoing additions to these and other leadership skills as the tool grows. The Leadership Development Tool is here to support your continual learning and growth.",
-      "btn": "Details",
+      "microTitle": "Mon Outil de développement des gestionnaires",
+      "title":"Mon historique",
+      "text":"Cet espace est réservé à l’archivage de votre cheminement d’utilisation de <strong>l’Outil de développement des gestionnaires.</strong> Vos téléchargements précédents ont été enregistrés ici pour faciliter la consultation et des réflexions futures. N’hésitez pas à revenir en arrière et à explorer les détails de tous les éléments que vous avez téléchargés, et restez à jour avec des ajouts continus à ces compétences et à d’autres compétences en leadership au fur et à mesure que l’outil se développe. L’outil de développement des gestionnaires est là pour soutenir votre apprentissage et votre croissance continus.",
+      "btn": "Détails",
       "img": {
         "banner": "img/about_page/about10.jpg"
         },
       "imgAlt": {
-        "banner": "A photo of four women sitting at a table discussing contents on a laptop."
+        "banner": "Photo de quatre femmes assises à une table et discutant de contenu sur un ordinateur portatif."
       },
       "emptyArchive": "Mon historique est vide!"
     }
@@ -174,7 +174,7 @@
     {
       "categoryTitle": "Catégorie",
       "descriptionTitle": "Catégorie Description",
-      "nameTitle": "Capability",
+      "nameTitle": "Capacité",
       "sectionTitle1": "Description",
       "sectionTitle2": "Ajoutez-la à votre plan si",
       "btn1": "Ajouter",
@@ -201,7 +201,7 @@
         "Vous souhaitez en savoir plus sur la façon dont les autres vous perçoivent",
         "Vous souhaitez vous sentir apte à apporter des changements et à développer vos points forts et vos possibilités"
       ],
-      "download": "./learning_maps/LDT_Self_Awareness.pdf"
+      "download": "./learning_maps/FR/ODG_Connaissance_de_soi.pdf"
     },
     {
       "id": "02",
@@ -223,7 +223,7 @@
         "Vous voulez concrétiser les priorités grâce à l’action inspirée des autre",
         "Vous souhaitez mettre l’accent sur le développement de l’équipe"
       ],
-      "download": "./learning_maps/LDT_Empowerment.pdf"
+      "download": "./learning_maps/FR/ODG_Autonomisation.pdf"
     },
     {
       "id": "03",
@@ -242,7 +242,7 @@
         "Vous devez influencer les autres et collaborer avec eux pour obtenir des résultats",
         "Vous voulez obtenir différents points de vue pour améliorer vos résultats"
       ],
-      "download": "./learning_maps/LDT_Collaboration.pdf"
+      "download": "./learning_maps/FR/ODG_Collaboration.pdf"
     },
     {
       "id": "04",
@@ -263,7 +263,7 @@
         "Vous voulez gagner en assurance pour parler en public",
         "Vous voulez influencer les autres par la communication"
       ],
-      "download": "./learning_maps/LDT_Compelling_Communication.pdf"
+      "download": "./learning_maps/FR/ODG_Communication_Convaincante.pdf"
     },
     {
       "id": "05",
@@ -286,7 +286,7 @@
         "Vous devez gérer avec assurance les conversations, les situations ou les conflits difficiles",
         "Vous devez exprimer vos opinions même si elles sont impopulaires"
       ],
-      "download": "./learning_maps/LDT_Authentic_Conversations.pdf"
+      "download": "./learning_maps/FR/ODG_Conversations_Authentiques.pdf"
     },
     {
       "id": "06",
@@ -305,7 +305,7 @@
         "Vous souhaitez mieux parvenir à reconnaître les émotions et y réagir",
         "Vous êtes tenu de trouver des solutions aux problèmes dans des situations chargées émotionnellement"
       ],
-      "download": "./learning_maps/LDT_Emotional_Intelligence.pdf"
+      "download": "./learning_maps/FR/ODG_Intelligence_Émotionnelle.pdf"
     },
     {
       "id": "07",
@@ -324,7 +324,7 @@
         "Vous devez analyser des données et trouver des perspectives",
         "Vous souhaitez identifier des schémas"
       ],
-      "download": "./learning_maps/LDT_Critical_Thinking.pdf"
+      "download": "./learning_maps/FR/ODG_Pensée_Critique.pdf"
     },
     {
       "id": "08",
@@ -345,7 +345,7 @@
         "Vous devez élaborer une vision intégrée et un plan à long terme",
         "Vous devez utiliser vos ressources plus efficacement pour obtenir des résultats"
       ],
-      "download": "./learning_maps/LDT_Strategic_Thinking.pdf"
+      "download": "./learning_maps/FR/ODG_Pensée_Stratégique.pdf"
     },
     {
       "id": "09",
@@ -365,7 +365,7 @@
         "Vous devez assurer l’excellence en équipe",
         "Vous voulez créer un environnement de confiance, d’accomplissement et d’optimisme"
       ],
-      "download": "./learning_maps/LDT_High_Performing_Environment.pdf"
+      "download": "./learning_maps/FR/ODG_Environnement_Très_Performant.pdf"
     },
     {
       "id": "10",
@@ -385,7 +385,7 @@
         "Vous souhaitez renforcer votre aptitude à faire preuve d’empathie envers le client",
         "Vous voulez créer des occasions pour que tout le monde réussisse"
       ],
-      "download": "./learning_maps/LDT_Customer_Centricity.pdf"
+      "download": "./learning_maps/FR/ODG_Approche_Axée_Sur_le_Client.pdf"
     },
     {
       "id": "11",
@@ -404,7 +404,7 @@
         "Vous souhaitez essayer différentes approches et adopter une réflexion qui sort des sentiers battus",
         "Vous souhaitez instaurer un environnement sûr pour que votre équipe puisse prendre des risques calculés"
       ],
-      "download": "./learning_maps/LDT_Innovation.pdf"
+      "download": "./learning_maps/FR/ODG_Innovation.pdf"
     },
     {
       "id": "12",
@@ -429,7 +429,7 @@
         "Vous devez diriger un changement organisationnel ou culturel",
         "Vous devez donner les moyens aux autres de surmonter la résistance au changement"
       ],
-      "download": "./learning_maps/LDT_Change_Agility.pdf"
+      "download": "./learning_maps/FR/ODG_Agilité_Face_au_Changement.pdf"
     }
   ],
   "success": {

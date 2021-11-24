@@ -203,7 +203,7 @@
         "You’d like to learn about others perception of you",
         "You’d like to feel empowered to make changes and build on your areas of strengths and opportunities"
       ],
-      "download": "./learning_maps/LDT_Self_Awareness.pdf"
+      "download": "./learning_maps/EN/LDT_Self_Awareness.pdf"
     },
     {
       "id": "02",
@@ -224,7 +224,7 @@
         "You’d like to learn about others perception of you",
         "You’d like to feel empowered to make changes and build on your areas of strengths and opportunities"
       ],
-      "download": "./learning_maps/LDT_Empowerment.pdf"
+      "download": "./learning_maps/EN/LDT_Empowerment.pdf"
     },
     {
       "id": "03",
@@ -243,7 +243,7 @@
         "You need to influence and partner with others to achieve outcomes",
         "You want different points of view to enhance your outcomes"
       ],
-      "download": "./learning_maps/LDT_Collaboration.pdf"
+      "download": "./learning_maps/EN/LDT_Collaboration.pdf"
     },
     {
       "id": "04",
@@ -264,7 +264,7 @@
         "You want to build confidence in public speaking",
         "You want to influence others through communication"
       ],
-      "download": "./learning_maps/LDT_Compelling_Communication.pdf"
+      "download": "./learning_maps/EN/LDT_Compelling_Communication.pdf"
     },
     {
       "id": "05",
@@ -287,7 +287,7 @@
         "You need to confidently manage challenging conversations, situations or conflict", 
         "You need to share your opinions even if they are unpopular"
       ],
-      "download": "./learning_maps/LDT_Authentic_Conversations.pdf"
+      "download": "./learning_maps/EN/LDT_Authentic_Conversations.pdf"
     },
     {
       "id": "06",
@@ -306,7 +306,7 @@
         "You’d like to get better at identifying and responding to emotions",  
         "You’re required to find solutions to problems in emotionally charged situations"
       ],
-      "download": "./learning_maps/LDT_Emotional_Intelligence.pdf"
+      "download": "./learning_maps/EN/LDT_Emotional_Intelligence.pdf"
     },
     {
       "id": "07",
@@ -325,7 +325,7 @@
         "You need to analyze data and develop insights",
         "You’d like to identify patterns"
       ],
-      "download": "./learning_maps/LDT_Critical_Thinking.pdf"
+      "download": "./learning_maps/EN/LDT_Critical_Thinking.pdf"
     },
     {
       "id": "08",
@@ -346,7 +346,7 @@
         "You need to develop an integrated vision and long-term plan",
         "You need to use your resources more effectively to achieve outcomes"
       ],
-      "download": "./learning_maps/LDT_Strategic_Thinking.pdf"
+      "download": "./learning_maps/EN/LDT_Strategic_Thinking.pdf"
     },
     {
       "id": "09",
@@ -366,7 +366,7 @@
         "You need to deliver excellence as a team",
         "You want to create an environment of trust, achievement and optimism"
       ],
-      "download": "./learning_maps/LDT_High_Performing_Environment.pdf"
+      "download": "./learning_maps/EN/LDT_High_Performing_Environment.pdf"
     },
     {
       "id": "10",
@@ -386,7 +386,7 @@
         "You’d like to strengthen your ability to empathize with the customer",
         "You want to create opportunities for everyone to succeed"
       ],
-      "download": "./learning_maps/LDT_Customer_Centricity.pdf"
+      "download": "./learning_maps/EN/LDT_Customer_Centricity.pdf"
     },
     {
       "id": "11",
@@ -405,7 +405,7 @@
         "You’d like to try different approaches and adopt outside the box thinking",
         "You’d like to create a safe environment for your team to take calculated risks"
       ],
-      "download": "./learning_maps/LDT_Innovation.pdf"
+      "download": "./learning_maps/EN/LDT_Innovation.pdf"
     },
     {
       "id": "12",
@@ -430,7 +430,7 @@
         "You need to lead organizational or cultural change",
         "You need to enable others to overcome resistance to change"
       ],
-      "download": "./learning_maps/LDT_Change_Agility.pdf"
+      "download": "./learning_maps/EN/LDT_Change_Agility.pdf"
     }
   ],
   "success": {
