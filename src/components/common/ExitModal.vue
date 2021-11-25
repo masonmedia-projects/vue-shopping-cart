@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex align-items-center justify-content-start justify-content-lg-center pt-3 pt-lg-0">
+    <div class="d-flex align-items-center justify-content-start justify-content-xl-center pt-3 pt-xl-0">
         <!-- removed class="gear-icon" -->
         <div class="" v-for="item in $t('exit')" :key="item.id">
         <b-button type="button" size="sm" variant="outline-base" class="d-flex font-weight-bold mb-0 px-3 rounded" v-b-modal.exit-course>
@@ -13,6 +13,7 @@
             content-class="bg-glass"
             body-class="text-center p-4"
             hide-footer
+            :size="$i18n.locale == 'fr' ? 'lg' : 'md'"
             title-class="font-weight-bold badge badge-danger px-3 py-1"
             :title="item.heading"
             >
@@ -61,11 +62,14 @@ export default {
         },
     },
     methods: {
-         closeSession() {
-            this.$bvModal.hide("exit-course");
+        closeSession: function() {
             this.$store.dispatch("com_exit");
+            top.window.close();
+            this.$bvModal.hide("exit-course");
+            console.log("Close window")
         },
         exitCourse() {
+            top.window.close();
             this.$bvModal.hide("exit-course");
             SCORM.init();
             // var name = SCORM.get('cmi.core.student_name');

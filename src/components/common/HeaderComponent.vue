@@ -2,10 +2,10 @@
   <div>
   <b-navbar 
   fixed="top" 
-  toggleable="lg" 
+  toggleable="xl" 
   type="light" 
   variant="light" 
-  class="shadow py-3 py-lg-2"
+  class="shadow py-3 py-xl-2"
   v-for="items in $t('menu')" :key="items.id">
     <router-link 
     class="d-flex navbar-brand font-weight-bold align-items-center" to="/"
@@ -70,7 +70,7 @@
               font-scale="6"
               class="align-self-center bg-yellow rounded-circle shadow" 
               title="There are no items in my plan"></b-icon>
-              <span class="sr-only">There are no items in my plan</span>
+              <span class="sr-only" v-html="items.emptyPlan"></span>
                 <h5 class="my-4 px-3 text-center" v-html="items.emptyPlan"></h5>
             </div>
         </div>
@@ -80,19 +80,19 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav 
-      class="d-flex justify-content-center align-items-start align-items-lg-center ml-auto">
-        <li
-        v-for="item in items.menuItems" :key="item.id">
+      class="d-flex justify-content-center align-items-start align-items-xl-center ml-auto">
+        <li v-for="item in items.menuItems" :key="item.id">
             <router-link class="nav-link" :to="item.url" v-html="item.link"></router-link>
         </li>
 
             <!-- info question mark icon for about modal -->
             <div v-b-modal.modal-center class="nav-link mr-1">
-            <b-icon 
+              <b-icon 
               icon="question-circle" 
               variant="secondary"
               font-scale="1.7"
-              class="d-flex align-self-center"></b-icon>
+              class="d-flex align-self-center">
+              </b-icon>
             </div>
             <about-modal></about-modal>
 
@@ -106,12 +106,12 @@
               title="There are no items in my plan"></b-icon>
             <!-- menu cart counter -->
             <!-- <b-badge class="cart-count" variant="success">{{ count }}</b-badge> -->
-          </div>
-          
+          </div>    
       </b-navbar-nav>
+
       <b-navbar-nav class="nav-item py-2">
         <!-- lang select -->
-        <select class="custom-select mr-3 mt-3 mb-2 mt-lg-0 mb-lg-0" v-model="$i18n.locale">
+        <select class="custom-select mr-3 mt-3 mb-2 mt-xl-0 mb-lg-0" v-model="$i18n.locale">
           <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
             {{ lang }}
           </option>
