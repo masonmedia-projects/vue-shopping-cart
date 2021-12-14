@@ -10,7 +10,7 @@
                 data-animate="fade 2s"></b-img>
                 <!-- color strip -->
                 <div class="text absolute bottom w-100 z-0 bg-yellow-trans" style="height: 200px"></div>
-                <b-col md="12" lg="10" align-self="end" class="p-5 mt-4">
+                <b-col md="12" lg="10" align-self="end" class="p-4 p-md-5 mt-5 mt-md-4">
                     <div class="text p-5 bg-glass bg-taieri" style="border-radius: 14px;">
                         <h5 class="animate my-3 font-weight-bold" 
                         data-animate="fade-up 1s"

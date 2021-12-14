@@ -73,10 +73,10 @@
           v-bind="imgProps"
           style="filter: brightness(0.9)"
           ></b-card-img>
-          <b-card-text class="pt-4 px-5 pb-5"
+          <b-card-text class="py-4 px-5 py-4 px-5 d-flex flex-column align-items-center justify-content-center" style="min-height: 200px"
           v-for="item in $t('getStarted')" :key="item.id">
-            <h2 v-html="items.name" class="font-weight-bold"></h2>
-            <p v-html="items.category"></p>  
+            <h2 v-html="items.name" class="font-weight-bold m-0" style="font-size: 3vmin"></h2>
+            <p class="mt-2 mb-3" v-html="items.category"></p>  
             <b-button variant="lightblue mr-2 stretched-link" v-html="item.detailsBtn"></b-button>
             <!-- <router-link :to="{ name: 'FoodDetails', params: {id: topRated.id}}"></router-link> -->
           </b-card-text>
