@@ -8,7 +8,8 @@
   class="shadow py-3 py-xl-2"
   v-for="items in $t('menu')" :key="items.id">
     <router-link 
-    class="d-flex navbar-brand font-weight-bold align-items-center" to="/"
+    to="/"
+    class="d-flex navbar-brand font-weight-bold align-items-center"  
     v-html="items.navbarBrand">
     </router-link> 
 
@@ -112,10 +113,12 @@
       <b-navbar-nav class="nav-item py-2">
         <!-- lang select -->
         <select class="custom-select mr-3 mt-3 mb-2 mt-xl-0 mb-lg-0" v-model="$i18n.locale">
-          <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
+          <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
+          <!-- <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
             {{ lang }}
-          </option>
+          </option> -->
         </select>
+
         <!-- gear icon/exit modal -->
         <exit-modal :logout="items.logout"></exit-modal>
       </b-navbar-nav>
@@ -142,7 +145,13 @@ export default {
         }
     },
     methods: { 
-        itemDetails(item) {
+      // changeLanguage() {
+      //   // set the HTML lang="" attribute so :lang() will work
+      //     const getHTMLTag = document.documentElement;
+      //     getHTMLTag.setAttribute("lang", this.$i18n.locale);
+      //     console.log(this.$i18n.locale)
+      // },
+      itemDetails(item) {
         this.$router.push({name: "ItemDetails", params: item });
       },
       // close exit modal
@@ -168,19 +177,19 @@ export default {
         return this.$store.state.cartArchive;
       },
         // changed price to id so items without price would be recognized
-        totalPrice() {
-            let price = 0;
-            this.$store.state.cartItems.map(el => {
-                price += el["quantity"] * el["id"]
-            })
-            return price;
-        },
-        menu() {
-          return this.$store.state.data.menu;
-        },
+      totalPrice() {
+          let price = 0;
+          this.$store.state.cartItems.map(el => {
+              price += el["quantity"] * el["id"]
+          })
+          return price;
+      },
+      menu() {
+        return this.$store.state.data.menu;
+      },
       count() {
         return this.$store.state.cartItemCount;
-      }
+      },
     },
      mounted() {
     }

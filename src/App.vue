@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="animate__animated animate__fadeIn">
+  <div id="app" :lang="this.$i18n.locale" class="animate__animated animate__fadeIn">
     <header-component/>
     <transition
       mode="out-in"
