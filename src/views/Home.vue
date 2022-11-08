@@ -38,24 +38,24 @@
                     :alt="items.imgAlt.img1"
                     v-bind="imgProps"
                     class="animate h-100 w-100 cover" 
-                    :data-animate="fade"
+                    
                     style="border-radius: 14px 0 0 14px;"></b-img-lazy>
                 </b-col>
                 <b-col lg="7" align-self="center" class="p-5">
                     <h5 class="animate mb-3 font-weight-bold text-muted" 
-                    :data-animate="fadeUp"
+                
                     v-html="items.microTitle1"></h5>
                     <h1 class="animate display-4 font-weight-bold"
-                    :data-animate="fadeUp"
+                
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.title1"></h1>
-                    <hr :data-animate="fadeUp" class="animate d-flex m-0 mr-auto my-4 bg-orange" style="height: 4px; width: 50px;">
+                    <hr class="animate d-flex m-0 mr-auto my-4 bg-orange" style="height: 4px; width: 50px;">
                     <p class="animate mb-2"
-                    :data-animate="fadeUp"
+                
                      v-html="items.text1"></p>
                     <b-icon icon="chevron-double-down"
                     class="animate mt-3" 
-                    :data-animate="fadeUp" 
+                 
                     variant="dark" 
                     font-scale="2"></b-icon>
                 </b-col>
@@ -65,17 +65,17 @@
 
             <b-row align-v="stretch" class="min-h-75 mx-2 my-4 bg-glass border-0">
                 <b-col lg="7" align-self="center" class="p-5">
-                    <h5 :data-animate="fadeUp" class="animate mb-3 font-weight-bold text-muted" 
+                    <h5 class="animate mb-3 font-weight-bold text-muted" 
                     v-html="items.microTitle2"></h5>
-                    <h1 :data-animate="fadeUp" class="animate display-4 font-weight-bold"
+                    <h1 class="animate display-4 font-weight-bold"
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.title2"></h1>
-                    <hr :data-animate="fadeUp" 
+                    <hr 
                     class="animate d-flex m-0 mr-auto my-4 bg-danger" style="height: 4px; width: 50px;">
-                    <p :data-animate="fadeUp" 
+                    <p 
                     class="animate mb-2" v-html="items.text2"></p>
                     <b-icon icon="chevron-double-down" 
-                    :data-animate="fadeUp"
+                
                     class="animate mt-3" variant="dark" font-scale="2"></b-icon>
                 </b-col>
                 <b-col lg="5" align-self="stretch" class="p-0">
@@ -84,7 +84,7 @@
                     :alt="items.imgAlt.img2" 
                     v-bind="imgProps"
                     class="animate h-100 w-100 cover" 
-                    :data-animate="fade"
+                    
                     style="border-radius: 0 14px 14px 0;"></b-img-lazy>
                 </b-col>
             </b-row>
@@ -98,22 +98,22 @@
                     :alt="items.imgAlt.img3" 
                     v-bind="imgProps"
                     class="animate h-100 w-100 cover" 
-                    :data-animate="fade"
+                    
                     style="border-radius: 14px 0 0 14px;"></b-img-lazy>
                 </b-col>
                 <b-col lg="7" align-self="center" class="p-5">
                     <h5 class="animate mb-3 font-weight-bold text-muted" 
-                    :data-animate="fadeUp"
+                
                     v-html="items.microTitle3"></h5>
                     <h1 class="animate display-4 font-weight-bold"
-                    :data-animate="fadeUp"
+                
                     style="line-height: 90%; letter-spacing: -3px"
                     v-html="items.title3"></h1>
                     <hr class="animate d-flex m-0 mr-auto my-4 bg-lightblue" 
-                    :data-animate="fadeUp"
+                
                     style="height: 4px; width: 50px;">
-                    <p class="animate mb-2" :data-animate="fadeUp" v-html="items.text3"></p>
-                    <div class="animate d-flex flex-wrap my-3" :data-animate="fadeUp">
+                    <p class="animate mb-2" v-html="items.text3"></p>
+                    <div class="animate d-flex flex-wrap my-3">
                         <b-button 
                         v-b-modal.modal-center
                         variant="lightblue" 
@@ -137,11 +137,11 @@
 // import AboutModal from '../components/AboutModal';
 // import { animate } from "../mixins/animate";
 import { lms } from "../mixins/lms";
-import { obsAnimate } from '../mixins/obsAnimate'
+// import { obsAnimate } from '../mixins/obsAnimate'
 
 export default {
   name: 'Home',
-  mixins: [lms, obsAnimate],
+  mixins: [lms],
   data() {
       return {
           imgProps: {

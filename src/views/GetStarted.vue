@@ -63,7 +63,7 @@
           header-class="font-weight-bold"
           class="border-0 mb-3 shadow"
           body-class="p-0"
-          style="min-height: 510px;"
+          style="min-height: 410px;"
           >
           <b-avatar icon="bookmarks-fill" size="2.5rem" rounded="lg" 
           :class="items.color" class="absolute left top z-1 m-2 shadow"></b-avatar>
